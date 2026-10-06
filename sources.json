@@ -1,0 +1,4 @@
+{
+  "operators": { "repository": "fexli/ArknightsResource", "ref": "main", "root": "spine", "kind": "operator" },
+  "enemies": { "repository": "isHarryh/Ark-Models", "ref": "main", "root": "models_enemies", "kind": "enemy" }
+}

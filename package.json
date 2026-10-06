@@ -1,0 +1,12 @@
+{
+  "name": "arkpedia-sd-assets",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "validate": "node scripts/validate.mjs",
+    "import:model": "node scripts/import-model.mjs",
+    "refresh": "node scripts/refresh.mjs"
+  }
+}

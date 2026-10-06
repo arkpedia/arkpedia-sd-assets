@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "models": {
+    "operator/char_002_amiya/default/front": {
+      "kind": "operator",
+      "id": "char_002_amiya",
+      "variant": "default",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_002_amiya/char_002_amiya/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_002_amiya/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_002_amiya.skel",
+        "bytes": 179880,
+        "sha256": "db049b479a3812517419c60d29751a6d7193c174fd128718bcaecc67fe064284"
+      },
+      "atlas": {
+        "path": "models/operator/char_002_amiya/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_002_amiya.atlas",
+        "bytes": 5595,
+        "sha256": "85c7b44351306fb0e14da849db84f31f0a566519be3390a6e143ff0a8590b2a9"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_002_amiya/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_002_amiya.png",
+          "bytes": 84155,
+          "sha256": "90a971ac4bec2e1360668c7a32c2262f9342ddcea6663e5755b47a2a6255d22f"
+        }
+      ],
+      "premultipliedAlpha": null,
+      "animations": null
+    },
+    "operator/char_002_amiya/default/back": {
+      "kind": "operator",
+      "id": "char_002_amiya",
+      "variant": "default",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_002_amiya/char_002_amiya/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_002_amiya/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_002_amiya.skel",
+        "bytes": 115804,
+        "sha256": "b77967d964f2d7a3f363dddeef2d1d1b92ed55f985ff6fc3e5305fd6b470b40c"
+      },
+      "atlas": {
+        "path": "models/operator/char_002_amiya/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_002_amiya.atlas",
+        "bytes": 3052,
+        "sha256": "63c0b2a652f48e6467df65e0af5df25a18b7999f6cefea1f94e4026411095a45"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_002_amiya/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_002_amiya.png",
+          "bytes": 52368,
+          "sha256": "cbb7160dc3464d3348af5794756ff254b5f1ad69ad205a62547c6c21da80741c"
+        }
+      ],
+      "premultipliedAlpha": null,
+      "animations": null
+    },
+    "enemy/enemy_10001_trslim/default/default": {
+      "kind": "enemy",
+      "id": "enemy_10001_trslim",
+      "variant": "default",
+      "facing": "default",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "enemies",
+        "repository": "isHarryh/Ark-Models",
+        "commit": "8a3857c250a5c271429aefa82c660ff35803166e",
+        "directory": "models_enemies/10001_trslim"
+      },
+      "skeleton": {
+        "path": "models/enemy/enemy_10001_trslim/default/default/8a3857c250a5c271429aefa82c660ff35803166e/enemy_10001_trslim.skel",
+        "bytes": 31276,
+        "sha256": "8c07856f3b961c853a96512ea6fc78496e02b6917fabcd05d51036a7223c4dd0"
+      },
+      "atlas": {
+        "path": "models/enemy/enemy_10001_trslim/default/default/8a3857c250a5c271429aefa82c660ff35803166e/enemy_10001_trslim.atlas",
+        "bytes": 804,
+        "sha256": "aa8110ef24512e99ca66ad7fb3e644f48d4ad20314699e44563ba08468b329d4"
+      },
+      "textures": [
+        {
+          "path": "models/enemy/enemy_10001_trslim/default/default/8a3857c250a5c271429aefa82c660ff35803166e/enemy_10001_trslim.png",
+          "bytes": 14977,
+          "sha256": "e1783f2cd23a12a00866a643dfea002e61b3112010a03ea7024f876b6922919e"
+        }
+      ],
+      "premultipliedAlpha": null,
+      "animations": null
+    }
+  }
+}
