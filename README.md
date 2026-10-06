@@ -1,6 +1,6 @@
 # Arkpedia SD assets
 
-Battle chibi (super deformed) Spine models for Arkpedia's stage overhaul. This repository holds animation assets; stats, skills and stage rules stay in `arkpedia-data`.
+Battle chibi (super deformed) Spine models and original stage scenery for Arkpedia's stage overhaul. This repository holds artwork and animation assets; stats, skills and stage rules stay in `arkpedia-data`.
 
 This is an initial asset set, not a complete operator/enemy/effect catalogue. There are 17 complete models: Amiya's pilot Front/Back pair, the initial enemy pilot, and the 14 models used by the 0-1 simulator MVP (Fang, Melantha, Beagle, Kroos, Hibiscus and Steward Front/Back, plus slug and soldier). A model having files does not establish accurate combat behavior.
 
