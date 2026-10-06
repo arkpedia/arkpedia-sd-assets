@@ -39,4 +39,30 @@ export async function validateStages(manifest, root) {
     for (const m of Object.values(scene.materials))
       if (!scene.textures[m.map] || (m.emissiveMap && !scene.textures[m.emissiveMap])) throw Error('Missing stage texture');
   }
+  if (manifest.effects?.standardGates) {
+    const entry = manifest.effects.standardGates;
+    const pack = JSON.parse(await checked(root, entry));
+    if (pack.schemaVersion !== 1 || pack.coordinates !== 'column,row,height' ||
+        pack.source?.bundle !== 'arts/effects/[pack]map.ab' || pack.parts?.length !== 5)
+      throw Error('Invalid standard gate pack');
+    const base = path.dirname(path.join(root, entry.path));
+    const buffer = await checked(base, pack.buffer);
+    await checked(base, pack.texture);
+    const expected = {startDown:'start',startUp:'start',startBack:'start',endDown:'end',endUp:'end'};
+    if (new Set(pack.parts.map(p => p.key)).size !== 5) throw Error('Duplicate gate part');
+    for (const part of pack.parts) {
+      if (expected[part.key] !== part.kind || part.blend !== (part.key === 'endUp' ? 'alpha' : 'additive'))
+        throw Error('Invalid gate part');
+      for (const [name,size,type] of [['position',3,'Float32'],['uv',2,'Float32'],['index',1,'Uint32']]) {
+        const a = part.attributes[name];
+        if (!a || a.type !== type || a.itemSize !== size || !Number.isSafeInteger(a.byteOffset) ||
+            a.byteOffset < 0 || a.byteOffset % 4 || !Number.isSafeInteger(a.count) || a.count < 1 ||
+            a.byteOffset+a.count*size*4 > buffer.length) throw Error('Invalid gate buffer range');
+      }
+      const a = part.attributes.index, count = part.attributes.position.count;
+      if (part.attributes.uv.count !== count || a.count % 3 ||
+          new Uint32Array(buffer.buffer,buffer.byteOffset+a.byteOffset,a.count).some(i => i >= count))
+        throw Error('Invalid gate triangle');
+    }
+  }
 }

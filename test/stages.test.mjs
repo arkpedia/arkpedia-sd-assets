@@ -13,3 +13,8 @@ test('rejects tampered stage manifest checksums and paths outside the repository
     await assert.rejects(validateStages(bad,root), /checksum|reference/i);
   }
 });
+test('standard gate pack files are verified before publication', async () => {
+  const bad = structuredClone(manifest);
+  bad.effects.standardGates.sha256 = '0'.repeat(64);
+  await assert.rejects(validateStages(bad,root), /checksum/);
+});
