@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "stages": {
+    "0-1": {
+      "path": "stages/0-1/26-09-23-17-49-43_b9cc4a/scene.json",
+      "bytes": 4479,
+      "sha256": "0a48158f8b2c7479adc9e365251fb055cf3546c095ad3547d19cd801c18e6e01"
+    }
+  }
+}
