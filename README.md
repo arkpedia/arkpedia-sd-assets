@@ -2,7 +2,9 @@
 
 Battle chibi (super deformed) Spine models for Arkpedia's stage overhaul. This repository holds animation assets; stats, skills and stage rules stay in `arkpedia-data`.
 
-This is the initial asset foundation, not a complete operator/enemy/effect catalogue. A model having files does not establish accurate combat behavior or runtime compatibility. Animation role mappings and premultiplied-alpha settings remain `null` until verified in the chosen renderer.
+This is an initial asset set, not a complete operator/enemy/effect catalogue. There are 17 complete models: Amiya's pilot Front/Back pair, the initial enemy pilot, and the 14 models used by the 0-1 simulator MVP (Fang, Melantha, Beagle, Kroos, Hibiscus and Steward Front/Back, plus slug and soldier). A model having files does not establish accurate combat behavior.
+
+All 17 models have parsed Spine 3.8 animation durations, role mappings, attack-event times and bounds. Their atlas attachments have been checked with the simulator's Spine parser. Operator textures use straight alpha; enemy textures use premultiplied alpha, tested on the MVP in the browser renderer. New imports keep unverified runtime fields `null` until inspected. These checks do not establish frame-for-frame combat accuracy.
 
 ## Import a model
 
@@ -27,11 +29,11 @@ Imports pin the source commit, fetch the skeleton, atlas and every declared PNG 
 - `source`: upstream key, repository, full commit and original directory.
 - `spineVersion`: binary header version; renderer compatibility still needs testing.
 - `skeleton`, `atlas`, `textures`: repository paths, byte lengths and SHA-256 hashes.
-- `animations`, `premultipliedAlpha`: explicitly unknown until renderer verification.
+- `animations`, `animationRoles`, `hits`, `bounds`, `premultipliedAlpha`: runtime metadata when inspected, otherwise explicitly unknown. Refresh/import must be followed by parsing and renderer checks before a simulator uses a new revision.
 
 Files live at `models/<kind>/<id>/<variant>/<facing>/<upstream commit>/<original filename>`. Atlas-relative texture names are preserved. Clients use URLs pinned to this repository's commit, then lazy-load only the stage enemies, chosen squad, summons and effects. Never load this repository's moving `main` from an active battle.
 
-The app's release pipeline does not consume this repository yet. Adding a pinned SD revision to content releases, complete coverage reports, token/effect imports, runtime animation validation and automatic refresh/publication are follow-up work on `feat/stage-overhaul`. The manifest must distinguish missing art from unsupported mechanics.
+The [public simulator MVP](https://github.com/arkpedia/arkpedia-stage-simulator) consumes an immutable SD commit. The app's production release pipeline does not consume this repository yet. Adding a pinned SD revision to content releases, complete coverage reports, token/effect imports and automatic refresh/publication are follow-up work on `feat/stage-overhaul`. The manifest must distinguish missing art from unsupported mechanics.
 
 ## Reference
 
