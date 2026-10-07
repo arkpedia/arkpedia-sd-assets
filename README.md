@@ -2,9 +2,9 @@
 
 Battle chibi (super deformed) Spine models and original stage scenery for Arkpedia's stage overhaul. This repository holds artwork and animation assets; stats, skills and stage rules stay in `arkpedia-data`.
 
-This is an initial asset set, not a complete operator/enemy/effect catalogue. There are 181 complete models: Front/Back pairs for the simulator's 85 operators, three original summon model pairs, Amiya's pilot pair, and three enemy models. A model having files does not establish accurate combat behavior.
+This is an initial asset set, not a complete operator/enemy/effect catalogue. There are 187 complete models: Front/Back pairs for the simulator's 88 operators, three original summon model pairs, Amiya's pilot pair, and three enemy models. A model having files does not establish accurate combat behavior.
 
-All 181 models have parsed Spine 3.8 animation durations, role mappings, attack-event times and bounds. Multi-skill operator roles are indexed by the chosen skill, including separate start/loop/end clips where the source contains them. Their atlas attachments have been checked with the simulator's Spine parser. Alpha blending is recorded per model. Extracted original summon textures merge the source RGB and Alpha channels. New imports keep unverified runtime fields `null` until inspected. Browser checks cover selected squads; these checks do not establish frame-for-frame combat accuracy.
+All 187 models have parsed Spine 3.8 animation durations, role mappings, attack-event times and bounds. Multi-skill operator roles are indexed by the chosen skill, including separate start/loop/end clips where the source contains them. Their atlas attachments have been checked with the simulator's Spine parser. Alpha blending is recorded per model. Extracted original summon textures merge the source RGB and Alpha channels. New imports keep unverified runtime fields `null` until inspected. Browser checks cover selected squads; these checks do not establish frame-for-frame combat accuracy.
 
 ## Import a model
 
