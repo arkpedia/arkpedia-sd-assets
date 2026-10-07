@@ -14595,6 +14595,785 @@
         "width": 268.503,
         "height": 395.506
       }
+    },
+    "operator/token_10001_deepcl_tentac/default/front": {
+      "kind": "operator",
+      "id": "token_10001_deepcl_tentac",
+      "variant": "default",
+      "facing": "front",
+      "source": {
+        "key": "global-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_0.ab",
+          "bytes": 5060143,
+          "md5": "5ab8526b9e59e97cc7e94ed6a248013d",
+          "sha256": "eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f",
+          "resourceVersion": "26-09-23-17-49-43_b9cc4a",
+          "url": "https://ark-us-static-online.yo-star.com/assetbundle/official/Android/assets/26-09-23-17-49-43_b9cc4a/pkgrps_btl_pfb_tokens_0.dat",
+          "transforms": [
+            "RGB plus separated Alpha texture merge",
+            "atlas texture dimensions normalized and pma: true recorded"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_0.ab",
+        "extractedSkeleton": "token_10001_deepcl_tentacle.skel",
+        "facingAlias": "single-original-model",
+        "transforms": [
+          "RGB plus separated Alpha texture merge",
+          "atlas texture dimensions normalized and pma: true recorded"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10001_deepcl_tentac/default/front/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10001_deepcl_tentacle.skel",
+        "bytes": 45891,
+        "sha256": "da7c87ac637d68e8fac89ad1a476088ec74c87591000076e1813469b23e57a90"
+      },
+      "atlas": {
+        "path": "models/operator/token_10001_deepcl_tentac/default/front/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10001_deepcl_tentacle.atlas",
+        "bytes": 411,
+        "sha256": "8af3083d2ab59aca63cfa8dbae024e94190b25bc39209e6a9367492d335ec058"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10001_deepcl_tentac/default/front/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10001_deepcl_tentacle.png",
+          "bytes": 17743,
+          "sha256": "c13e1bdc03601578c21c731d729a27dc366e80b0c7fa5aa6e2922e5fc760150f"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.5,
+        "Attack2": 1.5,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1,
+        "x_Attack": 1.5
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Idle",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null,
+          "via": "attack",
+          "index": 0,
+          "idle": null
+        },
+        "die": "Die",
+        "move": null,
+        "stun": null
+      },
+      "hits": {
+        "Attack": [
+          0.467
+        ],
+        "Attack2": [
+          0.467
+        ],
+        "x_Attack": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -126.852,
+        "y": -26.966,
+        "width": 270.5,
+        "height": 321.999
+      },
+      "avatar": {
+        "path": "models/operator/token_10001_deepcl_tentac/default/front/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/avatar.png",
+        "bytes": 23958,
+        "sha256": "412c080f10251de0f8815c557ed2ed570355038b21e35245633cf428fa905dc4",
+        "source": {
+          "repository": "fexli/ArknightsResource",
+          "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+          "directory": "avatar/ASSISTANT"
+        }
+      }
+    },
+    "operator/token_10001_deepcl_tentac/default/back": {
+      "kind": "operator",
+      "id": "token_10001_deepcl_tentac",
+      "variant": "default",
+      "facing": "back",
+      "source": {
+        "key": "global-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_0.ab",
+          "bytes": 5060143,
+          "md5": "5ab8526b9e59e97cc7e94ed6a248013d",
+          "sha256": "eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f",
+          "resourceVersion": "26-09-23-17-49-43_b9cc4a",
+          "url": "https://ark-us-static-online.yo-star.com/assetbundle/official/Android/assets/26-09-23-17-49-43_b9cc4a/pkgrps_btl_pfb_tokens_0.dat",
+          "transforms": [
+            "RGB plus separated Alpha texture merge",
+            "atlas texture dimensions normalized and pma: true recorded"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_0.ab",
+        "extractedSkeleton": "token_10001_deepcl_tentacle.skel",
+        "facingAlias": "single-original-model",
+        "transforms": [
+          "RGB plus separated Alpha texture merge",
+          "atlas texture dimensions normalized and pma: true recorded"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10001_deepcl_tentac/default/back/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10001_deepcl_tentacle.skel",
+        "bytes": 45891,
+        "sha256": "da7c87ac637d68e8fac89ad1a476088ec74c87591000076e1813469b23e57a90"
+      },
+      "atlas": {
+        "path": "models/operator/token_10001_deepcl_tentac/default/back/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10001_deepcl_tentacle.atlas",
+        "bytes": 411,
+        "sha256": "8af3083d2ab59aca63cfa8dbae024e94190b25bc39209e6a9367492d335ec058"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10001_deepcl_tentac/default/back/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10001_deepcl_tentacle.png",
+          "bytes": 17743,
+          "sha256": "c13e1bdc03601578c21c731d729a27dc366e80b0c7fa5aa6e2922e5fc760150f"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.5,
+        "Attack2": 1.5,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1,
+        "x_Attack": 1.5
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Idle",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null,
+          "via": "attack",
+          "index": 0,
+          "idle": null
+        },
+        "die": "Die",
+        "move": null,
+        "stun": null
+      },
+      "hits": {
+        "Attack": [
+          0.467
+        ],
+        "Attack2": [
+          0.467
+        ],
+        "x_Attack": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -126.852,
+        "y": -26.966,
+        "width": 270.5,
+        "height": 321.999
+      },
+      "avatar": {
+        "path": "models/operator/token_10001_deepcl_tentac/default/back/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/avatar.png",
+        "bytes": 23958,
+        "sha256": "412c080f10251de0f8815c557ed2ed570355038b21e35245633cf428fa905dc4",
+        "source": {
+          "repository": "fexli/ArknightsResource",
+          "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+          "directory": "avatar/ASSISTANT"
+        }
+      }
+    },
+    "operator/token_10014_bstalk_crab/default/front": {
+      "kind": "operator",
+      "id": "token_10014_bstalk_crab",
+      "variant": "default",
+      "facing": "front",
+      "source": {
+        "key": "global-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_0.ab",
+          "bytes": 5060143,
+          "md5": "5ab8526b9e59e97cc7e94ed6a248013d",
+          "sha256": "eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f",
+          "resourceVersion": "26-09-23-17-49-43_b9cc4a",
+          "url": "https://ark-us-static-online.yo-star.com/assetbundle/official/Android/assets/26-09-23-17-49-43_b9cc4a/pkgrps_btl_pfb_tokens_0.dat",
+          "transforms": [
+            "RGB plus separated Alpha texture merge",
+            "atlas texture dimensions normalized and pma: true recorded"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_0.ab",
+        "extractedSkeleton": "token_10014_bstalk_crab.skel",
+        "facingAlias": "single-original-model",
+        "transforms": [
+          "RGB plus separated Alpha texture merge",
+          "atlas texture dimensions normalized and pma: true recorded"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10014_bstalk_crab/default/front/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10014_bstalk_crab.skel",
+        "bytes": 55560,
+        "sha256": "d25ee7d2fbbc581bd2c7625ff519385af3abf03395d8667d7f56a5b75e0a1369"
+      },
+      "atlas": {
+        "path": "models/operator/token_10014_bstalk_crab/default/front/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10014_bstalk_crab.atlas",
+        "bytes": 1630,
+        "sha256": "7903d5dbfd3d2f6673dc52b527392ec4f7fdba8d8b17db9eedd6406fd31bb1fd"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10014_bstalk_crab/default/front/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10014_bstalk_crab.png",
+          "bytes": 19210,
+          "sha256": "9f281cb57389cf1a0120e56d75ecebf89344543cca1380f245ed9d555ba4618f"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "P_Die": 1,
+        "P_Idle": 2.333,
+        "Y_Attack": 0.667,
+        "Y_Die": 1.967,
+        "Y_Idle": 1,
+        "Y_Start": 0.8,
+        "Y_stun": 1.5
+      },
+      "animationRoles": {
+        "idle": "P_Idle",
+        "deploy": "P_Idle",
+        "attack": {
+          "begin": null,
+          "loop": "Y_Attack",
+          "end": null,
+          "via": "attackAny"
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Y_Attack",
+          "end": null,
+          "via": "attack",
+          "index": 0,
+          "idle": null
+        },
+        "die": "P_Die",
+        "move": null,
+        "stun": null
+      },
+      "hits": {
+        "Y_Attack": [
+          0.367
+        ]
+      },
+      "bounds": {
+        "x": -731.221,
+        "y": -3.652,
+        "width": 298.267,
+        "height": 173.052
+      },
+      "avatar": {
+        "path": "models/operator/token_10014_bstalk_crab/default/front/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/avatar.png",
+        "bytes": 21986,
+        "sha256": "4996d750e296167e9c82ac5d843591f7f50a279095711b2478813f3c99b41e6f",
+        "source": {
+          "repository": "fexli/ArknightsResource",
+          "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+          "directory": "avatar/ASSISTANT"
+        }
+      }
+    },
+    "operator/token_10014_bstalk_crab/default/back": {
+      "kind": "operator",
+      "id": "token_10014_bstalk_crab",
+      "variant": "default",
+      "facing": "back",
+      "source": {
+        "key": "global-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_0.ab",
+          "bytes": 5060143,
+          "md5": "5ab8526b9e59e97cc7e94ed6a248013d",
+          "sha256": "eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f",
+          "resourceVersion": "26-09-23-17-49-43_b9cc4a",
+          "url": "https://ark-us-static-online.yo-star.com/assetbundle/official/Android/assets/26-09-23-17-49-43_b9cc4a/pkgrps_btl_pfb_tokens_0.dat",
+          "transforms": [
+            "RGB plus separated Alpha texture merge",
+            "atlas texture dimensions normalized and pma: true recorded"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_0.ab",
+        "extractedSkeleton": "token_10014_bstalk_crab.skel",
+        "facingAlias": "single-original-model",
+        "transforms": [
+          "RGB plus separated Alpha texture merge",
+          "atlas texture dimensions normalized and pma: true recorded"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10014_bstalk_crab/default/back/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10014_bstalk_crab.skel",
+        "bytes": 55560,
+        "sha256": "d25ee7d2fbbc581bd2c7625ff519385af3abf03395d8667d7f56a5b75e0a1369"
+      },
+      "atlas": {
+        "path": "models/operator/token_10014_bstalk_crab/default/back/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10014_bstalk_crab.atlas",
+        "bytes": 1630,
+        "sha256": "7903d5dbfd3d2f6673dc52b527392ec4f7fdba8d8b17db9eedd6406fd31bb1fd"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10014_bstalk_crab/default/back/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10014_bstalk_crab.png",
+          "bytes": 19210,
+          "sha256": "9f281cb57389cf1a0120e56d75ecebf89344543cca1380f245ed9d555ba4618f"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "P_Die": 1,
+        "P_Idle": 2.333,
+        "Y_Attack": 0.667,
+        "Y_Die": 1.967,
+        "Y_Idle": 1,
+        "Y_Start": 0.8,
+        "Y_stun": 1.5
+      },
+      "animationRoles": {
+        "idle": "P_Idle",
+        "deploy": "P_Idle",
+        "attack": {
+          "begin": null,
+          "loop": "Y_Attack",
+          "end": null,
+          "via": "attackAny"
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Y_Attack",
+          "end": null,
+          "via": "attack",
+          "index": 0,
+          "idle": null
+        },
+        "die": "P_Die",
+        "move": null,
+        "stun": null
+      },
+      "hits": {
+        "Y_Attack": [
+          0.367
+        ]
+      },
+      "bounds": {
+        "x": -731.221,
+        "y": -3.652,
+        "width": 298.267,
+        "height": 173.052
+      },
+      "avatar": {
+        "path": "models/operator/token_10014_bstalk_crab/default/back/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/avatar.png",
+        "bytes": 21986,
+        "sha256": "4996d750e296167e9c82ac5d843591f7f50a279095711b2478813f3c99b41e6f",
+        "source": {
+          "repository": "fexli/ArknightsResource",
+          "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+          "directory": "avatar/ASSISTANT"
+        }
+      }
+    },
+    "operator/token_10018_robrta_mach/default/front": {
+      "kind": "operator",
+      "id": "token_10018_robrta_mach",
+      "variant": "default",
+      "facing": "front",
+      "source": {
+        "key": "global-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_0.ab",
+          "bytes": 5060143,
+          "md5": "5ab8526b9e59e97cc7e94ed6a248013d",
+          "sha256": "eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f",
+          "resourceVersion": "26-09-23-17-49-43_b9cc4a",
+          "url": "https://ark-us-static-online.yo-star.com/assetbundle/official/Android/assets/26-09-23-17-49-43_b9cc4a/pkgrps_btl_pfb_tokens_0.dat",
+          "transforms": [
+            "RGB plus separated Alpha texture merge",
+            "atlas texture dimensions normalized and pma: true recorded"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_0.ab",
+        "extractedSkeleton": "token_10018_robrta_mach.skel",
+        "facingAlias": "single-original-model",
+        "transforms": [
+          "RGB plus separated Alpha texture merge",
+          "atlas texture dimensions normalized and pma: true recorded"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10018_robrta_mach/default/front/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10018_robrta_mach.skel",
+        "bytes": 8186,
+        "sha256": "cb3b986b735c59df8ea043805c97918cd968835744ee84ae5cb73e78a89ec141"
+      },
+      "atlas": {
+        "path": "models/operator/token_10018_robrta_mach/default/front/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10018_robrta_mach.atlas",
+        "bytes": 1188,
+        "sha256": "476a4c021b10c6e225287abf1c643e05aae00b019bac4da3f339ad9c04e1b7a7"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10018_robrta_mach/default/front/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10018_robrta_mach.png",
+          "bytes": 6600,
+          "sha256": "22c6acb04f9ff0686301e4059797d3d3fe14e76115525dd284f10a7c884f1be7"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "End": 0.667,
+        "Idle": 0.267,
+        "Start": 0.333
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Idle",
+          "end": null,
+          "via": "idle"
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Idle",
+          "end": null,
+          "via": "attack",
+          "index": 0,
+          "idle": null
+        },
+        "die": null,
+        "move": null,
+        "stun": null
+      },
+      "hits": {
+        "Idle": [
+          0
+        ]
+      },
+      "bounds": {
+        "x": -61.564,
+        "y": -1.294,
+        "width": 125.303,
+        "height": 164.523
+      },
+      "avatar": {
+        "path": "models/operator/token_10018_robrta_mach/default/front/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/avatar.png",
+        "bytes": 15595,
+        "sha256": "3ad78a9b638c6610b0a304d31ac4c48885fabbff8a98f7f51e47d9d651aca5db",
+        "source": {
+          "repository": "fexli/ArknightsResource",
+          "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+          "directory": "avatar/ASSISTANT"
+        }
+      }
+    },
+    "operator/token_10018_robrta_mach/default/back": {
+      "kind": "operator",
+      "id": "token_10018_robrta_mach",
+      "variant": "default",
+      "facing": "back",
+      "source": {
+        "key": "global-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_0.ab",
+          "bytes": 5060143,
+          "md5": "5ab8526b9e59e97cc7e94ed6a248013d",
+          "sha256": "eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f",
+          "resourceVersion": "26-09-23-17-49-43_b9cc4a",
+          "url": "https://ark-us-static-online.yo-star.com/assetbundle/official/Android/assets/26-09-23-17-49-43_b9cc4a/pkgrps_btl_pfb_tokens_0.dat",
+          "transforms": [
+            "RGB plus separated Alpha texture merge",
+            "atlas texture dimensions normalized and pma: true recorded"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_0.ab",
+        "extractedSkeleton": "token_10018_robrta_mach.skel",
+        "facingAlias": "single-original-model",
+        "transforms": [
+          "RGB plus separated Alpha texture merge",
+          "atlas texture dimensions normalized and pma: true recorded"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10018_robrta_mach/default/back/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10018_robrta_mach.skel",
+        "bytes": 8186,
+        "sha256": "cb3b986b735c59df8ea043805c97918cd968835744ee84ae5cb73e78a89ec141"
+      },
+      "atlas": {
+        "path": "models/operator/token_10018_robrta_mach/default/back/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10018_robrta_mach.atlas",
+        "bytes": 1188,
+        "sha256": "476a4c021b10c6e225287abf1c643e05aae00b019bac4da3f339ad9c04e1b7a7"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10018_robrta_mach/default/back/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/token_10018_robrta_mach.png",
+          "bytes": 6600,
+          "sha256": "22c6acb04f9ff0686301e4059797d3d3fe14e76115525dd284f10a7c884f1be7"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "End": 0.667,
+        "Idle": 0.267,
+        "Start": 0.333
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Idle",
+          "end": null,
+          "via": "idle"
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Idle",
+          "end": null,
+          "via": "attack",
+          "index": 0,
+          "idle": null
+        },
+        "die": null,
+        "move": null,
+        "stun": null
+      },
+      "hits": {
+        "Idle": [
+          0
+        ]
+      },
+      "bounds": {
+        "x": -61.564,
+        "y": -1.294,
+        "width": 125.303,
+        "height": 164.523
+      },
+      "avatar": {
+        "path": "models/operator/token_10018_robrta_mach/default/back/eb82b7f36d14b08e833f8effd2f39608a67676959cf42bcd4aae372f9010df8f/avatar.png",
+        "bytes": 15595,
+        "sha256": "3ad78a9b638c6610b0a304d31ac4c48885fabbff8a98f7f51e47d9d651aca5db",
+        "source": {
+          "repository": "fexli/ArknightsResource",
+          "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+          "directory": "avatar/ASSISTANT"
+        }
+      }
+    },
+    "operator/char_110_deepcl/default/front": {
+      "kind": "operator",
+      "id": "char_110_deepcl",
+      "variant": "default",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_110_deepcl/char_110_deepcl/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_110_deepcl/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_110_deepcl.skel",
+        "bytes": 75484,
+        "sha256": "a317a98be2481d634fb73d785428e74b33f640d05b4835e86403b1e5e7c7bf7d"
+      },
+      "atlas": {
+        "path": "models/operator/char_110_deepcl/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_110_deepcl.atlas",
+        "bytes": 7552,
+        "sha256": "6c93b16c3d20f79f058257690a3cde7f8d9ec97e676f6d3029d982681ccec35b"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_110_deepcl/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_110_deepcl.png",
+          "bytes": 64552,
+          "sha256": "3d7149eb51060561931e321aac538bafdabd09d47fe3eefe439611d52138fa4e"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.8,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 2,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null,
+          "via": "attack",
+          "index": 0,
+          "idle": null
+        },
+        "die": "Die",
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          1.167
+        ]
+      },
+      "bounds": {
+        "x": -118.506,
+        "y": -2.07,
+        "width": 284.629,
+        "height": 396.512
+      }
+    },
+    "operator/char_110_deepcl/default/back": {
+      "kind": "operator",
+      "id": "char_110_deepcl",
+      "variant": "default",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_110_deepcl/char_110_deepcl/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_110_deepcl/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_110_deepcl.skel",
+        "bytes": 48365,
+        "sha256": "ce21a97e2b35cb2c1f37555c57d25ef3e002f78fd1e7ac631ad69a364175c55d"
+      },
+      "atlas": {
+        "path": "models/operator/char_110_deepcl/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_110_deepcl.atlas",
+        "bytes": 2852,
+        "sha256": "df8af5078d0c0e3a5bec55c2da98e5e6ef0cf6dea211eff4df647f6ab8bb6b5c"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_110_deepcl/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_110_deepcl.png",
+          "bytes": 52033,
+          "sha256": "46114caff93fcaa45eaa07709d04ac9191974df1a067d0a547f8fcca68123862"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.8,
+        "Default": 0,
+        "Idle": 2,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null,
+          "via": "attack",
+          "index": 0,
+          "idle": null
+        },
+        "die": null,
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          1.167
+        ]
+      },
+      "bounds": {
+        "x": -118.376,
+        "y": -2.564,
+        "width": 284.499,
+        "height": 398.504
+      }
     }
   }
 }
