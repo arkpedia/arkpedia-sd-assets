@@ -12,6 +12,11 @@
       "path": "effects/standard-gates/26-09-23-17-49-43_b9cc4a/gates.json",
       "bytes": 3507,
       "sha256": "2cea52664ccd16631098cf80f1dcbf85037bd2aa049a80593499092cf9bb28e1"
+    },
+    "chargeCost": {
+      "path": "effects/charge-cost/26-09-23-17-49-43_b9cc4a/effect.json",
+      "bytes": 15311,
+      "sha256": "6cc438ec28c31ce19f50f26089b1545504bec670f7afc730c850c86cc0243cbd"
     }
   }
 }

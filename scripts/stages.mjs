@@ -65,4 +65,23 @@ export async function validateStages(manifest, root) {
         throw Error('Invalid gate triangle');
     }
   }
+  if (manifest.effects?.chargeCost) {
+    const entry=manifest.effects.chargeCost;
+    const pack=JSON.parse(await checked(root,entry));
+    const expected=new Set(['xingdian','andi_11','andi','baoshan','baodian']);
+    if (pack.schemaVersion!==1 || pack.key!=='common_charge_cost_start_01' ||
+        pack.coordinates!=='unity-x-y-z' || pack.scope?.implemented!=='activation-burst' ||
+        pack.source?.provider!=='official-global-android' || pack.source?.bundles?.length!==4 ||
+        pack.emitters?.length!==5 || new Set(pack.emitters.map(e=>e.id)).size!==5 ||
+        Object.keys(pack.textures??{}).length!==2) throw Error('Invalid charge-cost effect pack');
+    const base=path.dirname(path.join(root,entry.path));
+    for (const texture of Object.values(pack.textures)) await checked(base,texture);
+    for (const e of pack.emitters) {
+      if (!expected.has(e.id) || !pack.textures[e.material?.texture] ||
+          !['alpha','additive'].includes(e.material.blend) || ![0,2].includes(e.alignment) ||
+          !Number.isFinite(e.duration) || e.duration<=0 || e.duration>1 ||
+          !e.lifetime || !e.startColor || !Array.isArray(e.bursts))
+        throw Error('Invalid charge-cost emitter');
+    }
+  }
 }

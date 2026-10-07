@@ -44,3 +44,9 @@ The [public simulator MVP](https://github.com/arkpedia/arkpedia-stage-simulator)
 `stage-manifest.json` also publishes 0-1's original Chernobog scene: 177 static submeshes, tile heights, original UVs, colour/emission textures and baked lighting. Files are about 1.7 MB combined. Each file has a SHA-256 hash; the scene records the official Global Android resource version and verified bundle checksums. Runtime clients must pin a repository commit and match the scene's geometry hash to their gameplay grid.
 
 This is one verified stage, not automatic coverage of the stage catalogue. The GPL simulator's `tools/arkpedia/stages/export-scene.py` performs the extraction from the official scene, theme and lighting bundles. No Stronghold release media is used. The web renderer approximates the game shader; game assets alone do not establish identical lighting or battle behavior.
+
+## Skill effects
+
+`stage-manifest.json` includes `effects.chargeCost`: the five billboard particle emitters and two lossless textures in the original `common_charge_cost_start_01` activation burst shared by Fang and Vanilla. The pack records the verified Global Android bundle checksums, independent RGB/alpha gradient keys, Hermite size curves, burst counts, transforms, angular velocity and birth sub-emitter relation. Its files total about 22 KB.
+
+This is the activation burst only. The follow-up `common_charge_cost_01` flight toward the DP counter needs game-specific motion, noise and trail scripts. The simulator also approximates native velocity damping and the operator centre anchor; these limits are explicit in `effect.json`. A new source module or shader requires extractor/runtime review. All other skill effects and projectiles still need their own reviewed imports.

@@ -18,3 +18,8 @@ test('standard gate pack files are verified before publication', async () => {
   bad.effects.standardGates.sha256 = '0'.repeat(64);
   await assert.rejects(validateStages(bad,root), /checksum/);
 });
+test('charge-cost pack is checksum-verified before publication', async () => {
+  const bad=structuredClone(manifest);
+  bad.effects.chargeCost.sha256='0'.repeat(64);
+  await assert.rejects(validateStages(bad,root),/checksum/);
+});
