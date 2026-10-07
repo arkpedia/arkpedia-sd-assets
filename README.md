@@ -2,9 +2,9 @@
 
 Battle chibi (super deformed) Spine models and original stage scenery for Arkpedia's stage overhaul. This repository holds artwork and animation assets; stats, skills and stage rules stay in `arkpedia-data`.
 
-This is an initial asset set, not a complete operator/enemy/effect catalogue. There are 17 complete models: Amiya's pilot Front/Back pair, the initial enemy pilot, and the 14 models used by the 0-1 simulator MVP (Fang, Melantha, Beagle, Kroos, Hibiscus and Steward Front/Back, plus slug and soldier). A model having files does not establish accurate combat behavior.
+This is an initial asset set, not a complete operator/enemy/effect catalogue. There are 49 complete models: Front/Back pairs for all 17 three-stars and all five two-stars in the 0-1 simulator, Amiya's pilot pair, and three enemy models. A model having files does not establish accurate combat behavior.
 
-All 17 models have parsed Spine 3.8 animation durations, role mappings, attack-event times and bounds. Their atlas attachments have been checked with the simulator's Spine parser. Operator textures use straight alpha; enemy textures use premultiplied alpha, tested on the MVP in the browser renderer. New imports keep unverified runtime fields `null` until inspected. These checks do not establish frame-for-frame combat accuracy.
+All 49 models have parsed Spine 3.8 animation durations, role mappings, attack-event times and bounds. Their atlas attachments have been checked with the simulator's Spine parser. Operator textures use straight alpha; enemy textures use premultiplied alpha. New imports keep unverified runtime fields `null` until inspected. Browser checks cover selected squads; these checks do not establish frame-for-frame combat accuracy.
 
 ## Import a model
 
