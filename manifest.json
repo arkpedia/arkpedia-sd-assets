@@ -3542,7 +3542,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -3611,7 +3629,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -3681,7 +3717,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -3750,7 +3804,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -3815,7 +3887,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -3884,7 +3974,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -3954,7 +4062,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -4023,7 +4149,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -4095,7 +4239,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Attack_Begin",
+            "loop": "Attack_Loop",
+            "end": "Attack_End",
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": "Attack_Begin",
+            "loop": "Attack_Loop",
+            "end": "Attack_End",
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack_Loop": [
@@ -4166,7 +4328,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Attack_Begin",
+            "loop": "Attack_Loop",
+            "end": "Attack_End",
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": "Attack_Begin",
+            "loop": "Attack_Loop",
+            "end": "Attack_End",
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack_Loop": [
@@ -4236,7 +4416,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -4305,7 +4503,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -4375,7 +4591,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -4444,7 +4678,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -4514,7 +4766,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -4583,7 +4853,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -4648,7 +4936,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -4717,7 +5023,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -4787,7 +5111,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -4859,7 +5201,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -4930,7 +5290,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -5004,7 +5382,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -5085,7 +5481,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -5162,7 +5576,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -5238,7 +5670,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -5307,7 +5757,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -5377,7 +5845,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -5446,7 +5932,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -5516,7 +6020,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -5585,7 +6107,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -5657,7 +6197,23 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Skill_Loop",
+            "end": null,
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Skill_Loop",
+            "end": null,
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack_Loop": [
@@ -5731,7 +6287,23 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Skill_Loop",
+            "end": null,
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Skill_Loop",
+            "end": null,
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack_Loop": [
@@ -5804,7 +6376,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -5873,7 +6463,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -5945,7 +6553,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -6016,7 +6642,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -6091,7 +6735,25 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -6163,7 +6825,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -6230,7 +6910,23 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -6301,7 +6997,23 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -6373,7 +7085,23 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -6442,7 +7170,25 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -6519,6 +7265,22 @@
           "begin": null,
           "loop": "Stun",
           "end": null
+        },
+        "skills": {
+          "0": {
+            "begin": "Skill_Start",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": "Skill_Start",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 1,
+            "idle": null
+          }
         }
       },
       "hits": {
@@ -6593,7 +7355,23 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Skill_Start",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": "Skill_Start",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -6669,7 +7447,23 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Skill",
+            "end": null,
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": "Skill_2_Begin",
+            "loop": "Skill_2_Loop",
+            "end": "Skill_2_End",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -6741,7 +7535,23 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Skill",
+            "end": null,
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Skill",
+            "end": null,
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -6816,7 +7626,23 @@
         },
         "die": "Die",
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Skill_Start",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": "Skill_Start",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
@@ -6890,7 +7716,23 @@
         },
         "die": null,
         "move": null,
-        "stun": null
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Skill_Start",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": "Skill_Start",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 1,
+            "idle": null
+          }
+        }
       },
       "hits": {
         "Attack": [
