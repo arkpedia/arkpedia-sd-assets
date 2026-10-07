@@ -1667,6 +1667,145 @@
         "width": 466.363,
         "height": 392.342
       }
+    },
+    "operator/char_192_falco/default/front": {
+      "kind": "operator",
+      "id": "char_192_falco",
+      "variant": "default",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_192_falco/char_192_falco/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_192_falco/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_192_falco.skel",
+        "bytes": 57530,
+        "sha256": "ebdc8b6dc0c688396c8d99190d97a619c57e06d83cc3152bb492f7896de47880"
+      },
+      "atlas": {
+        "path": "models/operator/char_192_falco/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_192_falco.atlas",
+        "bytes": 4904,
+        "sha256": "eedce2fd8de8e4c132152016805e97520e605a566388a601e8fc8da5f59471b9"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_192_falco/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_192_falco.png",
+          "bytes": 76959,
+          "sha256": "d610e890f2da40b54a42cfe0e2960bd5b0b8ee0de3147cb2ab3b858cffff4929"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": {
+        "Attack": 1,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 3,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null,
+          "via": "attack",
+          "index": 0,
+          "idle": null
+        },
+        "die": "Die",
+        "move": null,
+        "stun": null
+      },
+      "hits": {
+        "Attack": [
+          0.333
+        ]
+      },
+      "bounds": {
+        "x": -162.316,
+        "y": -2.602,
+        "width": 447.373,
+        "height": 395.505
+      }
+    },
+    "operator/char_192_falco/default/back": {
+      "kind": "operator",
+      "id": "char_192_falco",
+      "variant": "default",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_192_falco/char_192_falco/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_192_falco/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_192_falco.skel",
+        "bytes": 33620,
+        "sha256": "020bf9ab516fbabcb0d7879cd87a4f63fdba4850acaec6b8952c5ad7fc956e60"
+      },
+      "atlas": {
+        "path": "models/operator/char_192_falco/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_192_falco.atlas",
+        "bytes": 2469,
+        "sha256": "0b0427a6bd0e625baa08d41f7e218b0999fd8e3104b3c638eededfbd1000023b"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_192_falco/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_192_falco.png",
+          "bytes": 63379,
+          "sha256": "2d2dd2fb8d075262efb5706e2237a189972201de004e9226aa6a23dfe11d7705"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": {
+        "Attack": 1,
+        "Default": 0,
+        "Idle": 1,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null,
+          "via": "attack",
+          "index": 0,
+          "idle": null
+        },
+        "die": null,
+        "move": null,
+        "stun": null
+      },
+      "hits": {
+        "Attack": [
+          0.333
+        ]
+      },
+      "bounds": {
+        "x": -161.786,
+        "y": -1.602,
+        "width": 444.822,
+        "height": 395.504
+      }
     }
   }
 }
