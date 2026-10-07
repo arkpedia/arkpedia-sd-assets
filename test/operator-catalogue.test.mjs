@@ -39,7 +39,10 @@ test('all 374 pinned catalogue originals have inspected facings with exact manif
     directories.add(record.sourceDirectory);
   }
   assert.equal(directories.size,742);
-  assert.equal(Object.keys(manifest.models).length,catalogue.inventory.totalManifestEntries);
+  // The catalogue records the original operator batch. Additional verified
+  // tokens/enemies must not invalidate or replace any of its operator facings.
+  assert.equal(Object.keys(manifest.models).filter(key=>key.startsWith('operator/char_')).length,
+    catalogue.inventory.operatorFacingEntries);
   assert.equal(catalogue.inventory.operatorFacingEntries,748);
   assert.equal(catalogue.inventory.newlyImportedOperators,204);
 });
