@@ -6,7 +6,7 @@ import { parseArgs } from 'node:util';
 import { root } from './import-model.mjs';
 import { atlasPages, component, fileRecord, modelPrefix, safePath, spineVersion, validateManifest } from './manifest.mjs';
 
-export async function importOriginalModels({ metadata, bundle, extractedRoot }) {
+export async function importOriginalModels({ metadata, bundle, extractedRoot, destinationRoot = root }) {
   const info = JSON.parse(await readFile(metadata, 'utf8'));
   const original = await readFile(bundle);
   const sourceBundle = info.sourceBundle;
@@ -14,41 +14,47 @@ export async function importOriginalModels({ metadata, bundle, extractedRoot }) 
     || createHash('md5').update(original).digest('hex') !== sourceBundle.md5
     || createHash('sha256').update(original).digest('hex') !== sourceBundle.sha256)
     throw new Error('Original model bundle bytes do not match the reviewed source');
-  const manifestPath = path.join(root, 'manifest.json');
+  const manifestPath = path.join(destinationRoot, 'manifest.json');
   const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
-  for (const [id, record] of Object.entries(info.models)) {
+  for (const [id, originalRecord] of Object.entries(info.models)) {
     component(id);
-    safePath(record.directory);
-    const directory = path.resolve(extractedRoot, record.directory);
-    const names = Object.keys(record.files);
-    const skel = names.find(name => name.endsWith('.skel'));
-    const atlas = names.find(name => name.endsWith('.atlas'));
-    if (names.filter(name => name.endsWith('.skel')).length !== 1
-      || names.filter(name => name.endsWith('.atlas')).length !== 1) throw new Error(`${id}: ambiguous original model`);
-    const bytes = new Map();
-    for (const name of names) {
-      safePath(name);
-      const data = await readFile(path.join(directory, name));
-      if (data.length !== record.files[name].bytes
-        || createHash('sha256').update(data).digest('hex') !== record.files[name].sha256)
-        throw new Error(`${id}: extracted file changed: ${name}`);
-      bytes.set(name, data);
-    }
-    const pages = atlasPages(bytes.get(atlas).toString('utf8'));
-    if (spineVersion(bytes.get(skel)) !== record.spineVersion
-      || pages.some(name => !bytes.has(name))) throw new Error(`${id}: incomplete extracted model`);
-    // These original token containers have one auto-facing skeleton. Both
-    // renderer facings refer to that same source, rather than a costume model.
+    if (originalRecord.facings && (Object.keys(originalRecord.facings).length !== 2
+      || !originalRecord.facings.front || !originalRecord.facings.back))
+      throw new Error(`${id}: expected exactly front and back original facings`);
     for (const facing of ['front', 'back']) {
+      const record = originalRecord.facings?.[facing] ?? originalRecord;
+      safePath(record.directory);
+      const directory = path.resolve(extractedRoot, record.directory);
+      const names = Object.keys(record.files);
+      const skel = names.find(name => name.endsWith('.skel'));
+      const atlas = names.find(name => name.endsWith('.atlas'));
+      if (names.filter(name => name.endsWith('.skel')).length !== 1
+        || names.filter(name => name.endsWith('.atlas')).length !== 1) throw new Error(`${id}: ambiguous original model`);
+      const bytes = new Map();
+      for (const name of names) {
+        safePath(name);
+        const data = await readFile(path.join(directory, name));
+        if (data.length !== record.files[name].bytes
+          || createHash('sha256').update(data).digest('hex') !== record.files[name].sha256)
+          throw new Error(`${id}: extracted file changed: ${name}`);
+        bytes.set(name, data);
+      }
+      const pages = atlasPages(bytes.get(atlas).toString('utf8'));
+      if (spineVersion(bytes.get(skel)) !== record.spineVersion
+        || pages.some(name => !bytes.has(name))) throw new Error(`${id}: incomplete extracted model`);
+    // Preserve legacy single-skeleton aliases. Tokens such as Phantom's clone
+    // instead provide the exact skeleton selected by each native animator ref.
       const key = `operator/${id}/default/${facing}`;
       const source = { key: 'global-client', kind: 'assetbundle',
         bundle: sourceBundle, directory: sourceBundle.path,
-        extractedSkeleton: skel, facingAlias: 'single-original-model',
+        extractedSkeleton: skel,
+        ...(originalRecord.facings ? { originalPathIds: record.originalPathIds }
+          : { facingAlias: 'single-original-model' }),
         transforms: sourceBundle.transforms };
       const prefix = modelPrefix(key, source);
-      await mkdir(path.join(root, prefix), { recursive: true });
+      await mkdir(path.join(destinationRoot, prefix), { recursive: true });
       for (const [name, data] of bytes) {
-        const destination = path.join(root, prefix, name);
+        const destination = path.join(destinationRoot, prefix, name);
         try {
           const existing = await readFile(destination);
           if (!existing.equals(data)) throw new Error(`${id}: immutable model file changed`);
@@ -67,7 +73,7 @@ export async function importOriginalModels({ metadata, bundle, extractedRoot }) 
       };
     }
   }
-  await validateManifest(manifest, root);
+  await validateManifest(manifest, destinationRoot);
   await writeFile(`${manifestPath}.tmp`, `${JSON.stringify(manifest, null, 2)}\n`);
   await rename(`${manifestPath}.tmp`, manifestPath);
   return Object.keys(info.models);
