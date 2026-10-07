@@ -26582,6 +26582,1898 @@
           "directory": "avatar/ASSISTANT"
         }
       }
+    },
+    "operator/char_4106_bryota/default/front": {
+      "kind": "operator",
+      "id": "char_4106_bryota",
+      "variant": "default",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_4106_bryota/char_4106_bryota/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_4106_bryota/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4106_bryota.skel",
+        "bytes": 292150,
+        "sha256": "467f517c3aa39c5ee7a47114f3ca88504e9250816acd1bb532ed3aef38c694ac"
+      },
+      "atlas": {
+        "path": "models/operator/char_4106_bryota/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4106_bryota.atlas",
+        "bytes": 8559,
+        "sha256": "9d7998393ef59f8f93cfc721255d6055f09f921285e7b857643b81c07b005a9b"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_4106_bryota/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4106_bryota.png",
+          "bytes": 79824,
+          "sha256": "499fa17643a1433f4774a6d0a5a6f704a44da13e10d280ad3fd9c4db742a7f29"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.067,
+        "Attack_Down": 1.067,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 4,
+        "Skill": 1.067,
+        "Skill_Down": 1.067,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": {
+          "begin": null,
+          "loop": "Attack_Down",
+          "end": null
+        },
+        "skill": {
+          "begin": null,
+          "loop": "Skill",
+          "end": null,
+          "index": 0,
+          "idle": null
+        },
+        "die": "Die",
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Skill",
+            "end": null,
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Skill",
+            "end": null,
+            "index": 1,
+            "idle": null
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.433
+        ],
+        "Attack_Down": [
+          0.433
+        ],
+        "Skill": [
+          0.433
+        ],
+        "Skill_Down": [
+          0.433
+        ]
+      },
+      "bounds": {
+        "x": -178.781,
+        "y": -0.772,
+        "width": 474.807,
+        "height": 540.519
+      }
+    },
+    "operator/char_4106_bryota/default/back": {
+      "kind": "operator",
+      "id": "char_4106_bryota",
+      "variant": "default",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_4106_bryota/char_4106_bryota/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_4106_bryota/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4106_bryota.skel",
+        "bytes": 168281,
+        "sha256": "0c66e0179ffeb4fa34ae186ee102d1aeb9cc5bec6d1f2c720918521e113afbdb"
+      },
+      "atlas": {
+        "path": "models/operator/char_4106_bryota/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4106_bryota.atlas",
+        "bytes": 4552,
+        "sha256": "12f886a23e13be3f242e5a1bd9572e1d83802aaaa977b8a96597816993c71eec"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_4106_bryota/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4106_bryota.png",
+          "bytes": 62627,
+          "sha256": "b3e6b989fd2dcbb547d38f0af6a4ba4377bdbdbaa08ece31b02f0fa7a5889383"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.067,
+        "Default": 0,
+        "Idle": 4,
+        "Skill": 1.067,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Skill",
+          "end": null,
+          "index": 0,
+          "idle": null
+        },
+        "die": null,
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Skill",
+            "end": null,
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Skill",
+            "end": null,
+            "index": 1,
+            "idle": null
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.433
+        ],
+        "Skill": [
+          0.433
+        ]
+      },
+      "bounds": {
+        "x": -178.781,
+        "y": -0.772,
+        "width": 474.807,
+        "height": 540.519
+      }
+    },
+    "operator/char_154_morgan/default/front": {
+      "kind": "operator",
+      "id": "char_154_morgan",
+      "variant": "default",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_154_morgan/char_154_morgan/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_154_morgan/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_154_morgan.skel",
+        "bytes": 157123,
+        "sha256": "d681e21ed41ae29573b492658f7ca7d404a18fa7e88da3ee8069fc05804638eb"
+      },
+      "atlas": {
+        "path": "models/operator/char_154_morgan/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_154_morgan.atlas",
+        "bytes": 6269,
+        "sha256": "fbd3e1a7c7a44d30ac6641a6b480813bc84dc3b175478f10ea25fbdea403ff74"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_154_morgan/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_154_morgan.png",
+          "bytes": 143837,
+          "sha256": "501ed227102b6786cbbe0f9e8a0e1b06b03ac5aefb0e9366b539ca97de33e006"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.333,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 2.667,
+        "Skill_1": 1.333,
+        "Skill_2": 1.333,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Skill_1",
+          "end": null,
+          "index": 0,
+          "idle": null
+        },
+        "die": "Die",
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Skill_1",
+            "end": null,
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Skill_2",
+            "end": null,
+            "index": 1,
+            "idle": null
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.433
+        ],
+        "Skill_1": [
+          0.433
+        ],
+        "Skill_2": [
+          0.567
+        ]
+      },
+      "bounds": {
+        "x": -204.8,
+        "y": -1.674,
+        "width": 501.057,
+        "height": 397.575
+      }
+    },
+    "operator/char_154_morgan/default/back": {
+      "kind": "operator",
+      "id": "char_154_morgan",
+      "variant": "default",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_154_morgan/char_154_morgan/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_154_morgan/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_154_morgan.skel",
+        "bytes": 72696,
+        "sha256": "3a0ac67af27bc2c1171a0e0924d802b382ecf07543a870eee0f3e65537c647c5"
+      },
+      "atlas": {
+        "path": "models/operator/char_154_morgan/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_154_morgan.atlas",
+        "bytes": 3606,
+        "sha256": "42e723f0ace424c6cc558267fda576129b595d4c5b421f601d102c769b19a305"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_154_morgan/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_154_morgan.png",
+          "bytes": 124902,
+          "sha256": "40b4c3952dedf3974ea4fa31a618f4e3eaea08dc75971f81fed17185454f0e74"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.333,
+        "Default": 0,
+        "Idle": 2.667,
+        "Skill_1": 1.333,
+        "Skill_2": 1.333,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Skill_1",
+          "end": null,
+          "index": 0,
+          "idle": null
+        },
+        "die": null,
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Skill_1",
+            "end": null,
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Skill_2",
+            "end": null,
+            "index": 1,
+            "idle": null
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.433
+        ],
+        "Skill_1": [
+          0.433
+        ],
+        "Skill_2": [
+          0.567
+        ]
+      },
+      "bounds": {
+        "x": -204.8,
+        "y": -1.674,
+        "width": 501.057,
+        "height": 397.001
+      }
+    },
+    "operator/char_157_dagda/default/front": {
+      "kind": "operator",
+      "id": "char_157_dagda",
+      "variant": "default",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_157_dagda/char_157_dagda/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_157_dagda/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_157_dagda.skel",
+        "bytes": 188681,
+        "sha256": "a11c96d9bd08f58d4e05ade40531fd1b748fb162455768115fae9021504655da"
+      },
+      "atlas": {
+        "path": "models/operator/char_157_dagda/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_157_dagda.atlas",
+        "bytes": 7682,
+        "sha256": "a080b35b5ae8bc7a4c70a38b5dd00d5792cf2e77b8000f897476c0ca1f358945"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_157_dagda/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_157_dagda.png",
+          "bytes": 134396,
+          "sha256": "36df498fcacb35fcc0d16a4cf2913159b113c4401730dd41af4de6b7980d1cde"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 0.8,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 2.667,
+        "Skill1": 0.533,
+        "Skill2": 0.867,
+        "Skill2_End": 0.667,
+        "Skill2_Idle": 2.667,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Skill1",
+          "end": null,
+          "index": 0,
+          "idle": null
+        },
+        "die": "Die",
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Skill1",
+            "end": null,
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Skill2",
+            "end": "Skill2_End",
+            "index": 1,
+            "idle": "Skill2_Idle"
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.167
+        ],
+        "Skill1": [
+          0.1
+        ],
+        "Skill2": [
+          0.2
+        ]
+      },
+      "bounds": {
+        "x": -295.317,
+        "y": -1424.47,
+        "width": 1191.012,
+        "height": 1814.903
+      }
+    },
+    "operator/char_157_dagda/default/back": {
+      "kind": "operator",
+      "id": "char_157_dagda",
+      "variant": "default",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_157_dagda/char_157_dagda/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_157_dagda/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_157_dagda.skel",
+        "bytes": 108262,
+        "sha256": "6a472a648385127f73341da77704817997ce7cda0d0fa40e474d62af305b0ba9"
+      },
+      "atlas": {
+        "path": "models/operator/char_157_dagda/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_157_dagda.atlas",
+        "bytes": 4099,
+        "sha256": "4c42ddb0a0eee8da98f5e60b76238e46c3fb7940a52b5d9a8ace075331bce689"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_157_dagda/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_157_dagda.png",
+          "bytes": 90734,
+          "sha256": "c6a56bf73bd99ad93756b7f422c32dc2796662f1a527359313cdb16bc9bd5c25"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 0.8,
+        "Default": 0,
+        "Idle": 2.667,
+        "Skill1": 0.533,
+        "Skill2": 0.867,
+        "Skill2_End": 0.667,
+        "Skill2_Idle": 2.667,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Skill1",
+          "end": null,
+          "index": 0,
+          "idle": null
+        },
+        "die": null,
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Skill1",
+            "end": null,
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Skill2",
+            "end": "Skill2_End",
+            "index": 1,
+            "idle": "Skill2_Idle"
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.167
+        ],
+        "Skill1": [
+          0.1
+        ],
+        "Skill2": [
+          0.2
+        ]
+      },
+      "bounds": {
+        "x": -295.317,
+        "y": -1424.47,
+        "width": 1191.012,
+        "height": 1814.903
+      }
+    },
+    "operator/char_194_leto/default/front": {
+      "kind": "operator",
+      "id": "char_194_leto",
+      "variant": "default",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_194_leto/char_194_leto/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_194_leto/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_194_leto.skel",
+        "bytes": 252428,
+        "sha256": "1c60fb7da09bf895b1d509b3899ae8523d14ebb2af8d766b6160af493fdab521"
+      },
+      "atlas": {
+        "path": "models/operator/char_194_leto/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_194_leto.atlas",
+        "bytes": 9258,
+        "sha256": "99a707c17d952ebea092a733c922c8f849954cde0c39e68c35ef9a726dd2a96a"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_194_leto/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_194_leto.png",
+          "bytes": 141823,
+          "sha256": "c7224618493613eb40f3b199bc8ca71fad1c85a760f07063a3320a494a4fb31f"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.3,
+        "Attack_Down": 1.3,
+        "Combat": 1.3,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 2.667,
+        "Skill_2": 1.3,
+        "Skill_Down_2": 1.3,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": {
+          "begin": null,
+          "loop": "Attack_Down",
+          "end": null
+        },
+        "skill": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null,
+          "via": "attack",
+          "index": 0,
+          "idle": null
+        },
+        "die": "Die",
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Skill_2",
+            "end": null,
+            "index": 1,
+            "idle": null
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.333
+        ],
+        "Attack_Down": [
+          0.333
+        ],
+        "Combat": [
+          0.467
+        ],
+        "Skill_2": [
+          0.467
+        ],
+        "Skill_Down_2": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -139.726,
+        "y": -1.462,
+        "width": 664.916,
+        "height": 468.482
+      }
+    },
+    "operator/char_194_leto/default/back": {
+      "kind": "operator",
+      "id": "char_194_leto",
+      "variant": "default",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_194_leto/char_194_leto/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_194_leto/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_194_leto.skel",
+        "bytes": 107736,
+        "sha256": "815f5ef0f4e1b70cd12fe2be57dba3b45daaba25a31b773435e9df3f00e081b6"
+      },
+      "atlas": {
+        "path": "models/operator/char_194_leto/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_194_leto.atlas",
+        "bytes": 5765,
+        "sha256": "32fcab4af1722252b28a0ea5cde929ac6960d6e9313f874b56f74bde2a5f86fe"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_194_leto/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_194_leto.png",
+          "bytes": 153836,
+          "sha256": "de276013190a5a2d16a39d3d69bacbad5582c3d68c519ef7adae48b05e1ac011"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.3,
+        "Combat": 1.3,
+        "Default": 0,
+        "Idle": 2.667,
+        "Skill_2": 1.3,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null,
+          "via": "attack",
+          "index": 0,
+          "idle": null
+        },
+        "die": null,
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Skill_2",
+            "end": null,
+            "index": 1,
+            "idle": null
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.333
+        ],
+        "Combat": [
+          0.467
+        ],
+        "Skill_2": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -136.693,
+        "y": -1.869,
+        "width": 688.383,
+        "height": 468.889
+      }
+    },
+    "operator/char_4083_chimes/default/front": {
+      "kind": "operator",
+      "id": "char_4083_chimes",
+      "variant": "default",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_4083_chimes/char_4083_chimes/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_4083_chimes/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4083_chimes.skel",
+        "bytes": 249092,
+        "sha256": "2795aa4f450dc6bc27949e0afe1d2c55bd25af3ce4a74a7c2fca90a639a65641"
+      },
+      "atlas": {
+        "path": "models/operator/char_4083_chimes/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4083_chimes.atlas",
+        "bytes": 8217,
+        "sha256": "57f79549273e704dca68be41921bfa994166a847e40f8a6732a18f2c46ff9e91"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_4083_chimes/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4083_chimes.png",
+          "bytes": 98695,
+          "sha256": "f6c16781c755fde7268c21192f1dc82fc7aad6f75e62cb222bc697458902466d"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.667,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 4,
+        "Skill_Begin": 0.333,
+        "Skill_End": 1.7,
+        "Skill_Idle": 4,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": "Skill_Begin",
+          "loop": "Skill_Idle",
+          "end": "Skill_End",
+          "index": 0,
+          "idle": "Skill_Idle"
+        },
+        "die": "Die",
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Idle",
+            "end": "Skill_End",
+            "index": 0,
+            "idle": "Skill_Idle"
+          },
+          "1": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Idle",
+            "end": "Skill_End",
+            "index": 1,
+            "idle": "Skill_Idle"
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.567
+        ],
+        "Skill_End": [
+          0.5
+        ]
+      },
+      "bounds": {
+        "x": -295.118,
+        "y": -1.397,
+        "width": 993.391,
+        "height": 401.5
+      }
+    },
+    "operator/char_4083_chimes/default/back": {
+      "kind": "operator",
+      "id": "char_4083_chimes",
+      "variant": "default",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_4083_chimes/char_4083_chimes/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_4083_chimes/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4083_chimes.skel",
+        "bytes": 127951,
+        "sha256": "28b04db55c9b43c7117b29b7fa20e9e0260e0eaaef291780bedf168eb8307607"
+      },
+      "atlas": {
+        "path": "models/operator/char_4083_chimes/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4083_chimes.atlas",
+        "bytes": 5869,
+        "sha256": "be3eb33b3b819075e7639e2cda6e331cf2b7940691ce5bdab64914e52ce07570"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_4083_chimes/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4083_chimes.png",
+          "bytes": 86313,
+          "sha256": "fa42634ee20a5e46ee8c9e10dc4e3dd4af6025bc13d9f98be942f47f173e768f"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.667,
+        "Default": 0,
+        "Idle": 1.333,
+        "Skill_Begin": 0.333,
+        "Skill_End": 1.7,
+        "Skill_Idle": 1.333,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": "Skill_Begin",
+          "loop": "Skill_Idle",
+          "end": "Skill_End",
+          "index": 0,
+          "idle": "Skill_Idle"
+        },
+        "die": null,
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Idle",
+            "end": "Skill_End",
+            "index": 0,
+            "idle": "Skill_Idle"
+          },
+          "1": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Idle",
+            "end": "Skill_End",
+            "index": 1,
+            "idle": "Skill_Idle"
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.567
+        ],
+        "Skill_End": [
+          0.5
+        ]
+      },
+      "bounds": {
+        "x": -295.118,
+        "y": -1.397,
+        "width": 993.391,
+        "height": 401.5
+      }
+    },
+    "operator/char_405_absin/default/front": {
+      "kind": "operator",
+      "id": "char_405_absin",
+      "variant": "default",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_405_absin/char_405_absin/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_405_absin/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_405_absin.skel",
+        "bytes": 156536,
+        "sha256": "f9c13c700e307d65a9992f71e8ad18e5f2e0fc7cbba16062461ceb5018befece"
+      },
+      "atlas": {
+        "path": "models/operator/char_405_absin/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_405_absin.atlas",
+        "bytes": 7802,
+        "sha256": "f2af23920b656ae83464f49f6c65d69520d3af238945eb3df8c018e6d81f3de8"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_405_absin/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_405_absin.png",
+          "bytes": 82681,
+          "sha256": "b905b41360acbab6f9b98f20c2f2edddfc6df34a46e781f6e20e0ca82caed1f0"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack_End": 0.267,
+        "Attack_Loop": 1.6,
+        "Attack_Loop_Down": 1.6,
+        "Attack_Start": 0.167,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1,
+        "Skill_Begin": 0.5,
+        "Skill_End": 0.233,
+        "Skill_Idle": 1,
+        "Skill_Loop": 1,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": "Attack_Start",
+          "loop": "Attack_Loop",
+          "end": "Attack_End"
+        },
+        "attackDown": {
+          "begin": null,
+          "loop": "Attack_Loop_Down",
+          "end": null,
+          "via": "attackAny"
+        },
+        "skill": {
+          "begin": "Skill_Begin",
+          "loop": "Skill_Loop",
+          "end": "Skill_End",
+          "index": 0,
+          "idle": "Skill_Idle"
+        },
+        "die": "Die",
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 0,
+            "idle": "Skill_Idle"
+          },
+          "1": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 1,
+            "idle": "Skill_Idle"
+          }
+        }
+      },
+      "hits": {
+        "Attack_Loop": [
+          0.6
+        ],
+        "Attack_Loop_Down": [
+          0.6
+        ],
+        "Skill_Loop": [
+          0.033
+        ]
+      },
+      "bounds": {
+        "x": -110.48,
+        "y": -6.727,
+        "width": 368.233,
+        "height": 380.5
+      }
+    },
+    "operator/char_405_absin/default/back": {
+      "kind": "operator",
+      "id": "char_405_absin",
+      "variant": "default",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_405_absin/char_405_absin/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_405_absin/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_405_absin.skel",
+        "bytes": 91358,
+        "sha256": "b0ebdda4c9bad3560e86f218b0f6b996eac836653f6d7f9ef8cf1ca12d9e15cb"
+      },
+      "atlas": {
+        "path": "models/operator/char_405_absin/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_405_absin.atlas",
+        "bytes": 4424,
+        "sha256": "1d9d09c72e306d6fe74604cc361eec5adab62e9515cf373e2de253d419905f03"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_405_absin/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_405_absin.png",
+          "bytes": 55080,
+          "sha256": "127943b169eefa2dcba1b8a956e01c854f45627dda5747c6bd1e55894f571888"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack_End": 0.267,
+        "Attack_Loop": 1.6,
+        "Attack_Start": 0.167,
+        "Default": 0,
+        "Idle": 1,
+        "Skill_Begin": 0.5,
+        "Skill_End": 0.233,
+        "Skill_Idle": 1,
+        "Skill_Loop": 1,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": "Attack_Start",
+          "loop": "Attack_Loop",
+          "end": "Attack_End"
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": "Skill_Begin",
+          "loop": "Skill_Loop",
+          "end": "Skill_End",
+          "index": 0,
+          "idle": "Skill_Idle"
+        },
+        "die": null,
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 0,
+            "idle": "Skill_Idle"
+          },
+          "1": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 1,
+            "idle": "Skill_Idle"
+          }
+        }
+      },
+      "hits": {
+        "Attack_Loop": [
+          0.6
+        ],
+        "Skill_Loop": [
+          0.033
+        ]
+      },
+      "bounds": {
+        "x": -110.48,
+        "y": -6.727,
+        "width": 368.233,
+        "height": 380.5
+      }
+    },
+    "operator/char_164_nightm/default/front": {
+      "kind": "operator",
+      "id": "char_164_nightm",
+      "variant": "default",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_164_nightm/char_164_nightm/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_164_nightm/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_164_nightm.skel",
+        "bytes": 62314,
+        "sha256": "5ebed481ebdea5ba97f53232edea27af7dcf8d4736784624e4dd773dbcb91033"
+      },
+      "atlas": {
+        "path": "models/operator/char_164_nightm/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_164_nightm.atlas",
+        "bytes": 3648,
+        "sha256": "e870b6b230ae5a03dfa7b75b618ad17d658f96bb7c03da92aaeed8569f657539"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_164_nightm/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_164_nightm.png",
+          "bytes": 69417,
+          "sha256": "23a449b044fa195c88b97f26ba9e1179644435f47d3e47acbe7593b00f94bf59"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.8,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 4,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null,
+          "via": "attack",
+          "index": 0,
+          "idle": null
+        },
+        "die": "Die",
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.733
+        ]
+      },
+      "bounds": {
+        "x": -114.71,
+        "y": -56.707,
+        "width": 448.15,
+        "height": 452.793
+      }
+    },
+    "operator/char_164_nightm/default/back": {
+      "kind": "operator",
+      "id": "char_164_nightm",
+      "variant": "default",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_164_nightm/char_164_nightm/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_164_nightm/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_164_nightm.skel",
+        "bytes": 34912,
+        "sha256": "8ebf73af1b8ebefe59eede8bf4765013c4a6c60eaf07538025b525c8d466c818"
+      },
+      "atlas": {
+        "path": "models/operator/char_164_nightm/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_164_nightm.atlas",
+        "bytes": 2368,
+        "sha256": "571cbf911379a03e80255f3723418573c0d2869f574ed20a57428f71eb1a8b19"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_164_nightm/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_164_nightm.png",
+          "bytes": 51965,
+          "sha256": "f1b91e9a46e75c0a0366e38ae2d7de811c65b2e1456591394bc562ba50640447"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.8,
+        "Default": 0,
+        "Idle": 1,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null,
+          "via": "attack",
+          "index": 0,
+          "idle": null
+        },
+        "die": null,
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "via": "attack",
+            "index": 1,
+            "idle": null
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.733
+        ]
+      },
+      "bounds": {
+        "x": -115.814,
+        "y": -61.662,
+        "width": 443.712,
+        "height": 456.752
+      }
+    },
+    "operator/char_466_qanik/default/front": {
+      "kind": "operator",
+      "id": "char_466_qanik",
+      "variant": "default",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_466_qanik/char_466_qanik/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_466_qanik/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_466_qanik.skel",
+        "bytes": 137468,
+        "sha256": "50893de4a3bba9d661de69ae6747fb8c55d851f0b24bcebf4274ee9bd18684b9"
+      },
+      "atlas": {
+        "path": "models/operator/char_466_qanik/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_466_qanik.atlas",
+        "bytes": 6922,
+        "sha256": "e8af4081f5fee4e7c0b56528a1307bfaa63f913bff8db5cdffb0bbd1d0899df5"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_466_qanik/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_466_qanik.png",
+          "bytes": 120137,
+          "sha256": "633083f098d4f72b297842e76fdaa46b6b0fe6190b6a18819d1bb5fba18df701"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.6,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 3.333,
+        "Skill_Begin": 0.333,
+        "Skill_End": 0.2,
+        "Skill_Loop": 2.667,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": "Skill_Begin",
+          "loop": "Skill_Loop",
+          "end": "Skill_End",
+          "index": 0,
+          "idle": null
+        },
+        "die": "Die",
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 1,
+            "idle": null
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.667
+        ],
+        "Skill_Begin": [
+          0.2
+        ],
+        "Skill_Loop": [
+          0
+        ]
+      },
+      "bounds": {
+        "x": -259.376,
+        "y": -9.087,
+        "width": 1147.453,
+        "height": 515.052
+      }
+    },
+    "operator/char_466_qanik/default/back": {
+      "kind": "operator",
+      "id": "char_466_qanik",
+      "variant": "default",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_466_qanik/char_466_qanik/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_466_qanik/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_466_qanik.skel",
+        "bytes": 58247,
+        "sha256": "ff3d0cbdee2432ad1ce622cfec15edbdf0fc24ae5490076b3754aa78040eb922"
+      },
+      "atlas": {
+        "path": "models/operator/char_466_qanik/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_466_qanik.atlas",
+        "bytes": 2975,
+        "sha256": "888aa9116ce41f8beb2455770a98be427f99371a03d4a2dec95708ad8fa5ef59"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_466_qanik/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_466_qanik.png",
+          "bytes": 96430,
+          "sha256": "42d37ec76f795f98beb90738961cdb692624487c72cb8e5f9c4c6ac604c8c6f2"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.6,
+        "Default": 0,
+        "Idle": 3.333,
+        "Skill_Begin": 0.333,
+        "Skill_End": 0.2,
+        "Skill_Loop": 2.667,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": "Skill_Begin",
+          "loop": "Skill_Loop",
+          "end": "Skill_End",
+          "index": 0,
+          "idle": null
+        },
+        "die": null,
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 1,
+            "idle": null
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.667
+        ],
+        "Skill_Begin": [
+          0.2
+        ],
+        "Skill_End": [
+          0
+        ],
+        "Skill_Loop": [
+          0
+        ]
+      },
+      "bounds": {
+        "x": -259.376,
+        "y": -9.087,
+        "width": 1147.453,
+        "height": 515.052
+      }
+    },
+    "operator/char_341_sntlla/default/front": {
+      "kind": "operator",
+      "id": "char_341_sntlla",
+      "variant": "default",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_341_sntlla/char_341_sntlla/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_341_sntlla/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_341_sntlla.skel",
+        "bytes": 302279,
+        "sha256": "a6808e9d6d22756ca69c14914c624c3289e80fe5ae840072686f798a08b96394"
+      },
+      "atlas": {
+        "path": "models/operator/char_341_sntlla/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_341_sntlla.atlas",
+        "bytes": 7361,
+        "sha256": "bd330c61b8b533d0874c48401be47bb1de460bd9b834f3c30c61ce39c8f59a0f"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_341_sntlla/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_341_sntlla.png",
+          "bytes": 127557,
+          "sha256": "ae4dd145deb2242631b975ecd5510cdf928d4e6686d976a28f881d61b0d4e8b9"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 2.9,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 3,
+        "Skill_Begin": 0.5,
+        "Skill_End": 0.333,
+        "Skill_Loop": 1,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": "Skill_Begin",
+          "loop": "Skill_Loop",
+          "end": "Skill_End",
+          "index": 0,
+          "idle": null
+        },
+        "die": "Die",
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 1,
+            "idle": null
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.5
+        ],
+        "Skill_Loop": [
+          0
+        ]
+      },
+      "bounds": {
+        "x": -312.487,
+        "y": -1.854,
+        "width": 442.164,
+        "height": 516.018
+      }
+    },
+    "operator/char_341_sntlla/default/back": {
+      "kind": "operator",
+      "id": "char_341_sntlla",
+      "variant": "default",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_341_sntlla/char_341_sntlla/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_341_sntlla/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_341_sntlla.skel",
+        "bytes": 146216,
+        "sha256": "5ae63607880762e1605460c53ae07db2e529a3b48c84a8b4701929a63862d319"
+      },
+      "atlas": {
+        "path": "models/operator/char_341_sntlla/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_341_sntlla.atlas",
+        "bytes": 4032,
+        "sha256": "faab2e439efef9f20c2179dfd21dff1ddeae0c6cc01e6bb365fedd341e995437"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_341_sntlla/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_341_sntlla.png",
+          "bytes": 103263,
+          "sha256": "f13a6471e16eadf9083915dea1218aff1f0d4e604f75ebe62c1874e385c6e144"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 2.9,
+        "Default": 0,
+        "Idle": 1.5,
+        "Skill_Begin": 0.5,
+        "Skill_End": 0.333,
+        "Skill_Loop": 1,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": "Skill_Begin",
+          "loop": "Skill_Loop",
+          "end": "Skill_End",
+          "index": 0,
+          "idle": null
+        },
+        "die": null,
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": "Skill_End",
+            "index": 1,
+            "idle": null
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.5
+        ],
+        "Skill_Loop": [
+          0
+        ]
+      },
+      "bounds": {
+        "x": -312.487,
+        "y": -1.854,
+        "width": 442.164,
+        "height": 516.018
+      }
+    },
+    "operator/char_4110_delphn/default/front": {
+      "kind": "operator",
+      "id": "char_4110_delphn",
+      "variant": "default",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_4110_delphn/char_4110_delphn/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_4110_delphn/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4110_delphn.skel",
+        "bytes": 422332,
+        "sha256": "9aba7651a7afaad1596605ffe4ee9b9d8bc229436d194df9f1c8ab574eb531e0"
+      },
+      "atlas": {
+        "path": "models/operator/char_4110_delphn/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4110_delphn.atlas",
+        "bytes": 10872,
+        "sha256": "13fe00d7c5a93e62d345875e96e836fcb0750bdfe5156c2a274a66346f70cbba"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_4110_delphn/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4110_delphn.png",
+          "bytes": 134115,
+          "sha256": "f0ab1f123c31d36c689842c83d4b6f1623650f04088d24243eeb248e6097511e"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 3,
+        "Charge": 3,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 2,
+        "Skill_1_Begin": 0.667,
+        "Skill_1_End": 0.667,
+        "Skill_1_Loop": 2,
+        "Skill_2_Begin": 0.667,
+        "Skill_2_Charge": 3,
+        "Skill_2_End": 0.667,
+        "Skill_2_Idle": 2,
+        "Skill_2_Loop": 3,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": "Skill_1_Begin",
+          "loop": "Skill_1_Loop",
+          "end": "Skill_1_End",
+          "index": 0,
+          "idle": null
+        },
+        "die": "Die",
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Skill_1_Begin",
+            "loop": "Skill_1_Loop",
+            "end": "Skill_1_End",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": "Skill_2_Begin",
+            "loop": "Skill_2_Loop",
+            "end": "Skill_2_End",
+            "index": 1,
+            "idle": "Skill_2_Idle"
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.533
+        ],
+        "Charge": [
+          0.533
+        ],
+        "Skill_2_Charge": [
+          0.6
+        ],
+        "Skill_2_Loop": [
+          0.6
+        ]
+      },
+      "bounds": {
+        "x": -173.018,
+        "y": -10.634,
+        "width": 368.305,
+        "height": 403.53
+      }
+    },
+    "operator/char_4110_delphn/default/back": {
+      "kind": "operator",
+      "id": "char_4110_delphn",
+      "variant": "default",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+        "directory": "spine/char_4110_delphn/char_4110_delphn/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_4110_delphn/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4110_delphn.skel",
+        "bytes": 277775,
+        "sha256": "d08e19866d5b8a3116f39b78306df4464c7416b672521c196d541c32e8cd1e22"
+      },
+      "atlas": {
+        "path": "models/operator/char_4110_delphn/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4110_delphn.atlas",
+        "bytes": 7884,
+        "sha256": "3e5b563471b120699995d4488be4f35e9dee839e0c1bd279b41c2a67de76cb22"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_4110_delphn/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4110_delphn.png",
+          "bytes": 103274,
+          "sha256": "09fea2a8ea9d51eb6ca3c0f0170e5067e454f4fbd58243d9b597b9dbea2c3c43"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 3,
+        "Charge": 3,
+        "Default": 0,
+        "Idle": 2,
+        "Skill_1_Begin": 0.667,
+        "Skill_1_End": 0.667,
+        "Skill_1_Loop": 2,
+        "Skill_2_Begin": 0.667,
+        "Skill_2_Charge": 3,
+        "Skill_2_End": 0.667,
+        "Skill_2_Idle": 2,
+        "Skill_2_Loop": 3,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": "Skill_1_Begin",
+          "loop": "Skill_1_Loop",
+          "end": "Skill_1_End",
+          "index": 0,
+          "idle": null
+        },
+        "die": null,
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": "Skill_1_Begin",
+            "loop": "Skill_1_Loop",
+            "end": "Skill_1_End",
+            "index": 0,
+            "idle": null
+          },
+          "1": {
+            "begin": "Skill_2_Begin",
+            "loop": "Skill_2_Loop",
+            "end": "Skill_2_End",
+            "index": 1,
+            "idle": "Skill_2_Idle"
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.533
+        ],
+        "Charge": [
+          0.533
+        ],
+        "Skill_2_Charge": [
+          0.6
+        ],
+        "Skill_2_Loop": [
+          0.6
+        ]
+      },
+      "bounds": {
+        "x": -173.018,
+        "y": -10.634,
+        "width": 368.305,
+        "height": 403.53
+      }
     }
   }
 }
