@@ -50194,29 +50194,32 @@
         },
         "attackDown": null,
         "skill": {
-          "begin": "Skill_Begin",
-          "loop": "Skill_Loop",
-          "end": "Skill_End",
+          "begin": null,
+          "loop": "Attack",
+          "end": null,
           "index": 0,
-          "idle": null
+          "idle": null,
+          "via": "attack"
         },
         "die": "Die",
         "move": null,
         "stun": null,
         "skills": {
           "0": {
-            "begin": "Skill_Begin",
-            "loop": "Skill_Loop",
-            "end": "Skill_End",
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
             "index": 0,
-            "idle": null
+            "idle": null,
+            "via": "attack"
           },
           "1": {
-            "begin": "Skill_Begin",
-            "loop": "Skill_Loop",
-            "end": "Skill_End",
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
             "index": 1,
-            "idle": null
+            "idle": null,
+            "via": "attack"
           },
           "2": {
             "begin": "Skill_Begin",
@@ -50291,29 +50294,32 @@
         },
         "attackDown": null,
         "skill": {
-          "begin": "Skill_Begin",
-          "loop": "Skill_Loop",
-          "end": "Skill_End",
+          "begin": null,
+          "loop": "Attack",
+          "end": null,
           "index": 0,
-          "idle": null
+          "idle": null,
+          "via": "attack"
         },
         "die": null,
         "move": null,
         "stun": null,
         "skills": {
           "0": {
-            "begin": "Skill_Begin",
-            "loop": "Skill_Loop",
-            "end": "Skill_End",
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
             "index": 0,
-            "idle": null
+            "idle": null,
+            "via": "attack"
           },
           "1": {
-            "begin": "Skill_Begin",
-            "loop": "Skill_Loop",
-            "end": "Skill_End",
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
             "index": 1,
-            "idle": null
+            "idle": null,
+            "via": "attack"
           },
           "2": {
             "begin": "Skill_Begin",
