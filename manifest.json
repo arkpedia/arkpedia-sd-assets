@@ -45370,7 +45370,8 @@
           "loop": "Skill_1",
           "end": null,
           "index": 0,
-          "idle": null
+          "idle": null,
+          "via": "attack"
         },
         "die": "Die",
         "move": null,
@@ -45381,7 +45382,8 @@
             "loop": "Skill_1",
             "end": null,
             "index": 0,
-            "idle": null
+            "idle": null,
+            "via": "attack"
           },
           "1": {
             "begin": "Skill_2_Begin",
@@ -45465,7 +45467,8 @@
           "loop": "Skill_1",
           "end": null,
           "index": 0,
-          "idle": null
+          "idle": null,
+          "via": "attack"
         },
         "die": null,
         "move": null,
@@ -45476,7 +45479,8 @@
             "loop": "Skill_1",
             "end": null,
             "index": 0,
-            "idle": null
+            "idle": null,
+            "via": "attack"
           },
           "1": {
             "begin": "Skill_2_Begin",
