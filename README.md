@@ -15,7 +15,7 @@ The catalogue is pinned to `Kengxxiao/ArknightsGameData_YoStar` character-table 
  Dusk's original Little Instinct token includes its actual entrance, attack, death and stun clips, with the source attack event at 0.433 seconds. Both logical facings share that original auto-facing skeleton. Its import does not enable Dusk's combat kit by itself.
 
 
-Robin's original Clip retains both binding and launching Start/Idle/Skill/Die/Retreat variants and the literal 0.167-second hit events. Both logical facings share the original fixed-rotation skeleton. Its import does not enable a combat adapter.
+Robin's original Clip retains both binding and launching Start/Idle/Skill/Die/Retreat variants and the literal 0.167-second hit events. Both logical facings share the original fixed-rotation skeleton. The separate simulator now enables her reviewed stocked-trap adapter. Native ATK inheritance timing remains unrecovered; the adapter documents and tests its owner-ATK snapshot at placement.
 
 ## Import a model
 
