@@ -58242,10 +58242,11 @@
         "attackDown": null,
         "skill": {
           "begin": null,
-          "loop": "Skill",
+          "loop": "Attack",
           "end": null,
           "index": 0,
-          "idle": null
+          "idle": null,
+          "via": "attack"
         },
         "die": "Die",
         "move": null,
@@ -58253,24 +58254,25 @@
         "skills": {
           "0": {
             "begin": null,
-            "loop": "Skill",
+            "loop": "Attack",
             "end": null,
             "index": 0,
-            "idle": null
+            "idle": null,
+            "via": "attack"
           },
           "1": {
-            "begin": "Skill_2_Begin",
-            "loop": "Skill_2_Loop",
-            "end": "Skill_2_End",
-            "index": 1,
-            "idle": "Skill_2_Idle"
-          },
-          "2": {
             "begin": null,
             "loop": "Skill",
             "end": null,
-            "index": 2,
+            "index": 1,
             "idle": null
+          },
+          "2": {
+            "begin": "Skill_2_Begin",
+            "loop": "Skill_2_Loop",
+            "end": "Skill_2_End",
+            "index": 2,
+            "idle": "Skill_2_Idle"
           }
         }
       },
@@ -58344,10 +58346,11 @@
         "attackDown": null,
         "skill": {
           "begin": null,
-          "loop": "Skill",
+          "loop": "Attack",
           "end": null,
           "index": 0,
-          "idle": null
+          "idle": null,
+          "via": "attack"
         },
         "die": null,
         "move": null,
@@ -58355,24 +58358,25 @@
         "skills": {
           "0": {
             "begin": null,
-            "loop": "Skill",
+            "loop": "Attack",
             "end": null,
             "index": 0,
-            "idle": null
+            "idle": null,
+            "via": "attack"
           },
           "1": {
-            "begin": "Skill_2_Begin",
-            "loop": "Skill_2_Loop",
-            "end": "Skill_2_End",
-            "index": 1,
-            "idle": "Skill_2_Idle"
-          },
-          "2": {
             "begin": null,
             "loop": "Skill",
             "end": null,
-            "index": 2,
+            "index": 1,
             "idle": null
+          },
+          "2": {
+            "begin": "Skill_2_Begin",
+            "loop": "Skill_2_Loop",
+            "end": "Skill_2_End",
+            "index": 2,
+            "idle": "Skill_2_Idle"
           }
         }
       },
