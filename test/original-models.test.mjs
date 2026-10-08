@@ -24,7 +24,7 @@ async function fixture() {
       await writeFile(path.join(dir, directory, name), bytes);
       files[name] = { bytes: bytes.length, sha256: hash(bytes) };
     }
-    return { directory, files, spineVersion: '3.8.99', originalPathIds: { skeletonTextAsset: facing === 'front' ? '111' : '222' }, durations: { Attack: 1 }, hits: { Attack: [.4] } };
+    return { directory, files, spineVersion: '3.8.99', originalPathIds: { skeletonTextAsset: facing === 'front' ? '111' : '222' }, durations: { Attack: 1, Idle: 1.2, Start: 1, Die: 1 }, animationRoles: { idle: 'Idle', deploy: 'Start', attack: { loop: 'Attack' }, die: 'Die' }, hits: { Attack: [.4] } };
   };
   const front = await make('front'), back = await make('back');
   const info = { sourceBundle: { path: 'pkgrps/tokens.ab', bytes: original.length, md5: hash(original, 'md5'), sha256: hash(original), resourceVersion: 'test-version', url: 'https://ark-us-static-online.yo-star.com/assetbundle/official/Android/assets/test-version/tokens.dat' }, models: { token_pair: { facings: { front, back } } } };
@@ -73,5 +73,30 @@ test('an unverified original bundle is rejected before importing either facing',
     await writeFile(f.args.bundle, 'different bundle');
     await assert.rejects(importOriginalModels(f.args), /bundle bytes do not match/);
     assert.deepEqual((await f.manifest()).models, {});
+  } finally { await rm(f.dir, { recursive: true, force: true }); }
+});
+
+test('role descriptors and missing clips are rejected before publication', async () => {
+  const f = await fixture();
+  try {
+    f.front.animationRoles.idle = { name: 'Idle', loop: true }; await f.save();
+    await assert.rejects(importOriginalModels(f.args), /literal existing clip names/);
+    assert.deepEqual((await f.manifest()).models, {});
+    f.front.animationRoles.idle = 'Idle'; f.front.animationRoles.deploy = 'Missing'; await f.save();
+    await assert.rejects(importOriginalModels(f.args), /literal existing clip names/);
+    assert.deepEqual((await f.manifest()).models, {});
+  } finally { await rm(f.dir, { recursive: true, force: true }); }
+});
+
+test('passive original devices keep literal birth and idle clips without inventing attacks', async () => {
+  const f = await fixture();
+  try {
+    for (const record of [f.front, f.back]) record.animationRoles = {
+      idle: 'Idle', deploy: 'Start', attack: null, skill: null, die: 'Die',
+    };
+    await f.save(); await importOriginalModels(f.args);
+    for (const facing of ['front', 'back']) assert.deepEqual(
+      (await f.manifest()).models[`operator/token_pair/default/${facing}`].animationRoles,
+      f.front.animationRoles);
   } finally { await rm(f.dir, { recursive: true, force: true }); }
 });

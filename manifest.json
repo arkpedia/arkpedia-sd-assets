@@ -74911,18 +74911,14 @@
         "Start": 1
       },
       "animationRoles": {
-        "idle": {
-          "name": "Idle",
-          "loop": true
-        },
-        "default": {
-          "name": "Default",
-          "loop": true
-        },
-        "start": {
-          "name": "Start",
-          "loop": false
-        }
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": null,
+        "attackDown": null,
+        "skill": null,
+        "die": "Die",
+        "move": null,
+        "stun": null
       },
       "hits": {},
       "bounds": {
@@ -74996,18 +74992,14 @@
         "Start": 1
       },
       "animationRoles": {
-        "idle": {
-          "name": "Idle",
-          "loop": true
-        },
-        "default": {
-          "name": "Default",
-          "loop": true
-        },
-        "start": {
-          "name": "Start",
-          "loop": false
-        }
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": null,
+        "attackDown": null,
+        "skill": null,
+        "die": "Die",
+        "move": null,
+        "stun": null
       },
       "hits": {},
       "bounds": {

@@ -23,6 +23,11 @@ export async function importOriginalModels({ metadata, bundle, extractedRoot, de
       throw new Error(`${id}: expected exactly front and back original facings`);
     for (const facing of ['front', 'back']) {
       const record = originalRecord.facings?.[facing] ?? originalRecord;
+      const roles = record.animationRoles;
+      if (typeof roles?.idle !== 'string' || !Object.hasOwn(record.durations ?? {}, roles.idle)
+        || ['deploy', 'die'].some(role => roles[role] != null
+          && (typeof roles[role] !== 'string' || !Object.hasOwn(record.durations ?? {}, roles[role]))))
+        throw new Error(`${id}: original animation roles require literal existing clip names`);
       safePath(record.directory);
       const directory = path.resolve(extractedRoot, record.directory);
       const names = Object.keys(record.files);
