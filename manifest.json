@@ -70197,7 +70197,8 @@
             "loop": "Skill_2",
             "end": null,
             "index": 1,
-            "idle": null
+            "idle": null,
+            "via": "attack"
           },
           "2": {
             "begin": "Skill_3_Begin",
@@ -70303,7 +70304,8 @@
             "loop": "Skill_2",
             "end": null,
             "index": 1,
-            "idle": null
+            "idle": null,
+            "via": "attack"
           },
           "2": {
             "begin": "Skill_3_Begin",
