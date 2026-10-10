@@ -2,6 +2,7 @@ import { readFile, writeFile, mkdir, rename, rm, mkdtemp } from 'node:fs/promise
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
+import { gitSource } from './source-git.mjs';
 import { atlasPages, component, fileRecord, safePath, spineVersion, validateManifest } from './manifest.mjs';
 
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -18,7 +19,7 @@ async function response(url, authenticated = false) {
 const api = async (url) => (await response(`https://api.github.com/${url}`, true)).json();
 
 /** Publish complete immutable model files first; replace the manifest only after validation. */
-export async function importModel({ source: sourceName, directory, id, variant = 'default', facing = 'default', commit }) {
+export async function importModel({ source: sourceName, directory, id, variant = 'default', facing = 'default', commit, sourceRoot }) {
   const sources = JSON.parse(await readFile(path.join(root, 'sources.json'), 'utf8'));
   const source = sources[sourceName];
   if (!source) throw new Error(`Unknown source: ${sourceName}`);
@@ -26,7 +27,12 @@ export async function importModel({ source: sourceName, directory, id, variant =
   if (!directory.startsWith(`${source.root}/`) || !['front', 'back', 'default'].includes(facing)) throw new Error('Invalid source directory or facing');
   commit ||= (await api(`repos/${source.repository}/commits/${encodeURIComponent(source.ref)}`)).sha;
   if (!/^[a-f0-9]{40}$/.test(commit)) throw new Error('Expected a full upstream commit SHA');
-  const listing = await api(`repos/${source.repository}/contents/${encoded(directory)}?ref=${commit}`);
+  // A filtered Git checkout provides the same pinned tree without one API
+  // request per facing. Read blobs from Git, never uncommitted checkout files.
+  const localSource = sourceRoot ? gitSource(sourceRoot, source.repository, commit) : null;
+  const listing = sourceRoot
+    ? localSource.listing(directory)
+    : await api(`repos/${source.repository}/contents/${encoded(directory)}?ref=${commit}`);
   if (!Array.isArray(listing)) throw new Error('Expected a model directory');
   const files = listing.filter((file) => file.type === 'file');
   const skeletons = files.filter((file) => file.name.endsWith('.skel'));
@@ -38,8 +44,10 @@ export async function importModel({ source: sourceName, directory, id, variant =
   const download = async (name) => {
     safePath(name);
     if (!files.some((file) => file.name === name)) throw new Error(`Atlas page absent from upstream listing: ${name}`);
+    const file = files.find(file => file.name === name);
     const url = `https://raw.githubusercontent.com/${source.repository}/${commit}/${encoded(`${directory}/${name}`)}`;
-    const bytes = Buffer.from(await (await response(url)).arrayBuffer());
+    const bytes = sourceRoot ? localSource.blob(file)
+      : Buffer.from(await (await response(url)).arrayBuffer());
     if (!bytes.length) throw new Error(`Empty model file: ${name}`);
     buffers.set(name, bytes);
     return bytes;
@@ -78,7 +86,7 @@ export async function importModel({ source: sourceName, directory, id, variant =
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  const { values } = parseArgs({ options: Object.fromEntries(['source', 'directory', 'id', 'variant', 'facing', 'commit'].map((key) => [key, { type: 'string' }])) });
+  const { values } = parseArgs({ options: Object.fromEntries(['source', 'source-root', 'directory', 'id', 'variant', 'facing', 'commit'].map((key) => [key, { type: 'string' }])) });
   if (!values.source || !values.directory || !values.id) throw new Error('Required: --source operators|enemies --directory upstream/path --id game_id');
-  console.log(`Imported ${await importModel(values)}`);
+  console.log(`Imported ${await importModel({ ...values, sourceRoot: values['source-root'] })}`);
 }

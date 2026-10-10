@@ -56,6 +56,24 @@ export function fileRecord(relativePath, bytes) {
   return { path: safePath(relativePath), bytes: bytes.length, sha256: sha256(bytes) };
 }
 
+/** Model identity is pinned either to a Git tree or to the verified original bundle bytes. */
+export function modelPrefix(key, source) {
+  if (source?.kind === 'assetbundle') {
+    const b = source.bundle;
+    if (!b || !/^[a-f0-9]{64}$/.test(b.sha256) || !/^[a-f0-9]{32}$/.test(b.md5)
+      || !Number.isSafeInteger(b.bytes) || b.bytes <= 0
+      || !/^[a-z0-9_-]+$/i.test(b.resourceVersion)) throw new Error(`${key}: missing verified original bundle`);
+    const url = new URL(b.url);
+    if (url.protocol !== 'https:' || url.hostname !== 'ark-us-static-online.yo-star.com'
+      || !url.pathname.includes(`/${b.resourceVersion}/`)) throw new Error(`${key}: invalid original bundle URL`);
+    safePath(b.path);
+    return `models/${key}/${b.sha256}/`;
+  }
+  if (!source || !/^[\w-]+\/[\w.-]+$/.test(source.repository) || !/^[a-f0-9]{40}$/.test(source.commit))
+    throw new Error(`${key}: missing pinned source`);
+  return `models/${key}/${source.commit}/`;
+}
+
 export async function validateManifest(manifest, root) {
   if (manifest.schemaVersion !== 1 || !manifest.models || Array.isArray(manifest.models) || typeof manifest.models !== 'object') {
     throw new Error('Expected SD manifest schemaVersion 1');
@@ -64,13 +82,12 @@ export async function validateManifest(manifest, root) {
     if (!['operator', 'enemy'].includes(model.kind) || !['front', 'back', 'default'].includes(model.facing)) throw new Error(`${key}: invalid kind or facing`);
     if (key !== `${model.kind}/${component(model.id)}/${component(model.variant)}/${model.facing}`) throw new Error(`${key}: identity mismatch`);
     const source = model.source;
-    if (!source || !/^[\w-]+\/[\w.-]+$/.test(source.repository) || !/^[a-f0-9]{40}$/.test(source.commit)) throw new Error(`${key}: missing pinned source`);
+    const prefix = modelPrefix(key, source);
     safePath(source.directory);
     if (!/^\d+\.\d+(?:\.\d+)?$/.test(model.spineVersion)) throw new Error(`${key}: missing Spine version`);
     if (!Array.isArray(model.textures) || !model.textures.length) throw new Error(`${key}: missing textures`);
-    const files = [model.skeleton, model.atlas, ...model.textures];
+    const files = [model.skeleton, model.atlas, ...model.textures, ...(model.avatar ? [model.avatar] : [])];
     if (files.some((file) => !file || typeof file.path !== 'string') || new Set(files.map((file) => file.path)).size !== files.length) throw new Error(`${key}: duplicate or missing files`);
-    const prefix = `models/${key}/${source.commit}/`;
     for (const file of files) {
       safePath(file.path);
       if (!file.path.startsWith(prefix) || !/^[a-f0-9]{64}$/.test(file.sha256) || !Number.isSafeInteger(file.bytes) || file.bytes <= 0) throw new Error(`${key}: invalid file record`);
