@@ -54,7 +54,8 @@ export async function importOriginalModels({ metadata, bundle, extractedRoot, de
         bundle: sourceBundle, directory: sourceBundle.path,
         extractedSkeleton: skel,
         ...(originalRecord.facings ? { originalPathIds: record.originalPathIds }
-          : { facingAlias: 'single-original-model' }),
+          : { facingAlias: 'single-original-model',
+            ...(record.originalPathIds ? { originalPathIds: record.originalPathIds } : {}) }),
         transforms: sourceBundle.transforms };
       const prefix = modelPrefix(key, source);
       await mkdir(path.join(destinationRoot, prefix), { recursive: true });
