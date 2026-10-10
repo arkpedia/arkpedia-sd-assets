@@ -41,8 +41,11 @@ test('all 374 pinned catalogue originals have inspected facings with exact manif
   assert.equal(directories.size,742);
   // The catalogue records the original operator batch. Additional verified
   // tokens/enemies must not invalidate or replace any of its operator facings.
-  assert.equal(Object.keys(manifest.models).filter(key=>key.startsWith('operator/char_')).length,
+  const catalogueIds = new Set(catalogue.operators.map(o=>o.id));
+  assert.equal(Object.values(manifest.models).filter(model=>catalogueIds.has(model.id)).length,
     catalogue.inventory.operatorFacingEntries);
+  assert.deepEqual(Object.values(manifest.models).filter(model=>model.id.startsWith('char_') && !catalogueIds.has(model.id))
+    .map(model=>`${model.id}/${model.facing}`).sort(), ['char_1001_amiya2/back','char_1001_amiya2/front']);
   assert.equal(catalogue.inventory.operatorFacingEntries,748);
   assert.equal(catalogue.inventory.newlyImportedOperators,204);
 });
@@ -69,4 +72,22 @@ test('fixed-front and single-Spine exceptions alias only each exact original, ne
   assert.equal(catalogue.inventory.originalPairs,368);
   assert.equal(catalogue.inventory.frontOnly,fixed.length);
   assert.equal(catalogue.inventory.singleSpine,single.length);
+});
+
+test('Guard Amiya is a separately verified original Global form, with both literal skill clips', async()=>{
+  for(const face of ['front','back']) {
+    const m=manifest.models[`operator/char_1001_amiya2/default/${face}`];
+    assert.equal(m.source.key,'global-client');
+    assert.equal(m.source.bundle.path,'chararts/char_1001_amiya2.ab');
+    assert.equal(m.source.bundle.md5,'6529aa0632b9dedec37a3f9c5a89ecef');
+    assert.equal(m.source.bundle.resourceVersion,'26-09-23-17-49-43_b9cc4a');
+    assert.equal(m.premultipliedAlpha,true);
+    assert.deepEqual(m.animationRoles.skills,['Skill_1','Skill_2']);
+    assert.equal(m.hits.Skill_2.length,11);
+    assert.equal(m.hits.Skill_1.length,2);
+    assert.ok(m.avatar && m.source.originalPathIds.faceSwitcherPathId);
+  }
+  const f=manifest.models['operator/char_1001_amiya2/default/front'],b=manifest.models['operator/char_1001_amiya2/default/back'];
+  assert.notEqual(f.skeleton.sha256,b.skeleton.sha256);
+  assert.equal(f.animationRoles.die,'Die');assert.equal(b.animationRoles.die,undefined);
 });
