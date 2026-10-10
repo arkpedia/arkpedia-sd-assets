@@ -45,7 +45,7 @@ test('all 374 pinned catalogue originals have inspected facings with exact manif
   assert.equal(Object.values(manifest.models).filter(model=>catalogueIds.has(model.id)).length,
     catalogue.inventory.operatorFacingEntries);
   assert.deepEqual(Object.values(manifest.models).filter(model=>model.id.startsWith('char_') && !catalogueIds.has(model.id))
-    .map(model=>`${model.id}/${model.facing}`).sort(), ['char_1001_amiya2/back','char_1001_amiya2/front']);
+    .map(model=>`${model.id}/${model.facing}`).sort(), ['char_1001_amiya2/back','char_1001_amiya2/front','char_1037_amiya3/back','char_1037_amiya3/front']);
   assert.equal(catalogue.inventory.operatorFacingEntries,748);
   assert.equal(catalogue.inventory.newlyImportedOperators,204);
 });
@@ -90,4 +90,23 @@ test('Guard Amiya is a separately verified original Global form, with both liter
   const f=manifest.models['operator/char_1001_amiya2/default/front'],b=manifest.models['operator/char_1001_amiya2/default/back'];
   assert.notEqual(f.skeleton.sha256,b.skeleton.sha256);
   assert.equal(f.animationRoles.die,'Die');assert.equal(b.animationRoles.die,undefined);
+});
+
+
+test('Medic Amiya preserves both embedded-RGBA models and the pinned default-form portrait binding',()=>{
+  for(const face of ['front','back']) {
+    const m=manifest.models[`operator/char_1037_amiya3/default/${face}`];
+    assert.equal(m.source.key,'global-client');assert.equal(m.source.bundle.path,'chararts/char_1037_amiya3.ab');
+    assert.equal(m.source.bundle.resourceVersion,'26-09-23-17-49-43_b9cc4a');
+    assert.equal(m.source.originalPathIds.alphaTexturePathId,'0');assert.equal(m.premultipliedAlpha,true);
+    assert.equal(m.avatar.source.file,'char_1037_amiya3_2.png');
+    assert.deepEqual(m.avatar.source.formSkin,{skinId:'char_1037_amiya3#2',formId:'char_1037_amiya3',characterId:'char_002_amiya'});
+    assert.equal(m.avatar.source.skinTable.sha,'0317e4b9816b64a76084592891c8bf9c63b6fab6');
+    assert.equal(m.avatar.source.skinTable.commit,'57010cb5b2afea112cae57daa756b58676ba6850');
+    assert.deepEqual(m.animationRoles.skills,['Skill_1_Attack','Skill_2_Attack']);
+    assert.deepEqual(m.hits.Skill_2_Begin,[1.1]);assert.deepEqual(m.hits.Skill_2_Attack,[.633]);
+  }
+  const f=manifest.models['operator/char_1037_amiya3/default/front'],b=manifest.models['operator/char_1037_amiya3/default/back'];
+  assert.notEqual(f.skeleton.sha256,b.skeleton.sha256);assert.notEqual(f.textures[0].sha256,b.textures[0].sha256);
+  assert.equal(f.animations.Skill_1_Begin,.167);assert.equal(b.animations.Skill_1_Begin,.233);
 });
