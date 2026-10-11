@@ -26,7 +26,7 @@ export async function syncWebsiteChibis({ sourceRoot, commit, destinationRoot = 
   for (const skin of Object.keys(previous.websiteSkins ?? {})) {
     if (!table.charSkins[skin]) throw new Error(`Upstream table lost published skin ${skin}`);
   }
-  const next = { ...previous, models: { ...previous.models }, websiteSkins: { ...previous.websiteSkins } };
+  const next = { ...previous, models: { ...previous.models }, websiteSkins: { ...previous.websiteSkins }, websiteDefaultSkins: { ...previous.websiteDefaultSkins } };
   const directories = new Map();
   const prefabs = new Map();
   for (const file of source.tree('spine')) {
@@ -146,6 +146,9 @@ export async function syncWebsiteChibis({ sourceRoot, commit, destinationRoot = 
       facings.walk = await modelKey(walk, retained);
     }
     next.websiteSkins[skin] = facings;
+    if (template && defaultBattle && data.isBuySkin !== true && skin.split('#')[0] === data.tmplId) {
+      if (!next.websiteDefaultSkins[data.tmplId] || skin === `${data.tmplId}#1`) next.websiteDefaultSkins[data.tmplId] = skin;
+    }
     if (!previous.websiteSkins?.[skin]) addedSkins++;
   }
   next.websiteSource = { repository: REPOSITORY, commit, table: TABLE, pending: pending.sort() };

@@ -31,6 +31,8 @@ Unchanged files keep their existing pins. New/changed website models use automat
 
 Native template forms use `tmplId` for battle identity and `buildingId` for their base model. Reviewed exact-form default models already in SD take precedence. This corrects inherited Guard/Medic Amiya battle aliases to their respective verified originals, with Medic Amiya's own base model imported separately; Guard's shared Caster base model follows its explicit native building reference.
 
+`websiteDefaultSkins` records each template form's exact native default skin ID. Some forms have only `#2`, while the website's Base display normally looks up `#1`. The website can generate that display alias from this source declaration; the SD skin inventory keeps the real ID and validates that its battle models belong to the template itself.
+
 The website's scheduled content preparation waits for this sync alongside its other asset jobs, then adopts SD's complete, commit-pinned `websiteSkins` catalogue. It also reports failed or stale SD syncs. Later model additions need a content release, without an app redeploy. Upstream dump availability and GitHub scheduling delays determine when a release can adopt the artwork; the previous published models remain usable during failures. Manual edits/imports and syncs must run sequentially.
 
 The default operator artwork catalogue covers all **374 obtainable operators in the pinned Global character table**. `manifest.json` contains **831 complete entries**: 752 logical operator facings, seventy-six summon facings, and three existing enemies. The operator entries come from 742 original model directories: 368 Front/Back pairs, four Front-only originals, and two single-Spine originals. The previous 353 entries remain unchanged.
