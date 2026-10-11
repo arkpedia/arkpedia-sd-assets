@@ -95,6 +95,7 @@ export async function syncWebsiteChibis({ sourceRoot, commit, destinationRoot = 
     }
     const prefix = `models/${key}/${commit}`;
     for (const [name, buffer] of bytes) {
+      if (!/^[A-Za-z0-9_.-]+$/.test(name)) throw new Error(`Unsupported website asset filename: ${directory}/${name}`);
       if (!buffer.length) throw new Error(`Empty original file: ${directory}/${name}`);
       const target = path.join(destinationRoot, prefix, name);
       await mkdir(path.dirname(target), { recursive: true });
@@ -113,6 +114,7 @@ export async function syncWebsiteChibis({ sourceRoot, commit, destinationRoot = 
   };
   for (const [skin, data] of Object.entries(table.charSkins)) {
     if (!data.charId?.startsWith('char_')) continue;
+    if (!/^char_[\w]+(?:@[\w]+)?#\d+\+?$/.test(skin)) throw new Error(`Invalid website skin ID: ${skin}`);
     const prefab = data.battleSkin?.skinOrPrefabId;
     const battle = (!prefab || prefab === 'DefaultSkin' ? data.tmplId || data.charId : prefab).replaceAll('#', '_');
     component(battle);
