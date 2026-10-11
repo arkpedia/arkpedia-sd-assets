@@ -1,0 +1,65 @@
+name: Sync website chibis
+on:
+  schedule:
+    # Before the website's 19:57 UTC daily content release; off the busy hour boundary.
+    - cron: '23 16 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: sync-website-chibis
+  cancel-in-progress: false
+jobs:
+  sync:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Pin the upstream model and skin-table revision
+        run: git clone --filter=blob:none --no-checkout --depth 1 --single-branch --branch main https://github.com/fexli/ArknightsResource.git .cache/arknights-resource
+      - name: Discover and validate complete website models
+        run: |
+          set -euo pipefail
+          npm test
+          npm run sync:website -- --source-root .cache/arknights-resource | tee "$RUNNER_TEMP/chibi-sync.log"
+          npm run validate
+          cat "$RUNNER_TEMP/chibi-sync.log" >> "$GITHUB_STEP_SUMMARY"
+      - name: Publish the validated manifest and immutable files together
+        run: |
+          set -euo pipefail
+          git add manifest.json models
+          if git diff --cached --quiet; then
+            echo 'No chibi changes to publish.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Sync complete website chibis from pinned upstream'
+          # A concurrent human import is a conflict to retry, never an overwrite/rebase.
+          git push origin HEAD:main
+      - name: Close the sync failure report after recovery
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          for issue in $(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search '"SD chibi sync failing" in:title' --json number,title --jq '.[] | select(.title == "SD chibi sync failing") | .number'); do
+            gh issue close "$issue" --repo "$GITHUB_REPOSITORY" --comment "Recovered: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          done
+      - name: Report a failed discovery or publication
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          issue=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search '"SD chibi sync failing" in:title' --json number,title --jq '[.[] | select(.title == "SD chibi sync failing")][0].number // empty')
+          body="The automatic SD chibi import or publication failed. The previous published manifest remains the website source. Inspect and retry: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          if [ -n "$issue" ]; then
+            gh issue comment "$issue" --repo "$GITHUB_REPOSITORY" --body "$body"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title 'SD chibi sync failing' --body "$body"
+          fi
