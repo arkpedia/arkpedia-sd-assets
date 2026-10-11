@@ -156522,5 +156522,9 @@
     "pending": [
       "char_101_sora@summer#1"
     ]
+  },
+  "websiteDefaultSkins": {
+    "char_1001_amiya2": "char_1001_amiya2#2",
+    "char_1037_amiya3": "char_1037_amiya3#2"
   }
 }

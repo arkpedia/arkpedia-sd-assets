@@ -111,4 +111,17 @@ export async function validateManifest(manifest, root) {
       }
     }
   }
+  if (manifest.websiteDefaultSkins !== undefined) {
+    const defaults = manifest.websiteDefaultSkins;
+    if (!defaults || Array.isArray(defaults) || typeof defaults !== 'object') throw new Error('Invalid website default skins');
+    for (const [id, skin] of Object.entries(defaults)) {
+      component(id);
+      if (!id.startsWith('char_') || typeof skin !== 'string' || !skin.startsWith(`${id}#`) || !manifest.websiteSkins?.[skin]) throw new Error(`${id}: missing native default skin`);
+      for (const [facing, key] of Object.entries(manifest.websiteSkins[skin])) {
+        if (facing === 'walk') continue; // Native building references may intentionally share the base character.
+        const model = manifest.models[key];
+        if (model.id !== id || typeof model.premultipliedAlpha !== 'boolean') throw new Error(`${id}: default skin must use its own reviewed battle model`);
+      }
+    }
+  }
 }

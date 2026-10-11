@@ -104,6 +104,7 @@ test('new operators, skins and native base variants publish atomically, retry an
     await writeFile(path.join(destinationRoot, 'manifest.json'), JSON.stringify(third));
     const formCommit = commit();
     const corrected = await sync(formCommit);
+    assert.equal(corrected.websiteDefaultSkins.char_form, 'char_form#2');
     for (const facing of ['front', 'back', 'walk']) {
       const native = corrected.models[corrected.websiteSkins['char_form#2'][facing]];
       assert.equal(native.id, 'char_form', `template ${facing} uses its own original, not the base character`);
@@ -123,6 +124,7 @@ test('new operators, skins and native base variants publish atomically, retry an
     corrected.websiteSkins['char_form#2'].front = reviewedKey;
     await writeFile(path.join(destinationRoot, 'manifest.json'), JSON.stringify(corrected));
     const preferred = await sync(formCommit);
+    assert.equal(preferred.websiteDefaultSkins.char_form, 'char_form#2');
     assert.equal(preferred.websiteSkins['char_form#2'].front, 'operator/char_form/default/front');
     assert.deepEqual(preferred.models['operator/char_form/default/front'], native);
 
