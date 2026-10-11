@@ -53,3 +53,13 @@ test('manifest publication requires all texture pages and detects altered bytes'
     await assert.rejects(validateManifest(manifest, root), /ENOENT/);
   } finally { await rm(root, { recursive: true, force: true }); }
 });
+
+test('original bundle provenance uses content hashes and rejects unpinned or unrelated resource URLs', async () => {
+ const {modelPrefix}=await import('../scripts/manifest.mjs');
+ const source={kind:'assetbundle',bundle:{sha256:'a'.repeat(64),md5:'b'.repeat(32),bytes:123,
+  resourceVersion:'26-09-23-17-49-43_b9cc4a',path:'pkgrps/btl_pfb_tokens_0.ab',
+  url:'https://ark-us-static-online.yo-star.com/assetbundle/official/Android/assets/26-09-23-17-49-43_b9cc4a/pkgrps_btl_pfb_tokens_0.dat'}};
+ const key='operator/token_test/default/front';assert.equal(modelPrefix(key,source),`models/${key}/${'a'.repeat(64)}/`);
+ for(const patch of [{sha256:'a'.repeat(40)},{md5:null},{bytes:0},{url:'https://example.com/26-09-23-17-49-43_b9cc4a/a.dat'},{resourceVersion:'../escape'}])
+  assert.throws(()=>modelPrefix(key,{...source,bundle:{...source.bundle,...patch}}));
+});
