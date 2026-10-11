@@ -42,9 +42,10 @@ test('all 374 pinned catalogue originals have inspected facings with exact manif
   // The catalogue records the original operator batch. Additional verified
   // tokens/enemies must not invalidate or replace any of its operator facings.
   const catalogueIds = new Set(catalogue.operators.map(o=>o.id));
-  assert.equal(Object.values(manifest.models).filter(model=>catalogueIds.has(model.id)).length,
+  const battleDefaults = Object.values(manifest.models).filter(model=>model.variant==='default' && ['front','back'].includes(model.facing));
+  assert.equal(battleDefaults.filter(model=>catalogueIds.has(model.id)).length,
     catalogue.inventory.operatorFacingEntries);
-  assert.deepEqual(Object.values(manifest.models).filter(model=>model.id.startsWith('char_') && !catalogueIds.has(model.id))
+  assert.deepEqual(battleDefaults.filter(model=>model.source.kind==='assetbundle' && model.id.startsWith('char_') && !catalogueIds.has(model.id))
     .map(model=>`${model.id}/${model.facing}`).sort(), ['char_1001_amiya2/back','char_1001_amiya2/front','char_1037_amiya3/back','char_1037_amiya3/front']);
   assert.equal(catalogue.inventory.operatorFacingEntries,748);
   assert.equal(catalogue.inventory.newlyImportedOperators,204);

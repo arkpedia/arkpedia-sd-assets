@@ -2,6 +2,22 @@
 
 Battle chibi (super deformed) Spine models and original stage scenery for Arkpedia's stage overhaul. This repository holds artwork and animation assets; stats, skills and stage rules stay in `arkpedia-data`.
 
+## Website chibis
+
+The manifest also supplies every model referenced by the website's existing chibi catalogue: **1,378 skin IDs**, including their battle facings and separate dormitory/base animations. `websiteSkins` maps each exact skin ID and `front`/`back`/`walk` selection to a model key. Shared original models remain explicit aliases; missing facings are not invented. The website reads this catalogue at one immutable SD repository commit and serves skeletons, atlases and textures from this repository only.
+
+The website import adds **2,128 original models** (603 front, 593 back and 932 base/walk) to the previous 831 entries, for **2,959 complete entries**. The pinned upstream is `fexli/ArknightsResource` commit `d0b5af0b004b044d322397ce5ae79632b6d9fcdd`. Every imported file matches its original Git blob; filenames, all animation clips and alpha blending remain unchanged. Existing records and immutable directories are retained. This preserves the website's existing coverage rather than announcing any new regional availability or simulator combat support.
+
+To migrate a reviewed website catalogue from pinned upstream URLs, with a local checkout of the declared upstream repository:
+
+```sh
+npm run import:website -- --index /path/to/website/data/chibi-art.json --source-root /path/to/ArknightsResource
+npm test
+npm run validate
+```
+
+The importer reads committed Git blobs, copies every atlas page, rejects conflicting references, and publishes the manifest only after complete validation. It can be rerun without replacing existing models. `import:model` retains `websiteSkins` when refreshing a model; a new skin must be mapped explicitly before it becomes available to the website. The historical Global operator catalogue below remains a separate inventory of reviewed default battle models.
+
 The default operator artwork catalogue covers all **374 obtainable operators in the pinned Global character table**. `manifest.json` contains **831 complete entries**: 752 logical operator facings, seventy-six summon facings, and three existing enemies. The operator entries come from 742 original model directories: 368 Front/Back pairs, four Front-only originals, and two single-Spine originals. The previous 353 entries remain unchanged.
 
 [operator-catalogue.json](operator-catalogue.json) records every operator ID, exact original folder and file names, source commit, file fingerprints and inspected idle/attack roles. It also records the verified exceptions: U-Official, Heidi, Angelina and Civilight Eterna share their original Front model for both logical facings; Sora and Skadi the Corrupting Heart share their original Spine model. Liskarm's original inner folder is `char_107_liskarm`, while the catalogue ID is `char_107_liskam`. No different operator or skin was substituted, and no default originals are missing from this pinned catalogue.
@@ -48,7 +64,7 @@ Imports pin the source commit, fetch the skeleton, atlas and every declared PNG 
 
 Git-sourced files live at `models/<kind>/<id>/<variant>/<facing>/<upstream commit>/<original filename>`. Verified original-client models use the decompressed bundle SHA256 in place of the upstream commit; their manifest records the official URL, resource version, byte count, MD5, transforms and SHA256. `scripts/import-original-models.mjs` verifies both the original bundle and reviewed extracted files before publishing. Atlas-relative texture names are preserved. Clients use URLs pinned to this repository's commit, then lazy-load only the stage enemies, chosen squad, summons and effects. Never load this repository's moving `main` from an active battle.
 
-The [public simulator MVP](https://github.com/arkpedia/arkpedia-stage-simulator) consumes an immutable SD commit. The app's production release pipeline does not consume this repository yet. Adding a pinned SD revision to content releases, complete coverage reports, token/effect imports and automatic refresh/publication are follow-up work on `feat/stage-overhaul`. The manifest must distinguish missing art from unsupported mechanics.
+The [public simulator MVP](https://github.com/arkpedia/arkpedia-stage-simulator) consumes an immutable SD commit. The website integration reads `websiteSkins` from this manifest and publishes commit-pinned URLs through its content release. Asset publication, development integration and production promotion are separate steps. Adding coverage reports, further token/effect imports and automatic discovery/import of newly released upstream models remain follow-up work on `feat/stage-overhaul`. The manifest must distinguish missing art from unsupported mechanics.
 
 ## Reference
 

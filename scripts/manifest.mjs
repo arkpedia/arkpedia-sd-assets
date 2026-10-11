@@ -79,7 +79,7 @@ export async function validateManifest(manifest, root) {
     throw new Error('Expected SD manifest schemaVersion 1');
   }
   for (const [key, model] of Object.entries(manifest.models)) {
-    if (!['operator', 'enemy'].includes(model.kind) || !['front', 'back', 'default'].includes(model.facing)) throw new Error(`${key}: invalid kind or facing`);
+    if (!['operator', 'enemy'].includes(model.kind) || !['front', 'back', 'walk', 'default'].includes(model.facing)) throw new Error(`${key}: invalid kind or facing`);
     if (key !== `${model.kind}/${component(model.id)}/${component(model.variant)}/${model.facing}`) throw new Error(`${key}: identity mismatch`);
     const source = model.source;
     const prefix = modelPrefix(key, source);
@@ -100,5 +100,15 @@ export async function validateManifest(manifest, root) {
     const expected = atlasPages(atlas).map((page) => `${path.posix.dirname(model.atlas.path)}/${page}`).sort();
     const actual = model.textures.map((file) => file.path).sort();
     if (JSON.stringify(expected) !== JSON.stringify(actual)) throw new Error(`${key}: atlas texture pages do not match manifest`);
+  }
+  if (manifest.websiteSkins !== undefined) {
+    if (!manifest.websiteSkins || Array.isArray(manifest.websiteSkins) || typeof manifest.websiteSkins !== 'object') throw new Error('Invalid website skin catalogue');
+    for (const [skin, facings] of Object.entries(manifest.websiteSkins)) {
+      if (!/^char_[\w]+(?:@[\w]+)?#\d+\+?$/.test(skin) || !facings || Array.isArray(facings) || typeof facings !== 'object'
+        || (!facings.front && !facings.back)) throw new Error(`Invalid website skin: ${skin}`);
+      for (const [facing, key] of Object.entries(facings)) {
+        if (!['front', 'back', 'walk'].includes(facing) || !manifest.models[key] || manifest.models[key].kind !== 'operator') throw new Error(`${skin}: missing ${facing} model ${key}`);
+      }
+    }
   }
 }

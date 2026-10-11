@@ -24,7 +24,7 @@ export async function importModel({ source: sourceName, directory, id, variant =
   const source = sources[sourceName];
   if (!source) throw new Error(`Unknown source: ${sourceName}`);
   component(id); component(variant); safePath(directory);
-  if (!directory.startsWith(`${source.root}/`) || !['front', 'back', 'default'].includes(facing)) throw new Error('Invalid source directory or facing');
+  if (!directory.startsWith(`${source.root}/`) || !['front', 'back', 'walk', 'default'].includes(facing)) throw new Error('Invalid source directory or facing');
   commit ||= (await api(`repos/${source.repository}/commits/${encodeURIComponent(source.ref)}`)).sha;
   if (!/^[a-f0-9]{40}$/.test(commit)) throw new Error('Expected a full upstream commit SHA');
   // A filtered Git checkout provides the same pinned tree without one API
@@ -66,7 +66,7 @@ export async function importModel({ source: sourceName, directory, id, variant =
   };
   const manifestPath = path.join(root, 'manifest.json');
   const previous = JSON.parse(await readFile(manifestPath, 'utf8'));
-  const next = { schemaVersion: 1, models: { ...previous.models, [key]: model } };
+  const next = { ...previous, models: { ...previous.models, [key]: model } };
   const stagingRoot = path.join(root, '.cache');
   await mkdir(stagingRoot, { recursive: true });
   const staging = await mkdtemp(path.join(stagingRoot, 'model-'));
