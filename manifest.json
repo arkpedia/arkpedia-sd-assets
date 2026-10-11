@@ -150852,6 +150852,127 @@
           "directory": "avatar/ASSISTANT"
         }
       }
+    },
+    "operator/char_101_sora/summer_1/front": {
+      "kind": "operator",
+      "id": "char_101_sora",
+      "variant": "summer_1",
+      "facing": "front",
+      "source": {
+        "key": "global-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "skinpack/char_101_sora.ab",
+          "bytes": 3500149,
+          "md5": "ca7233df73a960a7599a78c45296734d",
+          "sha256": "ddeca629b88caaf88f7c84d128239b22628f9280464de075e5cc1d466f87126f",
+          "resourceVersion": "26-09-23-17-49-43_b9cc4a",
+          "url": "https://ark-us-static-online.yo-star.com/assetbundle/official/Android/assets/26-09-23-17-49-43_b9cc4a/skinpack_char_101_sora.dat",
+          "transforms": [
+            "Original native skeleton retained byte-for-byte",
+            "Native split RGB and alpha textures decoded and merged into premultiplied RGBA; compression bleed clamped to alpha",
+            "Atlas PNG dimensions normalized; pma: true recorded; original region names retained"
+          ]
+        },
+        "directory": "skinpack/char_101_sora.ab",
+        "extractedSkeleton": "char_101_sora.skel",
+        "originalPathIds": {
+          "rootPathId": "-5657540243845363319",
+          "animatorPathId": "-725284875907315319",
+          "skeletonAnimationPathId": "6035413349501094281",
+          "skeletonDataAssetPathId": "6773567867414333613",
+          "textAssetPathId": "7781748026391345496",
+          "atlasAssetPathId": "5198991007450620506",
+          "atlasTextAssetPathId": "-5407804051879216835",
+          "materialPathId": "-70388410043208158",
+          "rgbTexturePathId": "5882387886970683126",
+          "alphaTexturePathId": "7961766701144446879",
+          "faceSwitcherPathId": "-2937104398385493623"
+        },
+        "transforms": [
+          "Original native skeleton retained byte-for-byte",
+          "Native split RGB and alpha textures decoded and merged into premultiplied RGBA; compression bleed clamped to alpha",
+          "Atlas PNG dimensions normalized; pma: true recorded; original region names retained"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/char_101_sora/summer_1/front/ddeca629b88caaf88f7c84d128239b22628f9280464de075e5cc1d466f87126f/char_101_sora.skel",
+        "bytes": 191330,
+        "sha256": "c17699eff52fc1cb71dbd8ed610b35ac29e67b59c19bdcdd07a29bddb32bf148"
+      },
+      "atlas": {
+        "path": "models/operator/char_101_sora/summer_1/front/ddeca629b88caaf88f7c84d128239b22628f9280464de075e5cc1d466f87126f/char_101_sora.atlas",
+        "bytes": 9191,
+        "sha256": "677c7405ec31ec117cd442b06d8167edc722c276c6320f95352a07a873bf17a5"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_101_sora/summer_1/front/ddeca629b88caaf88f7c84d128239b22628f9280464de075e5cc1d466f87126f/char_101_sora.png",
+          "bytes": 123762,
+          "sha256": "00f62d6ec93855e8b4da699f65f1086d5066aa6eaa441e9b45cdd2832a8a5216"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Die": 1,
+        "Idle": 10.633,
+        "Start": 3.467,
+        "Stun": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "die": "Die",
+        "stun": {
+          "begin": null,
+          "loop": "Stun",
+          "end": null
+        },
+        "attack": null,
+        "skill": null,
+        "move": null
+      },
+      "hits": {},
+      "bounds": {
+        "x": -243.236,
+        "y": -197.648,
+        "width": 436.043,
+        "height": 706.203
+      }
+    },
+    "operator/char_101_sora/website_char_101_sora_summer_1/walk": {
+      "kind": "operator",
+      "id": "char_101_sora",
+      "variant": "website_char_101_sora_summer_1",
+      "facing": "walk",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d7bdc0146f99f6fa88ecdc1bbf79021c012c21c5",
+        "directory": "spine/char_101_sora/build_char_101_sora_summer_1/Spine"
+      },
+      "skeleton": {
+        "path": "models/operator/char_101_sora/website_char_101_sora_summer_1/walk/d7bdc0146f99f6fa88ecdc1bbf79021c012c21c5/build_char_101_sora_summer_1.skel",
+        "bytes": 238373,
+        "sha256": "05e891bfceca048e078187e724353e59c904fa674e3f567726daafc341d54c6b"
+      },
+      "atlas": {
+        "path": "models/operator/char_101_sora/website_char_101_sora_summer_1/walk/d7bdc0146f99f6fa88ecdc1bbf79021c012c21c5/build_char_101_sora_summer_1.atlas",
+        "bytes": 10056,
+        "sha256": "0719f40dde2828c3f1f56de9dfd8b4d1f73bde88bf73c24eba31e005e80c1cea"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_101_sora/website_char_101_sora_summer_1/walk/d7bdc0146f99f6fa88ecdc1bbf79021c012c21c5/build_char_101_sora_summer_1.png",
+          "bytes": 590813,
+          "sha256": "bb023f7e2024410c5546749ab72b81bc9fbce82c232bf7b0ad325486b1e3d3ba"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
     }
   },
   "websiteSkins": {
@@ -157723,15 +157844,17 @@
       "front": "operator/char_194_leto/website_char_194_leto_sightseer_4/front",
       "back": "operator/char_194_leto/website_char_194_leto_sightseer_4/back",
       "walk": "operator/char_194_leto/website_char_194_leto_sightseer_4/walk"
+    },
+    "char_101_sora@summer#1": {
+      "front": "operator/char_101_sora/summer_1/front",
+      "walk": "operator/char_101_sora/website_char_101_sora_summer_1/walk"
     }
   },
   "websiteSource": {
     "repository": "fexli/ArknightsResource",
     "commit": "d7bdc0146f99f6fa88ecdc1bbf79021c012c21c5",
     "table": "gamedata/excel/skin_table.json",
-    "pending": [
-      "char_101_sora@summer#1"
-    ]
+    "pending": []
   },
   "websiteDefaultSkins": {
     "char_1001_amiya2": "char_1001_amiya2#2",
