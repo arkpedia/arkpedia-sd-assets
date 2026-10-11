@@ -128,6 +128,32 @@ test('new operators, skins and native base variants publish atomically, retry an
     assert.equal(preferred.websiteSkins['char_form#2'].front, 'operator/char_form/default/front');
     assert.deepEqual(preferred.models['operator/char_form/default/front'], native);
 
+    // A reviewed alternate source fills a missing battle prefab (Sora's summer case).
+    // Daily primary-source discovery must retain it and still import its exact base model.
+    const archiveKey = 'operator/char_pending/archive/front';
+    const archive = { ...structuredClone(preferred.models[key]), id: 'char_pending', variant: 'archive',
+      source: { key: 'archive', repository: 'archive/OriginalModels', commit: firstCommit, directory: 'art/char_pending/front' } };
+    for (const file of [archive.skeleton, archive.atlas, ...archive.textures]) {
+      const bytes = await readFile(path.join(destinationRoot, file.path));
+      file.path = `models/${archiveKey}/${firstCommit}/${path.basename(file.path)}`;
+      await mkdir(path.dirname(path.join(destinationRoot, file.path)), { recursive: true });
+      await writeFile(path.join(destinationRoot, file.path), bytes);
+    }
+    preferred.models[archiveKey] = archive;
+    preferred.websiteSkins['char_pending#1'] = { front: archiveKey };
+    await writeFile(path.join(destinationRoot, 'manifest.json'), JSON.stringify(preferred));
+    await model('char_pending', 'build_char_pending', 'Spine');
+    const archiveCommit = commit();
+    const retainedArchive = await sync(archiveCommit);
+    assert.deepEqual(retainedArchive.models[archiveKey], archive);
+    assert.equal(retainedArchive.websiteSkins['char_pending#1'].front, archiveKey);
+    assert.equal(retainedArchive.websiteSkins['char_pending#1'].back, undefined);
+    assert.ok(retainedArchive.websiteSkins['char_pending#1'].walk);
+    assert.deepEqual(retainedArchive.websiteSource.pending, []);
+    const retainedText = await readFile(path.join(destinationRoot, 'manifest.json'), 'utf8');
+    await sync(archiveCommit);
+    assert.equal(await readFile(path.join(destinationRoot, 'manifest.json'), 'utf8'), retainedText);
+
     const final = await readFile(path.join(destinationRoot, 'manifest.json'), 'utf8');
     delete charSkins['char_new#2']; await table();
     await assert.rejects(sync(commit()), /lost published skin/);

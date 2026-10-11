@@ -1,0 +1,135 @@
+{
+  "skinId": "char_101_sora@summer#1",
+  "prefab": "char_101_sora_summer#1",
+  "sourceBundle": {
+    "path": "skinpack/char_101_sora.ab",
+    "bytes": 3500149,
+    "md5": "ca7233df73a960a7599a78c45296734d",
+    "sha256": "ddeca629b88caaf88f7c84d128239b22628f9280464de075e5cc1d466f87126f",
+    "resourceVersion": "26-09-23-17-49-43_b9cc4a",
+    "url": "https://ark-us-static-online.yo-star.com/assetbundle/official/Android/assets/26-09-23-17-49-43_b9cc4a/skinpack_char_101_sora.dat",
+    "transforms": [
+      "Original native skeleton retained byte-for-byte",
+      "Native split RGB and alpha textures decoded and merged into premultiplied RGBA; compression bleed clamped to alpha",
+      "Atlas PNG dimensions normalized; pma: true recorded; original region names retained"
+    ]
+  },
+  "sourceManifestSha256": "80352c1a5fee9330dcc570159bd0089ae0331d955160c2ce3694d0529fe37fe7",
+  "originalPathIds": {
+    "rootPathId": "-5657540243845363319",
+    "animatorPathId": "-725284875907315319",
+    "skeletonAnimationPathId": "6035413349501094281",
+    "skeletonDataAssetPathId": "6773567867414333613",
+    "textAssetPathId": "7781748026391345496",
+    "atlasAssetPathId": "5198991007450620506",
+    "atlasTextAssetPathId": "-5407804051879216835",
+    "materialPathId": "-70388410043208158",
+    "rgbTexturePathId": "5882387886970683126",
+    "alphaTexturePathId": "7961766701144446879",
+    "faceSwitcherPathId": "-2937104398385493623"
+  },
+  "nativeAnimationBindings": [
+    {
+      "animKey": "Idle",
+      "animName": "Idle",
+      "loop": 1,
+      "speed": 1,
+      "ignoreMissing": 0
+    },
+    {
+      "animKey": "Die",
+      "animName": "Die",
+      "loop": 0,
+      "speed": 1,
+      "ignoreMissing": 0
+    },
+    {
+      "animKey": "Born",
+      "animName": "Start",
+      "loop": 0,
+      "speed": 1,
+      "ignoreMissing": 0
+    },
+    {
+      "animKey": "Default",
+      "animName": "Default",
+      "loop": 0,
+      "speed": 1,
+      "ignoreMissing": 0
+    },
+    {
+      "animKey": "Stun",
+      "animName": "Stun",
+      "loop": 0,
+      "speed": 1,
+      "ignoreMissing": 0
+    }
+  ],
+  "materialFloats": {
+    "_BaselineZ": 0,
+    "_Cutoff": 0.10000000149011612,
+    "_DitherIntensity": 0,
+    "_UseAlphaTex": 1,
+    "_UseBleed": 0,
+    "_UseDither": 0,
+    "_UseFixedFormula": 0,
+    "_UseTintBlack": 0
+  },
+  "textureDimensions": [
+    512,
+    512
+  ],
+  "originalFiles": {
+    "skeleton": {
+      "bytes": 191330,
+      "sha256": "c17699eff52fc1cb71dbd8ed610b35ac29e67b59c19bdcdd07a29bddb32bf148"
+    },
+    "atlas": {
+      "bytes": 9181,
+      "sha256": "46fb0b35cedb40c50fe1a9b83333ebbb745ccf869034939881a0a229f85b6d29"
+    }
+  },
+  "files": {
+    "char_101_sora.skel": {
+      "bytes": 191330,
+      "sha256": "c17699eff52fc1cb71dbd8ed610b35ac29e67b59c19bdcdd07a29bddb32bf148"
+    },
+    "char_101_sora.atlas": {
+      "bytes": 9191,
+      "sha256": "677c7405ec31ec117cd442b06d8167edc722c276c6320f95352a07a873bf17a5"
+    },
+    "char_101_sora.png": {
+      "bytes": 123762,
+      "sha256": "00f62d6ec93855e8b4da699f65f1086d5066aa6eaa441e9b45cdd2832a8a5216"
+    }
+  },
+  "modelKey": "operator/char_101_sora/summer_1/front",
+  "inspection": {
+    "version": "3.8.99",
+    "animations": [
+      "Default",
+      "Die",
+      "Idle",
+      "Start",
+      "Stun"
+    ],
+    "durations": {
+      "Default": 0,
+      "Die": 1,
+      "Idle": 10.633,
+      "Start": 3.467,
+      "Stun": 1
+    },
+    "events": [
+      "beat"
+    ],
+    "hits": {},
+    "bounds": {
+      "x": -243.236,
+      "y": -197.648,
+      "width": 436.043,
+      "height": 706.203
+    },
+    "missingRegions": []
+  }
+}
