@@ -7,6 +7,7 @@
     "test": "node --test test/*.test.mjs",
     "validate": "node scripts/validate.mjs",
     "import:model": "node scripts/import-model.mjs",
+    "import:website": "node scripts/import-website-chibis.mjs",
     "refresh": "node scripts/refresh.mjs"
   }
 }
