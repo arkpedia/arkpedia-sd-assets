@@ -94,6 +94,38 @@ test('new operators, skins and native base variants publish atomically, retry an
     assert.equal(await readFile(path.join(destinationRoot, updated.textures[0].path), 'utf8'), 'updated original texture');
     assert.equal(await readFile(path.join(destinationRoot, first.models[key].textures[0].path), 'utf8'), 'original texture bytes', 'old bytes remain available');
 
+    // An inherited base-character alias is invalid for a native template form.
+    charSkins['char_form#2'] = { charId: 'char_test', tmplId: 'char_form', buildingId: 'char_form', battleSkin: { skinOrPrefabId: 'DefaultSkin' } };
+    await model('char_form', 'char_form', 'Front');
+    await model('char_form', 'char_form', 'Back');
+    await model('char_form', 'build_char_form', 'Spine');
+    await table();
+    third.websiteSkins['char_form#2'] = { ...third.websiteSkins['char_test#1'] };
+    await writeFile(path.join(destinationRoot, 'manifest.json'), JSON.stringify(third));
+    const formCommit = commit();
+    const corrected = await sync(formCommit);
+    for (const facing of ['front', 'back', 'walk']) {
+      const native = corrected.models[corrected.websiteSkins['char_form#2'][facing]];
+      assert.equal(native.id, 'char_form', `template ${facing} uses its own original, not the base character`);
+    }
+    assert.deepEqual(corrected.models[reviewedKey], reviewed, 'correcting a form does not change the reviewed base model');
+    // Reviewed native form records take precedence and keep their runtime metadata.
+    const nativeKey = corrected.websiteSkins['char_form#2'].front;
+    const native = structuredClone(corrected.models[nativeKey]);
+    native.variant = 'default'; native.animations = { Idle: 1 };
+    for (const file of [native.skeleton, native.atlas, ...native.textures]) {
+      const replacement = file.path.replace('/website_char_form/', '/default/');
+      await mkdir(path.dirname(path.join(destinationRoot, replacement)), { recursive: true });
+      await writeFile(path.join(destinationRoot, replacement), await readFile(path.join(destinationRoot, file.path)));
+      file.path = replacement;
+    }
+    corrected.models['operator/char_form/default/front'] = native;
+    corrected.websiteSkins['char_form#2'].front = reviewedKey;
+    await writeFile(path.join(destinationRoot, 'manifest.json'), JSON.stringify(corrected));
+    const preferred = await sync(formCommit);
+    assert.equal(preferred.websiteSkins['char_form#2'].front, 'operator/char_form/default/front');
+    assert.deepEqual(preferred.models['operator/char_form/default/front'], native);
+
     const final = await readFile(path.join(destinationRoot, 'manifest.json'), 'utf8');
     delete charSkins['char_new#2']; await table();
     await assert.rejects(sync(commit()), /lost published skin/);

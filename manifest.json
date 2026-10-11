@@ -149610,6 +149610,38 @@
       ],
       "premultipliedAlpha": false,
       "animations": null
+    },
+    "operator/char_1037_amiya3/website_char_1037_amiya3/walk": {
+      "kind": "operator",
+      "id": "char_1037_amiya3",
+      "variant": "website_char_1037_amiya3",
+      "facing": "walk",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "d7bdc0146f99f6fa88ecdc1bbf79021c012c21c5",
+        "directory": "spine/char_1037_amiya3/build_char_1037_amiya3/Spine"
+      },
+      "skeleton": {
+        "path": "models/operator/char_1037_amiya3/website_char_1037_amiya3/walk/d7bdc0146f99f6fa88ecdc1bbf79021c012c21c5/build_char_1037_amiya3.skel",
+        "bytes": 278470,
+        "sha256": "18b094ab3989235872b208f689a1d7a0f442fc15e08b24faf033f6af7d3a55e9"
+      },
+      "atlas": {
+        "path": "models/operator/char_1037_amiya3/website_char_1037_amiya3/walk/d7bdc0146f99f6fa88ecdc1bbf79021c012c21c5/build_char_1037_amiya3.atlas",
+        "bytes": 10675,
+        "sha256": "e8e4b8f54c46f3a61aac275406ca251e074728cbd8c048f191bc8d48915a5124"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_1037_amiya3/website_char_1037_amiya3/walk/d7bdc0146f99f6fa88ecdc1bbf79021c012c21c5/build_char_1037_amiya3.png",
+          "bytes": 618673,
+          "sha256": "a4cf2b0ae63dab19cb15988f7c7d4c0b8ed3e47cadac6bb2ac7995578c7c58f7"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
     }
   },
   "websiteSkins": {
@@ -156428,14 +156460,14 @@
       "walk": "operator/char_4220_kormr/char_4220_kormr_p3r_1/walk"
     },
     "char_1001_amiya2#2": {
-      "back": "operator/char_002_amiya/default/back",
-      "front": "operator/char_002_amiya/default/front",
+      "back": "operator/char_1001_amiya2/default/back",
+      "front": "operator/char_1001_amiya2/default/front",
       "walk": "operator/char_002_amiya/default/walk"
     },
     "char_1037_amiya3#2": {
-      "back": "operator/char_002_amiya/default/back",
-      "front": "operator/char_002_amiya/default/front",
-      "walk": "operator/char_002_amiya/default/walk"
+      "back": "operator/char_1037_amiya3/default/back",
+      "front": "operator/char_1037_amiya3/default/front",
+      "walk": "operator/char_1037_amiya3/website_char_1037_amiya3/walk"
     },
     "char_393_toledo#1": {
       "front": "operator/char_393_toledo/website_char_393_toledo/front",

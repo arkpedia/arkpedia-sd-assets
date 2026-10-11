@@ -116,20 +116,35 @@ export async function syncWebsiteChibis({ sourceRoot, commit, destinationRoot = 
     if (!data.charId?.startsWith('char_')) continue;
     if (!/^char_[\w]+(?:@[\w]+)?#\d+\+?$/.test(skin)) throw new Error(`Invalid website skin ID: ${skin}`);
     const prefab = data.battleSkin?.skinOrPrefabId;
-    const battle = (!prefab || prefab === 'DefaultSkin' ? data.tmplId || data.charId : prefab).replaceAll('#', '_');
+    const defaultBattle = !prefab || prefab === 'DefaultSkin';
+    const battle = (defaultBattle ? data.tmplId || data.charId : prefab).replaceAll('#', '_');
     component(battle);
     const existing = previous.websiteSkins?.[skin] ?? {};
     const battleDirectories = prefabFacings(battle, data.tmplId || data.charId);
-    if (!battleDirectories.front && !battleDirectories.back && !existing.front && !existing.back) { pending.push(skin); continue; }
+    const template = data.tmplId && data.tmplId !== data.charId;
+    const reviewedFacings = {};
+    if (template && defaultBattle) for (const facing of ['front', 'back']) {
+      const key = `operator/${data.tmplId}/default/${facing}`;
+      const model = previous.models[key];
+      if (model?.kind === 'operator' && typeof model.premultipliedAlpha === 'boolean' && model.spineVersion.startsWith('3.8.')) reviewedFacings[facing] = key;
+    }
+    if (!battleDirectories.front && !battleDirectories.back && !reviewedFacings.front && !reviewedFacings.back && !existing.front && !existing.back) { pending.push(skin); continue; }
     const facings = { ...existing };
     for (const facing of ['front', 'back']) {
-      if (battleDirectories[facing]) facings[facing] = await modelKey(battleDirectories[facing], existing[facing]);
+      if (reviewedFacings[facing]) facings[facing] = reviewedFacings[facing];
+      else if (battleDirectories[facing]) {
+        const retained = template && defaultBattle && previous.models[existing[facing]]?.id !== data.tmplId ? undefined : existing[facing];
+        facings[facing] = await modelKey(battleDirectories[facing], retained);
+      }
     }
     const building = (data.buildingId || battle).replaceAll('#', '_');
     component(building);
     const buildingOwner = /^char_\d+_[A-Za-z0-9]+/.exec(building)?.[0] || data.charId;
     const walk = prefabFacings(`build_${building}`, buildingOwner).walk;
-    if (walk) facings.walk = await modelKey(walk, existing.walk);
+    if (walk) {
+      const retained = template && previous.models[existing.walk]?.source.directory !== walk ? undefined : existing.walk;
+      facings.walk = await modelKey(walk, retained);
+    }
     next.websiteSkins[skin] = facings;
     if (!previous.websiteSkins?.[skin]) addedSkins++;
   }
