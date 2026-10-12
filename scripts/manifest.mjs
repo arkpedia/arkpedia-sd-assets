@@ -79,9 +79,15 @@ export async function validateManifest(manifest, root) {
     throw new Error('Expected SD manifest schemaVersion 1');
   }
   for (const [key, model] of Object.entries(manifest.models)) {
-    if (!['operator', 'enemy'].includes(model.kind) || !['front', 'back', 'walk', 'default'].includes(model.facing)) throw new Error(`${key}: invalid kind or facing`);
+    if (!['operator', 'enemy'].includes(model.kind) || !['front', 'back', 'walk', 'default', 'down'].includes(model.facing)) throw new Error(`${key}: invalid kind or facing`);
     if (key !== `${model.kind}/${component(model.id)}/${component(model.variant)}/${model.facing}`) throw new Error(`${key}: identity mismatch`);
     const source = model.source;
+    if (model.facing === 'down' && (model.kind !== 'operator' || !model.id.startsWith('token_')
+      || source?.kind !== 'assetbundle' || source.facingAlias
+      || ['skeletonAnimationPathId', 'skeletonDataAssetPathId', 'textAssetPathId'].some(name =>
+        typeof source.originalPathIds?.[name] !== 'string'
+        || !/^-?[1-9]\d*$/.test(source.originalPathIds[name]))))
+      throw new Error(`${key}: down facing requires an original token skeleton chain`);
     const prefix = modelPrefix(key, source);
     safePath(source.directory);
     if (!/^\d+\.\d+(?:\.\d+)?$/.test(model.spineVersion)) throw new Error(`${key}: missing Spine version`);
