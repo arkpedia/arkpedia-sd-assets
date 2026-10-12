@@ -30,7 +30,7 @@ async function fixture() {
   const info = { sourceBundle: { path: 'pkgrps/tokens.ab', bytes: original.length, md5: hash(original, 'md5'), sha256: hash(original), resourceVersion: 'test-version', url: 'https://ark-us-static-online.yo-star.com/assetbundle/official/Android/assets/test-version/tokens.dat' }, models: { token_pair: { facings: { front, back } } } };
   const save = () => writeFile(metadata, JSON.stringify(info));
   await save();
-  return { dir, info, front, back, save, args: { metadata, bundle, extractedRoot: dir, destinationRoot: dir }, manifest: async () => JSON.parse(await readFile(path.join(dir, 'manifest.json'), 'utf8')) };
+  return { dir, info, front, back, make, save, args: { metadata, bundle, extractedRoot: dir, destinationRoot: dir }, manifest: async () => JSON.parse(await readFile(path.join(dir, 'manifest.json'), 'utf8')) };
 }
 
 test('original facings preserve distinct native bytes despite identical filenames and retain existing single-model aliases', async () => {
@@ -98,5 +98,39 @@ test('passive original devices keep literal birth and idle clips without inventi
     for (const facing of ['front', 'back']) assert.deepEqual(
       (await f.manifest()).models[`operator/token_pair/default/${facing}`].animationRoles,
       f.front.animationRoles);
+  } finally { await rm(f.dir, { recursive: true, force: true }); }
+});
+
+test('a third original token facing preserves its distinct files and literal skeleton chain', async () => {
+  const f = await fixture();
+  try {
+    const down = await f.make('down');
+    down.originalPathIds = { skeletonAnimationPathId: '333', skeletonDataAssetPathId: '334', textAssetPathId: '335' };
+    f.info.models.token_pair.facings.down = down; await f.save();
+    await importOriginalModels(f.args);
+    const models = (await f.manifest()).models;
+    assert.equal(Object.keys(models).length, 3);
+    assert.equal(new Set(Object.values(models).map(m => m.skeleton.sha256)).size, 3);
+    const delivered = models['operator/token_pair/default/down'];
+    assert.equal(delivered.skeleton.sha256, down.files['same.skel'].sha256);
+    assert.deepEqual(delivered.source.originalPathIds, down.originalPathIds);
+    assert.equal(delivered.source.facingAlias, undefined);
+    await importOriginalModels(f.args); assert.deepEqual((await f.manifest()).models, models);
+  } finally { await rm(f.dir, { recursive: true, force: true }); }
+});
+
+test('invented facing names and down records without a native token chain cannot publish', async () => {
+  const f = await fixture();
+  try {
+    f.info.models.token_pair.facings.up = f.front; await f.save();
+    await assert.rejects(importOriginalModels(f.args), /original facings/);
+    delete f.info.models.token_pair.facings.up;
+    f.info.models.token_pair.facings.down = f.front; await f.save();
+    await assert.rejects(importOriginalModels(f.args), /original token skeleton chain/);
+    const record = { ...f.front, originalPathIds: { skeletonAnimationPathId: '333', skeletonDataAssetPathId: '334', textAssetPathId: '335' } };
+    f.info.models.char_fake = { facings: { front: f.front, back: f.back, down: record } };
+    delete f.info.models.token_pair; await f.save();
+    await assert.rejects(importOriginalModels(f.args), /original token skeleton chain/);
+    assert.deepEqual((await f.manifest()).models, {});
   } finally { await rm(f.dir, { recursive: true, force: true }); }
 });

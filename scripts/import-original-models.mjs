@@ -18,10 +18,16 @@ export async function importOriginalModels({ metadata, bundle, extractedRoot, de
   const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
   for (const [id, originalRecord] of Object.entries(info.models)) {
     component(id);
-    if (originalRecord.facings && (Object.keys(originalRecord.facings).length !== 2
-      || !originalRecord.facings.front || !originalRecord.facings.back))
-      throw new Error(`${id}: expected exactly front and back original facings`);
-    for (const facing of ['front', 'back']) {
+    const facings = originalRecord.facings ? Object.keys(originalRecord.facings) : ['front', 'back'];
+    if (originalRecord.facings && (!originalRecord.facings.front || !originalRecord.facings.back
+      || facings.some(facing => !['front', 'back', 'down'].includes(facing))))
+      throw new Error(`${id}: expected exactly front and back original facings, with optional native down`);
+    if (originalRecord.facings?.down && (!id.startsWith('token_')
+      || ['skeletonAnimationPathId', 'skeletonDataAssetPathId', 'textAssetPathId'].some(key =>
+        typeof originalRecord.facings.down.originalPathIds?.[key] !== 'string'
+        || !/^-?[1-9]\d*$/.test(originalRecord.facings.down.originalPathIds[key]))))
+      throw new Error(`${id}: native down facing requires an original token skeleton chain`);
+    for (const facing of facings) {
       const record = originalRecord.facings?.[facing] ?? originalRecord;
       const roles = record.animationRoles;
       if (typeof roles?.idle !== 'string' || !Object.hasOwn(record.durations ?? {}, roles.idle)
