@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "effects": {
+    "tragodia": {
+      "path": "effects/native/tragodia/26-09-23-17-49-43_b9cc4a/e39769c56a91f5d483632808082a05a3dbe0b71d5a5c99b3ade9ebdee68fd0ff/manifest.json",
+      "bytes": 44646,
+      "sha256": "d102c41886445b583cd4ffa491f2db9644ba6a6c39a76bcd6d2fed2f6c919e87"
+    }
+  }
+}

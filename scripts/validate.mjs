@@ -9,3 +9,6 @@ console.log(`Validated ${Object.keys(manifest.models).length} complete models`);
 const { validateStages } = await import('./stages.mjs');
 await validateStages(JSON.parse(await readFile(path.join(root, 'stage-manifest.json'), 'utf8')), root);
 console.log('Validated stage scenery files and geometry');
+const {validateNativeEffects}=await import('./native-effects.mjs');
+const native=JSON.parse(await readFile(path.join(root,'native-effect-manifest.json'),'utf8'));
+console.log(`Validated ${await validateNativeEffects(native,root)} native effect packages`);
