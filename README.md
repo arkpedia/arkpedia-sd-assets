@@ -184,3 +184,11 @@ Reconstruction retains its original Single skeleton from the same pinned Global 
 Record Keeper's existing Front and Back files remain byte-identical to their pinned source. [source-reviews/record-keeper.json](source-reviews/record-keeper.json) binds both skeleton chains, atlas regions and every decoded texture pixel to the original CN artwork bundle. Metadata now uses the native premultiplied-alpha input. S1 retains Attack; S2 selects its literal Skill_Begin, Skill_Loop and Skill_Idle clips without inferring Skill_End. Back has no death clip.
 
 Only these two metadata records change; all other 3,011 models and all original files remain unchanged. The simulator's independent source audit reproduces the receipt and rejects 32 altered claims on Node 22 and 24. Chromium decodes all 15 usable owner clips per viewport and captures 16 desktop and emulated landscape-phone states, with no browser or resource errors. This is artwork delivery evidence; playable selection, original-stage review, native particles/shaders/audio and game-frame parity remain separate.
+
+### Original Vetochki owner metadata
+
+Vetochki's existing Front/Back files remain byte-identical to the pinned source. [source-reviews/vetochki.json](source-reviews/vetochki.json) binds the original native skeleton/atlas/material/texture pointers and every decoded pixel. Both inputs are premultiplied alpha. S1 retains Attack; S2 uses its literal Skill_2_Begin/Loop/Idle clips. The original art controller explicitly mixes Skill_2_Idle or Skill_2_Loop into Idle through Skill_2_End; these two End transitions are preserved. Back has no death clip.
+
+Only these two metadata records change; the other 3,011 models and all original files remain unchanged. Source verification, negative-claim rejection and controlled artwork review are separate from playable admission, native shader/particle/audio and game-frame parity.
+
+Validation passes all 54 asset tests and the complete 3,013-model catalogue on Node 22 and 24. The simulator independently verifies delivered files/pixels/materials, reproduces the receipt and rejects 32 altered artwork/approval claims on both versions. Chromium decodes all 15 usable clips per viewport and captures 16 desktop/emulated landscape-phone states without browser/resource errors. Desktop Begin and phone End captures are visually inspected.
