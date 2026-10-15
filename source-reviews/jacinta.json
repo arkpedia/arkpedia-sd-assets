@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "artworkOnly": true,
+  "enabledOperators": [],
+  "frameParity": false,
+  "nativeParticleSupport": false,
+  "nativeShaderParity": false,
+  "foundation": {
+    "repository": "arkpedia/arkpedia-stage-simulator",
+    "path": "data/arkpedia-native-operators/char_4237_jcinta.json",
+    "sha256": "c43d9cebc0231826e476dde9dd6cc0f8d44887244379a93600468986cf67f9a5",
+    "commit": "a550f5e048bb94e7cdefc6eb97a4091f0c4c7add",
+    "client": "26-09-22-07-47-20_6c71fa"
+  },
+  "sourceBundle": {
+    "path": "chararts/char_4237_jcinta.ab",
+    "bytes": 4004458,
+    "md5": "4838a9ec234a6ab9d96648c5b98b54a7",
+    "archive": "chararts_char_4237_jcinta.dat",
+    "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/chararts_char_4237_jcinta.dat",
+    "sha256": "53e841afb425ad1344a08af014475e36f0f36aa0f7bc1f0f918ac4614fe779ce"
+  },
+  "models": {
+    "Front": {
+      "modelKey": "operator/char_4237_jcinta/default/front",
+      "model": {
+        "kind": "operator",
+        "id": "char_4237_jcinta",
+        "variant": "default",
+        "facing": "front",
+        "spineVersion": "3.8.99",
+        "source": {
+          "key": "operators",
+          "repository": "fexli/ArknightsResource",
+          "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+          "directory": "spine/char_4237_jcinta/char_4237_jcinta/Front"
+        },
+        "skeleton": {
+          "path": "models/operator/char_4237_jcinta/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4237_jcinta.skel",
+          "bytes": 502736,
+          "sha256": "6198699fea73c4183f3b22e92e964841b9b7860493e923c4f8acb98183448089"
+        },
+        "atlas": {
+          "path": "models/operator/char_4237_jcinta/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4237_jcinta.atlas",
+          "bytes": 14588,
+          "sha256": "33006acafd4e6f8219a46dc82cc29a1b51b80e5f3686346466ada9541af27c47"
+        },
+        "textures": [
+          {
+            "path": "models/operator/char_4237_jcinta/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4237_jcinta.png",
+            "bytes": 280057,
+            "sha256": "6898a608cd2aec1cd741bdcce14a42ef5846dd8d914bfc6126ed1639613bbdd4"
+          }
+        ],
+        "premultipliedAlpha": false,
+        "animations": {
+          "Attack": 1.3,
+          "Default": 0,
+          "Die": 1,
+          "Idle": 3.333,
+          "Skill_1_Begin": 0.467,
+          "Skill_1_End": 0.333,
+          "Skill_1_Loop": 3.333,
+          "Skill_2_Begin": 0.467,
+          "Skill_2_End": 0.333,
+          "Skill_2_Loop": 2.667,
+          "Start": 1
+        },
+        "animationRoles": {
+          "idle": "Idle",
+          "deploy": "Start",
+          "attack": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null
+          },
+          "attackDown": null,
+          "skill": {
+            "begin": "Skill_1_Begin",
+            "loop": "Skill_1_Loop",
+            "end": "Skill_1_End",
+            "index": 0,
+            "idle": null,
+            "via": "skill"
+          },
+          "die": "Die",
+          "move": null,
+          "stun": null,
+          "skills": {
+            "0": {
+              "begin": "Skill_1_Begin",
+              "loop": "Skill_1_Loop",
+              "end": "Skill_1_End",
+              "index": 0,
+              "idle": null,
+              "via": "skill"
+            },
+            "1": {
+              "begin": "Skill_2_Begin",
+              "loop": "Skill_2_Loop",
+              "end": "Skill_2_End",
+              "index": 1,
+              "idle": null,
+              "via": "skill"
+            }
+          }
+        },
+        "hits": {
+          "Attack": [
+            0.467
+          ]
+        },
+        "bounds": {
+          "x": -697.935,
+          "y": -1.842,
+          "width": 1950.146,
+          "height": 810.263
+        }
+      },
+      "originalBinding": {
+        "animatorPathId": "-7295795201208427914",
+        "skeletonAnimationPathId": "-1527524478235780490",
+        "skeletonDataAssetPathId": "1711676599089773903",
+        "textAssetPathId": "-2264083707767930799",
+        "atlasAssetPathId": "-8216802691207888286",
+        "atlasTextAssetPathId": "1905240102696733527",
+        "sha256": "6198699fea73c4183f3b22e92e964841b9b7860493e923c4f8acb98183448089",
+        "bytes": 502736,
+        "atlasSha256": "8fdaf642f59b5f05ac654b8cba88cabf9453066370f213b472b1fa5d8a2a9c0c",
+        "atlasBytes": 14603
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.46666666865348816,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Start": [
+          {
+            "time": 0.1666666716337204,
+            "name": "OnStart",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "atlasNormalization": "Existing pinned atlas omits the leading blank line and page size header; all other text is identical to the original native atlas. Original page sizes are 452x452 Front and 416x416 Back."
+    },
+    "Back": {
+      "modelKey": "operator/char_4237_jcinta/default/back",
+      "model": {
+        "kind": "operator",
+        "id": "char_4237_jcinta",
+        "variant": "default",
+        "facing": "back",
+        "spineVersion": "3.8.99",
+        "source": {
+          "key": "operators",
+          "repository": "fexli/ArknightsResource",
+          "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+          "directory": "spine/char_4237_jcinta/char_4237_jcinta/Back"
+        },
+        "skeleton": {
+          "path": "models/operator/char_4237_jcinta/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4237_jcinta.skel",
+          "bytes": 288975,
+          "sha256": "657ed4d5f23cbe4d53f82ccd5110a0db63d2976b645b3b437a41f92947df57c7"
+        },
+        "atlas": {
+          "path": "models/operator/char_4237_jcinta/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4237_jcinta.atlas",
+          "bytes": 8678,
+          "sha256": "d5ade108555d51f47bcec10aeba6d70e0fa4f8a14c754a099ad5368e28a20802"
+        },
+        "textures": [
+          {
+            "path": "models/operator/char_4237_jcinta/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4237_jcinta.png",
+            "bytes": 239321,
+            "sha256": "212303d3de713f00faf865a7b9f749a7e38e69c86accadaec132c405084dc305"
+          }
+        ],
+        "premultipliedAlpha": false,
+        "animations": {
+          "Attack": 1.3,
+          "Default": 0,
+          "Idle": 1.667,
+          "Skill_1_Begin": 0.467,
+          "Skill_1_End": 0.333,
+          "Skill_1_Loop": 1.667,
+          "Skill_2_Begin": 0.467,
+          "Skill_2_End": 0.333,
+          "Skill_2_Loop": 1.333,
+          "Start": 1
+        },
+        "animationRoles": {
+          "idle": "Idle",
+          "deploy": "Start",
+          "attack": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null
+          },
+          "attackDown": null,
+          "skill": {
+            "begin": "Skill_1_Begin",
+            "loop": "Skill_1_Loop",
+            "end": "Skill_1_End",
+            "index": 0,
+            "idle": null,
+            "via": "skill"
+          },
+          "die": null,
+          "move": null,
+          "stun": null,
+          "skills": {
+            "0": {
+              "begin": "Skill_1_Begin",
+              "loop": "Skill_1_Loop",
+              "end": "Skill_1_End",
+              "index": 0,
+              "idle": null,
+              "via": "skill"
+            },
+            "1": {
+              "begin": "Skill_2_Begin",
+              "loop": "Skill_2_Loop",
+              "end": "Skill_2_End",
+              "index": 1,
+              "idle": null,
+              "via": "skill"
+            }
+          }
+        },
+        "hits": {
+          "Attack": [
+            0.467
+          ]
+        },
+        "bounds": {
+          "x": -697.935,
+          "y": -1.842,
+          "width": 1950.146,
+          "height": 810.263
+        }
+      },
+      "originalBinding": {
+        "animatorPathId": "-7295795201208427914",
+        "skeletonAnimationPathId": "-7690855663676106122",
+        "skeletonDataAssetPathId": "-6840363005142293089",
+        "textAssetPathId": "4241688286113448863",
+        "atlasAssetPathId": "6000690365158025864",
+        "atlasTextAssetPathId": "1687970561276774892",
+        "sha256": "657ed4d5f23cbe4d53f82ccd5110a0db63d2976b645b3b437a41f92947df57c7",
+        "bytes": 288975,
+        "atlasSha256": "50ca776badbe5df0736acea94589683f721ed39458f65d196ff9d85c032e8a90",
+        "atlasBytes": 8693
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.46666666865348816,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Start": [
+          {
+            "time": 0.1666666716337204,
+            "name": "OnStart",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "atlasNormalization": "Existing pinned atlas omits the leading blank line and page size header; all other text is identical to the original native atlas. Original page sizes are 452x452 Front and 416x416 Back."
+    }
+  }
+}
