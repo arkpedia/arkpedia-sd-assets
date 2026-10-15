@@ -18,6 +18,8 @@ test('Ripresa keeps original Front/Back bytes and binds only literal normal/S1/S
     assert.equal(row.eventPayloads.Attack[0].time, .5); assert.equal(row.eventPayloads.Skill_1[0].time, .5);
     assert.equal(row.eventPayloads.Skill_2[0].time, .2666666805744171); assert.equal(row.eventPayloads.Skill_2[1].name, 'AnimeAttack');
     assert.equal(row.eventPayloads.Skill_2[1].time, 1.3666666746139526);
+    assert.equal(m.animationRoles.die, face === 'Back' ? null : 'Die');
+    if (face === 'Back') assert.equal(m.animations.Die, undefined);
     for (let i = 0; i < 2; i++) {
       const role = m.animationRoles.skills[String(i)]; assert.equal(role.loop, `Skill_${i + 1}`);
       assert.equal(role.begin, null); assert.equal(role.end, null); assert.equal(role.via, 'attack');

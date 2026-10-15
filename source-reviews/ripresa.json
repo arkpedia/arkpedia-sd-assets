@@ -235,7 +235,7 @@
             "idle": null,
             "via": "attack"
           },
-          "die": "Die",
+          "die": null,
           "move": null,
           "stun": null,
           "skills": {
