@@ -202,4 +202,8 @@ Varkáris's existing Front/Back files remain byte-identical to their pinned sour
 
 Snow Hunter's existing Front/Back files remain byte-identical to their pinned source. [source-reviews/snow-hunter.json](source-reviews/snow-hunter.json) binds the original skeleton, atlas, material and decoded texture pixels. Both inputs use premultiplied alpha. Attack and reload keep their separate Begin/Loop/End families; S1 uses Skill_1 and S2 uses Skill_2_Begin/Loop/End. Front also has downward clips; Back has no death clip. Reload_Loop has no Spine refill event. Animation metadata does not approve gameplay timing or native shader/frame parity.
 
+### Original Kichisei owner metadata
+
+Kichisei's existing Front/Back files remain byte-identical to their pinned source. [source-reviews/kichisei.json](source-reviews/kichisei.json) binds original pointers, material settings and decoded pixels through the simulator's recipe-based art verifier. Both textures use premultiplied alpha. Both skills retain their literal Begin/Loop/Idle/End tracks; only their original Idle-to-Idle End mixes are recorded. Front also has downward attacks; Back has no death clip. The source reload-audio markers do not imply ammunition mechanics. Combat admission and native shader/frame parity remain separate.
+
 Only these two metadata records change; all six original files and the other 3,011 model records remain unchanged. The source/material verifier and negative audit are separate from gameplay admission. Chromium decodes eighteen usable clips per viewport and captures twenty desktop/emulated landscape-phone artwork states without errors. This receipt does not approve combat, native shaders/particles/audio or game-frame/pixel parity.
