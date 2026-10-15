@@ -198,4 +198,8 @@ Validation passes all 54 asset tests and the complete 3,013-model catalogue on N
 
 Varkáris's existing Front/Back files remain byte-identical to their pinned source. [source-reviews/varkaris.json](source-reviews/varkaris.json) binds original skeleton/atlas/material/texture pointers and every decoded texture pixel. Both inputs use premultiplied alpha. S1 uses its separate three-event Skill clip; Front retains Attack_Down. S2 selects literal Skill_2_Begin/Loop/Idle and the two explicit native End mixes. Back has no death clip.
 
+### Original Snow Hunter owner metadata
+
+Snow Hunter's existing Front/Back files remain byte-identical to their pinned source. [source-reviews/snow-hunter.json](source-reviews/snow-hunter.json) binds the original skeleton, atlas, material and decoded texture pixels. Both inputs use premultiplied alpha. Attack and reload keep their separate Begin/Loop/End families; S1 uses Skill_1 and S2 uses Skill_2_Begin/Loop/End. Front also has downward clips; Back has no death clip. Reload_Loop has no Spine refill event. Animation metadata does not approve gameplay timing or native shader/frame parity.
+
 Only these two metadata records change; all six original files and the other 3,011 model records remain unchanged. The source/material verifier and negative audit are separate from gameplay admission. Chromium decodes eighteen usable clips per viewport and captures twenty desktop/emulated landscape-phone artwork states without errors. This receipt does not approve combat, native shaders/particles/audio or game-frame/pixel parity.
