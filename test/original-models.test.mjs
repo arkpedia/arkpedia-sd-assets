@@ -55,6 +55,34 @@ test('original facings preserve distinct native bytes despite identical filename
   } finally { await rm(f.dir, { recursive: true, force: true }); }
 });
 
+test('an explicitly pinned CN original import preserves both facings and labels its actual client source', async () => {
+  const f = await fixture();
+  try {
+    Object.assign(f.info.sourceBundle, { client: 'cn',
+      url: 'https://ak.hycdn.cn/assetbundle/official/Android/assets/test-version/pkgrps_tokens.dat' });
+    await f.save(); await importOriginalModels(f.args);
+    const before = (await f.manifest()).models;
+    for (const facing of ['front', 'back']) {
+      const m = before[`operator/token_pair/default/${facing}`];
+      assert.equal(m.source.key, 'cn-client'); assert.equal(m.source.bundle.client, 'cn');
+      assert.deepEqual(m.source.bundle, f.info.sourceBundle);
+    }
+    await importOriginalModels(f.args); assert.deepEqual((await f.manifest()).models, before);
+  } finally { await rm(f.dir, { recursive: true, force: true }); }
+});
+
+test('CN URLs cannot silently import as Global or accept a mismatched bundle path', async () => {
+  const f = await fixture();
+  try {
+    f.info.sourceBundle.url = 'https://ak.hycdn.cn/assetbundle/official/Android/assets/test-version/pkgrps_tokens.dat';
+    await f.save(); await assert.rejects(importOriginalModels(f.args), /original bundle URL/);
+    assert.deepEqual((await f.manifest()).models, {});
+    f.info.sourceBundle.client = 'cn'; f.info.sourceBundle.path = 'pkgrps/another.ab'; await f.save();
+    await assert.rejects(importOriginalModels(f.args), /original CN bundle URL/);
+    assert.deepEqual((await f.manifest()).models, {});
+  } finally { await rm(f.dir, { recursive: true, force: true }); }
+});
+
 test('a missing native facing or changed extracted file cannot publish a manifest', async () => {
   const f = await fixture();
   try {

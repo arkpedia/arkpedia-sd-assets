@@ -64,9 +64,17 @@ export function modelPrefix(key, source) {
       || !Number.isSafeInteger(b.bytes) || b.bytes <= 0
       || !/^[a-z0-9_-]+$/i.test(b.resourceVersion)) throw new Error(`${key}: missing verified original bundle`);
     const url = new URL(b.url);
-    if (url.protocol !== 'https:' || url.hostname !== 'ark-us-static-online.yo-star.com'
-      || !url.pathname.includes(`/${b.resourceVersion}/`)) throw new Error(`${key}: invalid original bundle URL`);
     safePath(b.path);
+    const client = b.client ?? 'global';
+    if (!['global', 'cn'].includes(client) || (source.key != null && source.key !== `${client}-client`))
+      throw new Error(`${key}: invalid original client identity`);
+    if (client === 'cn') {
+      const archive = encodeURIComponent(b.path.replaceAll('/', '_').replace(/\.ab$/, '.dat'));
+      const expected = `https://ak.hycdn.cn/assetbundle/official/Android/assets/${b.resourceVersion}/${archive}`;
+      if (source.key !== 'cn-client' || !b.path.endsWith('.ab') || url.href !== expected)
+        throw new Error(`${key}: invalid original CN bundle URL`);
+    } else if (url.protocol !== 'https:' || url.hostname !== 'ark-us-static-online.yo-star.com'
+      || !url.pathname.includes(`/${b.resourceVersion}/`)) throw new Error(`${key}: invalid original bundle URL`);
     return `models/${key}/${b.sha256}/`;
   }
   if (!source || !/^[\w-]+\/[\w.-]+$/.test(source.repository) || !/^[a-f0-9]{40}$/.test(source.commit))

@@ -18,6 +18,8 @@ npm run validate
 
 The importer reads committed Git blobs, copies every atlas page, rejects conflicting references, and publishes the manifest only after complete validation. It can be rerun without replacing existing models. `import:model` retains `websiteSkins` when refreshing a model. The historical Global operator catalogue below remains a separate inventory of reviewed default battle models.
 
+Original-client model imports can also declare `sourceBundle.client: "cn"`. These retain a separate `cn-client` source identity and must use the exact official `ak.hycdn.cn` resource-version and bundle-archive URL; the version, path, checksums and extracted files remain pinned. An undeclared CN URL cannot pass as a Global source, and altered hosts, paths, queries or fragments are rejected. Existing Global receipts keep their source identity and validation. This import capability alone does not publish any new artwork or enable a simulator operator.
+
 ### Automatic discovery and delivery
 
 `Sync website chibis` runs daily at 16:23 UTC and supports manual dispatch. It pins one `fexli/ArknightsResource` commit, reads its native skin table and Spine tree, and discovers new operators, outfits and base animations. Exact `battleSkin`, `tmplId` and `buildingId` references determine the models; absent battle files stay pending in `manifest.websiteSource.pending` and are retried on the next run. No alternate operator, outfit or invented facing fills a gap.

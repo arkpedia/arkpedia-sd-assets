@@ -63,3 +63,21 @@ test('original bundle provenance uses content hashes and rejects unpinned or unr
  for(const patch of [{sha256:'a'.repeat(40)},{md5:null},{bytes:0},{url:'https://example.com/26-09-23-17-49-43_b9cc4a/a.dat'},{resourceVersion:'../escape'}])
   assert.throws(()=>modelPrefix(key,{...source,bundle:{...source.bundle,...patch}}));
 });
+
+test('CN original bundles require explicit client provenance and the exact official resource/archive URL', async () => {
+  const { modelPrefix } = await import('../scripts/manifest.mjs');
+  const key = 'operator/token_cn/default/front';
+  const source = { key: 'cn-client', kind: 'assetbundle', bundle: { client: 'cn', path: 'pkgrps/btl_pfb_tokens_4.ab',
+    bytes: 123, sha256: 'a'.repeat(64), md5: 'b'.repeat(32), resourceVersion: '26-09-22-07-47-20_6c71fa',
+    url: 'https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_4.dat' } };
+  assert.equal(modelPrefix(key, source), `models/${key}/${'a'.repeat(64)}/`);
+  for (const patch of [{ key: 'global-client' }, { key: undefined },
+    ...[{ client: undefined }, { client: 'other' }, { path: 'pkgrps/other.ab' },
+      { url: source.bundle.url + '?unverified=1' }, { url: source.bundle.url + '#fragment' },
+      { url: source.bundle.url.replace('https:', 'http:') },
+      { url: source.bundle.url.replace('ak.hycdn.cn', 'ak.hycdn.cn.example.com') },
+      { url: source.bundle.url.replace('ak.hycdn.cn', 'someone@ak.hycdn.cn') },
+      { url: source.bundle.url.replace('/official/', '/another/') },
+      { url: source.bundle.url.replace('tokens_4.dat', 'tokens_3.dat') }].map(bundle => ({ bundle: { ...source.bundle, ...bundle } }))])
+    assert.throws(() => modelPrefix(key, { ...source, ...patch }));
+});

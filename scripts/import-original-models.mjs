@@ -56,7 +56,7 @@ export async function importOriginalModels({ metadata, bundle, extractedRoot, de
     // Preserve legacy single-skeleton aliases. Tokens such as Phantom's clone
     // instead provide the exact skeleton selected by each native animator ref.
       const key = `operator/${id}/default/${facing}`;
-      const source = { key: 'global-client', kind: 'assetbundle',
+      const source = { key: `${sourceBundle.client ?? 'global'}-client`, kind: 'assetbundle',
         bundle: sourceBundle, directory: sourceBundle.path,
         extractedSkeleton: skel,
         ...(originalRecord.facings ? { originalPathIds: record.originalPathIds }
