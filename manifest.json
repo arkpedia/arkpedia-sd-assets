@@ -89558,8 +89558,70 @@
           "sha256": "69220a4e3b2b603563be9beae18add7db99de110246bb7ea2af8d42bbe2d291f"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 2.867,
+        "Default": 0,
+        "Idle": 2,
+        "Skill_Begin": 0.5,
+        "Skill_End": 0.167,
+        "Skill_Idle": 2,
+        "Skill_Loop": 2.833,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.567
+        ],
+        "Skill_Loop": [
+          0.567
+        ]
+      },
+      "bounds": {
+        "x": -402.863,
+        "y": -1.03,
+        "width": 781.076,
+        "height": 906.51
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null,
+          "idle": null,
+          "index": 0,
+          "via": "attack"
+        },
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "idle": null,
+            "index": 0,
+            "via": "attack"
+          },
+          "1": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": null,
+            "idle": "Skill_Idle",
+            "index": 1,
+            "via": "skill"
+          }
+        },
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4196_reckpr/default/front": {
       "kind": "operator",
@@ -89590,8 +89652,71 @@
           "sha256": "c9905d6e59fa49b420e57d4fc39bc0001ece30f149b15c1bd688a867f8594266"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 2.867,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 2,
+        "Skill_Begin": 0.5,
+        "Skill_End": 0.167,
+        "Skill_Idle": 2,
+        "Skill_Loop": 2.833,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.567
+        ],
+        "Skill_Loop": [
+          0.6
+        ]
+      },
+      "bounds": {
+        "x": -402.863,
+        "y": -1.029,
+        "width": 781.076,
+        "height": 906.509
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null,
+          "idle": null,
+          "index": 0,
+          "via": "attack"
+        },
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "idle": null,
+            "index": 0,
+            "via": "attack"
+          },
+          "1": {
+            "begin": "Skill_Begin",
+            "loop": "Skill_Loop",
+            "end": null,
+            "idle": "Skill_Idle",
+            "index": 1,
+            "via": "skill"
+          }
+        },
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4196_reckpr/default/walk": {
       "kind": "operator",
