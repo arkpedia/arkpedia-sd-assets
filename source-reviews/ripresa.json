@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 1,
+  "artworkOnly": true,
+  "enabledOperators": [],
+  "frameParity": false,
+  "nativeParticleSupport": false,
+  "nativeShaderParity": false,
+  "foundation": {
+    "repository": "arkpedia/arkpedia-stage-simulator",
+    "path": "data/arkpedia-native-operators/char_4031_liesel.json",
+    "sha256": "62949eb87a3cee7788f874b668d81200080c235d34af8fd1fe1bc4eb2b27ab4c",
+    "commit": "a550f5e048bb94e7cdefc6eb97a4091f0c4c7add",
+    "client": "26-09-22-07-47-20_6c71fa"
+  },
+  "sourceBundle": {
+    "path": "chararts/char_4031_liesel.ab",
+    "bytes": 3322963,
+    "md5": "a26af92b9bbba99d87f0329982c19cc1",
+    "archive": "chararts_char_4031_liesel.dat",
+    "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/chararts_char_4031_liesel.dat",
+    "sha256": "4994238dc615146895210a3b89f9842f4968279ed2416daab99e54d49711be8f"
+  },
+  "models": {
+    "Front": {
+      "modelKey": "operator/char_4031_liesel/default/front",
+      "model": {
+        "kind": "operator",
+        "id": "char_4031_liesel",
+        "variant": "default",
+        "facing": "front",
+        "spineVersion": "3.8.99",
+        "source": {
+          "key": "operators",
+          "repository": "fexli/ArknightsResource",
+          "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+          "directory": "spine/char_4031_liesel/char_4031_liesel/Front"
+        },
+        "skeleton": {
+          "path": "models/operator/char_4031_liesel/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4031_liesel.skel",
+          "bytes": 255068,
+          "sha256": "753fabdaf1c1e151ecfebb24ff3c655de32fa2fa5769c9a3350fb5e0f5bb8961"
+        },
+        "atlas": {
+          "path": "models/operator/char_4031_liesel/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4031_liesel.atlas",
+          "bytes": 10437,
+          "sha256": "f987de6e4c66a9c1f04411cd43554f6686bfd43181c5acfd7bfb7fb895867b15"
+        },
+        "textures": [
+          {
+            "path": "models/operator/char_4031_liesel/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4031_liesel.png",
+            "bytes": 160616,
+            "sha256": "ac8044b9260c15bde52858cc438ee14bb2ffa6e564540235bc9379a47443eb48"
+          }
+        ],
+        "premultipliedAlpha": false,
+        "animations": {
+          "Attack": 2.9,
+          "Default": 0,
+          "Die": 1,
+          "Idle": 2,
+          "Skill_1": 2.9,
+          "Skill_2": 1.5,
+          "Start": 1
+        },
+        "animationRoles": {
+          "idle": "Idle",
+          "deploy": "Start",
+          "attack": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null
+          },
+          "attackDown": null,
+          "skill": {
+            "begin": null,
+            "loop": "Skill_1",
+            "end": null,
+            "index": 0,
+            "idle": null,
+            "via": "attack"
+          },
+          "die": "Die",
+          "move": null,
+          "stun": null,
+          "skills": {
+            "0": {
+              "begin": null,
+              "loop": "Skill_1",
+              "end": null,
+              "index": 0,
+              "idle": null,
+              "via": "attack"
+            },
+            "1": {
+              "begin": null,
+              "loop": "Skill_2",
+              "end": null,
+              "index": 1,
+              "idle": null,
+              "via": "attack"
+            }
+          }
+        },
+        "hits": {
+          "Attack": [
+            0.5
+          ],
+          "Skill_1": [
+            0.5
+          ],
+          "Skill_2": [
+            0.267
+          ]
+        },
+        "bounds": {
+          "x": -263.332,
+          "y": -1.914,
+          "width": 365.486,
+          "height": 590.734
+        }
+      },
+      "originalBinding": {
+        "animatorPathId": "-4778330267768240973",
+        "skeletonAnimationPathId": "-5850414905242860365",
+        "skeletonDataAssetPathId": "3715365251208043801",
+        "textAssetPathId": "-5217250102619965399",
+        "atlasAssetPathId": "3559673615353611483",
+        "atlasTextAssetPathId": "-6279407246189614402",
+        "sha256": "753fabdaf1c1e151ecfebb24ff3c655de32fa2fa5769c9a3350fb5e0f5bb8961",
+        "bytes": 255068,
+        "atlasSha256": "2da583e901878a9df31e7928ce1371cf345bec2c5e7d9c95a240b01fffbc1857",
+        "atlasBytes": 10452
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.5,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Skill_1": [
+          {
+            "time": 0.5,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Skill_2": [
+          {
+            "time": 0.2666666805744171,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          },
+          {
+            "time": 1.3666666746139526,
+            "name": "AnimeAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Start": [
+          {
+            "time": 0.3333333432674408,
+            "name": "OnStart",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "atlasNormalization": "Existing pinned atlas omits the leading blank line and page size header; all other text is identical to the original native atlas."
+    },
+    "Back": {
+      "modelKey": "operator/char_4031_liesel/default/back",
+      "model": {
+        "kind": "operator",
+        "id": "char_4031_liesel",
+        "variant": "default",
+        "facing": "back",
+        "spineVersion": "3.8.99",
+        "source": {
+          "key": "operators",
+          "repository": "fexli/ArknightsResource",
+          "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+          "directory": "spine/char_4031_liesel/char_4031_liesel/Back"
+        },
+        "skeleton": {
+          "path": "models/operator/char_4031_liesel/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4031_liesel.skel",
+          "bytes": 158054,
+          "sha256": "81999dacb19feb38b163bc289f4271afcdffb0d15a8f5d657a7ebaf4a1e7fb5b"
+        },
+        "atlas": {
+          "path": "models/operator/char_4031_liesel/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4031_liesel.atlas",
+          "bytes": 5908,
+          "sha256": "f8ce86d4d3ca75376200d0a5527cf81acf9a1cb50f5eedde4550aabd9733a1a4"
+        },
+        "textures": [
+          {
+            "path": "models/operator/char_4031_liesel/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4031_liesel.png",
+            "bytes": 154697,
+            "sha256": "006d91a5f1d38979b07cb7130a4faf08c19d2d988c31571e1c03e5758a80b3dd"
+          }
+        ],
+        "premultipliedAlpha": false,
+        "animations": {
+          "Attack": 2.9,
+          "Default": 0,
+          "Idle": 2,
+          "Skill_1": 2.9,
+          "Skill_2": 1.5,
+          "Start": 1
+        },
+        "animationRoles": {
+          "idle": "Idle",
+          "deploy": "Start",
+          "attack": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null
+          },
+          "attackDown": null,
+          "skill": {
+            "begin": null,
+            "loop": "Skill_1",
+            "end": null,
+            "index": 0,
+            "idle": null,
+            "via": "attack"
+          },
+          "die": "Die",
+          "move": null,
+          "stun": null,
+          "skills": {
+            "0": {
+              "begin": null,
+              "loop": "Skill_1",
+              "end": null,
+              "index": 0,
+              "idle": null,
+              "via": "attack"
+            },
+            "1": {
+              "begin": null,
+              "loop": "Skill_2",
+              "end": null,
+              "index": 1,
+              "idle": null,
+              "via": "attack"
+            }
+          }
+        },
+        "hits": {
+          "Attack": [
+            0.5
+          ],
+          "Skill_1": [
+            0.5
+          ],
+          "Skill_2": [
+            0.267
+          ]
+        },
+        "bounds": {
+          "x": -198.39,
+          "y": -1.408,
+          "width": 300.507,
+          "height": 419.748
+        }
+      },
+      "originalBinding": {
+        "animatorPathId": "-4778330267768240973",
+        "skeletonAnimationPathId": "-6978109776207330125",
+        "skeletonDataAssetPathId": "3059245241426184250",
+        "textAssetPathId": "-8598034391338659046",
+        "atlasAssetPathId": "8474607333049254967",
+        "atlasTextAssetPathId": "-7577812340955297965",
+        "sha256": "81999dacb19feb38b163bc289f4271afcdffb0d15a8f5d657a7ebaf4a1e7fb5b",
+        "bytes": 158054,
+        "atlasSha256": "ed438f487f49b4c5185d9a81df9f2e6826ba677eafb04429ecad7746e65ec0a6",
+        "atlasBytes": 5923
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.5,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Skill_1": [
+          {
+            "time": 0.5,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Skill_2": [
+          {
+            "time": 0.2666666805744171,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          },
+          {
+            "time": 1.3666666746139526,
+            "name": "AnimeAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Start": [
+          {
+            "time": 0.3333333432674408,
+            "name": "OnStart",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "atlasNormalization": "Existing pinned atlas omits the leading blank line and page size header; all other text is identical to the original native atlas."
+    }
+  }
+}

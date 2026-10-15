@@ -88568,7 +88568,70 @@
         }
       ],
       "premultipliedAlpha": false,
-      "animations": null
+      "animations": {
+        "Attack": 2.9,
+        "Default": 0,
+        "Idle": 2,
+        "Skill_1": 2.9,
+        "Skill_2": 1.5,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Skill_1",
+          "end": null,
+          "index": 0,
+          "idle": null,
+          "via": "attack"
+        },
+        "die": "Die",
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Skill_1",
+            "end": null,
+            "index": 0,
+            "idle": null,
+            "via": "attack"
+          },
+          "1": {
+            "begin": null,
+            "loop": "Skill_2",
+            "end": null,
+            "index": 1,
+            "idle": null,
+            "via": "attack"
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.5
+        ],
+        "Skill_1": [
+          0.5
+        ],
+        "Skill_2": [
+          0.267
+        ]
+      },
+      "bounds": {
+        "x": -198.39,
+        "y": -1.408,
+        "width": 300.507,
+        "height": 419.748
+      }
     },
     "operator/char_4031_liesel/default/front": {
       "kind": "operator",
@@ -88600,7 +88663,71 @@
         }
       ],
       "premultipliedAlpha": false,
-      "animations": null
+      "animations": {
+        "Attack": 2.9,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 2,
+        "Skill_1": 2.9,
+        "Skill_2": 1.5,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Skill_1",
+          "end": null,
+          "index": 0,
+          "idle": null,
+          "via": "attack"
+        },
+        "die": "Die",
+        "move": null,
+        "stun": null,
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Skill_1",
+            "end": null,
+            "index": 0,
+            "idle": null,
+            "via": "attack"
+          },
+          "1": {
+            "begin": null,
+            "loop": "Skill_2",
+            "end": null,
+            "index": 1,
+            "idle": null,
+            "via": "attack"
+          }
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.5
+        ],
+        "Skill_1": [
+          0.5
+        ],
+        "Skill_2": [
+          0.267
+        ]
+      },
+      "bounds": {
+        "x": -263.332,
+        "y": -1.914,
+        "width": 365.486,
+        "height": 590.734
+      }
     },
     "operator/char_4031_liesel/default/walk": {
       "kind": "operator",
