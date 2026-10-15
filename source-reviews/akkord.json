@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "artworkOnly": true,
+  "enabledOperators": [],
+  "frameParity": false,
+  "nativeParticleSupport": false,
+  "nativeShaderParity": false,
+  "foundation": {
+    "repository": "arkpedia/arkpedia-stage-simulator",
+    "path": "data/arkpedia-akkord-prefabs.json",
+    "sha256": "3d2aa18369ffc63c55ccc27ed082d3e72fff28b2b8911b0cb161a2617fad9bab",
+    "commit": "a550f5e048bb94e7cdefc6eb97a4091f0c4c7add",
+    "client": "26-09-22-07-47-20_6c71fa"
+  },
+  "sourceBundle": {
+    "path": "chararts/char_4051_akkord.ab",
+    "bytes": 2612952,
+    "md5": "90261b5a4aebe1088576cc62bf5a9c82",
+    "archive": "chararts_char_4051_akkord.dat",
+    "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/chararts_char_4051_akkord.dat",
+    "sha256": "fa5e24016152f9ee2f72041078f656fcf8efe2adc5c0f6719adc6ddaeb3bcf6e"
+  },
+  "models": {
+    "Front": {
+      "modelKey": "operator/char_4051_akkord/default/front",
+      "model": {
+        "kind": "operator",
+        "id": "char_4051_akkord",
+        "variant": "default",
+        "facing": "front",
+        "spineVersion": "3.8.99",
+        "source": {
+          "key": "operators",
+          "repository": "fexli/ArknightsResource",
+          "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+          "directory": "spine/char_4051_akkord/char_4051_akkord/Front"
+        },
+        "skeleton": {
+          "path": "models/operator/char_4051_akkord/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4051_akkord.skel",
+          "bytes": 480593,
+          "sha256": "6b7a82e539763f97da6bce414997829c3caab20b74499c24118b008cdb5914a5"
+        },
+        "atlas": {
+          "path": "models/operator/char_4051_akkord/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4051_akkord.atlas",
+          "bytes": 12309,
+          "sha256": "ed2c187222d8ef5eb9a923d912db7021b5fe27c90d052c9a317d0541e7c6ee08"
+        },
+        "textures": [
+          {
+            "path": "models/operator/char_4051_akkord/default/front/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4051_akkord.png",
+            "bytes": 241602,
+            "sha256": "53021fb6169465235f1518aebdab0a188aecc949747e0f6126b4a12e71ffdb2c"
+          }
+        ],
+        "premultipliedAlpha": false,
+        "animations": {
+          "Attack": 2.9,
+          "Attack_Down": 2.9,
+          "Default": 0,
+          "Die": 1,
+          "Idle": 4.5,
+          "Skill_2_Begin": 0.267,
+          "Skill_2_End": 0.233,
+          "Skill_2_Idle": 4.5,
+          "Skill_2_Loop": 2.9,
+          "Skill_Down_2_Loop": 2.9,
+          "Start": 1
+        },
+        "animationRoles": {
+          "idle": "Idle",
+          "deploy": "Start",
+          "attack": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null
+          },
+          "attackDown": {
+            "begin": null,
+            "loop": "Attack_Down",
+            "end": null
+          },
+          "skill": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "index": 0,
+            "idle": null,
+            "via": "attack"
+          },
+          "die": "Die",
+          "move": null,
+          "stun": null,
+          "skills": {
+            "0": {
+              "begin": null,
+              "loop": "Attack",
+              "end": null,
+              "index": 0,
+              "idle": null,
+              "via": "attack"
+            },
+            "1": {
+              "begin": null,
+              "loop": "Skill_2_Loop",
+              "end": null,
+              "index": 1,
+              "idle": "Skill_2_Idle",
+              "via": "attack"
+            }
+          }
+        },
+        "hits": {
+          "Attack": [
+            0.667
+          ],
+          "Attack_Down": [
+            0.667
+          ],
+          "Skill_2_Loop": [
+            0.667
+          ],
+          "Skill_Down_2_Loop": [
+            0.667
+          ]
+        },
+        "bounds": {
+          "x": -534.535,
+          "y": -1.278,
+          "width": 1585.601,
+          "height": 447.556
+        }
+      },
+      "originalBinding": {
+        "animatorPathId": "-6784567137399464636",
+        "skeletonAnimationPathId": "8153613847124122948",
+        "skeletonDataAssetPathId": "-1306007708105463229",
+        "textAssetPathId": "1155346636088568962",
+        "atlasAssetPathId": "792859818799899283",
+        "atlasTextAssetPathId": "3445390757696359452",
+        "sha256": "6b7a82e539763f97da6bce414997829c3caab20b74499c24118b008cdb5914a5",
+        "bytes": 480593,
+        "atlasSha256": "a2ba18bd3920cd151a7db909024a0217829e9a3638594999bb0024197692fc28",
+        "atlasBytes": 12324
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.6666666865348816,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Attack_Down": [
+          {
+            "time": 0.6666666865348816,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Skill_2_Loop": [
+          {
+            "time": 0.6666666865348816,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Skill_Down_2_Loop": [
+          {
+            "time": 0.6666666865348816,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Start": [
+          {
+            "time": 0.3333333432674408,
+            "name": "OnStart",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      }
+    },
+    "Back": {
+      "modelKey": "operator/char_4051_akkord/default/back",
+      "model": {
+        "kind": "operator",
+        "id": "char_4051_akkord",
+        "variant": "default",
+        "facing": "back",
+        "spineVersion": "3.8.99",
+        "source": {
+          "key": "operators",
+          "repository": "fexli/ArknightsResource",
+          "commit": "d0b5af0b004b044d322397ce5ae79632b6d9fcdd",
+          "directory": "spine/char_4051_akkord/char_4051_akkord/Back"
+        },
+        "skeleton": {
+          "path": "models/operator/char_4051_akkord/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4051_akkord.skel",
+          "bytes": 300951,
+          "sha256": "cb34ff9af29ca8e2975bb2c42eaf40bbab119e36daedef5288cf21caf2f90484"
+        },
+        "atlas": {
+          "path": "models/operator/char_4051_akkord/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4051_akkord.atlas",
+          "bytes": 12309,
+          "sha256": "ed2c187222d8ef5eb9a923d912db7021b5fe27c90d052c9a317d0541e7c6ee08"
+        },
+        "textures": [
+          {
+            "path": "models/operator/char_4051_akkord/default/back/d0b5af0b004b044d322397ce5ae79632b6d9fcdd/char_4051_akkord.png",
+            "bytes": 241602,
+            "sha256": "53021fb6169465235f1518aebdab0a188aecc949747e0f6126b4a12e71ffdb2c"
+          }
+        ],
+        "premultipliedAlpha": false,
+        "animations": {
+          "Attack": 2.9,
+          "Default": 0,
+          "Idle": 4.5,
+          "Skill_2_Begin": 0.267,
+          "Skill_2_End": 0.233,
+          "Skill_2_Idle": 4.5,
+          "Skill_2_Loop": 2.9,
+          "Start": 1
+        },
+        "animationRoles": {
+          "idle": "Idle",
+          "deploy": "Start",
+          "attack": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null
+          },
+          "attackDown": null,
+          "skill": {
+            "begin": null,
+            "loop": "Attack",
+            "end": null,
+            "index": 0,
+            "idle": null,
+            "via": "attack"
+          },
+          "die": null,
+          "move": null,
+          "stun": null,
+          "skills": {
+            "0": {
+              "begin": null,
+              "loop": "Attack",
+              "end": null,
+              "index": 0,
+              "idle": null,
+              "via": "attack"
+            },
+            "1": {
+              "begin": null,
+              "loop": "Skill_2_Loop",
+              "end": null,
+              "index": 1,
+              "idle": "Skill_2_Idle",
+              "via": "attack"
+            }
+          }
+        },
+        "hits": {
+          "Attack": [
+            0.667
+          ],
+          "Skill_2_Loop": [
+            0.667
+          ]
+        },
+        "bounds": {
+          "x": -534.535,
+          "y": -1.278,
+          "width": 1585.601,
+          "height": 447.556
+        }
+      },
+      "originalBinding": {
+        "animatorPathId": "-6784567137399464636",
+        "skeletonAnimationPathId": "7322036549561032004",
+        "skeletonDataAssetPathId": "4083508831568830495",
+        "textAssetPathId": "6336296492731962437",
+        "atlasAssetPathId": "-9025466703807183293",
+        "atlasTextAssetPathId": "-7718007463656878119",
+        "sha256": "cb34ff9af29ca8e2975bb2c42eaf40bbab119e36daedef5288cf21caf2f90484",
+        "bytes": 300951,
+        "atlasSha256": "a2ba18bd3920cd151a7db909024a0217829e9a3638594999bb0024197692fc28",
+        "atlasBytes": 12324
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.6666666865348816,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Skill_2_Loop": [
+          {
+            "time": 0.6666666865348816,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Start": [
+          {
+            "time": 0.3333333432674408,
+            "name": "OnStart",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      }
+    }
+  },
+  "limits": [
+    "Original model files and source Git revision are unchanged; only animation metadata is added.",
+    "CN native skeleton identities and literal events match both imported facings. S1 uses Attack; S2 uses Skill_2_Loop/Skill_2_Idle without speculative begin/end.",
+    "Native particles, shaders, pixel and frame parity remain unverified."
+  ]
+}
