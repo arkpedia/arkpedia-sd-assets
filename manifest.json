@@ -155142,6 +155142,205 @@
           "directory": "avatar/ASSISTANT"
         }
       }
+    },
+    "operator/token_10069_mcnist_mcgraf/default/front": {
+      "kind": "operator",
+      "id": "token_10069_mcnist_mcgraf",
+      "variant": "default",
+      "facing": "front",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_5.ab",
+          "bytes": 2183454,
+          "md5": "1c4224582e2e540c2c1c96419fb6d38d",
+          "sha256": "1da6347c10575ac922ef1ceeade662ebfb785b0653ef13266ab48f03d1828af9",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_5.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "Distinct original Front/Back skeletons and zero-duration clips retained; no missing clip invented"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_5.ab",
+        "extractedSkeleton": "token_10069_mcnist_mcgraf.skel",
+        "originalPathIds": {
+          "rootPathId": "-7832074744968755917",
+          "controllerPathId": "1311138106172917043",
+          "animatorPathId": "3830167749147247923",
+          "faceSwitcherPathId": "894667047100958003",
+          "skeletonAnimationPathId": "7077693720433018163",
+          "skeletonDataAssetPathId": "-3239441113444061980",
+          "textAssetPathId": "6173028442988676066",
+          "atlasAssetPathId": "-4900500795942453475",
+          "atlasTextAssetPathId": "2873292334559918825",
+          "materialPathId": "-942015258751744317",
+          "texturePathId": "7998002062082615826"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "Distinct original Front/Back skeletons and zero-duration clips retained; no missing clip invented"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10069_mcnist_mcgraf/default/front/1da6347c10575ac922ef1ceeade662ebfb785b0653ef13266ab48f03d1828af9/token_10069_mcnist_mcgraf.skel",
+        "bytes": 50820,
+        "sha256": "098147d02b97341bcd0548d69d9fc755ddd8720323ec28befeea393e397c3cbe"
+      },
+      "atlas": {
+        "path": "models/operator/token_10069_mcnist_mcgraf/default/front/1da6347c10575ac922ef1ceeade662ebfb785b0653ef13266ab48f03d1828af9/token_10069_mcnist_mcgraf.atlas",
+        "bytes": 3303,
+        "sha256": "5712009448861b7b4e33539c2f53669960d2c2481382cefefd304396850d1c62"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10069_mcnist_mcgraf/default/front/1da6347c10575ac922ef1ceeade662ebfb785b0653ef13266ab48f03d1828af9/token_10069_mcnist_mcgraf.png",
+          "bytes": 57526,
+          "sha256": "a045f73cfe6aa0b55831abb1af2d3363513b7b06fe3fbc46821a02791103677a"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.5,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1.333,
+        "Skill_Begin": 0.267,
+        "Skill_End": 1.233,
+        "Skill_Loop": 0,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "skill": null,
+        "die": "Die",
+        "stun": null,
+        "move": null
+      },
+      "hits": {
+        "Attack": [
+          0.667
+        ],
+        "Skill_End": [
+          0.4
+        ]
+      },
+      "bounds": {
+        "x": -124.804,
+        "y": -2.196,
+        "width": 250.009,
+        "height": 390.019
+      }
+    },
+    "operator/token_10069_mcnist_mcgraf/default/back": {
+      "kind": "operator",
+      "id": "token_10069_mcnist_mcgraf",
+      "variant": "default",
+      "facing": "back",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_5.ab",
+          "bytes": 2183454,
+          "md5": "1c4224582e2e540c2c1c96419fb6d38d",
+          "sha256": "1da6347c10575ac922ef1ceeade662ebfb785b0653ef13266ab48f03d1828af9",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_5.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "Distinct original Front/Back skeletons and zero-duration clips retained; no missing clip invented"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_5.ab",
+        "extractedSkeleton": "token_10069_mcnist_mcgraf.skel",
+        "originalPathIds": {
+          "rootPathId": "-7832074744968755917",
+          "controllerPathId": "1311138106172917043",
+          "animatorPathId": "3830167749147247923",
+          "faceSwitcherPathId": "894667047100958003",
+          "skeletonAnimationPathId": "-6018818784573176525",
+          "skeletonDataAssetPathId": "8554973703665780539",
+          "textAssetPathId": "-325951955814050698",
+          "atlasAssetPathId": "638323428707351044",
+          "atlasTextAssetPathId": "606886953647724479",
+          "materialPathId": "-2486842277239809532",
+          "texturePathId": "-2703697758200296805"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "Distinct original Front/Back skeletons and zero-duration clips retained; no missing clip invented"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10069_mcnist_mcgraf/default/back/1da6347c10575ac922ef1ceeade662ebfb785b0653ef13266ab48f03d1828af9/token_10069_mcnist_mcgraf.skel",
+        "bytes": 40996,
+        "sha256": "3a78eba0d55724382947f945b92fadb23364f94727b19710eb06ba0ca1e131ff"
+      },
+      "atlas": {
+        "path": "models/operator/token_10069_mcnist_mcgraf/default/back/1da6347c10575ac922ef1ceeade662ebfb785b0653ef13266ab48f03d1828af9/token_10069_mcnist_mcgraf.atlas",
+        "bytes": 2740,
+        "sha256": "e9ca044edd588754515c462d7359e9abe11e2d9cbc056508d1ae0eb1520b5b8b"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10069_mcnist_mcgraf/default/back/1da6347c10575ac922ef1ceeade662ebfb785b0653ef13266ab48f03d1828af9/token_10069_mcnist_mcgraf.png",
+          "bytes": 52326,
+          "sha256": "43cb2012bb44c829633663ad116ea7eb4938c2a1976670a2d1b1820db19366f9"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.5,
+        "Default": 0,
+        "Idle": 1.333,
+        "Skill_Begin": 0.267,
+        "Skill_End": 1.233,
+        "Skill_Loop": 0,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "skill": null,
+        "die": null,
+        "stun": null,
+        "move": null
+      },
+      "hits": {
+        "Attack": [
+          0.667
+        ],
+        "Skill_End": [
+          0.4
+        ]
+      },
+      "bounds": {
+        "x": -124.614,
+        "y": -2.201,
+        "width": 250.009,
+        "height": 389.524
+      }
     }
   },
   "websiteSkins": {
