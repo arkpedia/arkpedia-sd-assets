@@ -81158,8 +81158,33 @@
           "sha256": "2466839e976c4edfe84e6d9bd2280ec0fcd0ca8eac280507957c9552bf092f4c"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.6,
+        "Default": 0,
+        "Idle": 1.333,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.6
+        ]
+      },
+      "bounds": null,
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": null,
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4227_gallus/default/front": {
       "kind": "operator",
@@ -81190,8 +81215,34 @@
           "sha256": "06586021c8f27e2e100fb3dc0075051327c8e18b3bbf4637df4f19e60c54fda6"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.6,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1.333,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.6
+        ]
+      },
+      "bounds": null,
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": null,
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4227_gallus/default/walk": {
       "kind": "operator",
