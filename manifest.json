@@ -155505,6 +155505,294 @@
           "proofSha256": "50776abdeafeb93862fd95f98942a3ce466a3a224c2c3c3d1d92f79b648b0445"
         }
       }
+    },
+    "operator/char_2025_shu/website_char_2025_shu_nlc_1/front": {
+      "kind": "operator",
+      "id": "char_2025_shu",
+      "variant": "website_char_2025_shu_nlc_1",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7",
+        "directory": "spine/char_2025_shu/char_2025_shu_nlc_1/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_2025_shu/website_char_2025_shu_nlc_1/front/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_2025_shu_nlc_1.skel",
+        "bytes": 490793,
+        "sha256": "33e289bcf48cd4845200de7957b90c18656105ca5b64c99ec13400e42bc469cc"
+      },
+      "atlas": {
+        "path": "models/operator/char_2025_shu/website_char_2025_shu_nlc_1/front/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_2025_shu_nlc_1.atlas",
+        "bytes": 12070,
+        "sha256": "66c996a07c9485e96ddee8f8ea7a034bf89a4a25a5a72031b8a2eaf56c21d187"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_2025_shu/website_char_2025_shu_nlc_1/front/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_2025_shu_nlc_1.png",
+          "bytes": 257565,
+          "sha256": "d1d3cf0e295c87e621fd5d1d613ebaa0172a3ba2f6f0b93d816baf7410d7c4de"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
+    },
+    "operator/char_2025_shu/website_char_2025_shu_nlc_1/back": {
+      "kind": "operator",
+      "id": "char_2025_shu",
+      "variant": "website_char_2025_shu_nlc_1",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7",
+        "directory": "spine/char_2025_shu/char_2025_shu_nlc_1/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_2025_shu/website_char_2025_shu_nlc_1/back/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_2025_shu_nlc_1.skel",
+        "bytes": 292380,
+        "sha256": "882231fee1d0a0b71a51674489d7b4d03c049aa7e02d8d6363b85f07844a503a"
+      },
+      "atlas": {
+        "path": "models/operator/char_2025_shu/website_char_2025_shu_nlc_1/back/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_2025_shu_nlc_1.atlas",
+        "bytes": 8122,
+        "sha256": "427606559a848225e63682bdb8c5f409a717bc2b652cb9db57d4b0f301f14ed9"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_2025_shu/website_char_2025_shu_nlc_1/back/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_2025_shu_nlc_1.png",
+          "bytes": 234304,
+          "sha256": "69ff37d229e8ea37266dcdc2e629aaac937135d3f12106e9191cd94bd1040c3b"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
+    },
+    "operator/char_2025_shu/website_char_2025_shu_nlc_1/walk": {
+      "kind": "operator",
+      "id": "char_2025_shu",
+      "variant": "website_char_2025_shu_nlc_1",
+      "facing": "walk",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7",
+        "directory": "spine/char_2025_shu/build_char_2025_shu_nlc_1/Spine"
+      },
+      "skeleton": {
+        "path": "models/operator/char_2025_shu/website_char_2025_shu_nlc_1/walk/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/build_char_2025_shu_nlc_1.skel",
+        "bytes": 612866,
+        "sha256": "5ea5304ba3803367b560f60a6c0211ed3236a785dfd8a03c06f6c67438b717ba"
+      },
+      "atlas": {
+        "path": "models/operator/char_2025_shu/website_char_2025_shu_nlc_1/walk/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/build_char_2025_shu_nlc_1.atlas",
+        "bytes": 16887,
+        "sha256": "6d5290128e4f2f8d92d683c93fb663383a4803c7a5b36db7e26faa514592000e"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_2025_shu/website_char_2025_shu_nlc_1/walk/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/build_char_2025_shu_nlc_1.png",
+          "bytes": 1372241,
+          "sha256": "815cb6d4167ec540c33d36f00e0649bb7c26592faa78b96b967f7d48056c4b4c"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
+    },
+    "operator/char_1040_blaze2/website_char_1040_blaze2_nlc_1/front": {
+      "kind": "operator",
+      "id": "char_1040_blaze2",
+      "variant": "website_char_1040_blaze2_nlc_1",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7",
+        "directory": "spine/char_1040_blaze2/char_1040_blaze2_nlc_1/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_1040_blaze2/website_char_1040_blaze2_nlc_1/front/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_1040_blaze2_nlc_1.skel",
+        "bytes": 889081,
+        "sha256": "c53904f660dca15ff8dffa413e9e7897af8ce8449e4994a556820c3fef49d584"
+      },
+      "atlas": {
+        "path": "models/operator/char_1040_blaze2/website_char_1040_blaze2_nlc_1/front/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_1040_blaze2_nlc_1.atlas",
+        "bytes": 18062,
+        "sha256": "1fcd1634693bbf03a2291309224536f5b2e0d8c547d8321df1770aef7bc5c637"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_1040_blaze2/website_char_1040_blaze2_nlc_1/front/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_1040_blaze2_nlc_1.png",
+          "bytes": 318810,
+          "sha256": "926e8eddf2c047ab7ed2225386fa2953e6562f655a2fb05b5e4ab2f9e01734a8"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
+    },
+    "operator/char_1040_blaze2/website_char_1040_blaze2_nlc_1/back": {
+      "kind": "operator",
+      "id": "char_1040_blaze2",
+      "variant": "website_char_1040_blaze2_nlc_1",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7",
+        "directory": "spine/char_1040_blaze2/char_1040_blaze2_nlc_1/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_1040_blaze2/website_char_1040_blaze2_nlc_1/back/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_1040_blaze2_nlc_1.skel",
+        "bytes": 747147,
+        "sha256": "17504928275aa089fb8600eef6b64c89b79c3535ab743adedcc2b0ed2b4760d2"
+      },
+      "atlas": {
+        "path": "models/operator/char_1040_blaze2/website_char_1040_blaze2_nlc_1/back/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_1040_blaze2_nlc_1.atlas",
+        "bytes": 13441,
+        "sha256": "c0be50ecc0049a4697a85e0448f287b20d2b27e80e38a12717baf717a5ff2b8d"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_1040_blaze2/website_char_1040_blaze2_nlc_1/back/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_1040_blaze2_nlc_1.png",
+          "bytes": 273151,
+          "sha256": "eee9adfcb289b5cd0e7edbbb3fdd2ad16716a2ef654cb832c0271b1e5b88eb61"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
+    },
+    "operator/char_1040_blaze2/website_char_1040_blaze2_nlc_1/walk": {
+      "kind": "operator",
+      "id": "char_1040_blaze2",
+      "variant": "website_char_1040_blaze2_nlc_1",
+      "facing": "walk",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7",
+        "directory": "spine/char_1040_blaze2/build_char_1040_blaze2_nlc_1/Spine"
+      },
+      "skeleton": {
+        "path": "models/operator/char_1040_blaze2/website_char_1040_blaze2_nlc_1/walk/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/build_char_1040_blaze2_nlc_1.skel",
+        "bytes": 608598,
+        "sha256": "a62c5beef6d56cd7053b654c96afcf30e2e92a48b0c497baacf431cf1e6e2f5d"
+      },
+      "atlas": {
+        "path": "models/operator/char_1040_blaze2/website_char_1040_blaze2_nlc_1/walk/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/build_char_1040_blaze2_nlc_1.atlas",
+        "bytes": 15775,
+        "sha256": "4d6da0845865ab646dc4401c374dadadf685b957304a6063fb27735e2bff7668"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_1040_blaze2/website_char_1040_blaze2_nlc_1/walk/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/build_char_1040_blaze2_nlc_1.png",
+          "bytes": 1483358,
+          "sha256": "627e055443bad4982039607cf33c7f2e04a160109c8702c44ebc1eccfcb03765"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
+    },
+    "operator/char_1033_swire2/website_char_1033_swire2_nlc_1/front": {
+      "kind": "operator",
+      "id": "char_1033_swire2",
+      "variant": "website_char_1033_swire2_nlc_1",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7",
+        "directory": "spine/char_1033_swire2/char_1033_swire2_nlc_1/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_1033_swire2/website_char_1033_swire2_nlc_1/front/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_1033_swire2_nlc_1.skel",
+        "bytes": 540167,
+        "sha256": "072edb31e5061e3816518ebd6bba553810114b9fcff2e6c3d163605dd6eb0d48"
+      },
+      "atlas": {
+        "path": "models/operator/char_1033_swire2/website_char_1033_swire2_nlc_1/front/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_1033_swire2_nlc_1.atlas",
+        "bytes": 16012,
+        "sha256": "666081d3779cebd9f1592d0387d58c55d948dad799139302b32249410ea8ed75"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_1033_swire2/website_char_1033_swire2_nlc_1/front/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_1033_swire2_nlc_1.png",
+          "bytes": 333381,
+          "sha256": "a4ce6e8558f080ad6d0f38f4696d0dc58945176a1af979108fc435c3e6b4d4b5"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
+    },
+    "operator/char_1033_swire2/website_char_1033_swire2_nlc_1/back": {
+      "kind": "operator",
+      "id": "char_1033_swire2",
+      "variant": "website_char_1033_swire2_nlc_1",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7",
+        "directory": "spine/char_1033_swire2/char_1033_swire2_nlc_1/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_1033_swire2/website_char_1033_swire2_nlc_1/back/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_1033_swire2_nlc_1.skel",
+        "bytes": 368302,
+        "sha256": "9766c6d251ea33fa3946e0840ef1969a2dd33ac7da5692826cab771eead1ed60"
+      },
+      "atlas": {
+        "path": "models/operator/char_1033_swire2/website_char_1033_swire2_nlc_1/back/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_1033_swire2_nlc_1.atlas",
+        "bytes": 12238,
+        "sha256": "5062f7ac043db747f043a94bf57fc42c41e965918ca61f5a6ac78ad59e3387b6"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_1033_swire2/website_char_1033_swire2_nlc_1/back/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/char_1033_swire2_nlc_1.png",
+          "bytes": 286563,
+          "sha256": "0e5f6bdb95b123af9db45a75c4cb6a511659c8870ed2cbb32486fae2124de2e8"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
+    },
+    "operator/char_1033_swire2/website_char_1033_swire2_nlc_1/walk": {
+      "kind": "operator",
+      "id": "char_1033_swire2",
+      "variant": "website_char_1033_swire2_nlc_1",
+      "facing": "walk",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7",
+        "directory": "spine/char_1033_swire2/build_char_1033_swire2_nlc_1/Spine"
+      },
+      "skeleton": {
+        "path": "models/operator/char_1033_swire2/website_char_1033_swire2_nlc_1/walk/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/build_char_1033_swire2_nlc_1.skel",
+        "bytes": 667286,
+        "sha256": "56ec4c79343252cc67f27f87ec81432e86d586b001f60ea4a28bc9de8ae6a71f"
+      },
+      "atlas": {
+        "path": "models/operator/char_1033_swire2/website_char_1033_swire2_nlc_1/walk/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/build_char_1033_swire2_nlc_1.atlas",
+        "bytes": 22827,
+        "sha256": "6cf3bf1b9fd63d9b457287934b64e3df2c4d14db2fc73e1130f43530459c12a6"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_1033_swire2/website_char_1033_swire2_nlc_1/walk/de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7/build_char_1033_swire2_nlc_1.png",
+          "bytes": 2411589,
+          "sha256": "dd79d617982d24b9d06c701ce0703c493ec74d488c69a8d2c543d37a16ebf6d3"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
     }
   },
   "websiteSkins": {
@@ -162380,11 +162668,26 @@
     "char_101_sora@summer#1": {
       "front": "operator/char_101_sora/summer_1/front",
       "walk": "operator/char_101_sora/website_char_101_sora_summer_1/walk"
+    },
+    "char_2025_shu@nlc#1": {
+      "front": "operator/char_2025_shu/website_char_2025_shu_nlc_1/front",
+      "back": "operator/char_2025_shu/website_char_2025_shu_nlc_1/back",
+      "walk": "operator/char_2025_shu/website_char_2025_shu_nlc_1/walk"
+    },
+    "char_1040_blaze2@nlc#1": {
+      "front": "operator/char_1040_blaze2/website_char_1040_blaze2_nlc_1/front",
+      "back": "operator/char_1040_blaze2/website_char_1040_blaze2_nlc_1/back",
+      "walk": "operator/char_1040_blaze2/website_char_1040_blaze2_nlc_1/walk"
+    },
+    "char_1033_swire2@nlc#1": {
+      "front": "operator/char_1033_swire2/website_char_1033_swire2_nlc_1/front",
+      "back": "operator/char_1033_swire2/website_char_1033_swire2_nlc_1/back",
+      "walk": "operator/char_1033_swire2/website_char_1033_swire2_nlc_1/walk"
     }
   },
   "websiteSource": {
     "repository": "fexli/ArknightsResource",
-    "commit": "d7bdc0146f99f6fa88ecdc1bbf79021c012c21c5",
+    "commit": "de6cfb30ed1d41d9102d93e8ea400fc0cefc8ff7",
     "table": "gamedata/excel/skin_table.json",
     "pending": []
   },
