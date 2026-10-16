@@ -80838,8 +80838,50 @@
           "sha256": "9173b828ac9b8707d35b288e054c692ca16038177940f7198108b3d000a038b4"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.3,
+        "Default": 0,
+        "Idle": 2.4,
+        "Skill_End": 0.367,
+        "Skill_Loop": 2.2,
+        "Start_1": 1,
+        "Start_2": 1
+      },
+      "hits": {
+        "Attack": [
+          0.467,
+          0.667
+        ],
+        "Skill_Loop": [
+          0,
+          0.3,
+          0.6,
+          0.9,
+          1.2,
+          1.7
+        ]
+      },
+      "bounds": {
+        "x": -2807.388,
+        "y": -13.738,
+        "width": 3054.494,
+        "height": 542.5
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start_1",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": null,
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4220_kormr/default/front": {
       "kind": "operator",
@@ -80870,8 +80912,51 @@
           "sha256": "37c3a4bef5c90c8b7dadddf5d230c98d1f7677761618e28553eb59791bc43f28"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.3,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 2.4,
+        "Skill_End": 0.367,
+        "Skill_Loop": 2.2,
+        "Start_1": 1,
+        "Start_2": 1
+      },
+      "hits": {
+        "Attack": [
+          0.467,
+          0.667
+        ],
+        "Skill_Loop": [
+          0,
+          0.3,
+          0.6,
+          0.9,
+          1.2,
+          1.7
+        ]
+      },
+      "bounds": {
+        "x": -2807.388,
+        "y": -10.562,
+        "width": 3054.494,
+        "height": 530.564
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start_1",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": null,
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4220_kormr/default/walk": {
       "kind": "operator",
