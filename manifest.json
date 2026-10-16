@@ -155241,6 +155241,20 @@
         "y": -2.196,
         "width": 250.009,
         "height": 390.019
+      },
+      "avatar": {
+        "path": "models/operator/token_10069_mcnist_mcgraf/default/front/1da6347c10575ac922ef1ceeade662ebfb785b0653ef13266ab48f03d1828af9/avatar.png",
+        "bytes": 24576,
+        "sha256": "d665f457f1eb8233b410ce1e971eac123a04721adba1dbacf12d29a74cd21871",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "e5c3889ce7efb39ebb30edc382a7f16724369618335427f7c496ce4cff221c28",
+          "spritePathId": "-97459599149998769",
+          "texturePathId": "-1509622144603693745",
+          "proof": "source-reviews/mechanist-mcgraf-avatar.json",
+          "proofSha256": "50776abdeafeb93862fd95f98942a3ce466a3a224c2c3c3d1d92f79b648b0445"
+        }
       }
     },
     "operator/token_10069_mcnist_mcgraf/default/back": {
@@ -155340,6 +155354,20 @@
         "y": -2.201,
         "width": 250.009,
         "height": 389.524
+      },
+      "avatar": {
+        "path": "models/operator/token_10069_mcnist_mcgraf/default/back/1da6347c10575ac922ef1ceeade662ebfb785b0653ef13266ab48f03d1828af9/avatar.png",
+        "bytes": 24576,
+        "sha256": "d665f457f1eb8233b410ce1e971eac123a04721adba1dbacf12d29a74cd21871",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "e5c3889ce7efb39ebb30edc382a7f16724369618335427f7c496ce4cff221c28",
+          "spritePathId": "-97459599149998769",
+          "texturePathId": "-1509622144603693745",
+          "proof": "source-reviews/mechanist-mcgraf-avatar.json",
+          "proofSha256": "50776abdeafeb93862fd95f98942a3ce466a3a224c2c3c3d1d92f79b648b0445"
+        }
       }
     }
   },

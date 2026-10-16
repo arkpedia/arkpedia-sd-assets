@@ -70,6 +70,14 @@ test('an explicitly pinned CN original import preserves both facings and labels 
     await importOriginalModels(f.args); assert.deepEqual((await f.manifest()).models, before);
   } finally { await rm(f.dir, { recursive: true, force: true }); }
 });
+test('reimporting an unchanged original body preserves an independently reviewed avatar but a changed source does not inherit it', async () => {
+ const f=await fixture();try{
+  await importOriginalModels(f.args);const m=await f.manifest(),key='operator/token_pair/default/front',model=m.models[key],bytes=Buffer.from('independent avatar fixture'),relative=model.skeleton.path.replace('same.skel','avatar.png');
+  await writeFile(path.join(f.dir,relative),bytes);model.avatar={path:relative,bytes:bytes.length,sha256:hash(bytes),source:{kind:'independently-reviewed-fixture'}};
+  await writeFile(path.join(f.dir,'manifest.json'),JSON.stringify(m));await importOriginalModels(f.args);assert.deepEqual((await f.manifest()).models[key].avatar,model.avatar);
+  const original=Buffer.from('updated native bundle fixture');await writeFile(f.args.bundle,original);Object.assign(f.info.sourceBundle,{bytes:original.length,md5:hash(original,'md5'),sha256:hash(original)});await f.save();await importOriginalModels(f.args);assert.equal((await f.manifest()).models[key].avatar,undefined);
+ }finally{await rm(f.dir,{recursive:true,force:true});}
+});
 
 test('CN URLs cannot silently import as Global or accept a mismatched bundle path', async () => {
   const f = await fixture();

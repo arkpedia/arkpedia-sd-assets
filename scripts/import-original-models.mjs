@@ -76,12 +76,19 @@ export async function importOriginalModels({ metadata, bundle, extractedRoot, de
         }
       }
       const file = name => fileRecord(`${prefix}${name}`, bytes.get(name));
+      // A UI Sprite may be independently reviewed after its native skeleton.
+      // Reimporting the same body source must not discard that portrait. A
+      // changed body source still needs a fresh explicit avatar attachment.
+      const previous = manifest.models[key];
+      const retainedAvatar = !bytes.has('avatar.png') && previous?.avatar
+        && JSON.stringify(previous.source) === JSON.stringify(source) ? previous.avatar : null;
       manifest.models[key] = { kind: 'operator', id, variant: 'default', facing, source,
         spineVersion: record.spineVersion, skeleton: file(skel), atlas: file(atlas),
         textures: pages.map(file), premultipliedAlpha: true,
         animations: record.durations, animationRoles: record.animationRoles,
         hits: record.hits, bounds: record.bounds,
         ...(bytes.has('avatar.png') ? { avatar: { ...file('avatar.png'), source: info.avatarSource } } : {}),
+        ...(retainedAvatar ? { avatar: retainedAvatar } : {}),
       };
     }
   }
