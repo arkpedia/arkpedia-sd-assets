@@ -224,3 +224,9 @@ Palamute has one original Single skeleton from the pinned CN client token bundle
 Ukusik original artwork
 
 Ukusik's existing Front/Back files remain unchanged. [source-reviews/ukusik.json](source-reviews/ukusik.json) binds their native pointers, decoded pixels, premultiplied alpha and literal Start/Attack, S1 Begin/Loop/Idle/End and Skill_2 tracks. Both original S1-to-Idle End mixes are retained; Back has no death clip. All 3,024 other model records remain unchanged. These are original-art metadata and provenance checks; combat admission and native effects, shaders and game-frame parity remain separate.
+
+Ju original artwork
+
+Ju's existing Front/Back files remain unchanged. [source-reviews/ju.json](source-reviews/ju.json) binds native pointers, decoded pixels, premultiplied alpha and literal Start, Attack, Skill_1 and S2 Begin/Loop/Idle/End clips. Only the original Skill_2_Idle-to-Idle End mix is declared; Back has no death clip. All 3,024 other model records remain unchanged. Original artwork metadata does not enable combat or establish native effects, shaders or game-frame parity.
+
+The original-art review loads all 17 facing/clip combinations on desktop and landscape touch and records 18 inspected captures with no browser or resource errors. Independent Node 22/24 audits reproduce the receipt and reject 33 altered source, pointer, material, pixel, role or approval claims each. Both versions pass 88 tests and complete asset validation. These checks do not establish compiled-client behavior.
