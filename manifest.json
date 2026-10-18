@@ -88502,8 +88502,77 @@
           "sha256": "16338e7fc1b2e0e640a190884da7e8a523ee66936e846692e248d6699a853190"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 2.1,
+        "Default": 0,
+        "Idle": 4,
+        "Skill_1_Begin": 1,
+        "Skill_1_End": 1,
+        "Skill_2_Begin": 1,
+        "Skill_2_Close": 1,
+        "Skill_2_End": 1,
+        "Skill_2_Idle": 4,
+        "Skill_2_Loop": 2.1,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.333
+        ],
+        "Skill_1_Begin": [
+          0.533
+        ],
+        "Skill_2_Close": [
+          0.267
+        ],
+        "Skill_2_Loop": [
+          0.267
+        ]
+      },
+      "bounds": {
+        "x": -315.648,
+        "y": -7.032,
+        "width": 502.695,
+        "height": 468.78
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": "Skill_1_Begin",
+          "loop": null,
+          "end": "Skill_1_End",
+          "index": 0,
+          "via": "skill"
+        },
+        "skills": {
+          "0": {
+            "begin": "Skill_1_Begin",
+            "loop": null,
+            "end": "Skill_1_End",
+            "index": 0,
+            "via": "skill"
+          },
+          "1": {
+            "begin": "Skill_2_Begin",
+            "loop": "Skill_2_Loop",
+            "idle": "Skill_2_Idle",
+            "end": "Skill_2_End",
+            "index": 1,
+            "via": "skill"
+          }
+        },
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4213_skybx/default/front": {
       "kind": "operator",
@@ -88534,8 +88603,91 @@
           "sha256": "1c165a27a81e416ab9acc3c7d6c389244b123be0952a63ce3f1079fdd7c623a8"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 2.1,
+        "Attack_Down": 2.1,
+        "Default": 0,
+        "Die": 1,
+        "Die_2": 1,
+        "Idle": 4,
+        "Skill_1_Begin": 1,
+        "Skill_1_End": 1,
+        "Skill_2_Begin": 1,
+        "Skill_2_Close": 1,
+        "Skill_2_End": 1,
+        "Skill_2_Idle": 4,
+        "Skill_2_Loop": 2.1,
+        "Skill_Down_2_Loop": 2.1,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.333
+        ],
+        "Attack_Down": [
+          0.333
+        ],
+        "Skill_1_Begin": [
+          0.533
+        ],
+        "Skill_2_Close": [
+          0.267
+        ],
+        "Skill_2_Loop": [
+          0.267
+        ],
+        "Skill_Down_2_Loop": [
+          0.267
+        ]
+      },
+      "bounds": {
+        "x": -315.648,
+        "y": -7.032,
+        "width": 502.695,
+        "height": 468.78
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "attackDown": {
+          "begin": null,
+          "loop": "Attack_Down",
+          "end": null
+        },
+        "skill": {
+          "begin": "Skill_1_Begin",
+          "loop": null,
+          "end": "Skill_1_End",
+          "index": 0,
+          "via": "skill"
+        },
+        "skills": {
+          "0": {
+            "begin": "Skill_1_Begin",
+            "loop": null,
+            "end": "Skill_1_End",
+            "index": 0,
+            "via": "skill"
+          },
+          "1": {
+            "begin": "Skill_2_Begin",
+            "loop": "Skill_2_Loop",
+            "idle": "Skill_2_Idle",
+            "end": "Skill_2_End",
+            "index": 1,
+            "via": "skill"
+          }
+        },
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4213_skybx/default/walk": {
       "kind": "operator",
