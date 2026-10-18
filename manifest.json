@@ -94681,8 +94681,73 @@
           "sha256": "6aaf372110369e88fc7ec91306db20ba24195309615cd703fe2091694d2e9d7b"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack_Begin": 0.167,
+        "Attack_End": 0.167,
+        "Attack_Loop": 2.1,
+        "Default": 0,
+        "Idle": 1.667,
+        "Skill_1": 4.067,
+        "Skill_2": 3.333,
+        "Start": 1
+      },
+      "hits": {
+        "Attack_Loop": [
+          0.033
+        ],
+        "Skill_1": [
+          1.533,
+          1.833,
+          2.133,
+          3.367
+        ],
+        "Skill_2": [
+          2.3
+        ]
+      },
+      "bounds": {
+        "x": -1166.014,
+        "y": -3.288,
+        "width": 3171.265,
+        "height": 567.658
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": "Attack_Begin",
+          "loop": "Attack_Loop",
+          "end": "Attack_End"
+        },
+        "attackDown": null,
+        "skill": {
+          "begin": null,
+          "loop": "Skill_1",
+          "end": null,
+          "index": 0,
+          "via": "skill"
+        },
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Skill_1",
+            "end": null,
+            "index": 0,
+            "via": "skill"
+          },
+          "1": {
+            "begin": null,
+            "loop": "Skill_2",
+            "end": null,
+            "index": 1,
+            "via": "skill"
+          }
+        },
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4219_yukari/default/front": {
       "kind": "operator",
@@ -94713,8 +94778,84 @@
           "sha256": "6aaf372110369e88fc7ec91306db20ba24195309615cd703fe2091694d2e9d7b"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack_Begin": 0.167,
+        "Attack_Down_Begin": 0.167,
+        "Attack_Down_End": 0.167,
+        "Attack_Down_Loop": 2.1,
+        "Attack_End": 0.167,
+        "Attack_Loop": 2.1,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 3.333,
+        "Skill_1": 4.067,
+        "Skill_2": 3.333,
+        "Start": 1
+      },
+      "hits": {
+        "Attack_Down_Loop": [
+          0.033
+        ],
+        "Attack_Loop": [
+          0.033
+        ],
+        "Skill_1": [
+          1.533,
+          1.833,
+          2.133,
+          3.367
+        ],
+        "Skill_2": [
+          2.4
+        ]
+      },
+      "bounds": {
+        "x": -1166.014,
+        "y": -3.288,
+        "width": 3171.265,
+        "height": 567.658
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": "Attack_Begin",
+          "loop": "Attack_Loop",
+          "end": "Attack_End"
+        },
+        "attackDown": {
+          "begin": "Attack_Down_Begin",
+          "loop": "Attack_Down_Loop",
+          "end": "Attack_Down_End"
+        },
+        "skill": {
+          "begin": null,
+          "loop": "Skill_1",
+          "end": null,
+          "index": 0,
+          "via": "skill"
+        },
+        "skills": {
+          "0": {
+            "begin": null,
+            "loop": "Skill_1",
+            "end": null,
+            "index": 0,
+            "via": "skill"
+          },
+          "1": {
+            "begin": null,
+            "loop": "Skill_2",
+            "end": null,
+            "index": 1,
+            "via": "skill"
+          }
+        },
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4219_yukari/default/walk": {
       "kind": "operator",
