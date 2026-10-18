@@ -230,3 +230,10 @@ Ju original artwork
 Ju's existing Front/Back files remain unchanged. [source-reviews/ju.json](source-reviews/ju.json) binds native pointers, decoded pixels, premultiplied alpha and literal Start, Attack, Skill_1 and S2 Begin/Loop/Idle/End clips. Only the original Skill_2_Idle-to-Idle End mix is declared; Back has no death clip. All 3,024 other model records remain unchanged. Original artwork metadata does not enable combat or establish native effects, shaders or game-frame parity.
 
 The original-art review loads all 17 facing/clip combinations on desktop and landscape touch and records 18 inspected captures with no browser or resource errors. Independent Node 22/24 audits reproduce the receipt and reject 33 altered source, pointer, material, pixel, role or approval claims each. Both versions pass 88 tests and complete asset validation. These checks do not establish compiled-client behavior.
+
+
+Taraxacum original artwork
+
+Taraxacum's existing Front/Back files remain unchanged. [source-reviews/taraxacum.json](source-reviews/taraxacum.json) binds the original native skeleton/atlas/material/texture pointers, decoded pixels, premultiplied alpha and literal Start/Attack, S1 Begin/Loop/End and S2 Begin/Loop/Idle/End tracks. Front retains Die and Skill_Die; Back has neither. The original controller has no End mixes and none are invented. Only these two model metadata records change; all 3,024 other models and the six original files remain unchanged.
+
+Independent Node22/24 audits reproduce the receipt and reject 33 altered provenance or approval claims each. Both versions pass 88 tests and complete model, scenery/geometry and native effect validation. The artwork browser check loads 22 original facing/clip combinations per desktop and landscape-touch viewport and records 24 inspected captures, with no browser/resource errors. This is original-art delivery evidence; combat admission, public controls, native effects/shaders/audio and compiled/frame/pixel parity remain separate.
