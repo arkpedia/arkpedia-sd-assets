@@ -101277,8 +101277,60 @@
           "sha256": "c24c50bb951efede299a062c86f3de23ec1eed5df1e9c5f7261eef68a960de68"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.5,
+        "Default": 0,
+        "Idle": 4,
+        "Skill_1_End": 1,
+        "Skill_1_Idle": 4,
+        "Skill_1_Loop": 1.5,
+        "Skill_2_Begin": 1,
+        "Skill_2_End": 1,
+        "Skill_2_Idle": 4,
+        "Skill_2_Loop": 1,
+        "Skill_2_Takeoff_Begin": 0.333,
+        "Skill_2_Takeoff_End": 1,
+        "Skill_2_Takeoff_Loop": 0.5,
+        "Skill_3_Begin": 1,
+        "Skill_3_Combat": 1.5,
+        "Skill_3_End": 1,
+        "Skill_3_Idle": 4,
+        "Skill_3_Loop": 1.5,
+        "Skill_3_Move": 3.333,
+        "Skill_3_Restart_Begin": 0.333,
+        "Start": 1,
+        "Start_2": 1
+      },
+      "hits": {
+        "Attack": [
+          0.4
+        ],
+        "Skill_1_Loop": [
+          0.5
+        ],
+        "Skill_2_Loop": [
+          0.333
+        ],
+        "Skill_3_Combat": [
+          0.5
+        ],
+        "Skill_3_Loop": [
+          0.5
+        ]
+      },
+      "bounds": null,
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_1015_aglna2/default/front": {
       "kind": "operator",
@@ -101309,8 +101361,76 @@
           "sha256": "3a434fdee5cda4fbcf7a3e6d2172dc8b98bab4145c256a13d53c3b20e21367c3"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.5,
+        "Attack_Down": 1.5,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 4,
+        "Skill_1_Die": 1,
+        "Skill_1_End": 1,
+        "Skill_1_Idle": 4,
+        "Skill_1_Loop": 1.5,
+        "Skill_2_Begin": 1,
+        "Skill_2_Die": 1,
+        "Skill_2_End": 1,
+        "Skill_2_Idle": 4,
+        "Skill_2_Loop": 1,
+        "Skill_2_Takeoff_Begin": 0.333,
+        "Skill_2_Takeoff_End": 1,
+        "Skill_2_Takeoff_Loop": 0.5,
+        "Skill_3_Begin": 1,
+        "Skill_3_Combat": 1.5,
+        "Skill_3_Die": 1,
+        "Skill_3_End": 1,
+        "Skill_3_Idle": 4,
+        "Skill_3_Loop": 1.5,
+        "Skill_3_Move": 3.333,
+        "Skill_3_Restart_Begin": 0.333,
+        "Skill_Down_1_Loop": 1.5,
+        "Skill_Down_2_Loop": 1,
+        "Start": 1,
+        "Start_2": 1
+      },
+      "hits": {
+        "Attack": [
+          0.4
+        ],
+        "Attack_Down": [
+          0.4
+        ],
+        "Skill_1_Loop": [
+          0.5
+        ],
+        "Skill_2_Loop": [
+          0.333
+        ],
+        "Skill_3_Combat": [
+          0.5
+        ],
+        "Skill_3_Loop": [
+          0.5
+        ],
+        "Skill_Down_1_Loop": [
+          0.5
+        ],
+        "Skill_Down_2_Loop": [
+          0.333
+        ]
+      },
+      "bounds": null,
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_1015_aglna2/default/walk": {
       "kind": "operator",
