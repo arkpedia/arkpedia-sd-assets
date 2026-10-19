@@ -85679,8 +85679,42 @@
           "sha256": "1f20715b07bbe98d65a037867fb95731ca846e279c9069ff69627fa6d44ec0cd"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.2,
+        "Default": 0,
+        "Idle": 3.6,
+        "Skill_Begin": 0.567,
+        "Skill_End": 0.2,
+        "Skill_Idle": 1.2,
+        "Skill_Loop": 1.2,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.467
+        ],
+        "Skill_Loop": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -171.087,
+        "y": -1.242,
+        "width": 341.813,
+        "height": 416.004
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4199_makiri/default/front": {
       "kind": "operator",
@@ -85711,8 +85745,43 @@
           "sha256": "74e68c0038f00731bca46e0f0487db19d7f209bac723dd4bdad353f40702d59a"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.2,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 3.6,
+        "Skill_Begin": 0.567,
+        "Skill_End": 0.2,
+        "Skill_Idle": 1.2,
+        "Skill_Loop": 1.2,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.467
+        ],
+        "Skill_Loop": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -171.087,
+        "y": -1.242,
+        "width": 341.813,
+        "height": 416.004
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4199_makiri/default/walk": {
       "kind": "operator",
@@ -94511,8 +94580,43 @@
           "sha256": "3133912ccfcaa1650e8cb3310d93e69fa4610e82f86dc108d16a5c4627b9c70d"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.6,
+        "Default": 0,
+        "Idle": 4.8,
+        "Skill_1": 1.6,
+        "Skill_2": 1.6,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.533
+        ],
+        "Skill_1": [
+          0.567
+        ],
+        "Skill_2": [
+          0.533
+        ]
+      },
+      "bounds": {
+        "x": -151.23,
+        "y": -12.221,
+        "width": 376.031,
+        "height": 456.186
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_1022_flwr2/default/front": {
       "kind": "operator",
@@ -94543,8 +94647,44 @@
           "sha256": "9bc1ff4fc77dcd3c2690aef160c605c2e0467062b9b0d1738ac81f9fe3a35492"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.6,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 4.8,
+        "Skill_1": 1.6,
+        "Skill_2": 1.6,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.533
+        ],
+        "Skill_1": [
+          0.567
+        ],
+        "Skill_2": [
+          0.533
+        ]
+      },
+      "bounds": {
+        "x": -151.23,
+        "y": -12.221,
+        "width": 376.031,
+        "height": 456.186
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_1022_flwr2/default/walk": {
       "kind": "operator",
@@ -102480,8 +102620,54 @@
           "sha256": "1b430438537d19a437f58b6b3b903c51198256e445ea4ec7b7baa798909b4984"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.8,
+        "Default": 0,
+        "Idle": 2.667,
+        "Skill_1": 1.8,
+        "Skill_2_Begin": 0.5,
+        "Skill_2_End": 0.5,
+        "Skill_2_Idle": 2.667,
+        "Skill_2_Loop": 1.8,
+        "Skill_3": 9.233,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.9
+        ],
+        "Skill_1": [
+          0.9
+        ],
+        "Skill_2_Loop": [
+          0.667
+        ],
+        "Skill_3": [
+          1.1,
+          2.8,
+          4.433,
+          6.067,
+          7.767
+        ]
+      },
+      "bounds": {
+        "x": -320.78,
+        "y": -1.82,
+        "width": 463.927,
+        "height": 401.509
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_1051_headb2/default/front": {
       "kind": "operator",
@@ -102512,8 +102698,56 @@
           "sha256": "b5f9835c1b17c6e1c4b941438b958b6965c30641e8afec98087f09bf7f12d4d4"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.8,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 2.667,
+        "Skill_1": 1.8,
+        "Skill_2_Begin": 0.5,
+        "Skill_2_Die": 1,
+        "Skill_2_End": 0.5,
+        "Skill_2_Idle": 2.667,
+        "Skill_2_Loop": 1.8,
+        "Skill_3": 9.233,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.9
+        ],
+        "Skill_1": [
+          0.9
+        ],
+        "Skill_2_Loop": [
+          0.667
+        ],
+        "Skill_3": [
+          1.1,
+          2.8,
+          4.433,
+          6.067,
+          7.767
+        ]
+      },
+      "bounds": {
+        "x": -320.78,
+        "y": -1.82,
+        "width": 463.927,
+        "height": 401.509
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_1051_headb2/default/walk": {
       "kind": "operator",

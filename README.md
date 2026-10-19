@@ -299,3 +299,18 @@ Mutsumi's existing Front/Back files remain unchanged. [source-reviews/mortis.jso
 Togawa Sakiko original artwork
 
 Sakiko's existing Front/Back files remain unchanged. [source-reviews/oblvns.json](source-reviews/oblvns.json) binds native pointers, decoded pixels, premultiplied alpha and literal Idle/Start/Attack/Die roles. Her simulator owner plays the Combat, Skill_1, S2 instrument and S3 clips itself, and both original S3-to-Idle End mixes are retained. Only two metadata records change.
+
+
+Matsukiri original artwork
+
+Matsukiri's original files remain unchanged. [source-reviews/makiri.json](source-reviews/makiri.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Perfumer the Distilled original artwork
+
+Perfumer the Distilled's original files remain unchanged. [source-reviews/flwr2.json](source-reviews/flwr2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Zima the Raging Tide original artwork
+
+Zima the Raging Tide's original files remain unchanged. [source-reviews/headb2.json](source-reviews/headb2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
