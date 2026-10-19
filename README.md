@@ -309,3 +309,8 @@ Matsukiri's original files remain unchanged. [source-reviews/makiri.json](source
 Perfumer the Distilled original artwork
 
 Perfumer the Distilled's original files remain unchanged. [source-reviews/flwr2.json](source-reviews/flwr2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Zima the Raging Tide original artwork
+
+Zima the Raging Tide's original files remain unchanged. [source-reviews/headb2.json](source-reviews/headb2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
