@@ -364,3 +364,8 @@ Mantra's original files remain unchanged. [source-reviews/mantra.json](source-re
 Haruka original artwork
 
 Haruka's original files remain unchanged. [source-reviews/haruka.json](source-reviews/haruka.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Wang original artwork
+
+Wang's original files remain unchanged. [source-reviews/wang.json](source-reviews/wang.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
