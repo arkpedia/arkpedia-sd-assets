@@ -94580,8 +94580,43 @@
           "sha256": "3133912ccfcaa1650e8cb3310d93e69fa4610e82f86dc108d16a5c4627b9c70d"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.6,
+        "Default": 0,
+        "Idle": 4.8,
+        "Skill_1": 1.6,
+        "Skill_2": 1.6,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.533
+        ],
+        "Skill_1": [
+          0.567
+        ],
+        "Skill_2": [
+          0.533
+        ]
+      },
+      "bounds": {
+        "x": -151.23,
+        "y": -12.221,
+        "width": 376.031,
+        "height": 456.186
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_1022_flwr2/default/front": {
       "kind": "operator",
@@ -94612,8 +94647,44 @@
           "sha256": "9bc1ff4fc77dcd3c2690aef160c605c2e0467062b9b0d1738ac81f9fe3a35492"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.6,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 4.8,
+        "Skill_1": 1.6,
+        "Skill_2": 1.6,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.533
+        ],
+        "Skill_1": [
+          0.567
+        ],
+        "Skill_2": [
+          0.533
+        ]
+      },
+      "bounds": {
+        "x": -151.23,
+        "y": -12.221,
+        "width": 376.031,
+        "height": 456.186
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_1022_flwr2/default/walk": {
       "kind": "operator",
