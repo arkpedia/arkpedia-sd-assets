@@ -329,3 +329,8 @@ Astgenne the Lightchaser's original files remain unchanged. [source-reviews/halo
 Zinogre S Catapult original artwork
 
 Zinogre S Catapult's original files remain unchanged. [source-reviews/catap2.json](source-reviews/catap2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Ch'en the Dawnstreak original artwork
+
+Ch'en the Dawnstreak's original files remain unchanged. [source-reviews/chen3.json](source-reviews/chen3.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
