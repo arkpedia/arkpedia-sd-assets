@@ -99290,8 +99290,49 @@
           "sha256": "603c16511907ce1d2f36be744fe07e09543a11e89fb4ca9f48b2b8ef34df4408"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack_A": 1.2,
+        "Attack_B": 1.2,
+        "Default": 0,
+        "Doll_Skill_1_Attack": 1.8,
+        "Doll_Skill_1_Idle": 2,
+        "Doll_Skill_2_Loop": 2,
+        "Doll_Skill_3_P1_Attack_A": 1.8,
+        "Doll_Skill_3_P1_Attack_B": 1.8,
+        "Doll_Skill_3_P1_Idle": 2,
+        "Idle": 12,
+        "Start": 1
+      },
+      "hits": {
+        "Attack_A": [
+          0.533
+        ],
+        "Attack_B": [
+          0.533
+        ],
+        "Doll_Skill_1_Attack": [
+          0.8
+        ],
+        "Doll_Skill_3_P1_Attack_A": [
+          0.8
+        ],
+        "Doll_Skill_3_P1_Attack_B": [
+          0.8
+        ]
+      },
+      "bounds": null,
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack_A",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4217_makoto/default/front": {
       "kind": "operator",
@@ -99322,8 +99363,76 @@
           "sha256": "e083b60494ca1ced552e8fc19100d8b50f20464120ebc0b7e0a1deef6451c161"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack_A": 1.2,
+        "Attack_B": 1.2,
+        "Default": 0,
+        "Doll_Skill_1_Attack": 1.8,
+        "Doll_Skill_1_Die": 1,
+        "Doll_Skill_1_Idle": 2,
+        "Doll_Skill_1_Stun": 1,
+        "Doll_Skill_1_SwitchIn": 1,
+        "Doll_Skill_1_SwitchOut": 1,
+        "Doll_Skill_2_Die": 1,
+        "Doll_Skill_2_Loop": 2,
+        "Doll_Skill_2_Stun": 1,
+        "Doll_Skill_2_SwitchIn": 1,
+        "Doll_Skill_2_SwitchOut": 1,
+        "Doll_Skill_3_P1_Attack_A": 1.8,
+        "Doll_Skill_3_P1_Attack_B": 1.8,
+        "Doll_Skill_3_P1_Idle": 2,
+        "Doll_Skill_3_P1_Stun": 1,
+        "Doll_Skill_3_P1_SwitchIn": 1,
+        "Doll_Skill_3_P1_SwitchOut": 1,
+        "Doll_Skill_3_P1toP2_ChangeBegin": 0.5,
+        "Doll_Skill_3_P1toP2_ChangeEnd": 1,
+        "Doll_Skill_3_P2_Die": 1,
+        "Doll_Skill_3_P2_Loop": 2,
+        "Doll_Skill_3_P2_Stun": 1,
+        "Doll_Skill_3_P2_SwitchOut": 1,
+        "Idle": 12,
+        "Skill_AllOutAttack_End": 1.433,
+        "Skill_AllOutAttack_Loop": 0.167,
+        "Start": 1,
+        "Stun": 1,
+        "SwitchOut": 1
+      },
+      "hits": {
+        "Attack_A": [
+          0.533
+        ],
+        "Attack_B": [
+          0.533
+        ],
+        "Doll_Skill_1_Attack": [
+          0.8
+        ],
+        "Doll_Skill_3_P1_Attack_A": [
+          0.8
+        ],
+        "Doll_Skill_3_P1_Attack_B": [
+          0.8
+        ],
+        "Doll_Skill_3_P1toP2_ChangeEnd": [
+          0.8
+        ],
+        "Skill_AllOutAttack_End": [
+          0.133
+        ]
+      },
+      "bounds": null,
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack_A",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Stun",
+        "stun": "Stun",
+        "move": null
+      }
     },
     "operator/char_4217_makoto/default/walk": {
       "kind": "operator",
