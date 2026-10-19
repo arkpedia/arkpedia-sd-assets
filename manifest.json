@@ -87547,8 +87547,53 @@
           "sha256": "b6fc24fd571b7717b18de959a6a96daeaf1e33bdb2f200e69f16e25ee500674c"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.8,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1,
+        "Skill_1": 1.8,
+        "Skill_2": 1.8,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.667
+        ],
+        "Skill_1": [
+          0.267,
+          0.867,
+          1.467
+        ],
+        "Skill_2": [
+          0.1,
+          0.333,
+          0.567,
+          0.8,
+          1,
+          1.233,
+          1.467,
+          1.7
+        ]
+      },
+      "bounds": {
+        "x": -1413.23,
+        "y": -11.3,
+        "width": 1550.098,
+        "height": 371.09
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4185_amoris/default/front": {
       "kind": "operator",
@@ -87579,8 +87624,53 @@
           "sha256": "53a2b834222a4a17bc8ce030a8cdae2222746e1b8c3b7973a842be3b6b29422f"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.8,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1,
+        "Skill_1": 1.8,
+        "Skill_2": 1.8,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.667
+        ],
+        "Skill_1": [
+          0.267,
+          0.867,
+          1.467
+        ],
+        "Skill_2": [
+          0.1,
+          0.333,
+          0.567,
+          0.8,
+          1,
+          1.233,
+          1.467,
+          1.7
+        ]
+      },
+      "bounds": {
+        "x": -1413.23,
+        "y": -11.3,
+        "width": 1550.098,
+        "height": 371.42
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4185_amoris/default/walk": {
       "kind": "operator",
@@ -95311,8 +95401,46 @@
           "sha256": "8d128063ba4a9f8b1b06d65959e132649e74e56d34f2ff2c0222f140ea057307"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1,
+        "Default": 0,
+        "Idle": 4,
+        "Skill_1": 1.5,
+        "Skill_2_Begin": 0.333,
+        "Skill_2_End": 0.667,
+        "Skill_2_Loop": 2,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.467
+        ],
+        "Skill_1": [
+          0.367,
+          0.5,
+          0.633,
+          0.767,
+          0.9
+        ]
+      },
+      "bounds": {
+        "x": -201.437,
+        "y": -1.144,
+        "width": 298.711,
+        "height": 360.55
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4186_tmoris/default/front": {
       "kind": "operator",
@@ -95343,8 +95471,47 @@
           "sha256": "ab2f1e7304768d8e0d896bb70a4d30cfe747cfa015d07fb8316c1c86b5a873b0"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 4,
+        "Skill_1": 1.5,
+        "Skill_2_Begin": 0.333,
+        "Skill_2_End": 0.667,
+        "Skill_2_Loop": 2,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.467
+        ],
+        "Skill_1": [
+          0.367,
+          0.5,
+          0.633,
+          0.767,
+          0.9
+        ]
+      },
+      "bounds": {
+        "x": -201.437,
+        "y": -1.159,
+        "width": 388.26,
+        "height": 361.572
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4186_tmoris/default/walk": {
       "kind": "operator",
