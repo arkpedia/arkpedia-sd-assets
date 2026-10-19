@@ -349,3 +349,8 @@ Violet Mizutsune Orchid's original files remain unchanged. [source-reviews/orchd
 Leizi the Thunderbringer original artwork
 
 Leizi the Thunderbringer's original files remain unchanged. [source-reviews/leizi2.json](source-reviews/leizi2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Viy original artwork
+
+Viy's original files remain unchanged. [source-reviews/veen.json](source-reviews/veen.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
