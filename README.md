@@ -344,3 +344,8 @@ Hoshiguma the Breacher's original files remain unchanged. [source-reviews/hsgma2
 Violet Mizutsune Orchid original artwork
 
 Violet Mizutsune Orchid's original files remain unchanged. [source-reviews/orchd2.json](source-reviews/orchd2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Leizi the Thunderbringer original artwork
+
+Leizi the Thunderbringer's original files remain unchanged. [source-reviews/leizi2.json](source-reviews/leizi2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.

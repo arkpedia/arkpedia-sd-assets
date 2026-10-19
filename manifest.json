@@ -104244,8 +104244,50 @@
           "sha256": "2a79102f04fa4cc978809ad092bc9ae92e5e814391058a82cdd901ea73a35f48"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Idle": 1.667,
+        "Skill_1_Begin": 0.5,
+        "Skill_1_End": 0.933,
+        "Skill_2_Begin": 0.5,
+        "Skill_2_End": 0.933,
+        "Skill_2_Idle": 1.667,
+        "Skill_2_Loop": 1.2,
+        "Skill_3_Begin": 0.5,
+        "Skill_3_End": 0.833,
+        "Skill_3_Idle": 3.333,
+        "Skill_3_Loop": 2,
+        "Start": 1
+      },
+      "hits": {
+        "Skill_1_Begin": [
+          0.3
+        ],
+        "Skill_2_Loop": [
+          0.433
+        ],
+        "Skill_3_Loop": [
+          0.4
+        ]
+      },
+      "bounds": {
+        "x": 284.34,
+        "y": -0.255,
+        "width": 701.419,
+        "height": 404.552
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": null,
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_1043_leizi2/default/front": {
       "kind": "operator",
@@ -104276,8 +104318,56 @@
           "sha256": "3164efbdb9ea9a7221beadc438e482fad1077b8a910b35cf5300456212b506a1"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Die": 1,
+        "Die2": 1,
+        "Idle": 1.667,
+        "Skill_1_Begin": 0.5,
+        "Skill_1_End": 0.933,
+        "Skill_2_Begin": 0.5,
+        "Skill_2_End": 0.933,
+        "Skill_2_Idle": 3.333,
+        "Skill_2_Loop": 1.2,
+        "Skill_3_Begin": 0.5,
+        "Skill_3_End": 0.833,
+        "Skill_3_Idle": 3.333,
+        "Skill_3_Loop": 2,
+        "Skill_Down_2_Loop": 1.2,
+        "Start": 1
+      },
+      "hits": {
+        "Skill_1_Begin": [
+          0.3
+        ],
+        "Skill_2_Loop": [
+          0.433
+        ],
+        "Skill_3_Loop": [
+          0.4
+        ],
+        "Skill_Down_2_Loop": [
+          0.433
+        ]
+      },
+      "bounds": {
+        "x": -619.707,
+        "y": -0.255,
+        "width": 1605.465,
+        "height": 420.293
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": null,
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_1043_leizi2/default/walk": {
       "kind": "operator",
