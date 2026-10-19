@@ -85679,8 +85679,42 @@
           "sha256": "1f20715b07bbe98d65a037867fb95731ca846e279c9069ff69627fa6d44ec0cd"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.2,
+        "Default": 0,
+        "Idle": 3.6,
+        "Skill_Begin": 0.567,
+        "Skill_End": 0.2,
+        "Skill_Idle": 1.2,
+        "Skill_Loop": 1.2,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.467
+        ],
+        "Skill_Loop": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -171.087,
+        "y": -1.242,
+        "width": 341.813,
+        "height": 416.004
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4199_makiri/default/front": {
       "kind": "operator",
@@ -85711,8 +85745,43 @@
           "sha256": "74e68c0038f00731bca46e0f0487db19d7f209bac723dd4bdad353f40702d59a"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.2,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 3.6,
+        "Skill_Begin": 0.567,
+        "Skill_End": 0.2,
+        "Skill_Idle": 1.2,
+        "Skill_Loop": 1.2,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.467
+        ],
+        "Skill_Loop": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -171.087,
+        "y": -1.242,
+        "width": 341.813,
+        "height": 416.004
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4199_makiri/default/walk": {
       "kind": "operator",
