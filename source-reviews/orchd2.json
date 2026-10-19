@@ -10,8 +10,8 @@
     "path": "data/arkpedia-native-operators/char_1048_orchd2.json",
     "sha256": "2c8e34640e4d1e4b66959dea292a10107290ce11b397c229323b6eb37dca23dc"
   },
-  "recipeSha256": "827199689a393de65075148e5603d0278a0464b485708db1e388618f8f1d6607",
-  "scope": "Original Front/Back files unchanged. Independently checked native skeleton/atlas/material/texture pointers, decoded pixels and premultiplied alpha. Literal default roles: Front idle=Idle, die=Die; Back idle=Idle. Skill clips are played by the simulator owner itself; 0 original native mix(es) retained. Combat/public admission, modules, effects/audio/shaders and compiled/frame/pixel parity remain separate.",
+  "recipeSha256": "3bcd48679b511f94a29533376f15ea34ce29bb87830a8f07d9f59bb903397a5c",
+  "scope": "Original Front/Back files unchanged. Independently checked native skeleton/atlas/material/texture pointers, decoded pixels and premultiplied alpha. Literal default roles: Front idle=Idle, deploy=Start_1, attack=Attack_1, attackDown=Attack_Down_1, die=Die; Back idle=Idle, deploy=Start_1, attack=Attack_1. Skill clips are played by the simulator owner itself; 0 original native mix(es) retained. Combat/public admission, modules, effects/audio/shaders and compiled/frame/pixel parity remain separate.",
   "ownerModels": {
     "front": {
       "modelKey": "operator/char_1048_orchd2/default/front",
@@ -171,9 +171,9 @@
         },
         "animationRoles": {
           "idle": "Idle",
-          "deploy": null,
-          "attack": null,
-          "attackDown": null,
+          "deploy": "Start_1",
+          "attack": "Attack_1",
+          "attackDown": "Attack_Down_1",
           "skill": null,
           "skills": {},
           "die": "Die",
@@ -318,8 +318,8 @@
         },
         "animationRoles": {
           "idle": "Idle",
-          "deploy": null,
-          "attack": null,
+          "deploy": "Start_1",
+          "attack": "Attack_1",
           "attackDown": null,
           "skill": null,
           "skills": {},

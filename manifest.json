@@ -96727,8 +96727,8 @@
       },
       "animationRoles": {
         "idle": "Idle",
-        "deploy": null,
-        "attack": null,
+        "deploy": "Start_1",
+        "attack": "Attack_1",
         "attackDown": null,
         "skill": null,
         "skills": {},
@@ -96849,9 +96849,9 @@
       },
       "animationRoles": {
         "idle": "Idle",
-        "deploy": null,
-        "attack": null,
-        "attackDown": null,
+        "deploy": "Start_1",
+        "attack": "Attack_1",
+        "attackDown": "Attack_Down_1",
         "skill": null,
         "skills": {},
         "die": "Die",
