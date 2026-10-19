@@ -289,3 +289,8 @@ Umiri's existing Front/Back files remain unchanged. [source-reviews/tmoris.json]
 Misumi Uika original artwork
 
 Uika has one original model (native binding `Single`). [source-reviews/dolris.json](source-reviews/dolris.json) verifies it as Front: native pointers, decoded pixels, premultiplied alpha and literal Idle/Start/Die roles, plus all four original Begin/End mixes. Back is added as a byte-identical `fixed-original-front` alias, the same way as Heidi's. Her simulator owner plays the S1/S2 clips itself.
+
+
+Wakaba Mutsumi original artwork
+
+Mutsumi's existing Front/Back files remain unchanged. [source-reviews/mortis.json](source-reviews/mortis.json) binds native pointers, decoded pixels, premultiplied alpha and literal Idle/Start/Attack roles. Front has Stun and the stand-in Doll_* clips; Back has neither, and no plain Die clip exists. Only two metadata records change.
