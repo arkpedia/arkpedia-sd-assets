@@ -354,3 +354,13 @@ Leizi the Thunderbringer's original files remain unchanged. [source-reviews/leiz
 Viy original artwork
 
 Viy's original files remain unchanged. [source-reviews/veen.json](source-reviews/veen.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Mantra original artwork
+
+Mantra's original files remain unchanged. [source-reviews/mantra.json](source-reviews/mantra.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Haruka original artwork
+
+Haruka's original files remain unchanged. [source-reviews/haruka.json](source-reviews/haruka.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
