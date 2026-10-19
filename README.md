@@ -279,3 +279,8 @@ Hadiya's existing Front/Back files remain unchanged. [source-reviews/hadiya.json
 Yūtenji Nyamu original artwork
 
 Nyamu's existing Front/Back files remain unchanged. [source-reviews/amoris.json](source-reviews/amoris.json) binds native skeleton/atlas/material/texture pointers, decoded pixels, premultiplied alpha and literal Idle/Start/Attack/Die roles; her simulator owner plays the original Skill_1 (3 hit events) and Skill_2 (8 hit events) clips itself. She has no native mixes. Only two metadata records change.
+
+
+Yahata Umiri original artwork
+
+Umiri's existing Front/Back files remain unchanged. [source-reviews/tmoris.json](source-reviews/tmoris.json) binds native pointers, decoded pixels, premultiplied alpha and literal Idle/Start/Attack roles; Front has Die and Back has none. Her simulator owner plays Skill_1 and the S2 Loop/End clips itself, and the original S2-to-Idle End mix is retained. Only two metadata records change.
