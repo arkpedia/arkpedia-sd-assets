@@ -324,3 +324,8 @@ Titi's original files remain unchanged. [source-reviews/titi.json](source-review
 Astgenne the Lightchaser original artwork
 
 Astgenne the Lightchaser's original files remain unchanged. [source-reviews/halo2.json](source-reviews/halo2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Zinogre S Catapult original artwork
+
+Zinogre S Catapult's original files remain unchanged. [source-reviews/catap2.json](source-reviews/catap2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
