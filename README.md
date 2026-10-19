@@ -339,3 +339,8 @@ Ch'en the Dawnstreak's original files remain unchanged. [source-reviews/chen3.js
 Hoshiguma the Breacher original artwork
 
 Hoshiguma the Breacher's original files remain unchanged. [source-reviews/hsgma2.json](source-reviews/hsgma2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Violet Mizutsune Orchid original artwork
+
+Violet Mizutsune Orchid's original files remain unchanged. [source-reviews/orchd2.json](source-reviews/orchd2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
