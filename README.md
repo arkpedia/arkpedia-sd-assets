@@ -369,3 +369,8 @@ Haruka's original files remain unchanged. [source-reviews/haruka.json](source-re
 Wang original artwork
 
 Wang's original files remain unchanged. [source-reviews/wang.json](source-reviews/wang.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Bellone original artwork
+
+Bellone's original files remain unchanged. [source-reviews/demetr.json](source-reviews/demetr.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
