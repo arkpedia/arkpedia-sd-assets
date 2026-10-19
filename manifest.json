@@ -98798,8 +98798,53 @@
           "sha256": "d37aa390fa1a1d3d73727f035ed8d4ff6aceab15f510ba49987ae967ead413c4"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.9,
+        "Default": 0,
+        "Idle": 3.8,
+        "Skill_1_Begin": 0.2,
+        "Skill_1_End": 0.2,
+        "Skill_1_Idle": 1.9,
+        "Skill_1_Loop": 1.9,
+        "Skill_2": 1.9,
+        "Skill_3_Begin": 0.267,
+        "Skill_3_End": 0.2,
+        "Skill_3_Idle": 1.2,
+        "Skill_3_Loop": 1.2,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.7
+        ],
+        "Skill_1_Loop": [
+          0.567
+        ],
+        "Skill_2": [
+          0.633
+        ],
+        "Skill_3_Loop": [
+          0.4
+        ]
+      },
+      "bounds": {
+        "x": -236.368,
+        "y": -1.78,
+        "width": 579.418,
+        "height": 411.062
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_1047_halo2/default/front": {
       "kind": "operator",
@@ -98830,8 +98875,54 @@
           "sha256": "0c2ad81d49734843fadb9b3e2fc749577e623112e52268babd01b5f8a9b62418"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.9,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 3.8,
+        "Skill_1_Begin": 0.2,
+        "Skill_1_End": 0.2,
+        "Skill_1_Idle": 1.9,
+        "Skill_1_Loop": 1.9,
+        "Skill_2": 1.9,
+        "Skill_3_Begin": 0.267,
+        "Skill_3_End": 0.2,
+        "Skill_3_Idle": 1.2,
+        "Skill_3_Loop": 1.2,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.7
+        ],
+        "Skill_1_Loop": [
+          0.567
+        ],
+        "Skill_2": [
+          0.633
+        ],
+        "Skill_3_Loop": [
+          0.4
+        ]
+      },
+      "bounds": {
+        "x": -236.368,
+        "y": -3.567,
+        "width": 579.418,
+        "height": 412.85
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_1047_halo2/default/walk": {
       "kind": "operator",

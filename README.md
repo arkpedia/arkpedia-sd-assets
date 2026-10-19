@@ -319,3 +319,8 @@ Zima the Raging Tide's original files remain unchanged. [source-reviews/headb2.j
 Titi original artwork
 
 Titi's original files remain unchanged. [source-reviews/titi.json](source-reviews/titi.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Astgenne the Lightchaser original artwork
+
+Astgenne the Lightchaser's original files remain unchanged. [source-reviews/halo2.json](source-reviews/halo2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
