@@ -294,3 +294,8 @@ Uika has one original model (native binding `Single`). [source-reviews/dolris.js
 Wakaba Mutsumi original artwork
 
 Mutsumi's existing Front/Back files remain unchanged. [source-reviews/mortis.json](source-reviews/mortis.json) binds native pointers, decoded pixels, premultiplied alpha and literal Idle/Start/Attack roles. Front has Stun and the stand-in Doll_* clips; Back has neither, and no plain Die clip exists. Only two metadata records change.
+
+
+Togawa Sakiko original artwork
+
+Sakiko's existing Front/Back files remain unchanged. [source-reviews/oblvns.json](source-reviews/oblvns.json) binds native pointers, decoded pixels, premultiplied alpha and literal Idle/Start/Attack/Die roles. Her simulator owner plays the Combat, Skill_1, S2 instrument and S3 clips itself, and both original S3-to-Idle End mixes are retained. Only two metadata records change.
