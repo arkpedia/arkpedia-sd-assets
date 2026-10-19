@@ -17,10 +17,18 @@ const original=JSON.parse(await readFile(metadata));
 const sha=b=>createHash('sha256').update(b).digest('hex');
 async function temporary(t){const d=await mkdtemp(path.join(tmpdir(),'native-art-'));t.after(()=>rm(d,{recursive:true,force:true}));return d;}
 test('published original effect package verifies every immutable file and source binding',async()=>{
-  assert.equal(await validateNativeEffects(registry,root),1);
+  assert.equal(await validateNativeEffects(registry,root),2);
   assert.deepEqual(await validateNativeEffect(original,directory),{files:79,roots:33,textures:72});
   assert.deepEqual(original.scope.preparedRoots,['phatm2_skill_03_prison_01']);
   assert.equal(original.scope.publicBattleApproved,false);
+});
+test('published Aphrissa package keeps its CN client identity and lists only renderable roots',async()=>{
+  const a=registry.effects.aphrissa,meta=JSON.parse(await readFile(path.join(root,a.path)));
+  assert.equal(a.sha256,sha(await readFile(path.join(root,a.path))));
+  assert.deepEqual(await validateNativeEffect(meta,path.dirname(path.join(root,a.path))),{files:96,roots:22,textures:89});
+  assert.equal(meta.operator,'char_4229_aphris');assert.equal(meta.resourceVersion,'26-09-22-07-47-20_6c71fa');
+  assert.equal(meta.scope.preparedRoots.length,21);assert.ok(!meta.scope.preparedRoots.includes('common_char_birth_01_delay_01'));
+  assert.equal(meta.scope.publicBattleApproved,false);assert.equal(meta.scope.nativePixelParity,false);
 });
 test('rejects changed delivery scope, missing files, rebound roots and source receipts',async()=>{
   const cases=[

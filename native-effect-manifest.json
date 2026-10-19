@@ -5,6 +5,11 @@
       "path": "effects/native/tragodia/26-09-23-17-49-43_b9cc4a/e39769c56a91f5d483632808082a05a3dbe0b71d5a5c99b3ade9ebdee68fd0ff/manifest.json",
       "bytes": 44646,
       "sha256": "d102c41886445b583cd4ffa491f2db9644ba6a6c39a76bcd6d2fed2f6c919e87"
+    },
+    "aphrissa": {
+      "path": "effects/native/aphrissa/26-09-22-07-47-20_6c71fa/57feaeef6ee48b966eb80cf564c9c4093ad6a4f19265ef974402c69f457c0b22/manifest.json",
+      "bytes": 42817,
+      "sha256": "db00c363ad8518b966da0c704df5d3f8f09478bba7193e300fabaa2c0e7eb672"
     }
   }
 }
