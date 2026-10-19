@@ -87547,8 +87547,53 @@
           "sha256": "b6fc24fd571b7717b18de959a6a96daeaf1e33bdb2f200e69f16e25ee500674c"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.8,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1,
+        "Skill_1": 1.8,
+        "Skill_2": 1.8,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.667
+        ],
+        "Skill_1": [
+          0.267,
+          0.867,
+          1.467
+        ],
+        "Skill_2": [
+          0.1,
+          0.333,
+          0.567,
+          0.8,
+          1,
+          1.233,
+          1.467,
+          1.7
+        ]
+      },
+      "bounds": {
+        "x": -1413.23,
+        "y": -11.3,
+        "width": 1550.098,
+        "height": 371.09
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4185_amoris/default/front": {
       "kind": "operator",
@@ -87579,8 +87624,53 @@
           "sha256": "53a2b834222a4a17bc8ce030a8cdae2222746e1b8c3b7973a842be3b6b29422f"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.8,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1,
+        "Skill_1": 1.8,
+        "Skill_2": 1.8,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.667
+        ],
+        "Skill_1": [
+          0.267,
+          0.867,
+          1.467
+        ],
+        "Skill_2": [
+          0.1,
+          0.333,
+          0.567,
+          0.8,
+          1,
+          1.233,
+          1.467,
+          1.7
+        ]
+      },
+      "bounds": {
+        "x": -1413.23,
+        "y": -11.3,
+        "width": 1550.098,
+        "height": 371.42
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4185_amoris/default/walk": {
       "kind": "operator",

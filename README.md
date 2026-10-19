@@ -274,3 +274,8 @@ The same importer and validator check every file hash, the decoded pack, source 
 Hadiya original artwork
 
 Hadiya's existing Front/Back files remain unchanged. [source-reviews/hadiya.json](source-reviews/hadiya.json) binds native skeleton/atlas/material/texture pointers, decoded pixels, premultiplied alpha and literal default Idle/Start/Attack_A roles; her simulator owner selects the remaining original clips itself. All seven original S2-to-ordinary End mixes are retained. Front has Die, Skill_2_Die and Skill_Down_2_Loop; Back has none of them. Only two metadata records change; the original files and all other models remain unchanged.
+
+
+Yūtenji Nyamu original artwork
+
+Nyamu's existing Front/Back files remain unchanged. [source-reviews/amoris.json](source-reviews/amoris.json) binds native skeleton/atlas/material/texture pointers, decoded pixels, premultiplied alpha and literal Idle/Start/Attack/Die roles; her simulator owner plays the original Skill_1 (3 hit events) and Skill_2 (8 hit events) clips itself. She has no native mixes. Only two metadata records change.
