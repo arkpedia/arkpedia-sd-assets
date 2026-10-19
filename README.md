@@ -384,3 +384,8 @@ Pramanix the Prerita's original files remain unchanged. [source-reviews/sbell2.j
 Angelina the Mellow Wish original artwork
 
 Angelina the Mellow Wish's original files remain unchanged. [source-reviews/aglna2.json](source-reviews/aglna2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Raidian original artwork
+
+Raidian's original files remain unchanged. [source-reviews/radian.json](source-reviews/radian.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
