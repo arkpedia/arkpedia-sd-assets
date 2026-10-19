@@ -374,3 +374,8 @@ Wang's original files remain unchanged. [source-reviews/wang.json](source-review
 Bellone original artwork
 
 Bellone's original files remain unchanged. [source-reviews/demetr.json](source-reviews/demetr.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Pramanix the Prerita original artwork
+
+Pramanix the Prerita's original files remain unchanged. [source-reviews/sbell2.json](source-reviews/sbell2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
