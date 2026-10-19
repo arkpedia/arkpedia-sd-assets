@@ -87643,8 +87643,53 @@
           "sha256": "b50fb7d4a7926b7135c3e87117c9af8025b923b4a1c774af4185b5153ed8501f"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack_A": 1.233,
+        "Attack_B": 1.233,
+        "Default": 0,
+        "Idle": 2,
+        "Skill_1": 0.833,
+        "Skill_2_Begin": 1,
+        "Skill_2_End": 0.667,
+        "Skill_2_Idle": 2,
+        "Skill_2_Loop": 1.233,
+        "Start": 1
+      },
+      "hits": {
+        "Attack_A": [
+          0.533
+        ],
+        "Attack_B": [
+          0.533
+        ],
+        "Skill_1": [
+          0.167
+        ],
+        "Skill_2_Begin": [
+          0.433
+        ],
+        "Skill_2_Loop": [
+          0.433
+        ]
+      },
+      "bounds": {
+        "x": -130.225,
+        "y": -7.612,
+        "width": 613.702,
+        "height": 454.032
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack_A",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_394_hadiya/default/front": {
       "kind": "operator",
@@ -87675,8 +87720,59 @@
           "sha256": "8dee31054840beaf8c335e23870ea87415c8a9fa2b6ce3e5db9a73160196b901"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack_A": 1.233,
+        "Attack_B": 1.233,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 2,
+        "Skill_1": 0.833,
+        "Skill_2_Begin": 1,
+        "Skill_2_Die": 1,
+        "Skill_2_End": 0.667,
+        "Skill_2_Idle": 2,
+        "Skill_2_Loop": 1.233,
+        "Skill_Down_2_Loop": 1.233,
+        "Start": 1
+      },
+      "hits": {
+        "Attack_A": [
+          0.533
+        ],
+        "Attack_B": [
+          0.533
+        ],
+        "Skill_1": [
+          0.167
+        ],
+        "Skill_2_Begin": [
+          0.433
+        ],
+        "Skill_2_Loop": [
+          0.433
+        ],
+        "Skill_Down_2_Loop": [
+          0.433
+        ]
+      },
+      "bounds": {
+        "x": -134.308,
+        "y": -7.64,
+        "width": 617.785,
+        "height": 454.061
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack_A",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_394_hadiya/default/walk": {
       "kind": "operator",
