@@ -334,3 +334,8 @@ Zinogre S Catapult's original files remain unchanged. [source-reviews/catap2.jso
 Ch'en the Dawnstreak original artwork
 
 Ch'en the Dawnstreak's original files remain unchanged. [source-reviews/chen3.json](source-reviews/chen3.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Hoshiguma the Breacher original artwork
+
+Hoshiguma the Breacher's original files remain unchanged. [source-reviews/hsgma2.json](source-reviews/hsgma2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
