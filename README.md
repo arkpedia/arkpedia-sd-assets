@@ -284,3 +284,13 @@ Nyamu's existing Front/Back files remain unchanged. [source-reviews/amoris.json]
 Yahata Umiri original artwork
 
 Umiri's existing Front/Back files remain unchanged. [source-reviews/tmoris.json](source-reviews/tmoris.json) binds native pointers, decoded pixels, premultiplied alpha and literal Idle/Start/Attack roles; Front has Die and Back has none. Her simulator owner plays Skill_1 and the S2 Loop/End clips itself, and the original S2-to-Idle End mix is retained. Only two metadata records change.
+
+
+Misumi Uika original artwork
+
+Uika has one original model (native binding `Single`). [source-reviews/dolris.json](source-reviews/dolris.json) verifies it as Front: native pointers, decoded pixels, premultiplied alpha and literal Idle/Start/Die roles, plus all four original Begin/End mixes. Back is added as a byte-identical `fixed-original-front` alias, the same way as Heidi's. Her simulator owner plays the S1/S2 clips itself.
+
+
+Wakaba Mutsumi original artwork
+
+Mutsumi's existing Front/Back files remain unchanged. [source-reviews/mortis.json](source-reviews/mortis.json) binds native pointers, decoded pixels, premultiplied alpha and literal Idle/Start/Attack roles. Front has Stun and the stand-in Doll_* clips; Back has neither, and no plain Die clip exists. Only two metadata records change.
