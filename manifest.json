@@ -100667,8 +100667,52 @@
           "sha256": "dd2baf49fde1ca20e87d284a3b3007fb28a8afb3918bd0d911cb1a6a17a35e61"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.6,
+        "Default": 0,
+        "Idle": 4,
+        "Skill_1_Begin": 0.333,
+        "Skill_1_End": 0.5,
+        "Skill_1_Idle": 4,
+        "Skill_1_Loop": 1.6,
+        "Skill_2_Begin": 0.333,
+        "Skill_2_End": 0.5,
+        "Skill_2_Idle": 2,
+        "Skill_3_Begin": 0.333,
+        "Skill_3_End": 0.333,
+        "Skill_3_Idle": 4,
+        "Skill_3_Loop": 1.6,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.5
+        ],
+        "Skill_1_Loop": [
+          0.467
+        ],
+        "Skill_3_Loop": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -243.479,
+        "y": -17.43,
+        "width": 343.887,
+        "height": 484.999
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4056_titi/default/front": {
       "kind": "operator",
@@ -100699,8 +100743,53 @@
           "sha256": "2b3e64f5ff13f68966b561ae3bc9cb09198c789db012f01b9c89a60ca7202442"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.6,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 4,
+        "Skill_1_Begin": 0.333,
+        "Skill_1_End": 0.5,
+        "Skill_1_Idle": 4,
+        "Skill_1_Loop": 1.6,
+        "Skill_2_Begin": 0.333,
+        "Skill_2_End": 0.5,
+        "Skill_2_Idle": 2,
+        "Skill_3_Begin": 0.333,
+        "Skill_3_End": 0.333,
+        "Skill_3_Idle": 4,
+        "Skill_3_Loop": 1.6,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.5
+        ],
+        "Skill_1_Loop": [
+          0.467
+        ],
+        "Skill_3_Loop": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -243.479,
+        "y": -17.43,
+        "width": 343.019,
+        "height": 484.999
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4056_titi/default/walk": {
       "kind": "operator",

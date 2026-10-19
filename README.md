@@ -314,3 +314,8 @@ Perfumer the Distilled's original files remain unchanged. [source-reviews/flwr2.
 Zima the Raging Tide original artwork
 
 Zima the Raging Tide's original files remain unchanged. [source-reviews/headb2.json](source-reviews/headb2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Titi original artwork
+
+Titi's original files remain unchanged. [source-reviews/titi.json](source-reviews/titi.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
