@@ -314,3 +314,43 @@ Perfumer the Distilled's original files remain unchanged. [source-reviews/flwr2.
 Zima the Raging Tide original artwork
 
 Zima the Raging Tide's original files remain unchanged. [source-reviews/headb2.json](source-reviews/headb2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Titi original artwork
+
+Titi's original files remain unchanged. [source-reviews/titi.json](source-reviews/titi.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Astgenne the Lightchaser original artwork
+
+Astgenne the Lightchaser's original files remain unchanged. [source-reviews/halo2.json](source-reviews/halo2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Zinogre S Catapult original artwork
+
+Zinogre S Catapult's original files remain unchanged. [source-reviews/catap2.json](source-reviews/catap2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Ch'en the Dawnstreak original artwork
+
+Ch'en the Dawnstreak's original files remain unchanged. [source-reviews/chen3.json](source-reviews/chen3.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Hoshiguma the Breacher original artwork
+
+Hoshiguma the Breacher's original files remain unchanged. [source-reviews/hsgma2.json](source-reviews/hsgma2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Violet Mizutsune Orchid original artwork
+
+Violet Mizutsune Orchid's original files remain unchanged. [source-reviews/orchd2.json](source-reviews/orchd2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Leizi the Thunderbringer original artwork
+
+Leizi the Thunderbringer's original files remain unchanged. [source-reviews/leizi2.json](source-reviews/leizi2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Viy original artwork
+
+Viy's original files remain unchanged. [source-reviews/veen.json](source-reviews/veen.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
