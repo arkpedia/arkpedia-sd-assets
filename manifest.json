@@ -98550,8 +98550,52 @@
           "sha256": "efad6f2e64ed66ac578f5bf82851d8531988d821cf1b0ac13fe43d910ca2f912"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Idle": 8,
+        "Skill": 2,
+        "Skill_2_Attack": 2,
+        "Skill_2_Begin": 0.833,
+        "Skill_2_End": 0.5,
+        "Skill_2_Idle": 2.667,
+        "Skill_3_Attack_A": 2,
+        "Skill_3_Attack_B": 2,
+        "Skill_3_Attack_C": 2,
+        "Skill_3_Begin": 0.333,
+        "Skill_3_End": 0.667,
+        "Skill_3_Idle": 2.667,
+        "Start": 1
+      },
+      "hits": {
+        "Skill": [
+          0.767
+        ],
+        "Skill_2_Attack": [
+          0.7
+        ],
+        "Skill_3_Attack_A": [
+          0.667
+        ],
+        "Skill_3_Attack_B": [
+          0.667
+        ],
+        "Skill_3_Attack_C": [
+          0.667
+        ]
+      },
+      "bounds": null,
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Skill_2_Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_1046_sbell2/default/front": {
       "kind": "operator",
@@ -98582,8 +98626,58 @@
           "sha256": "5d9a3b11b7b31898f2c1b0e82b59c43e42d3a73d8876db18b74ebcc20eab1595"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Die": 1,
+        "Idle": 8,
+        "Skill": 2,
+        "Skill_2_Attack": 2,
+        "Skill_2_Begin": 0.833,
+        "Skill_2_End": 0.5,
+        "Skill_2_Idle": 2.667,
+        "Skill_3_Attack_A": 2,
+        "Skill_3_Attack_B": 2,
+        "Skill_3_Attack_C": 2,
+        "Skill_3_Begin": 0.333,
+        "Skill_3_End": 0.667,
+        "Skill_3_Idle": 8,
+        "Start": 1
+      },
+      "hits": {
+        "Skill": [
+          0.767
+        ],
+        "Skill_2_Attack": [
+          0.7
+        ],
+        "Skill_3_Attack_A": [
+          0.667
+        ],
+        "Skill_3_Attack_B": [
+          0.667
+        ],
+        "Skill_3_Attack_C": [
+          0.667
+        ]
+      },
+      "bounds": {
+        "x": -443.936,
+        "y": -1.529,
+        "width": 617.375,
+        "height": 402.518
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Skill_2_Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_1046_sbell2/default/walk": {
       "kind": "operator",
@@ -99031,8 +99125,49 @@
           "sha256": "8907e6b2687e46504bbe19533c89ca23bcdf6d7c38683395112482703aaf3b23"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.6,
+        "Default": 0,
+        "Idle": 3.333,
+        "Skill_1": 1.6,
+        "Skill_2_Begin": 0.267,
+        "Skill_2_End": 0.333,
+        "Skill_2_Loop": 2.667,
+        "Skill_3_Begin": 0.333,
+        "Skill_3_End": 0.333,
+        "Skill_3_Idle": 2.333,
+        "Skill_3_Loop": 1.6,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.433
+        ],
+        "Skill_1": [
+          0.433
+        ],
+        "Skill_3_Loop": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": 136.39,
+        "y": -4.32,
+        "width": 446.545,
+        "height": 394.998
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4204_mantra/default/front": {
       "kind": "operator",
@@ -99063,8 +99198,50 @@
           "sha256": "d3b701f923194a7e6674837819c0673da776cfbfc94ad8a501b496cce8158d9d"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.6,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 3.333,
+        "Skill_1": 1.6,
+        "Skill_2_Begin": 0.267,
+        "Skill_2_End": 0.333,
+        "Skill_2_Loop": 2.667,
+        "Skill_3_Begin": 0.333,
+        "Skill_3_End": 0.333,
+        "Skill_3_Idle": 2.333,
+        "Skill_3_Loop": 1.6,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.433
+        ],
+        "Skill_1": [
+          0.433
+        ],
+        "Skill_3_Loop": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -253.373,
+        "y": -5.32,
+        "width": 432.443,
+        "height": 393.457
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4204_mantra/default/walk": {
       "kind": "operator",
@@ -99506,8 +99683,56 @@
           "sha256": "94550564c1c15a1a331e200b3100ce1d4c1183ff30a75acad23f25ff2a597099"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.6,
+        "Default": 0,
+        "Idle": 2,
+        "Skill_1_Begin": 0.333,
+        "Skill_1_End": 0.167,
+        "Skill_1_Idle": 2,
+        "Skill_1_Loop": 1.6,
+        "Skill_2_Begin": 0.333,
+        "Skill_2_End": 0.167,
+        "Skill_2_Idle": 2,
+        "Skill_2_Loop": 1.3,
+        "Skill_3_Begin": 0.333,
+        "Skill_3_End": 0.167,
+        "Skill_3_Idle": 2.667,
+        "Skill_3_Loop": 1.6,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.4
+        ],
+        "Skill_1_Loop": [
+          0.467
+        ],
+        "Skill_2_Loop": [
+          0.133
+        ],
+        "Skill_3_Loop": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -218.793,
+        "y": -1.238,
+        "width": 706.757,
+        "height": 512.842
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4195_radian/default/front": {
       "kind": "operator",
@@ -99538,8 +99763,57 @@
           "sha256": "793a31665dd85657ea640132f3b6ec712c5becfc673dd0414089f83ce8e13db3"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.6,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 2,
+        "Skill_1_Begin": 0.333,
+        "Skill_1_End": 0.167,
+        "Skill_1_Idle": 2,
+        "Skill_1_Loop": 1.6,
+        "Skill_2_Begin": 0.333,
+        "Skill_2_End": 0.167,
+        "Skill_2_Idle": 2,
+        "Skill_2_Loop": 1.3,
+        "Skill_3_Begin": 0.333,
+        "Skill_3_End": 0.167,
+        "Skill_3_Idle": 2.667,
+        "Skill_3_Loop": 1.6,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.4
+        ],
+        "Skill_1_Loop": [
+          0.467
+        ],
+        "Skill_2_Loop": [
+          0.133
+        ],
+        "Skill_3_Loop": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -219.807,
+        "y": -1.238,
+        "width": 678.239,
+        "height": 520.057
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4195_radian/default/walk": {
       "kind": "operator",
@@ -99698,8 +99972,54 @@
           "sha256": "b0c9bcca65e53ee308c9b4f80961c10e2852c5008c7d4e6d5aa722f44599f234"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.6,
+        "Default": 0,
+        "Idle": 9.333,
+        "Skill_2_Begin": 0.267,
+        "Skill_2_Idle": 2,
+        "Skill_2_loop": 1.6,
+        "Skill_3_Begin": 0.267,
+        "Skill_3_End": 0.167,
+        "Skill_3_Idle": 1,
+        "Skill_3_Loop_A": 1,
+        "Skill_3_Loop_B": 1,
+        "Skill_Begin": 0.333,
+        "Skill_End": 0.167,
+        "Skill_Idle": 1.333,
+        "Skill_Loop": 1.6,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.5
+        ],
+        "Skill_2_loop": [
+          0.533
+        ],
+        "Skill_3_Loop_A": [
+          0.333
+        ],
+        "Skill_3_Loop_B": [
+          0.333
+        ],
+        "Skill_Loop": [
+          0.2
+        ]
+      },
+      "bounds": null,
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4202_haruka/default/front": {
       "kind": "operator",
@@ -99730,8 +100050,60 @@
           "sha256": "99f53dadbe45d32cf2f52f23de68de27202006bc17d217c1bc337d45443b9ca8"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.6,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 9.333,
+        "Skill_2_Begin": 0.267,
+        "Skill_2_Idle": 8,
+        "Skill_2_loop": 1.6,
+        "Skill_3_Begin": 0.267,
+        "Skill_3_End": 0.167,
+        "Skill_3_Idle": 8,
+        "Skill_3_Loop_A": 1,
+        "Skill_3_Loop_B": 1,
+        "Skill_Begin": 0.333,
+        "Skill_End": 0.167,
+        "Skill_Idle": 8,
+        "Skill_Loop": 1.6,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.5
+        ],
+        "Skill_2_loop": [
+          0.533
+        ],
+        "Skill_3_Loop_A": [
+          0.333
+        ],
+        "Skill_3_Loop_B": [
+          0.333
+        ],
+        "Skill_Loop": [
+          0.2
+        ]
+      },
+      "bounds": {
+        "x": -146.524,
+        "y": -3.864,
+        "width": 1072.208,
+        "height": 395.519
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4202_haruka/default/walk": {
       "kind": "operator",
@@ -100767,8 +101139,61 @@
           "sha256": "9fb56b803b5dfcb5b00a469e5ef52f7f24016217dae5fbd617476d93abbc4bfb"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack_1_A": 0.833,
+        "Attack_1_B": 0.833,
+        "Attack_2_A": 0.833,
+        "Attack_2_B": 0.833,
+        "Default": 0,
+        "Default_2": 0,
+        "Idle": 1.667,
+        "Idle_2": 1.667,
+        "Skill_3_Attack_A": 2.2,
+        "Skill_3_Attack_B": 2.2,
+        "Skill_3_Begin": 0.167,
+        "Skill_3_End": 0.267,
+        "Skill_3_Idle": 1.667,
+        "Start": 1,
+        "Start_2": 1
+      },
+      "hits": {
+        "Attack_1_A": [
+          0.3
+        ],
+        "Attack_1_B": [
+          0.3
+        ],
+        "Attack_2_A": [
+          0.3
+        ],
+        "Attack_2_B": [
+          0.3
+        ],
+        "Skill_3_Attack_A": [
+          1.033
+        ],
+        "Skill_3_Attack_B": [
+          1.033
+        ]
+      },
+      "bounds": {
+        "x": -606.915,
+        "y": -2.046,
+        "width": 1779.387,
+        "height": 509.718
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack_1_A",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_2027_wang/default/front": {
       "kind": "operator",
@@ -100799,8 +101224,62 @@
           "sha256": "cfc4dc1ab3b693c427ef75985fcb8605eb8f1f236135e3cf22317feb8074b77f"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack_1_A": 0.833,
+        "Attack_1_B": 0.833,
+        "Attack_2_A": 0.833,
+        "Attack_2_B": 0.833,
+        "Default": 0,
+        "Default_2": 0,
+        "Die": 1,
+        "Idle": 8.333,
+        "Idle_2": 8.333,
+        "Skill_3_Attack_A": 2.2,
+        "Skill_3_Attack_B": 2.2,
+        "Skill_3_Begin": 0.167,
+        "Skill_3_End": 0.267,
+        "Skill_3_Idle": 3.333,
+        "Start": 1,
+        "Start_2": 1
+      },
+      "hits": {
+        "Attack_1_A": [
+          0.3
+        ],
+        "Attack_1_B": [
+          0.3
+        ],
+        "Attack_2_A": [
+          0.3
+        ],
+        "Attack_2_B": [
+          0.3
+        ],
+        "Skill_3_Attack_A": [
+          1.033
+        ],
+        "Skill_3_Attack_B": [
+          1.033
+        ]
+      },
+      "bounds": {
+        "x": -606.915,
+        "y": -2.046,
+        "width": 898.1,
+        "height": 509.718
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack_1_A",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_2027_wang/default/walk": {
       "kind": "operator",
@@ -100895,8 +101374,60 @@
           "sha256": "c24c50bb951efede299a062c86f3de23ec1eed5df1e9c5f7261eef68a960de68"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.5,
+        "Default": 0,
+        "Idle": 4,
+        "Skill_1_End": 1,
+        "Skill_1_Idle": 4,
+        "Skill_1_Loop": 1.5,
+        "Skill_2_Begin": 1,
+        "Skill_2_End": 1,
+        "Skill_2_Idle": 4,
+        "Skill_2_Loop": 1,
+        "Skill_2_Takeoff_Begin": 0.333,
+        "Skill_2_Takeoff_End": 1,
+        "Skill_2_Takeoff_Loop": 0.5,
+        "Skill_3_Begin": 1,
+        "Skill_3_Combat": 1.5,
+        "Skill_3_End": 1,
+        "Skill_3_Idle": 4,
+        "Skill_3_Loop": 1.5,
+        "Skill_3_Move": 3.333,
+        "Skill_3_Restart_Begin": 0.333,
+        "Start": 1,
+        "Start_2": 1
+      },
+      "hits": {
+        "Attack": [
+          0.4
+        ],
+        "Skill_1_Loop": [
+          0.5
+        ],
+        "Skill_2_Loop": [
+          0.333
+        ],
+        "Skill_3_Combat": [
+          0.5
+        ],
+        "Skill_3_Loop": [
+          0.5
+        ]
+      },
+      "bounds": null,
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_1015_aglna2/default/front": {
       "kind": "operator",
@@ -100927,8 +101458,76 @@
           "sha256": "3a434fdee5cda4fbcf7a3e6d2172dc8b98bab4145c256a13d53c3b20e21367c3"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.5,
+        "Attack_Down": 1.5,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 4,
+        "Skill_1_Die": 1,
+        "Skill_1_End": 1,
+        "Skill_1_Idle": 4,
+        "Skill_1_Loop": 1.5,
+        "Skill_2_Begin": 1,
+        "Skill_2_Die": 1,
+        "Skill_2_End": 1,
+        "Skill_2_Idle": 4,
+        "Skill_2_Loop": 1,
+        "Skill_2_Takeoff_Begin": 0.333,
+        "Skill_2_Takeoff_End": 1,
+        "Skill_2_Takeoff_Loop": 0.5,
+        "Skill_3_Begin": 1,
+        "Skill_3_Combat": 1.5,
+        "Skill_3_Die": 1,
+        "Skill_3_End": 1,
+        "Skill_3_Idle": 4,
+        "Skill_3_Loop": 1.5,
+        "Skill_3_Move": 3.333,
+        "Skill_3_Restart_Begin": 0.333,
+        "Skill_Down_1_Loop": 1.5,
+        "Skill_Down_2_Loop": 1,
+        "Start": 1,
+        "Start_2": 1
+      },
+      "hits": {
+        "Attack": [
+          0.4
+        ],
+        "Attack_Down": [
+          0.4
+        ],
+        "Skill_1_Loop": [
+          0.5
+        ],
+        "Skill_2_Loop": [
+          0.333
+        ],
+        "Skill_3_Combat": [
+          0.5
+        ],
+        "Skill_3_Loop": [
+          0.5
+        ],
+        "Skill_Down_1_Loop": [
+          0.5
+        ],
+        "Skill_Down_2_Loop": [
+          0.333
+        ]
+      },
+      "bounds": null,
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_1015_aglna2/default/walk": {
       "kind": "operator",
@@ -101469,8 +102068,55 @@
           "sha256": "393ada91fca7d93f259920a37ed32c57443a7f1c28f1d3803b6aeedd23c81872"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack_Begin": 0.333,
+        "Attack_End": 0.333,
+        "Attack_Loop": 3,
+        "Default": 0,
+        "Idle": 2,
+        "Skill_2_Attack": 3,
+        "Skill_2_Begin": 0.667,
+        "Skill_2_End": 0.667,
+        "Skill_2_Idle": 2,
+        "Skill_3_Attack": 1.333,
+        "Skill_3_End": 0.5,
+        "Skill_3_Idle": 1.333,
+        "Skill_3_Restart_Begin": 1,
+        "Skill_3_Restart_End": 1,
+        "Start": 1
+      },
+      "hits": {
+        "Attack_Loop": [
+          0.6
+        ],
+        "Skill_2_Attack": [
+          0.533
+        ],
+        "Skill_3_Attack": [
+          0.433
+        ],
+        "Skill_3_Restart_Begin": [
+          0.667
+        ]
+      },
+      "bounds": {
+        "x": -1133.371,
+        "y": 26.373,
+        "width": 1290.307,
+        "height": 906.006
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack_Loop",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_1052_kalts2/default/front": {
       "kind": "operator",
@@ -101506,8 +102152,69 @@
           "sha256": "febbbd885df38107d7cc411d3e7fa3be425448c3108758ba2841f61551154ced"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack_Begin": 0.333,
+        "Attack_Down_Loop": 3,
+        "Attack_End": 0.333,
+        "Attack_Loop": 3,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 2,
+        "Skill_2_Attack": 3,
+        "Skill_2_Begin": 0.667,
+        "Skill_2_End": 0.667,
+        "Skill_2_Idle": 2,
+        "Skill_3_Attack": 1.333,
+        "Skill_3_End": 0.5,
+        "Skill_3_Idle": 1.333,
+        "Skill_3_Restart_Begin": 1,
+        "Skill_3_Restart_End": 1,
+        "Skill_Down_2_Attack": 3,
+        "Skill_Down_3_Attack": 1.333,
+        "Start": 1,
+        "Stun": 2
+      },
+      "hits": {
+        "Attack_Down_Loop": [
+          0.6
+        ],
+        "Attack_Loop": [
+          0.6
+        ],
+        "Skill_2_Attack": [
+          0.533
+        ],
+        "Skill_3_Attack": [
+          0.4
+        ],
+        "Skill_3_Restart_Begin": [
+          0.667
+        ],
+        "Skill_Down_2_Attack": [
+          0.533
+        ],
+        "Skill_Down_3_Attack": [
+          0.433
+        ]
+      },
+      "bounds": {
+        "x": -1133.371,
+        "y": 26.373,
+        "width": 1290.307,
+        "height": 906.006
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack_Loop",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": "Stun",
+        "move": null
+      }
     },
     "operator/char_1052_kalts2/default/walk": {
       "kind": "operator",
@@ -102883,8 +103590,68 @@
           "sha256": "8ef1afcebdc4573db46bdc87b37f83dfec400a209a3e38bb9616c3c00c61e5e0"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack_A": 0.8,
+        "Attack_B": 0.8,
+        "Default": 0,
+        "Idle": 4,
+        "Skill_1": 0.8,
+        "Skill_2_Begin": 0.167,
+        "Skill_2_End": 0.167,
+        "Skill_2_Idle": 2,
+        "Skill_2_Loop": 0.8,
+        "Skill_3_Back": 0.5,
+        "Skill_3_Begin": 0.167,
+        "Skill_3_End": 0.167,
+        "Skill_3_Idle": 2,
+        "Skill_3_Loop_A": 0.8,
+        "Skill_3_Loop_B": 0.8,
+        "Skill_3_Restart_Begin": 0.2,
+        "Skill_3_Restart_End": 0.3,
+        "Start": 1
+      },
+      "hits": {
+        "Attack_A": [
+          0.333
+        ],
+        "Attack_B": [
+          0.333
+        ],
+        "Skill_1": [
+          0.233,
+          0.433
+        ],
+        "Skill_2_Loop": [
+          0.333
+        ],
+        "Skill_3_Loop_A": [
+          0.333
+        ],
+        "Skill_3_Loop_B": [
+          0.333
+        ],
+        "Skill_3_Restart_End": [
+          0.1
+        ]
+      },
+      "bounds": {
+        "x": -461.249,
+        "y": -150.651,
+        "width": 1294.832,
+        "height": 671.498
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack_A",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4037_demetr/default/front": {
       "kind": "operator",
@@ -102915,8 +103682,69 @@
           "sha256": "e9bfed274b99f0e24665eb0ec80422ddb0bebd24ffd5a5e4e01c3a7336d0861e"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack_A": 0.8,
+        "Attack_B": 0.8,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 4,
+        "Skill_1": 0.8,
+        "Skill_2_Begin": 0.167,
+        "Skill_2_End": 0.167,
+        "Skill_2_Idle": 2,
+        "Skill_2_Loop": 0.8,
+        "Skill_3_Back": 0.5,
+        "Skill_3_Begin": 0.167,
+        "Skill_3_End": 0.167,
+        "Skill_3_Idle": 4,
+        "Skill_3_Loop_A": 0.8,
+        "Skill_3_Loop_B": 0.8,
+        "Skill_3_ReStart_Begin": 0.2,
+        "Skill_3_ReStart_End": 0.3,
+        "Start": 1
+      },
+      "hits": {
+        "Attack_A": [
+          0.333
+        ],
+        "Attack_B": [
+          0.333
+        ],
+        "Skill_1": [
+          0.233,
+          0.433
+        ],
+        "Skill_2_Loop": [
+          0.333
+        ],
+        "Skill_3_Loop_A": [
+          0.333
+        ],
+        "Skill_3_Loop_B": [
+          0.333
+        ],
+        "Skill_3_ReStart_End": [
+          0.1
+        ]
+      },
+      "bounds": {
+        "x": -461.249,
+        "y": -150.651,
+        "width": 1294.832,
+        "height": 671.498
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack_A",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4037_demetr/default/walk": {
       "kind": "operator",
@@ -159296,6 +160124,1258 @@
         "die": "Die",
         "stun": null,
         "move": null
+      }
+    },
+    "operator/token_10064_wang_stone1/default/front": {
+      "kind": "operator",
+      "id": "token_10064_wang_stone1",
+      "variant": "default",
+      "facing": "front",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_4.ab",
+          "bytes": 2568582,
+          "md5": "0fa7fd1e638ba6a269e09b6398ec5028",
+          "sha256": "af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_4.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_4.ab",
+        "extractedSkeleton": "token_10064_wang_stone1.skel",
+        "facingAlias": "single-original-model",
+        "originalPathIds": {
+          "rootPathId": "5811277307054023192",
+          "controllerPathId": "-9065475664010583528",
+          "animatorPathId": "-8422643847109254632",
+          "faceSwitcherPathId": "5241143822694638104",
+          "skeletonAnimationPathId": "-5577004064715152872",
+          "skeletonDataAssetPathId": "-185606049146996886",
+          "textAssetPathId": "5276863382540117202",
+          "atlasAssetPathId": "-6955997310926197933",
+          "atlasTextAssetPathId": "-917945545328281576",
+          "materialPathId": "4516885956693150239",
+          "texturePathId": "5291529385875616907"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10064_wang_stone1/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10064_wang_stone1.skel",
+        "bytes": 2961,
+        "sha256": "83cbb7cb0a3384623a43ab020cdc5163abca83fda2f349a351fd54f812075526"
+      },
+      "atlas": {
+        "path": "models/operator/token_10064_wang_stone1/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10064_wang_stone1.atlas",
+        "bytes": 295,
+        "sha256": "875d439eb08366d60ee963223cf8a7670c13778c195fd2aaf4c3917935c01f40"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10064_wang_stone1/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10064_wang_stone1.png",
+          "bytes": 13844,
+          "sha256": "9c448328d1adb2ab0b490402537807ed9aad83a2626f995eb071ec0887db0806"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 0.333,
+        "Default": 0,
+        "Idle": 1.667,
+        "Start": 0.333
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "skill": null,
+        "die": null,
+        "stun": null,
+        "move": null
+      },
+      "hits": {
+        "Attack": [
+          0.167
+        ]
+      },
+      "bounds": null,
+      "avatar": {
+        "path": "models/operator/token_10064_wang_stone1/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/avatar.png",
+        "bytes": 18005,
+        "sha256": "f444611725b09864d39ccde6ce1ce470ecc2cf19dfc0f9fabf1fc8b2c343c7e0",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "e5c3889ce7efb39ebb30edc382a7f16724369618335427f7c496ce4cff221c28",
+          "spritePathId": "6627777534124780985",
+          "texturePathId": "-3075414860925145671",
+          "proof": "source-reviews/wang-stone-avatar.json",
+          "proofSha256": "7a7ef35cad121e843b7114d4073713e3d0e0aec79f8af8b9bd48946792ed1a6b"
+        }
+      }
+    },
+    "operator/token_10064_wang_stone1/default/back": {
+      "kind": "operator",
+      "id": "token_10064_wang_stone1",
+      "variant": "default",
+      "facing": "back",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_4.ab",
+          "bytes": 2568582,
+          "md5": "0fa7fd1e638ba6a269e09b6398ec5028",
+          "sha256": "af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_4.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_4.ab",
+        "extractedSkeleton": "token_10064_wang_stone1.skel",
+        "facingAlias": "single-original-model",
+        "originalPathIds": {
+          "rootPathId": "5811277307054023192",
+          "controllerPathId": "-9065475664010583528",
+          "animatorPathId": "-8422643847109254632",
+          "faceSwitcherPathId": "5241143822694638104",
+          "skeletonAnimationPathId": "-5577004064715152872",
+          "skeletonDataAssetPathId": "-185606049146996886",
+          "textAssetPathId": "5276863382540117202",
+          "atlasAssetPathId": "-6955997310926197933",
+          "atlasTextAssetPathId": "-917945545328281576",
+          "materialPathId": "4516885956693150239",
+          "texturePathId": "5291529385875616907"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10064_wang_stone1/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10064_wang_stone1.skel",
+        "bytes": 2961,
+        "sha256": "83cbb7cb0a3384623a43ab020cdc5163abca83fda2f349a351fd54f812075526"
+      },
+      "atlas": {
+        "path": "models/operator/token_10064_wang_stone1/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10064_wang_stone1.atlas",
+        "bytes": 295,
+        "sha256": "875d439eb08366d60ee963223cf8a7670c13778c195fd2aaf4c3917935c01f40"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10064_wang_stone1/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10064_wang_stone1.png",
+          "bytes": 13844,
+          "sha256": "9c448328d1adb2ab0b490402537807ed9aad83a2626f995eb071ec0887db0806"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 0.333,
+        "Default": 0,
+        "Idle": 1.667,
+        "Start": 0.333
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "skill": null,
+        "die": null,
+        "stun": null,
+        "move": null
+      },
+      "hits": {
+        "Attack": [
+          0.167
+        ]
+      },
+      "bounds": null,
+      "avatar": {
+        "path": "models/operator/token_10064_wang_stone1/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/avatar.png",
+        "bytes": 18005,
+        "sha256": "f444611725b09864d39ccde6ce1ce470ecc2cf19dfc0f9fabf1fc8b2c343c7e0",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "e5c3889ce7efb39ebb30edc382a7f16724369618335427f7c496ce4cff221c28",
+          "spritePathId": "6627777534124780985",
+          "texturePathId": "-3075414860925145671",
+          "proof": "source-reviews/wang-stone-avatar.json",
+          "proofSha256": "7a7ef35cad121e843b7114d4073713e3d0e0aec79f8af8b9bd48946792ed1a6b"
+        }
+      }
+    },
+    "operator/token_10051_radian_tower1/default/front": {
+      "kind": "operator",
+      "id": "token_10051_radian_tower1",
+      "variant": "default",
+      "facing": "front",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_0.ab",
+          "bytes": 5046810,
+          "md5": "1d0326e80b1b7cd15178f64f0346602b",
+          "sha256": "49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_0.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_0.ab",
+        "extractedSkeleton": "token_10051_radian_tower1.skel",
+        "facingAlias": "single-original-model",
+        "originalPathIds": {
+          "rootPathId": "-9102937026467823022",
+          "controllerPathId": "8532660068973183570",
+          "animatorPathId": "-5455303238115818926",
+          "faceSwitcherPathId": "-1158268052239646126",
+          "skeletonAnimationPathId": "-8646745374682545582",
+          "skeletonDataAssetPathId": "160359930190922482",
+          "textAssetPathId": "-1301934344771138309",
+          "atlasAssetPathId": "-3810131710942423026",
+          "atlasTextAssetPathId": "-5859852883165184317",
+          "materialPathId": "3297793135604655568",
+          "texturePathId": "85036250512411924"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10051_radian_tower1/default/front/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10051_radian_tower1.skel",
+        "bytes": 122414,
+        "sha256": "45f116dcf790434c3bdbb5ed06597b73b430734f3d4e54d4209199e8b6cb9079"
+      },
+      "atlas": {
+        "path": "models/operator/token_10051_radian_tower1/default/front/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10051_radian_tower1.atlas",
+        "bytes": 2574,
+        "sha256": "f7c7921dc466a9f675393e58e912a1573c5be7f3ded971685917350109a19156"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10051_radian_tower1/default/front/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10051_radian_tower1.png",
+          "bytes": 24901,
+          "sha256": "01e056186c3936c67eaa48a1e542e68e844484e8a22006502778060c697653ca"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "C_Default": 0,
+        "C_Skill1_Attack": 1.2,
+        "C_Skill1_Die": 1,
+        "C_Skill1_Idle": 4,
+        "C_Skill1_Start": 1
+      },
+      "animationRoles": {
+        "idle": "C_Skill1_Idle",
+        "deploy": "C_Skill1_Start",
+        "attack": {
+          "begin": null,
+          "loop": "C_Skill1_Attack",
+          "end": null
+        },
+        "skill": null,
+        "die": "C_Skill1_Die",
+        "stun": null,
+        "move": null
+      },
+      "hits": {
+        "C_Skill1_Attack": [
+          0.267
+        ]
+      },
+      "bounds": null,
+      "avatar": {
+        "path": "models/operator/token_10051_radian_tower1/default/front/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/avatar.png",
+        "bytes": 20083,
+        "sha256": "57a411a31814ca6859b83eedd9dec39500026bd70a5062f24fdf1ddb8e40b0ca",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "b4cf621e16e075b3a82bfec7eb4a2318688e926feb025d899392814a69f4bd72",
+          "spritePathId": "469278986807388866",
+          "texturePathId": "5578809178006989506",
+          "proof": "source-reviews/radian-tower1-avatar.json",
+          "proofSha256": "fd6d2d81910b186c15d01d30d75c439bd6377b22360b3b656e48bd67f10578ad"
+        }
+      }
+    },
+    "operator/token_10051_radian_tower1/default/back": {
+      "kind": "operator",
+      "id": "token_10051_radian_tower1",
+      "variant": "default",
+      "facing": "back",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_0.ab",
+          "bytes": 5046810,
+          "md5": "1d0326e80b1b7cd15178f64f0346602b",
+          "sha256": "49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_0.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_0.ab",
+        "extractedSkeleton": "token_10051_radian_tower1.skel",
+        "facingAlias": "single-original-model",
+        "originalPathIds": {
+          "rootPathId": "-9102937026467823022",
+          "controllerPathId": "8532660068973183570",
+          "animatorPathId": "-5455303238115818926",
+          "faceSwitcherPathId": "-1158268052239646126",
+          "skeletonAnimationPathId": "-8646745374682545582",
+          "skeletonDataAssetPathId": "160359930190922482",
+          "textAssetPathId": "-1301934344771138309",
+          "atlasAssetPathId": "-3810131710942423026",
+          "atlasTextAssetPathId": "-5859852883165184317",
+          "materialPathId": "3297793135604655568",
+          "texturePathId": "85036250512411924"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10051_radian_tower1/default/back/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10051_radian_tower1.skel",
+        "bytes": 122414,
+        "sha256": "45f116dcf790434c3bdbb5ed06597b73b430734f3d4e54d4209199e8b6cb9079"
+      },
+      "atlas": {
+        "path": "models/operator/token_10051_radian_tower1/default/back/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10051_radian_tower1.atlas",
+        "bytes": 2574,
+        "sha256": "f7c7921dc466a9f675393e58e912a1573c5be7f3ded971685917350109a19156"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10051_radian_tower1/default/back/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10051_radian_tower1.png",
+          "bytes": 24901,
+          "sha256": "01e056186c3936c67eaa48a1e542e68e844484e8a22006502778060c697653ca"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "C_Default": 0,
+        "C_Skill1_Attack": 1.2,
+        "C_Skill1_Die": 1,
+        "C_Skill1_Idle": 4,
+        "C_Skill1_Start": 1
+      },
+      "animationRoles": {
+        "idle": "C_Skill1_Idle",
+        "deploy": "C_Skill1_Start",
+        "attack": {
+          "begin": null,
+          "loop": "C_Skill1_Attack",
+          "end": null
+        },
+        "skill": null,
+        "die": "C_Skill1_Die",
+        "stun": null,
+        "move": null
+      },
+      "hits": {
+        "C_Skill1_Attack": [
+          0.267
+        ]
+      },
+      "bounds": null,
+      "avatar": {
+        "path": "models/operator/token_10051_radian_tower1/default/back/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/avatar.png",
+        "bytes": 20083,
+        "sha256": "57a411a31814ca6859b83eedd9dec39500026bd70a5062f24fdf1ddb8e40b0ca",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "b4cf621e16e075b3a82bfec7eb4a2318688e926feb025d899392814a69f4bd72",
+          "spritePathId": "469278986807388866",
+          "texturePathId": "5578809178006989506",
+          "proof": "source-reviews/radian-tower1-avatar.json",
+          "proofSha256": "fd6d2d81910b186c15d01d30d75c439bd6377b22360b3b656e48bd67f10578ad"
+        }
+      }
+    },
+    "operator/token_10052_radian_tower2/default/front": {
+      "kind": "operator",
+      "id": "token_10052_radian_tower2",
+      "variant": "default",
+      "facing": "front",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_0.ab",
+          "bytes": 5046810,
+          "md5": "1d0326e80b1b7cd15178f64f0346602b",
+          "sha256": "49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_0.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "Distinct original Front/Back skeletons and zero-duration clips retained; no missing clip invented"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_0.ab",
+        "extractedSkeleton": "token_10052_radian_tower2.skel",
+        "originalPathIds": {
+          "rootPathId": "5850540471643347921",
+          "controllerPathId": "4237700582519217105",
+          "animatorPathId": "-1637904230622422063",
+          "faceSwitcherPathId": "1961427195066981329",
+          "skeletonAnimationPathId": "7765668938222803921",
+          "skeletonDataAssetPathId": "9131428283893604480",
+          "textAssetPathId": "6696196962687639945",
+          "atlasAssetPathId": "-3250277543508508068",
+          "atlasTextAssetPathId": "5590412247012793834",
+          "materialPathId": "4556942365834692427",
+          "texturePathId": "-3135733404471907149"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "Distinct original Front/Back skeletons and zero-duration clips retained; no missing clip invented"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10052_radian_tower2/default/front/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10052_radian_tower2.skel",
+        "bytes": 90132,
+        "sha256": "32a30b21016bd12d7e879410baa17ce3d27c8a9d7b246d02587eddebb99a37ec"
+      },
+      "atlas": {
+        "path": "models/operator/token_10052_radian_tower2/default/front/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10052_radian_tower2.atlas",
+        "bytes": 2524,
+        "sha256": "3d2a166a5b6cce92d669fa6420e8a9acc392ccf3d4f50f6a73f8f3e2fda377b0"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10052_radian_tower2/default/front/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10052_radian_tower2.png",
+          "bytes": 26620,
+          "sha256": "a7d4cb8383ed6f89db0894effb62a124f02d8a77274f4dde2d48f2a2ee4cd471"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Die": 1,
+        "Idle": 4.2,
+        "Skill_Idle": 3,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": null,
+        "skill": null,
+        "die": "Die",
+        "stun": null,
+        "move": null
+      },
+      "hits": {
+        "Idle": [
+          0.5
+        ],
+        "Skill_Idle": [
+          0.367
+        ]
+      },
+      "bounds": {
+        "x": -157.661,
+        "y": -493.753,
+        "width": 599.948,
+        "height": 130.995
+      },
+      "avatar": {
+        "path": "models/operator/token_10052_radian_tower2/default/front/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/avatar.png",
+        "bytes": 27098,
+        "sha256": "4907acfdbbfa0cc401c593cf2932c4a0685f3ceb9940fa7d2609614abf686202",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "e5c3889ce7efb39ebb30edc382a7f16724369618335427f7c496ce4cff221c28",
+          "spritePathId": "4128345594445033839",
+          "texturePathId": "-9108107031600696977",
+          "proof": "source-reviews/radian-tower2-avatar.json",
+          "proofSha256": "6a7c054e04460df10180aa5a149a5c1a8fa07a9bcfbc5623cdffd1a446f805e6"
+        }
+      }
+    },
+    "operator/token_10052_radian_tower2/default/back": {
+      "kind": "operator",
+      "id": "token_10052_radian_tower2",
+      "variant": "default",
+      "facing": "back",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_0.ab",
+          "bytes": 5046810,
+          "md5": "1d0326e80b1b7cd15178f64f0346602b",
+          "sha256": "49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_0.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "Distinct original Front/Back skeletons and zero-duration clips retained; no missing clip invented"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_0.ab",
+        "extractedSkeleton": "token_10052_radian_tower2.skel",
+        "originalPathIds": {
+          "rootPathId": "5850540471643347921",
+          "controllerPathId": "4237700582519217105",
+          "animatorPathId": "-1637904230622422063",
+          "faceSwitcherPathId": "1961427195066981329",
+          "skeletonAnimationPathId": "-8940856825319121967",
+          "skeletonDataAssetPathId": "-7933921864723477064",
+          "textAssetPathId": "-1876930573457636026",
+          "atlasAssetPathId": "-5083460082436127411",
+          "atlasTextAssetPathId": "-1729270995189820176",
+          "materialPathId": "-7028955252961056389",
+          "texturePathId": "-7317730943746818152"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "Distinct original Front/Back skeletons and zero-duration clips retained; no missing clip invented"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10052_radian_tower2/default/back/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10052_radian_tower2.skel",
+        "bytes": 95802,
+        "sha256": "c03c822425a8828c5ceec8a88d9b477bbde9250fc02b1e2fe76310e38abc891b"
+      },
+      "atlas": {
+        "path": "models/operator/token_10052_radian_tower2/default/back/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10052_radian_tower2.atlas",
+        "bytes": 2524,
+        "sha256": "3d2a166a5b6cce92d669fa6420e8a9acc392ccf3d4f50f6a73f8f3e2fda377b0"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10052_radian_tower2/default/back/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10052_radian_tower2.png",
+          "bytes": 26620,
+          "sha256": "a7d4cb8383ed6f89db0894effb62a124f02d8a77274f4dde2d48f2a2ee4cd471"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Die": 1,
+        "Idle": 4.2,
+        "Skill_Idle": 3,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": null,
+        "skill": null,
+        "die": "Die",
+        "stun": null,
+        "move": null
+      },
+      "hits": {
+        "Idle": [
+          0.5
+        ],
+        "Skill_Idle": [
+          0.367
+        ]
+      },
+      "bounds": {
+        "x": -157.661,
+        "y": -493.753,
+        "width": 599.948,
+        "height": 130.995
+      },
+      "avatar": {
+        "path": "models/operator/token_10052_radian_tower2/default/back/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/avatar.png",
+        "bytes": 27098,
+        "sha256": "4907acfdbbfa0cc401c593cf2932c4a0685f3ceb9940fa7d2609614abf686202",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "e5c3889ce7efb39ebb30edc382a7f16724369618335427f7c496ce4cff221c28",
+          "spritePathId": "4128345594445033839",
+          "texturePathId": "-9108107031600696977",
+          "proof": "source-reviews/radian-tower2-avatar.json",
+          "proofSha256": "6a7c054e04460df10180aa5a149a5c1a8fa07a9bcfbc5623cdffd1a446f805e6"
+        }
+      }
+    },
+    "operator/token_10052_radian_tower2/default/down": {
+      "kind": "operator",
+      "id": "token_10052_radian_tower2",
+      "variant": "default",
+      "facing": "down",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_0.ab",
+          "bytes": 5046810,
+          "md5": "1d0326e80b1b7cd15178f64f0346602b",
+          "sha256": "49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_0.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "Distinct original Front/Back skeletons and zero-duration clips retained; no missing clip invented"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_0.ab",
+        "extractedSkeleton": "token_10052_radian_tower2.skel",
+        "originalPathIds": {
+          "rootPathId": "5850540471643347921",
+          "controllerPathId": "4237700582519217105",
+          "animatorPathId": "-1637904230622422063",
+          "faceSwitcherPathId": "1961427195066981329",
+          "skeletonAnimationPathId": "-5406102008328938543",
+          "skeletonDataAssetPathId": "-2702685928518212632",
+          "textAssetPathId": "-4768233211345805921",
+          "atlasAssetPathId": "1443475847358363353",
+          "atlasTextAssetPathId": "-6330449663929679440",
+          "materialPathId": "3425702756022093094",
+          "texturePathId": "633773923076461792"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "Distinct original Front/Back skeletons and zero-duration clips retained; no missing clip invented"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10052_radian_tower2/default/down/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10052_radian_tower2.skel",
+        "bytes": 102227,
+        "sha256": "8fee10cec20c2d4783f445d2420d296e1c5eea0d7073f95e696493d025ef47f8"
+      },
+      "atlas": {
+        "path": "models/operator/token_10052_radian_tower2/default/down/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10052_radian_tower2.atlas",
+        "bytes": 2524,
+        "sha256": "3d2a166a5b6cce92d669fa6420e8a9acc392ccf3d4f50f6a73f8f3e2fda377b0"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10052_radian_tower2/default/down/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10052_radian_tower2.png",
+          "bytes": 26620,
+          "sha256": "a7d4cb8383ed6f89db0894effb62a124f02d8a77274f4dde2d48f2a2ee4cd471"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Die": 1,
+        "Idle": 4.2,
+        "Skill_Idle": 3,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": null,
+        "skill": null,
+        "die": "Die",
+        "stun": null,
+        "move": null
+      },
+      "hits": {
+        "Idle": [
+          0.5
+        ],
+        "Skill_Idle": [
+          0.367
+        ]
+      },
+      "bounds": {
+        "x": -157.661,
+        "y": -493.753,
+        "width": 599.948,
+        "height": 130.995
+      }
+    },
+    "operator/token_10053_radian_tower3/default/front": {
+      "kind": "operator",
+      "id": "token_10053_radian_tower3",
+      "variant": "default",
+      "facing": "front",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_0.ab",
+          "bytes": 5046810,
+          "md5": "1d0326e80b1b7cd15178f64f0346602b",
+          "sha256": "49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_0.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "Distinct original Front/Back skeletons and zero-duration clips retained; no missing clip invented"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_0.ab",
+        "extractedSkeleton": "token_10053_radian_tower3.skel",
+        "originalPathIds": {
+          "rootPathId": "2283841162274747279",
+          "controllerPathId": "3945268681089495951",
+          "animatorPathId": "5391133696830419855",
+          "faceSwitcherPathId": "-2139076740803775601",
+          "skeletonAnimationPathId": "-5854753415677004913",
+          "skeletonDataAssetPathId": "-804319779006502672",
+          "textAssetPathId": "-730228720257398950",
+          "atlasAssetPathId": "5385878883541687423",
+          "atlasTextAssetPathId": "-1857074282023030701",
+          "materialPathId": "-3349387595706931901",
+          "texturePathId": "6552525832194161037"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "Distinct original Front/Back skeletons and zero-duration clips retained; no missing clip invented"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10053_radian_tower3/default/front/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10053_radian_tower3.skel",
+        "bytes": 92791,
+        "sha256": "7708ad298e2df1dcfd5baa68ea956296a615cd3c11134119dde0905d47d1c869"
+      },
+      "atlas": {
+        "path": "models/operator/token_10053_radian_tower3/default/front/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10053_radian_tower3.atlas",
+        "bytes": 6495,
+        "sha256": "db62b39c997b95ddf7eb6fbe0b878791f2ec811ce14c836c2deac0cad8b2021b"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10053_radian_tower3/default/front/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10053_radian_tower3.png",
+          "bytes": 79238,
+          "sha256": "ec366dbbc664c3ae0a335706030fc5e6654f19aab8e18ae4e708cce57c9132b3"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 2,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1.333,
+        "Skill_Begin": 0.333,
+        "Skill_End": 0.333,
+        "Skill_Idle": 0.667,
+        "Skill_Loop": 2,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "skill": null,
+        "die": "Die",
+        "stun": null,
+        "move": null
+      },
+      "hits": {
+        "Attack": [
+          0.267
+        ],
+        "Skill_Loop": [
+          0.233
+        ]
+      },
+      "bounds": {
+        "x": -684.731,
+        "y": -862.267,
+        "width": 391.513,
+        "height": 680.516
+      },
+      "avatar": {
+        "path": "models/operator/token_10053_radian_tower3/default/front/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/avatar.png",
+        "bytes": 30846,
+        "sha256": "082232ed6e6212755bd7ecc6f601ed19c2b1910ce4129b5130a3557928e1932a",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "e5c3889ce7efb39ebb30edc382a7f16724369618335427f7c496ce4cff221c28",
+          "spritePathId": "2922568948662476231",
+          "texturePathId": "1344575260655164871",
+          "proof": "source-reviews/radian-tower3-avatar.json",
+          "proofSha256": "0b314f70b64a973a042b5ed98460386f37a4254aa272c70612ed002b1a5f84fa"
+        }
+      }
+    },
+    "operator/token_10053_radian_tower3/default/back": {
+      "kind": "operator",
+      "id": "token_10053_radian_tower3",
+      "variant": "default",
+      "facing": "back",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_0.ab",
+          "bytes": 5046810,
+          "md5": "1d0326e80b1b7cd15178f64f0346602b",
+          "sha256": "49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_0.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "Distinct original Front/Back skeletons and zero-duration clips retained; no missing clip invented"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_0.ab",
+        "extractedSkeleton": "token_10053_radian_tower3.skel",
+        "originalPathIds": {
+          "rootPathId": "2283841162274747279",
+          "controllerPathId": "3945268681089495951",
+          "animatorPathId": "5391133696830419855",
+          "faceSwitcherPathId": "-2139076740803775601",
+          "skeletonAnimationPathId": "664086076521919375",
+          "skeletonDataAssetPathId": "2564702102547954447",
+          "textAssetPathId": "7791621680465965597",
+          "atlasAssetPathId": "-4703499947347106258",
+          "atlasTextAssetPathId": "6774613433885035651",
+          "materialPathId": "1229337624392634795",
+          "texturePathId": "6119881697937719230"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "Distinct original Front/Back skeletons and zero-duration clips retained; no missing clip invented"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10053_radian_tower3/default/back/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10053_radian_tower3.skel",
+        "bytes": 86323,
+        "sha256": "6f75b29e2a6a2a3681cf95877dfd29e3b8db938a8806c346cc392b05a2d7b043"
+      },
+      "atlas": {
+        "path": "models/operator/token_10053_radian_tower3/default/back/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10053_radian_tower3.atlas",
+        "bytes": 6495,
+        "sha256": "db62b39c997b95ddf7eb6fbe0b878791f2ec811ce14c836c2deac0cad8b2021b"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10053_radian_tower3/default/back/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10053_radian_tower3.png",
+          "bytes": 79238,
+          "sha256": "ec366dbbc664c3ae0a335706030fc5e6654f19aab8e18ae4e708cce57c9132b3"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 2,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1.333,
+        "Skill_Begin": 0.333,
+        "Skill_End": 0.333,
+        "Skill_Idle": 0.667,
+        "Skill_Loop": 2,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "skill": null,
+        "die": "Die",
+        "stun": null,
+        "move": null
+      },
+      "hits": {
+        "Attack": [
+          0.267
+        ],
+        "Skill_Loop": [
+          0.233
+        ]
+      },
+      "bounds": {
+        "x": -684.731,
+        "y": -862.267,
+        "width": 391.513,
+        "height": 680.516
+      },
+      "avatar": {
+        "path": "models/operator/token_10053_radian_tower3/default/back/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/avatar.png",
+        "bytes": 30846,
+        "sha256": "082232ed6e6212755bd7ecc6f601ed19c2b1910ce4129b5130a3557928e1932a",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "e5c3889ce7efb39ebb30edc382a7f16724369618335427f7c496ce4cff221c28",
+          "spritePathId": "2922568948662476231",
+          "texturePathId": "1344575260655164871",
+          "proof": "source-reviews/radian-tower3-avatar.json",
+          "proofSha256": "0b314f70b64a973a042b5ed98460386f37a4254aa272c70612ed002b1a5f84fa"
+        }
+      }
+    },
+    "operator/token_10053_radian_tower3/default/down": {
+      "kind": "operator",
+      "id": "token_10053_radian_tower3",
+      "variant": "default",
+      "facing": "down",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_0.ab",
+          "bytes": 5046810,
+          "md5": "1d0326e80b1b7cd15178f64f0346602b",
+          "sha256": "49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_0.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "Distinct original Front/Back skeletons and zero-duration clips retained; no missing clip invented"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_0.ab",
+        "extractedSkeleton": "token_10053_radian_tower3.skel",
+        "originalPathIds": {
+          "rootPathId": "2283841162274747279",
+          "controllerPathId": "3945268681089495951",
+          "animatorPathId": "5391133696830419855",
+          "faceSwitcherPathId": "-2139076740803775601",
+          "skeletonAnimationPathId": "-933888919727492209",
+          "skeletonDataAssetPathId": "3333855432461759742",
+          "textAssetPathId": "-9036739378570767736",
+          "atlasAssetPathId": "-4965241805261016646",
+          "atlasTextAssetPathId": "4623311947304265781",
+          "materialPathId": "-4077682982333580216",
+          "texturePathId": "6086451343174045842"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "Distinct original Front/Back skeletons and zero-duration clips retained; no missing clip invented"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10053_radian_tower3/default/down/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10053_radian_tower3.skel",
+        "bytes": 80906,
+        "sha256": "4fcf8014f79fb0c257403b7e2cb4d743cb4b723c3753354458c59e719305d01b"
+      },
+      "atlas": {
+        "path": "models/operator/token_10053_radian_tower3/default/down/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10053_radian_tower3.atlas",
+        "bytes": 6495,
+        "sha256": "db62b39c997b95ddf7eb6fbe0b878791f2ec811ce14c836c2deac0cad8b2021b"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10053_radian_tower3/default/down/49543cf7477910e91f94baad43cb4b617cfba7dced51b88399234deca3dcac6b/token_10053_radian_tower3.png",
+          "bytes": 79238,
+          "sha256": "ec366dbbc664c3ae0a335706030fc5e6654f19aab8e18ae4e708cce57c9132b3"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 2,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1.333,
+        "Skill_Begin": 0.333,
+        "Skill_End": 0.333,
+        "Skill_Idle": 0.667,
+        "Skill_Loop": 2,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": {
+          "begin": null,
+          "loop": "Attack",
+          "end": null
+        },
+        "skill": null,
+        "die": "Die",
+        "stun": null,
+        "move": null
+      },
+      "hits": {
+        "Attack": [
+          0.267
+        ],
+        "Skill_Loop": [
+          0.233
+        ]
+      },
+      "bounds": {
+        "x": -684.731,
+        "y": -862.267,
+        "width": 391.513,
+        "height": 680.516
+      }
+    },
+    "operator/token_10068_kalts2_mtship/default/front": {
+      "kind": "operator",
+      "id": "token_10068_kalts2_mtship",
+      "variant": "default",
+      "facing": "front",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_4.ab",
+          "bytes": 2568582,
+          "md5": "0fa7fd1e638ba6a269e09b6398ec5028",
+          "sha256": "af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_4.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_4.ab",
+        "extractedSkeleton": "token_10068_kalts2_mtship.skel",
+        "facingAlias": "single-original-model",
+        "originalPathIds": {
+          "rootPathId": "4271001837536467036",
+          "controllerPathId": "-3924234592717776804",
+          "animatorPathId": "-452372911050860452",
+          "faceSwitcherPathId": "4227122262602995804",
+          "skeletonAnimationPathId": "-8759338209520002980",
+          "skeletonDataAssetPathId": "-2977763075991241592",
+          "textAssetPathId": "2867186674132826075",
+          "atlasAssetPathId": "6440056510548046590",
+          "atlasTextAssetPathId": "2271708715758681058",
+          "materialPathId": "7893308405762740566",
+          "texturePathId": "-7521093794680315839"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10068_kalts2_mtship/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10068_kalts2_mtship.skel",
+        "bytes": 1608,
+        "sha256": "e5dbf99bc88c251af9226d5bd14972ebe684e8c506cba57a10546e1b34541c3b"
+      },
+      "atlas": {
+        "path": "models/operator/token_10068_kalts2_mtship/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10068_kalts2_mtship.atlas",
+        "bytes": 203,
+        "sha256": "6e57e665ffc4dc5ed4e68099bfe3e0bb8b30b7ccaefa2b0f8cfc83b336b19f32"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10068_kalts2_mtship/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10068_kalts2_mtship.png",
+          "bytes": 34295,
+          "sha256": "2b395d91793152bea753af0dbb95c0acb8834b3c2384ef4ecb3522b21ad615d8"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": null,
+        "skill": null,
+        "die": "Die",
+        "stun": null,
+        "move": null
+      },
+      "hits": {},
+      "bounds": {
+        "x": -218.217,
+        "y": -160.033,
+        "width": 398,
+        "height": 410
+      },
+      "avatar": {
+        "path": "models/operator/token_10068_kalts2_mtship/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/avatar.png",
+        "bytes": 27861,
+        "sha256": "49643d2d70828fd54cd001ac959aec076aba8a0113f96267a962235c0d05278c",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "e5c3889ce7efb39ebb30edc382a7f16724369618335427f7c496ce4cff221c28",
+          "spritePathId": "2969609556768644796",
+          "texturePathId": "-7486568666054336836",
+          "proof": "source-reviews/kalts2-mtship-avatar.json",
+          "proofSha256": "c6d7415835bcd01d5fb51089909f46b021a47123e888b80f7f67805d9418b7e5"
+        }
+      }
+    },
+    "operator/token_10068_kalts2_mtship/default/back": {
+      "kind": "operator",
+      "id": "token_10068_kalts2_mtship",
+      "variant": "default",
+      "facing": "back",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_4.ab",
+          "bytes": 2568582,
+          "md5": "0fa7fd1e638ba6a269e09b6398ec5028",
+          "sha256": "af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_4.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_4.ab",
+        "extractedSkeleton": "token_10068_kalts2_mtship.skel",
+        "facingAlias": "single-original-model",
+        "originalPathIds": {
+          "rootPathId": "4271001837536467036",
+          "controllerPathId": "-3924234592717776804",
+          "animatorPathId": "-452372911050860452",
+          "faceSwitcherPathId": "4227122262602995804",
+          "skeletonAnimationPathId": "-8759338209520002980",
+          "skeletonDataAssetPathId": "-2977763075991241592",
+          "textAssetPathId": "2867186674132826075",
+          "atlasAssetPathId": "6440056510548046590",
+          "atlasTextAssetPathId": "2271708715758681058",
+          "materialPathId": "7893308405762740566",
+          "texturePathId": "-7521093794680315839"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10068_kalts2_mtship/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10068_kalts2_mtship.skel",
+        "bytes": 1608,
+        "sha256": "e5dbf99bc88c251af9226d5bd14972ebe684e8c506cba57a10546e1b34541c3b"
+      },
+      "atlas": {
+        "path": "models/operator/token_10068_kalts2_mtship/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10068_kalts2_mtship.atlas",
+        "bytes": 203,
+        "sha256": "6e57e665ffc4dc5ed4e68099bfe3e0bb8b30b7ccaefa2b0f8cfc83b336b19f32"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10068_kalts2_mtship/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10068_kalts2_mtship.png",
+          "bytes": 34295,
+          "sha256": "2b395d91793152bea753af0dbb95c0acb8834b3c2384ef4ecb3522b21ad615d8"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": null,
+        "skill": null,
+        "die": "Die",
+        "stun": null,
+        "move": null
+      },
+      "hits": {},
+      "bounds": {
+        "x": -218.217,
+        "y": -160.033,
+        "width": 398,
+        "height": 410
+      },
+      "avatar": {
+        "path": "models/operator/token_10068_kalts2_mtship/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/avatar.png",
+        "bytes": 27861,
+        "sha256": "49643d2d70828fd54cd001ac959aec076aba8a0113f96267a962235c0d05278c",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "e5c3889ce7efb39ebb30edc382a7f16724369618335427f7c496ce4cff221c28",
+          "spritePathId": "2969609556768644796",
+          "texturePathId": "-7486568666054336836",
+          "proof": "source-reviews/kalts2-mtship-avatar.json",
+          "proofSha256": "c6d7415835bcd01d5fb51089909f46b021a47123e888b80f7f67805d9418b7e5"
+        }
       }
     }
   },

@@ -354,3 +354,45 @@ Leizi the Thunderbringer's original files remain unchanged. [source-reviews/leiz
 Viy original artwork
 
 Viy's original files remain unchanged. [source-reviews/veen.json](source-reviews/veen.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Mantra original artwork
+
+Mantra's original files remain unchanged. [source-reviews/mantra.json](source-reviews/mantra.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Haruka original artwork
+
+Haruka's original files remain unchanged. [source-reviews/haruka.json](source-reviews/haruka.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Wang original artwork
+
+Wang's original files remain unchanged. [source-reviews/wang.json](source-reviews/wang.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Bellone original artwork
+
+Bellone's original files remain unchanged. [source-reviews/demetr.json](source-reviews/demetr.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Pramanix the Prerita original artwork
+
+Pramanix the Prerita's original files remain unchanged. [source-reviews/sbell2.json](source-reviews/sbell2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Angelina the Mellow Wish original artwork
+
+Angelina the Mellow Wish's original files remain unchanged. [source-reviews/aglna2.json](source-reviews/aglna2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Raidian original artwork
+
+Raidian's original files remain unchanged. [source-reviews/radian.json](source-reviews/radian.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Kal'tsit·Esperanta original artwork
+
+Kal'tsit·Esperanta's original files remain unchanged. [source-reviews/kalts2.json](source-reviews/kalts2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+Her tactical anchor (`token_10068_kalts2_mtship`) is recovered from the CN token bundle with its native pointers, decoded pixels and premultiplied alpha ([source-reviews/kalts2-mtship.json](source-reviews/kalts2-mtship.json)); its card avatar is the original 180x180 Sprite ([source-reviews/kalts2-mtship-avatar.json](source-reviews/kalts2-mtship-avatar.json)).
