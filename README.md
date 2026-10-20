@@ -396,3 +396,10 @@ Kal'tsit·Esperanta original artwork
 Kal'tsit·Esperanta's original files remain unchanged. [source-reviews/kalts2.json](source-reviews/kalts2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
 
 Her tactical anchor (`token_10068_kalts2_mtship`) is recovered from the CN token bundle with its native pointers, decoded pixels and premultiplied alpha ([source-reviews/kalts2-mtship.json](source-reviews/kalts2-mtship.json)); its card avatar is the original 180x180 Sprite ([source-reviews/kalts2-mtship-avatar.json](source-reviews/kalts2-mtship-avatar.json)).
+
+
+SilverAsh the Reignfrost original artwork
+
+SilverAsh the Reignfrost's original files remain unchanged. [source-reviews/svash2.json](source-reviews/svash2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+His Eye of the Blizzard cards (`token_10057_svash2_eagle1`/`2`/`3`, one per selected skill) are recovered from the CN token bundle with their native pointers, decoded pixels and premultiplied alpha ([source-reviews/svash2-eagle1.json](source-reviews/svash2-eagle1.json) and the matching `-eagle2`/`-eagle3` receipts). Each card avatar is the original 180x180 Sprite (`source-reviews/svash2-eagle*-avatar.json`).
