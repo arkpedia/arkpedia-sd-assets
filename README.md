@@ -403,3 +403,10 @@ SilverAsh the Reignfrost original artwork
 SilverAsh the Reignfrost's original files remain unchanged. [source-reviews/svash2.json](source-reviews/svash2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
 
 His Eye of the Blizzard cards (`token_10057_svash2_eagle1`/`2`/`3`, one per selected skill) are recovered from the CN token bundle with their native pointers, decoded pixels and premultiplied alpha ([source-reviews/svash2-eagle1.json](source-reviews/svash2-eagle1.json) and the matching `-eagle2`/`-eagle3` receipts). Each card avatar is the original 180x180 Sprite (`source-reviews/svash2-eagle*-avatar.json`).
+
+
+Nasti original artwork
+
+Nasti's original files remain unchanged. [source-reviews/nasti.json](source-reviews/nasti.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+Her three devices (`token_10059_nasti_nstdef`, `token_10060_nasti_nstchr`, `token_10061_nasti_nstbld`, one per selected skill) are recovered from the CN token bundle with their native pointers, decoded pixels and premultiplied alpha ([source-reviews/nasti-nstdef.json](source-reviews/nasti-nstdef.json) and the matching `-nstchr`/`-nstbld` receipts). Each card avatar is the original 180x180 Sprite (`source-reviews/nasti-*-avatar.json`).

@@ -100343,8 +100343,49 @@
           "sha256": "0742d4c4e812f9ee80d063e849cac80b9ac7e8a5aed0f09aff73a66abc4b5651"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.5,
+        "Default": 0,
+        "Idle": 2.667,
+        "Skill_1": 1.5,
+        "Skill_2_Begin": 0.833,
+        "Skill_2_End": 0.667,
+        "Skill_2_Idle": 2.667,
+        "Skill_3_Begin": 0.433,
+        "Skill_3_End": 0.333,
+        "Skill_3_Idle": 2.667,
+        "Skill_3_Loop": 1.5,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.433
+        ],
+        "Skill_1": [
+          0.8
+        ],
+        "Skill_3_Loop": [
+          0.5
+        ]
+      },
+      "bounds": {
+        "x": -1121.119,
+        "y": -4.607,
+        "width": 1399.853,
+        "height": 403.987
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": null,
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4212_nasti/default/front": {
       "kind": "operator",
@@ -100375,8 +100416,53 @@
           "sha256": "a5a3bfd78789958711023c25c9730bc27d716ba55ab4326d33203384c6c4792f"
         }
       ],
-      "premultipliedAlpha": false,
-      "animations": null
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.5,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 2.667,
+        "Skill_1": 1.5,
+        "Skill_2_Begin": 0.833,
+        "Skill_2_End": 0.667,
+        "Skill_2_Idle": 2.667,
+        "Skill_3_Begin": 0.433,
+        "Skill_3_End": 0.333,
+        "Skill_3_Idle": 2.667,
+        "Skill_3_Loop": 1.5,
+        "Start": 1
+      },
+      "hits": {
+        "Attack": [
+          0.433
+        ],
+        "Skill_1": [
+          0.8
+        ],
+        "Skill_3_Begin": [
+          0.433
+        ],
+        "Skill_3_Loop": [
+          0.5
+        ]
+      },
+      "bounds": {
+        "x": -1121.119,
+        "y": -4.607,
+        "width": 1399.853,
+        "height": 403.987
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": "Attack",
+        "attackDown": null,
+        "skill": null,
+        "skills": {},
+        "die": "Die",
+        "stun": null,
+        "move": null
+      }
     },
     "operator/char_4212_nasti/default/walk": {
       "kind": "operator",
@@ -162070,6 +162156,610 @@
           "texturePathId": "-3764712714936823025",
           "proof": "source-reviews/svash2-eagle3-avatar.json",
           "proofSha256": "780d3905d02304027f14d70d53e764e71fc7ade1318baa58128c4d76f4a73bfa"
+        }
+      }
+    },
+    "operator/token_10059_nasti_nstdef/default/front": {
+      "kind": "operator",
+      "id": "token_10059_nasti_nstdef",
+      "variant": "default",
+      "facing": "front",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_4.ab",
+          "bytes": 2568582,
+          "md5": "0fa7fd1e638ba6a269e09b6398ec5028",
+          "sha256": "af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_4.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_4.ab",
+        "extractedSkeleton": "token_10059_nasti_nstdef.skel",
+        "facingAlias": "single-original-model",
+        "originalPathIds": {
+          "rootPathId": "-3256769082811071101",
+          "controllerPathId": "5300537389745390979",
+          "animatorPathId": "7192793661870261635",
+          "faceSwitcherPathId": "6864443983147976067",
+          "skeletonAnimationPathId": "5256357867386520963",
+          "skeletonDataAssetPathId": "-5590114199219508842",
+          "textAssetPathId": "-856971425136859362",
+          "atlasAssetPathId": "-331827899375737190",
+          "atlasTextAssetPathId": "-8664908730175307040",
+          "materialPathId": "-2752747662819170192",
+          "texturePathId": "8637045789396128766"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10059_nasti_nstdef/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10059_nasti_nstdef.skel",
+        "bytes": 40403,
+        "sha256": "099a7ba1572ebf9d1f2bc0c295a190ebab73b9bae418187a0f37b612482fbe77"
+      },
+      "atlas": {
+        "path": "models/operator/token_10059_nasti_nstdef/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10059_nasti_nstdef.atlas",
+        "bytes": 3471,
+        "sha256": "6f6f010869c4a6b2b6351283026bd092d9e4b76eaeef1e39f58405a781395339"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10059_nasti_nstdef/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10059_nasti_nstdef.png",
+          "bytes": 29762,
+          "sha256": "126371853b0f615dae7cc5179ed5d9b38e025448a5cac3f330bc8382ab92beff"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1.333,
+        "Skill_Begin": 0.667,
+        "Skill_End": 0.333,
+        "Skill_Loop": 1.333,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": null,
+        "skill": null,
+        "die": "Die",
+        "stun": null,
+        "move": null
+      },
+      "hits": {},
+      "bounds": null,
+      "avatar": {
+        "path": "models/operator/token_10059_nasti_nstdef/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/avatar.png",
+        "bytes": 15405,
+        "sha256": "c5f39766f78a5b23cdbd209f326d164c43c32d90bff05263111f957f1e421408",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "e5c3889ce7efb39ebb30edc382a7f16724369618335427f7c496ce4cff221c28",
+          "spritePathId": "9196497741549012878",
+          "texturePathId": "8192056159552145294",
+          "proof": "source-reviews/nasti-nstdef-avatar.json",
+          "proofSha256": "b2928ff5546a32f328f18286215972bf4e3a8b931dd0f593ac507af0bfda3229"
+        }
+      }
+    },
+    "operator/token_10059_nasti_nstdef/default/back": {
+      "kind": "operator",
+      "id": "token_10059_nasti_nstdef",
+      "variant": "default",
+      "facing": "back",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_4.ab",
+          "bytes": 2568582,
+          "md5": "0fa7fd1e638ba6a269e09b6398ec5028",
+          "sha256": "af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_4.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_4.ab",
+        "extractedSkeleton": "token_10059_nasti_nstdef.skel",
+        "facingAlias": "single-original-model",
+        "originalPathIds": {
+          "rootPathId": "-3256769082811071101",
+          "controllerPathId": "5300537389745390979",
+          "animatorPathId": "7192793661870261635",
+          "faceSwitcherPathId": "6864443983147976067",
+          "skeletonAnimationPathId": "5256357867386520963",
+          "skeletonDataAssetPathId": "-5590114199219508842",
+          "textAssetPathId": "-856971425136859362",
+          "atlasAssetPathId": "-331827899375737190",
+          "atlasTextAssetPathId": "-8664908730175307040",
+          "materialPathId": "-2752747662819170192",
+          "texturePathId": "8637045789396128766"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10059_nasti_nstdef/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10059_nasti_nstdef.skel",
+        "bytes": 40403,
+        "sha256": "099a7ba1572ebf9d1f2bc0c295a190ebab73b9bae418187a0f37b612482fbe77"
+      },
+      "atlas": {
+        "path": "models/operator/token_10059_nasti_nstdef/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10059_nasti_nstdef.atlas",
+        "bytes": 3471,
+        "sha256": "6f6f010869c4a6b2b6351283026bd092d9e4b76eaeef1e39f58405a781395339"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10059_nasti_nstdef/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10059_nasti_nstdef.png",
+          "bytes": 29762,
+          "sha256": "126371853b0f615dae7cc5179ed5d9b38e025448a5cac3f330bc8382ab92beff"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1.333,
+        "Skill_Begin": 0.667,
+        "Skill_End": 0.333,
+        "Skill_Loop": 1.333,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "deploy": "Start",
+        "attack": null,
+        "skill": null,
+        "die": "Die",
+        "stun": null,
+        "move": null
+      },
+      "hits": {},
+      "bounds": null,
+      "avatar": {
+        "path": "models/operator/token_10059_nasti_nstdef/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/avatar.png",
+        "bytes": 15405,
+        "sha256": "c5f39766f78a5b23cdbd209f326d164c43c32d90bff05263111f957f1e421408",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "e5c3889ce7efb39ebb30edc382a7f16724369618335427f7c496ce4cff221c28",
+          "spritePathId": "9196497741549012878",
+          "texturePathId": "8192056159552145294",
+          "proof": "source-reviews/nasti-nstdef-avatar.json",
+          "proofSha256": "b2928ff5546a32f328f18286215972bf4e3a8b931dd0f593ac507af0bfda3229"
+        }
+      }
+    },
+    "operator/token_10060_nasti_nstchr/default/front": {
+      "kind": "operator",
+      "id": "token_10060_nasti_nstchr",
+      "variant": "default",
+      "facing": "front",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_4.ab",
+          "bytes": 2568582,
+          "md5": "0fa7fd1e638ba6a269e09b6398ec5028",
+          "sha256": "af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_4.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_4.ab",
+        "extractedSkeleton": "token_10060_nasti_nstchr.skel",
+        "facingAlias": "single-original-model",
+        "originalPathIds": {
+          "rootPathId": "-7901861346409785662",
+          "controllerPathId": "769433690442553026",
+          "animatorPathId": "2664838579536713410",
+          "faceSwitcherPathId": "5648215857184626370",
+          "skeletonAnimationPathId": "1732832385760679618",
+          "skeletonDataAssetPathId": "-6370409811269497931",
+          "textAssetPathId": "-4268051016701878893",
+          "atlasAssetPathId": "6540175032910056347",
+          "atlasTextAssetPathId": "1813237793437334686",
+          "materialPathId": "-4181407409393227699",
+          "texturePathId": "-1534118722958273668"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10060_nasti_nstchr/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10060_nasti_nstchr.skel",
+        "bytes": 91474,
+        "sha256": "076db6e80a7b49fb283f0e048f6967298deb7fa8ab3d336b88944515dc7a0bac"
+      },
+      "atlas": {
+        "path": "models/operator/token_10060_nasti_nstchr/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10060_nasti_nstchr.atlas",
+        "bytes": 2283,
+        "sha256": "ab1d9552ca93793996d5918618385baba9a36138f949df557210d6727bfb1681"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10060_nasti_nstchr/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10060_nasti_nstchr.png",
+          "bytes": 17339,
+          "sha256": "651821f9f38bc1cfe487aa9672a0628845f953ff839bc6a4d2937a6d102fa690"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Die": 1,
+        "Idle_1": 1.333,
+        "Idle_2": 1.333,
+        "Skill_Begin": 0.467,
+        "Skill_Down_Begin": 0.467,
+        "Skill_Down_End": 0.167,
+        "Skill_Down_Loop": 0.333,
+        "Skill_End": 0.167,
+        "Skill_Loop": 0.333,
+        "Skill_Up_Begin": 0.467,
+        "Skill_Up_End": 0.167,
+        "Skill_Up_Loop": 0.333,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle_1",
+        "deploy": "Start",
+        "attack": null,
+        "skill": null,
+        "die": "Die",
+        "stun": null,
+        "move": null
+      },
+      "hits": {},
+      "bounds": null,
+      "avatar": {
+        "path": "models/operator/token_10060_nasti_nstchr/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/avatar.png",
+        "bytes": 24618,
+        "sha256": "456502cffb23bf406dc738957a2ec5171dec546d69f6f58fdcbdfbe560373526",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "e5c3889ce7efb39ebb30edc382a7f16724369618335427f7c496ce4cff221c28",
+          "spritePathId": "-5300959099274417918",
+          "texturePathId": "1848683461400832258",
+          "proof": "source-reviews/nasti-nstchr-avatar.json",
+          "proofSha256": "17883deba25a9669a0cdfd4c2654be8e2137ea8f074a25f485dfc862ba6d69f3"
+        }
+      }
+    },
+    "operator/token_10060_nasti_nstchr/default/back": {
+      "kind": "operator",
+      "id": "token_10060_nasti_nstchr",
+      "variant": "default",
+      "facing": "back",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_4.ab",
+          "bytes": 2568582,
+          "md5": "0fa7fd1e638ba6a269e09b6398ec5028",
+          "sha256": "af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_4.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_4.ab",
+        "extractedSkeleton": "token_10060_nasti_nstchr.skel",
+        "facingAlias": "single-original-model",
+        "originalPathIds": {
+          "rootPathId": "-7901861346409785662",
+          "controllerPathId": "769433690442553026",
+          "animatorPathId": "2664838579536713410",
+          "faceSwitcherPathId": "5648215857184626370",
+          "skeletonAnimationPathId": "1732832385760679618",
+          "skeletonDataAssetPathId": "-6370409811269497931",
+          "textAssetPathId": "-4268051016701878893",
+          "atlasAssetPathId": "6540175032910056347",
+          "atlasTextAssetPathId": "1813237793437334686",
+          "materialPathId": "-4181407409393227699",
+          "texturePathId": "-1534118722958273668"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10060_nasti_nstchr/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10060_nasti_nstchr.skel",
+        "bytes": 91474,
+        "sha256": "076db6e80a7b49fb283f0e048f6967298deb7fa8ab3d336b88944515dc7a0bac"
+      },
+      "atlas": {
+        "path": "models/operator/token_10060_nasti_nstchr/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10060_nasti_nstchr.atlas",
+        "bytes": 2283,
+        "sha256": "ab1d9552ca93793996d5918618385baba9a36138f949df557210d6727bfb1681"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10060_nasti_nstchr/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10060_nasti_nstchr.png",
+          "bytes": 17339,
+          "sha256": "651821f9f38bc1cfe487aa9672a0628845f953ff839bc6a4d2937a6d102fa690"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Die": 1,
+        "Idle_1": 1.333,
+        "Idle_2": 1.333,
+        "Skill_Begin": 0.467,
+        "Skill_Down_Begin": 0.467,
+        "Skill_Down_End": 0.167,
+        "Skill_Down_Loop": 0.333,
+        "Skill_End": 0.167,
+        "Skill_Loop": 0.333,
+        "Skill_Up_Begin": 0.467,
+        "Skill_Up_End": 0.167,
+        "Skill_Up_Loop": 0.333,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle_1",
+        "deploy": "Start",
+        "attack": null,
+        "skill": null,
+        "die": "Die",
+        "stun": null,
+        "move": null
+      },
+      "hits": {},
+      "bounds": null,
+      "avatar": {
+        "path": "models/operator/token_10060_nasti_nstchr/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/avatar.png",
+        "bytes": 24618,
+        "sha256": "456502cffb23bf406dc738957a2ec5171dec546d69f6f58fdcbdfbe560373526",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "e5c3889ce7efb39ebb30edc382a7f16724369618335427f7c496ce4cff221c28",
+          "spritePathId": "-5300959099274417918",
+          "texturePathId": "1848683461400832258",
+          "proof": "source-reviews/nasti-nstchr-avatar.json",
+          "proofSha256": "17883deba25a9669a0cdfd4c2654be8e2137ea8f074a25f485dfc862ba6d69f3"
+        }
+      }
+    },
+    "operator/token_10061_nasti_nstbld/default/front": {
+      "kind": "operator",
+      "id": "token_10061_nasti_nstbld",
+      "variant": "default",
+      "facing": "front",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_4.ab",
+          "bytes": 2568582,
+          "md5": "0fa7fd1e638ba6a269e09b6398ec5028",
+          "sha256": "af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_4.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_4.ab",
+        "extractedSkeleton": "token_10061_nasti_nstbld.skel",
+        "facingAlias": "single-original-model",
+        "originalPathIds": {
+          "rootPathId": "-2516777268195659690",
+          "controllerPathId": "-6257090008822943658",
+          "animatorPathId": "-9006917584863006634",
+          "faceSwitcherPathId": "981976793013645398",
+          "skeletonAnimationPathId": "-8520522808034955178",
+          "skeletonDataAssetPathId": "-4254734054556352672",
+          "textAssetPathId": "-7599405907032678871",
+          "atlasAssetPathId": "-316848492931572975",
+          "atlasTextAssetPathId": "7733220273313702460",
+          "materialPathId": "-3904609780582178840",
+          "texturePathId": "9061619250352818455"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10061_nasti_nstbld/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10061_nasti_nstbld.skel",
+        "bytes": 40745,
+        "sha256": "3eca6c499a888f628f61427a2bfae329b9c50c527cf87048cef4dbeb6691eef5"
+      },
+      "atlas": {
+        "path": "models/operator/token_10061_nasti_nstbld/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10061_nasti_nstbld.atlas",
+        "bytes": 3282,
+        "sha256": "e43179cd0e6c2c1a8b9225631a91df32bace53896a90cb890cbeb791b35b74f3"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10061_nasti_nstbld/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10061_nasti_nstbld.png",
+          "bytes": 35079,
+          "sha256": "9d3b5fd73ec2b4051edf9f582e6720eac4c876ca523ea343c338a49976310ee5"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Die": 1,
+        "Idle_1": 2,
+        "Idle_2": 3.333,
+        "Idle_3": 1.333,
+        "Idle_4": 0,
+        "Skill": 1.433,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle_1",
+        "deploy": "Start",
+        "attack": null,
+        "skill": null,
+        "die": "Die",
+        "stun": null,
+        "move": null
+      },
+      "hits": {},
+      "bounds": null,
+      "avatar": {
+        "path": "models/operator/token_10061_nasti_nstbld/default/front/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/avatar.png",
+        "bytes": 36690,
+        "sha256": "0a9ffedea64bc72e9d27dd340cf39a83ffdda86af31e1189802bd293cb98c172",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "e5c3889ce7efb39ebb30edc382a7f16724369618335427f7c496ce4cff221c28",
+          "spritePathId": "1609578472243023530",
+          "texturePathId": "-5213676936370893142",
+          "proof": "source-reviews/nasti-nstbld-avatar.json",
+          "proofSha256": "d2c8450cdd7a8945d363731501ebcf89ba9f439d758778e0f3a26569d61a972e"
+        }
+      }
+    },
+    "operator/token_10061_nasti_nstbld/default/back": {
+      "kind": "operator",
+      "id": "token_10061_nasti_nstbld",
+      "variant": "default",
+      "facing": "back",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_4.ab",
+          "bytes": 2568582,
+          "md5": "0fa7fd1e638ba6a269e09b6398ec5028",
+          "sha256": "af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_4.dat",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+            "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+            "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_4.ab",
+        "extractedSkeleton": "token_10061_nasti_nstbld.skel",
+        "facingAlias": "single-original-model",
+        "originalPathIds": {
+          "rootPathId": "-2516777268195659690",
+          "controllerPathId": "-6257090008822943658",
+          "animatorPathId": "-9006917584863006634",
+          "faceSwitcherPathId": "981976793013645398",
+          "skeletonAnimationPathId": "-8520522808034955178",
+          "skeletonDataAssetPathId": "-4254734054556352672",
+          "textAssetPathId": "-7599405907032678871",
+          "atlasAssetPathId": "-316848492931572975",
+          "atlasTextAssetPathId": "7733220273313702460",
+          "materialPathId": "-3904609780582178840",
+          "texturePathId": "9061619250352818455"
+        },
+        "transforms": [
+          "Original embedded premultiplied RGBA texture decoded with every decoded pixel unchanged",
+          "Atlas page dimensions normalized and pma: true recorded; native regions unchanged",
+          "One native Single skeleton retained; front/back manifest slots are explicit compatibility aliases, not distinct original facings"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/operator/token_10061_nasti_nstbld/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10061_nasti_nstbld.skel",
+        "bytes": 40745,
+        "sha256": "3eca6c499a888f628f61427a2bfae329b9c50c527cf87048cef4dbeb6691eef5"
+      },
+      "atlas": {
+        "path": "models/operator/token_10061_nasti_nstbld/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10061_nasti_nstbld.atlas",
+        "bytes": 3282,
+        "sha256": "e43179cd0e6c2c1a8b9225631a91df32bace53896a90cb890cbeb791b35b74f3"
+      },
+      "textures": [
+        {
+          "path": "models/operator/token_10061_nasti_nstbld/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/token_10061_nasti_nstbld.png",
+          "bytes": 35079,
+          "sha256": "9d3b5fd73ec2b4051edf9f582e6720eac4c876ca523ea343c338a49976310ee5"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Die": 1,
+        "Idle_1": 2,
+        "Idle_2": 3.333,
+        "Idle_3": 1.333,
+        "Idle_4": 0,
+        "Skill": 1.433,
+        "Start": 1
+      },
+      "animationRoles": {
+        "idle": "Idle_1",
+        "deploy": "Start",
+        "attack": null,
+        "skill": null,
+        "die": "Die",
+        "stun": null,
+        "move": null
+      },
+      "hits": {},
+      "bounds": null,
+      "avatar": {
+        "path": "models/operator/token_10061_nasti_nstbld/default/back/af23c7f497862f38be2cdca0cd4079d44753bde8d61b97398e5a2777a54281e4/avatar.png",
+        "bytes": 36690,
+        "sha256": "0a9ffedea64bc72e9d27dd340cf39a83ffdda86af31e1189802bd293cb98c172",
+        "source": {
+          "kind": "cn-native-sprite",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "bundleSha256": "e5c3889ce7efb39ebb30edc382a7f16724369618335427f7c496ce4cff221c28",
+          "spritePathId": "1609578472243023530",
+          "texturePathId": "-5213676936370893142",
+          "proof": "source-reviews/nasti-nstbld-avatar.json",
+          "proofSha256": "d2c8450cdd7a8945d363731501ebcf89ba9f439d758778e0f3a26569d61a972e"
         }
       }
     }
