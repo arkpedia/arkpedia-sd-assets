@@ -389,3 +389,10 @@ Angelina the Mellow Wish's original files remain unchanged. [source-reviews/agln
 Raidian original artwork
 
 Raidian's original files remain unchanged. [source-reviews/radian.json](source-reviews/radian.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+
+Kal'tsit·Esperanta original artwork
+
+Kal'tsit·Esperanta's original files remain unchanged. [source-reviews/kalts2.json](source-reviews/kalts2.json) binds the native pointers, decoded pixels, premultiplied alpha and literal default roles; the simulator owner plays the skill clips itself. Only metadata records change.
+
+Her tactical anchor (`token_10068_kalts2_mtship`) is recovered from the CN token bundle with its native pointers, decoded pixels and premultiplied alpha ([source-reviews/kalts2-mtship.json](source-reviews/kalts2-mtship.json)); its card avatar is the original 180x180 Sprite ([source-reviews/kalts2-mtship-avatar.json](source-reviews/kalts2-mtship-avatar.json)).
