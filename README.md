@@ -2,6 +2,12 @@
 
 Battle chibi (super deformed) Spine models and original stage scenery for Arkpedia's stage overhaul. This repository holds artwork and animation assets; stats, skills and stage rules stay in `arkpedia-data`.
 
+## Furniture
+
+`furniture/` carries the two pieces of furniture the chibi renderers put behind a resting chibi: the **Black Retro Chair** (sit) and the **Porcelain Bed** (sleep). Both are unmodified game-client renders, pinned to `ArknightsAssets/ArknightsAssets2` revision `404cf368572a4f346f66614612c40fd7779012b5`, and both ship with the SVG silhouettes that clip their baked catalogue backdrop.
+
+`furniture/manifest.json` records the source, the SHA-256 of each image and the geometry both renderers use: a 226×169 image canvas placed in a 160×180 chibi box at 160×118, with the chair 56 px and the bed 62 px from the top. The website draws them with the masks as CSS `mask-image`; the desktop app uses the same files.
+
 ## Website chibis
 
 The manifest also supplies every model referenced by the website's existing chibi catalogue: **1,378 skin IDs**, including their battle facings and separate dormitory/base animations. `websiteSkins` maps each exact skin ID and `front`/`back`/`walk` selection to a model key. Shared original models remain explicit aliases; missing facings are not invented. The website reads this catalogue at one immutable SD repository commit and serves skeletons, atlases and textures from this repository only.

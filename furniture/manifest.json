@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "repository": "ArknightsAssets/ArknightsAssets2",
+    "revision": "404cf368572a4f346f66614612c40fd7779012b5",
+    "path": "assets/dyn/arts/ui/furnitureicons",
+    "note": "Unmodified game-client furniture icon renders, pinned to the same reviewed dump the website uses."
+  },
+  "geometry": {
+    "canvas": { "width": 226, "height": 169 },
+    "box": { "width": 160, "height": 180 },
+    "furniture": {
+      "width": 160,
+      "height": 118,
+      "top": { "sit": 56, "sleep": 62 }
+    }
+  },
+  "furniture": {
+    "sit": {
+      "id": "furni_s2_chair_L_01",
+      "name": "Black Retro Chair",
+      "image": "furni_s2_chair_l_01.png",
+      "mask": "sit-mask.svg",
+      "sha256": "d8f9f412851482a40dbce1ac01ddaddd842c842538915d053c5ccee74f7f7259"
+    },
+    "sleep": {
+      "id": "furni_s1_bed_01",
+      "name": "Porcelain Bed",
+      "image": "furni_s1_bed_01.png",
+      "mask": "sleep-mask.svg",
+      "sha256": "454c97f38bb4ac106f7e36ea4cf0d33e308115755dd74074de3fbd212a463861"
+    }
+  }
+}
