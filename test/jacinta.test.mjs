@@ -7,7 +7,7 @@ const manifest = JSON.parse(await readFile(new URL('manifest.json', root)));
 const receipt = JSON.parse(await readFile(new URL('source-reviews/jacinta.json', root)));
 test('Jacinta artwork keeps both original skeletons and binds both channel animation families', async () => {
   assert.equal(receipt.artworkOnly, true); assert.deepEqual(receipt.enabledOperators, []);
-  assert.equal(receipt.foundation.commit, 'a550f5e048bb94e7cdefc6eb97a4091f0c4c7add');
+  assert.equal(receipt.foundation.commit, 'ed4ba9560928a88474d99c5f68da7f450485cb24');
   assert.equal(receipt.foundation.client, '26-09-22-07-47-20_6c71fa');
   for (const key of ['frameParity', 'nativeParticleSupport', 'nativeShaderParity']) assert.equal(receipt[key], false);
   for (const face of ['Front', 'Back']) {

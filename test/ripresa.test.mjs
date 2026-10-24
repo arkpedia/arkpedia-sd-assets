@@ -7,7 +7,7 @@ const manifest = JSON.parse(await readFile(new URL('manifest.json', root)));
 const receipt = JSON.parse(await readFile(new URL('source-reviews/ripresa.json', root)));
 test('Ripresa keeps original Front/Back bytes and binds only literal normal/S1/S2 clips', async () => {
   assert.equal(receipt.artworkOnly, true); assert.deepEqual(receipt.enabledOperators, []);
-  assert.equal(receipt.foundation.commit, 'a550f5e048bb94e7cdefc6eb97a4091f0c4c7add');
+  assert.equal(receipt.foundation.commit, '18e0038ad2ef3f9326ad6474d0e36411bcb2421d');
   assert.equal(receipt.foundation.client, '26-09-22-07-47-20_6c71fa');
   for (const k of ['frameParity', 'nativeParticleSupport', 'nativeShaderParity']) assert.equal(receipt[k], false);
   for (const face of ['Front', 'Back']) {
