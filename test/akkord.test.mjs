@@ -7,7 +7,7 @@ const manifest = JSON.parse(await readFile(new URL('manifest.json', root)));
 const receipt = JSON.parse(await readFile(new URL('source-reviews/akkord.json', root)));
 test('Akkord metadata binds both original CN-verified facings without changing model files or claiming combat approval', async () => {
   assert.equal(receipt.artworkOnly, true); assert.deepEqual(receipt.enabledOperators, []);
-  assert.equal(receipt.foundation.commit, 'a550f5e048bb94e7cdefc6eb97a4091f0c4c7add');
+  assert.equal(receipt.foundation.commit, 'ee9ab4ae02f13ecd3307ea5b12b425c47f1e89b9');
   assert.equal(receipt.foundation.client, '26-09-22-07-47-20_6c71fa');
   for (const key of ['frameParity', 'nativeParticleSupport', 'nativeShaderParity']) assert.equal(receipt[key], false);
   for (const face of ['Front', 'Back']) {
