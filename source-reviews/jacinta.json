@@ -6,7 +6,7 @@
   "nativeParticleSupport": false,
   "nativeShaderParity": false,
   "foundation": {
-    "repository": "arkpedia/arkpedia-stage-simulator",
+    "repository": "arkpedia/arkpedia-stage-simulator-legacy",
     "path": "data/arkpedia-native-operators/char_4237_jcinta.json",
     "sha256": "c43d9cebc0231826e476dde9dd6cc0f8d44887244379a93600468986cf67f9a5",
     "commit": "ed4ba9560928a88474d99c5f68da7f450485cb24",
