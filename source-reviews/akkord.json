@@ -6,7 +6,7 @@
   "nativeParticleSupport": false,
   "nativeShaderParity": false,
   "foundation": {
-    "repository": "arkpedia/arkpedia-stage-simulator",
+    "repository": "arkpedia/arkpedia-stage-simulator-legacy",
     "path": "data/arkpedia-akkord-prefabs.json",
     "sha256": "3d2aa18369ffc63c55ccc27ed082d3e72fff28b2b8911b0cb161a2617fad9bab",
     "commit": "ee9ab4ae02f13ecd3307ea5b12b425c47f1e89b9",
