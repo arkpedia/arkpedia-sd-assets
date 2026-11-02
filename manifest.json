@@ -176749,7 +176749,7 @@
   },
   "websiteSource": {
     "repository": "fexli/ArknightsResource",
-    "commit": "09c770a1dc076c9fec21ed8a4a700420f8e79f09",
+    "commit": "490d33d97204b26946a7c26330abe928750f2dcd",
     "table": "gamedata/excel/skin_table.json",
     "pending": []
   },
