@@ -169204,24 +169204,24 @@
       "source": {
         "key": "operators",
         "repository": "fexli/ArknightsResource",
-        "commit": "09c770a1dc076c9fec21ed8a4a700420f8e79f09",
+        "commit": "62363543c0fa116f9cef83e291ccdeb006a9a1db",
         "directory": "spine/char_4247_oxi/char_4247_oxi/Front"
       },
       "skeleton": {
-        "path": "models/operator/char_4247_oxi/website_char_4247_oxi/front/09c770a1dc076c9fec21ed8a4a700420f8e79f09/char_4247_oxi.skel",
-        "bytes": 711916,
-        "sha256": "13db7be04100c982f368c5558ddc87e9eb72ed584b0e4d33c4ae8f75329769ff"
+        "path": "models/operator/char_4247_oxi/website_char_4247_oxi/front/62363543c0fa116f9cef83e291ccdeb006a9a1db/char_4247_oxi.skel",
+        "bytes": 717870,
+        "sha256": "f105864cade5676adf4d4c77d39961695a3561115acf20f3e054893941509b81"
       },
       "atlas": {
-        "path": "models/operator/char_4247_oxi/website_char_4247_oxi/front/09c770a1dc076c9fec21ed8a4a700420f8e79f09/char_4247_oxi.atlas",
-        "bytes": 9586,
-        "sha256": "dc6a639e38dbc1c415f503130076cfdae02131cc0c54998e9e2e25f3d494f8db"
+        "path": "models/operator/char_4247_oxi/website_char_4247_oxi/front/62363543c0fa116f9cef83e291ccdeb006a9a1db/char_4247_oxi.atlas",
+        "bytes": 9705,
+        "sha256": "0961e174b154509b2275afe875ad117e4b03cae542beb2092581230d10c96c1f"
       },
       "textures": [
         {
-          "path": "models/operator/char_4247_oxi/website_char_4247_oxi/front/09c770a1dc076c9fec21ed8a4a700420f8e79f09/char_4247_oxi.png",
-          "bytes": 222200,
-          "sha256": "820fbb3bde980d4934da4f1007aa5ae0405fdacf0f338af7f827a0e136a7a055"
+          "path": "models/operator/char_4247_oxi/website_char_4247_oxi/front/62363543c0fa116f9cef83e291ccdeb006a9a1db/char_4247_oxi.png",
+          "bytes": 224770,
+          "sha256": "4d0cc8048f7c3fb72fd57ca5fe2708e0287b105a69b96507715182dd4f94e627"
         }
       ],
       "premultipliedAlpha": false,
@@ -169236,22 +169236,22 @@
       "source": {
         "key": "operators",
         "repository": "fexli/ArknightsResource",
-        "commit": "09c770a1dc076c9fec21ed8a4a700420f8e79f09",
+        "commit": "62363543c0fa116f9cef83e291ccdeb006a9a1db",
         "directory": "spine/char_4247_oxi/char_4247_oxi/Back"
       },
       "skeleton": {
-        "path": "models/operator/char_4247_oxi/website_char_4247_oxi/back/09c770a1dc076c9fec21ed8a4a700420f8e79f09/char_4247_oxi.skel",
+        "path": "models/operator/char_4247_oxi/website_char_4247_oxi/back/62363543c0fa116f9cef83e291ccdeb006a9a1db/char_4247_oxi.skel",
         "bytes": 409403,
-        "sha256": "044bdff92953779d48a7af34fcff8f036f0ab68eadd2b428fd5fb908c4abd077"
+        "sha256": "87356591ed73ca91a6ccdcfd26ab1c14e0e1e039e47dd1099de83b991a3f81e5"
       },
       "atlas": {
-        "path": "models/operator/char_4247_oxi/website_char_4247_oxi/back/09c770a1dc076c9fec21ed8a4a700420f8e79f09/char_4247_oxi.atlas",
+        "path": "models/operator/char_4247_oxi/website_char_4247_oxi/back/62363543c0fa116f9cef83e291ccdeb006a9a1db/char_4247_oxi.atlas",
         "bytes": 3983,
         "sha256": "bf12303960fa29463c1e81dd32f6f6d31596ceccb494669bf54dea8b4a1f581c"
       },
       "textures": [
         {
-          "path": "models/operator/char_4247_oxi/website_char_4247_oxi/back/09c770a1dc076c9fec21ed8a4a700420f8e79f09/char_4247_oxi.png",
+          "path": "models/operator/char_4247_oxi/website_char_4247_oxi/back/62363543c0fa116f9cef83e291ccdeb006a9a1db/char_4247_oxi.png",
           "bytes": 170329,
           "sha256": "ca0a0edc68edf68876fb059303889e5a9f6e3a9558b43ddcd40ee285db248706"
         }
@@ -169268,24 +169268,24 @@
       "source": {
         "key": "operators",
         "repository": "fexli/ArknightsResource",
-        "commit": "09c770a1dc076c9fec21ed8a4a700420f8e79f09",
+        "commit": "62363543c0fa116f9cef83e291ccdeb006a9a1db",
         "directory": "spine/char_4247_oxi/build_char_4247_oxi/Spine"
       },
       "skeleton": {
-        "path": "models/operator/char_4247_oxi/website_char_4247_oxi/walk/09c770a1dc076c9fec21ed8a4a700420f8e79f09/build_char_4247_oxi.skel",
-        "bytes": 556043,
-        "sha256": "2274672a883bf0d519f8b100600b44db1dffe06956425347741c3034527c6551"
+        "path": "models/operator/char_4247_oxi/website_char_4247_oxi/walk/62363543c0fa116f9cef83e291ccdeb006a9a1db/build_char_4247_oxi.skel",
+        "bytes": 560195,
+        "sha256": "49eae097f1721cd4cf78605706f85461bcbf535451ed01e33c8ecbc8a83f1c26"
       },
       "atlas": {
-        "path": "models/operator/char_4247_oxi/website_char_4247_oxi/walk/09c770a1dc076c9fec21ed8a4a700420f8e79f09/build_char_4247_oxi.atlas",
-        "bytes": 13309,
-        "sha256": "634804c2f2947449f6b2f4e2fee673f1384e4100141b337221f5806c56a3f000"
+        "path": "models/operator/char_4247_oxi/website_char_4247_oxi/walk/62363543c0fa116f9cef83e291ccdeb006a9a1db/build_char_4247_oxi.atlas",
+        "bytes": 13402,
+        "sha256": "07d3ddd217a17e5587a9166d5be540c6b810b3d437129da2f8e4d20845260a22"
       },
       "textures": [
         {
-          "path": "models/operator/char_4247_oxi/website_char_4247_oxi/walk/09c770a1dc076c9fec21ed8a4a700420f8e79f09/build_char_4247_oxi.png",
-          "bytes": 1249464,
-          "sha256": "044463aad896e93edc572b6fd7f5e63293d3f483afd6cc2e368c9b1bbd23b4cd"
+          "path": "models/operator/char_4247_oxi/website_char_4247_oxi/walk/62363543c0fa116f9cef83e291ccdeb006a9a1db/build_char_4247_oxi.png",
+          "bytes": 1291028,
+          "sha256": "1ef9ff85e2548fbe0dcafd73933bc8cc14d0b94ac0a598936cc41c79b4016879"
         }
       ],
       "premultipliedAlpha": false,
@@ -169766,6 +169766,38 @@
           "path": "models/operator/char_4178_alanna/website_char_4178_alanna_race_3/walk/09c770a1dc076c9fec21ed8a4a700420f8e79f09/build_char_4178_alanna_race_3.png",
           "bytes": 1351092,
           "sha256": "ad3c1f2a65b459680661494c7230b6debd58fd90525f534435994512fcc22068"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
+    },
+    "operator/char_618_acrbot/website_char_618_acrbot/front": {
+      "kind": "operator",
+      "id": "char_618_acrbot",
+      "variant": "website_char_618_acrbot",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "62363543c0fa116f9cef83e291ccdeb006a9a1db",
+        "directory": "spine/char_618_acrbot/char_618_acrbot/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_618_acrbot/website_char_618_acrbot/front/62363543c0fa116f9cef83e291ccdeb006a9a1db/char_618_acrbot.skel",
+        "bytes": 135642,
+        "sha256": "547f1bd69b635295df2b3f8bac5be999e80cc82e27992ebe614855a4d3751ed9"
+      },
+      "atlas": {
+        "path": "models/operator/char_618_acrbot/website_char_618_acrbot/front/62363543c0fa116f9cef83e291ccdeb006a9a1db/char_618_acrbot.atlas",
+        "bytes": 6213,
+        "sha256": "3d6f277ea4d266351aeb16862c0324a4fe702f3f9a2ad482dd5a7c3215cb0036"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_618_acrbot/website_char_618_acrbot/front/62363543c0fa116f9cef83e291ccdeb006a9a1db/char_618_acrbot.png",
+          "bytes": 278410,
+          "sha256": "9ef7d16b630aa679a0bbd909bf849946ba0c0d9f4ed1708930a95c1a35374a06"
         }
       ],
       "premultipliedAlpha": false,
@@ -176745,11 +176777,17 @@
       "front": "operator/char_4178_alanna/website_char_4178_alanna_race_3/front",
       "back": "operator/char_4178_alanna/website_char_4178_alanna_race_3/back",
       "walk": "operator/char_4178_alanna/website_char_4178_alanna_race_3/walk"
+    },
+    "char_618_acrbot#1": {
+      "front": "operator/char_618_acrbot/website_char_618_acrbot/front"
+    },
+    "char_618_acrbot#2": {
+      "front": "operator/char_618_acrbot/website_char_618_acrbot/front"
     }
   },
   "websiteSource": {
     "repository": "fexli/ArknightsResource",
-    "commit": "490d33d97204b26946a7c26330abe928750f2dcd",
+    "commit": "62363543c0fa116f9cef83e291ccdeb006a9a1db",
     "table": "gamedata/excel/skin_table.json",
     "pending": []
   },
