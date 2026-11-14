@@ -1,0 +1,930 @@
+{
+  "sourceBundle": {
+    "client": "cn",
+    "path": "refs/arts/enm_art_8.ab",
+    "bytes": 3457946,
+    "md5": "3f08f87331803c20f150a0c2f52096bb",
+    "sha256": "b458a6a7331cab63a632a2c216291b6f3e941eb0423a4fff76b5025463fedb2e",
+    "resourceVersion": "26-09-22-07-47-20_6c71fa",
+    "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/refs_arts_enm_art_8.dat",
+    "transforms": [
+      "Original skeleton bytes retained",
+      "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+      "Atlas page dimensions and PMA header normalized; native regions retained"
+    ]
+  },
+  "models": {
+    "enemy_1163_hvymot_2": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1163_hvymot_2",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "6689510533602003113",
+        "textAssetPathId": "-788315568189836769",
+        "atlasAssetPathId": "802801224846687027",
+        "atlasTextAssetPathId": "-4944548215654341394",
+        "materials": [
+          {
+            "materialPathId": "8369791551490012060",
+            "mainTexturePathId": "-483331554121529917",
+            "alphaTexturePathId": "3465642456661011923",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_TestWater": 2,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1163_hvymot/2/enemy_1163_hvymot_2_SkeletonData.asset",
+      "files": {
+        "enemy_1163_hvymot_2.skel": {
+          "bytes": 67247,
+          "sha256": "145d3dd19bf87cab0491eb0d385c8755b14bf7b1c5bb55a95275d712ce6157a2"
+        },
+        "enemy_1163_hvymot_2.atlas": {
+          "bytes": 3960,
+          "sha256": "dc61bc22756b6fb7e6e9b72c90733cfe3fd3d80c2d54809bc330c5d352f43075"
+        },
+        "enemy_1163_hvymot_2.png": {
+          "bytes": 109745,
+          "sha256": "baca040432fe1f440b79997ece9b749190bec6d2337c32130df9bd8a95d64754"
+        }
+      },
+      "spineVersion": "3.8.99",
+      "durations": {
+        "Attack": 1,
+        "Default": 0,
+        "Die": 0.967,
+        "Idle": 1.333,
+        "Move": 1.2
+      },
+      "hits": {
+        "Attack": [
+          0.5
+        ]
+      },
+      "bounds": null,
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.5,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      }
+    },
+    "enemy_1164_bmbmot": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1164_bmbmot",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "7558182121525498137",
+        "textAssetPathId": "4334168354843048914",
+        "atlasAssetPathId": "518810719751099240",
+        "atlasTextAssetPathId": "4976242957939010633",
+        "materials": [
+          {
+            "materialPathId": "7129860902003331801",
+            "mainTexturePathId": "6779125387438772533",
+            "alphaTexturePathId": "-7030733442555687640",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_TestWater": 2,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1164_bmbmot/1/enemy_1164_bmbmot_SkeletonData.asset",
+      "files": {
+        "enemy_1164_bmbmot.skel": {
+          "bytes": 25470,
+          "sha256": "7e4a11db99b8ee09ba6c5cd5936ff66ae19d5e4547284cb91ad64d3cc238cd6e"
+        },
+        "enemy_1164_bmbmot.atlas": {
+          "bytes": 1651,
+          "sha256": "f1b1be19c0ae2277dd0f1e28799d05a87130083454b513c611a13934ad835894"
+        },
+        "enemy_1164_bmbmot.png": {
+          "bytes": 32654,
+          "sha256": "e279612bf1979eb1dfc67f04a43632551df321166de59297bfd6090d0262bc75"
+        }
+      },
+      "spineVersion": "3.8.99",
+      "durations": {
+        "Default": 0,
+        "Die": 1.333,
+        "Idle": 2.667,
+        "Move": 1
+      },
+      "hits": {},
+      "bounds": null,
+      "eventPayloads": {},
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": null
+      }
+    },
+    "enemy_1164_bmbmot_2": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1164_bmbmot_2",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "-7917529245836930679",
+        "textAssetPathId": "1656917644305937781",
+        "atlasAssetPathId": "8915212176452793110",
+        "atlasTextAssetPathId": "-4092606282171035738",
+        "materials": [
+          {
+            "materialPathId": "-1490132340468210977",
+            "mainTexturePathId": "-1292393898922675262",
+            "alphaTexturePathId": "-4900786689803381197",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_TestWater": 2,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1164_bmbmot/2/enemy_1164_bmbmot_2_SkeletonData.asset",
+      "files": {
+        "enemy_1164_bmbmot_2.skel": {
+          "bytes": 25470,
+          "sha256": "3c581fc93612d0d7ef8422c89c8d24301ed84cebf1d8f2c39b14f83e25fe87ec"
+        },
+        "enemy_1164_bmbmot_2.atlas": {
+          "bytes": 1653,
+          "sha256": "4230e7decda38c55e4330cfdbabbeccf481355f05d85c3099592398eb3c74897"
+        },
+        "enemy_1164_bmbmot_2.png": {
+          "bytes": 32841,
+          "sha256": "5f60c68db28ef1fa9cc8dc31aac55fd7a36ca36a8958455f04699c05c96eee08"
+        }
+      },
+      "spineVersion": "3.8.99",
+      "durations": {
+        "Default": 0,
+        "Die": 1.333,
+        "Idle": 2.667,
+        "Move": 1
+      },
+      "hits": {},
+      "bounds": null,
+      "eventPayloads": {},
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": null
+      }
+    },
+    "enemy_1165_duhond_2": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1165_duhond_2",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "-6219496046916759205",
+        "textAssetPathId": "1880780758690402132",
+        "atlasAssetPathId": "-1135635875925847478",
+        "atlasTextAssetPathId": "7017865115206806230",
+        "materials": [
+          {
+            "materialPathId": "6440420585868973350",
+            "mainTexturePathId": "-7858132713359978158",
+            "alphaTexturePathId": "-1130842959801227540",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1165_duhond/2/enemy_1165_duhond_2_SkeletonData.asset",
+      "files": {
+        "enemy_1165_duhond_2.skel": {
+          "bytes": 31030,
+          "sha256": "c7a54f9ef28a87d91a5c15e4c9752d8281e6c5341e8db6da4da62235a2b46625"
+        },
+        "enemy_1165_duhond_2.atlas": {
+          "bytes": 1654,
+          "sha256": "7405471ba5720894ad83c006d9be47f8b4ef0b289bad67590922f2270673a274"
+        },
+        "enemy_1165_duhond_2.png": {
+          "bytes": 28107,
+          "sha256": "3f8bc86c6b228446ac1a95b2e7f927e7e3b0e8c86ad6ca94aaccf4572acac0ef"
+        }
+      },
+      "spineVersion": "3.8.99",
+      "durations": {
+        "Attack": 1,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1,
+        "Run_Loop": 0.533
+      },
+      "hits": {
+        "Attack": [
+          0.6
+        ]
+      },
+      "bounds": null,
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.6000000238418579,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": null,
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      }
+    },
+    "enemy_1168_dumage_2": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1168_dumage_2",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "5122937693231328099",
+        "textAssetPathId": "-1983965795663975762",
+        "atlasAssetPathId": "762236634428295158",
+        "atlasTextAssetPathId": "-360461443196489214",
+        "materials": [
+          {
+            "materialPathId": "-1663341699713986346",
+            "mainTexturePathId": "-2068808550580258096",
+            "alphaTexturePathId": "-1698850570583907675",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1168_dumage/2/enemy_1168_dumage_2_SkeletonData.asset",
+      "files": {
+        "enemy_1168_dumage_2.skel": {
+          "bytes": 39671,
+          "sha256": "4cb40d0c3250b577a34633c80548d3666520b743d3fdf533f84e3af43801631e"
+        },
+        "enemy_1168_dumage_2.atlas": {
+          "bytes": 2791,
+          "sha256": "be1adbcef68243a40cc6da99e53d3e0bd98f25b6cfba0d86fe0c4605e0227508"
+        },
+        "enemy_1168_dumage_2.png": {
+          "bytes": 43961,
+          "sha256": "5f105ec0c24489fcea3c7dad435fa717db4c4d783c86493a9b21833ceb530a30"
+        }
+      },
+      "spineVersion": "3.8.99",
+      "durations": {
+        "Attack": 1.2,
+        "Default": 0,
+        "Die": 0.867,
+        "Idle": 2,
+        "Move": 1
+      },
+      "hits": {
+        "Attack": [
+          0.633
+        ]
+      },
+      "bounds": {
+        "x": -113.264,
+        "y": -2.403,
+        "width": 245.505,
+        "height": 385.942
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.6333333253860474,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      }
+    },
+    "enemy_1170_dushld_2": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1170_dushld_2",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "-3191779193903690832",
+        "textAssetPathId": "-1433809703482805583",
+        "atlasAssetPathId": "-6271118215999977542",
+        "atlasTextAssetPathId": "-6053404709850642940",
+        "materials": [
+          {
+            "materialPathId": "-3545243474191837532",
+            "mainTexturePathId": "-7892399833819939632",
+            "alphaTexturePathId": "6758283302386439845",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1170_dushld/2/enemy_1170_dushld_2_SkeletonData.asset",
+      "files": {
+        "enemy_1170_dushld_2.skel": {
+          "bytes": 33875,
+          "sha256": "fae96e8f7315b331608220289ad36547bc905a1726f7b22a128f4fb631d97f1f"
+        },
+        "enemy_1170_dushld_2.atlas": {
+          "bytes": 2284,
+          "sha256": "308fe777d648bd96b6e22491f5ac8af03ae65012f3ff8d49560bf9fce710989d"
+        },
+        "enemy_1170_dushld_2.png": {
+          "bytes": 71509,
+          "sha256": "c07e8b204857f225d26093b7e1327b6418e5dae654eecae5f807ef9310c70e85"
+        }
+      },
+      "spineVersion": "3.8.99",
+      "durations": {
+        "Attack": 1,
+        "Default": 0,
+        "Die": 0.9,
+        "Idle": 2,
+        "Move_Begin": 0.2,
+        "Move_End": 0.233,
+        "Move_Loop": 1.2
+      },
+      "hits": {
+        "Attack": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -313.31,
+        "y": -5.887,
+        "width": 468.119,
+        "height": 409.675
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.46666666865348816,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": null,
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      }
+    },
+    "enemy_1172_dugago_2": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1172_dugago_2",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "2106196281174531949",
+        "textAssetPathId": "-1828957717127673172",
+        "atlasAssetPathId": "7449363730084677471",
+        "atlasTextAssetPathId": "-1648907573919273003",
+        "materials": [
+          {
+            "materialPathId": "6039469355504159634",
+            "mainTexturePathId": "6202610972781487358",
+            "alphaTexturePathId": "8662413499975069905",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1172_dugago/2/enemy_1172_dugago_2_SkeletonData.asset",
+      "files": {
+        "enemy_1172_dugago_2.skel": {
+          "bytes": 130472,
+          "sha256": "bad55244a4832570433a346b1aa0b8eda305d7294874ab0248a6446c1a2321a8"
+        },
+        "enemy_1172_dugago_2.atlas": {
+          "bytes": 2402,
+          "sha256": "c47631cc2afcb6c78912f853be87955a0e9049b4e477a515fce004b92591175b"
+        },
+        "enemy_1172_dugago_2.png": {
+          "bytes": 102819,
+          "sha256": "465ede0bde366d6a12f176a02967f37928abe57c91406cc758305a088d5b6be2"
+        }
+      },
+      "spineVersion": "3.8.99",
+      "durations": {
+        "Attack": 1.5,
+        "Attack_2": 1.5,
+        "Default": 0,
+        "Die": 0.9,
+        "Die_2": 1,
+        "Idle": 1.333,
+        "Idle_2": 0.867,
+        "Move": 1.333,
+        "Move_2": 0.867,
+        "Sleep": 1.333,
+        "Start": 0.667
+      },
+      "hits": {
+        "Attack": [
+          0.767
+        ],
+        "Attack_2": [
+          0.767
+        ]
+      },
+      "bounds": {
+        "x": -245.386,
+        "y": -13.296,
+        "width": 489.357,
+        "height": 526.296
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.7666666507720947,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Attack_2": [
+          {
+            "time": 0.7666666507720947,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Start": [
+          {
+            "time": 0.6666666865348816,
+            "name": "OnStart",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": "Start",
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      }
+    },
+    "enemy_1173_duspfr_2": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1173_duspfr_2",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "2037226378143875883",
+        "textAssetPathId": "-4873360800120294164",
+        "atlasAssetPathId": "6182754351746865198",
+        "atlasTextAssetPathId": "-3948031660733895391",
+        "materials": [
+          {
+            "materialPathId": "6778312330655209221",
+            "mainTexturePathId": "-282835670199301142",
+            "alphaTexturePathId": "-5173260931491654982",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1173_duspfr/2/enemy_1173_duspfr_2_SkeletonData.asset",
+      "files": {
+        "enemy_1173_duspfr_2.skel": {
+          "bytes": 64877,
+          "sha256": "f8bc6871459c991976483fb0e1f74ceeab1c5727657e57cf99b8335f89b03453"
+        },
+        "enemy_1173_duspfr_2.atlas": {
+          "bytes": 2809,
+          "sha256": "e585ed2d673908807e7ebb46b7951d9304fad7f8bc71ccebb6c722f19994fd38"
+        },
+        "enemy_1173_duspfr_2.png": {
+          "bytes": 66306,
+          "sha256": "ebc9dff8352eaaf18a44048d79440fb5ba6813c7ac7d9d2842a84dc75ccc6129"
+        }
+      },
+      "spineVersion": "3.8.99",
+      "durations": {
+        "Attack": 1,
+        "Default": 0,
+        "Die": 1.3,
+        "Idle": 2.667,
+        "Move": 1.333,
+        "Skill_Down_End": 0.533,
+        "Skill_Down_Loop": 0.4,
+        "Skill_Down_Start": 0.5,
+        "Skill_Front_End": 0.533,
+        "Skill_Front_Loop": 0.4,
+        "Skill_Front_Start": 0.5,
+        "Skill_Up_End": 0.533,
+        "Skill_Up_Loop": 0.4,
+        "Skill_Up_Start": 0.5
+      },
+      "hits": {
+        "Attack": [
+          0.433
+        ],
+        "Skill_Down_Loop": [
+          0
+        ],
+        "Skill_Front_Loop": [
+          0
+        ],
+        "Skill_Up_Loop": [
+          0
+        ]
+      },
+      "bounds": {
+        "x": -158.824,
+        "y": -2.335,
+        "width": 453.012,
+        "height": 445.318
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.4333333373069763,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Skill_Down_Loop": [
+          {
+            "time": 0,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Skill_Front_Loop": [
+          {
+            "time": 0,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Skill_Up_Loop": [
+          {
+            "time": 0,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      }
+    },
+    "enemy_1174_duholy_2": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1174_duholy_2",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "-6198068914596232920",
+        "textAssetPathId": "8640960610898759204",
+        "atlasAssetPathId": "-5820764457956461222",
+        "atlasTextAssetPathId": "-3899969121159110250",
+        "materials": [
+          {
+            "materialPathId": "-1862299185259944332",
+            "mainTexturePathId": "2949423625325388205",
+            "alphaTexturePathId": "-1721783217235459300",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1174_duholy/2/enemy_1174_duholy_2_SkeletonData.asset",
+      "files": {
+        "enemy_1174_duholy_2.skel": {
+          "bytes": 41885,
+          "sha256": "f326f9e0a3f6b02322cc0ba2dfe67b542994808ccdcd290d1755010e359b121e"
+        },
+        "enemy_1174_duholy_2.atlas": {
+          "bytes": 2417,
+          "sha256": "fb7e020bfd0e20694c72b920ff727a20ee58dbec054bf528e0adc83e62afe0c0"
+        },
+        "enemy_1174_duholy_2.png": {
+          "bytes": 72523,
+          "sha256": "eb3cd9cf8ecc03afacfd59bbeb89b657716f4b78405782731d6bbac149d32ea1"
+        }
+      },
+      "spineVersion": "3.8.99",
+      "durations": {
+        "Attack": 1.333,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1.333,
+        "Move": 1.667
+      },
+      "hits": {
+        "Attack": [
+          0.6
+        ]
+      },
+      "bounds": {
+        "x": -202.109,
+        "y": -0.877,
+        "width": 587.681,
+        "height": 485.016
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.6000000238418579,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      }
+    },
+    "enemy_1175_dushdo_2": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1175_dushdo_2",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "-3492874788355400933",
+        "textAssetPathId": "9021976911147867540",
+        "atlasAssetPathId": "3566912635182655519",
+        "atlasTextAssetPathId": "-3496850889469702725",
+        "materials": [
+          {
+            "materialPathId": "-814763761177739280",
+            "mainTexturePathId": "-2915527310488648117",
+            "alphaTexturePathId": "-2910881287774520283",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1175_dushdo/2/enemy_1175_dushdo_2_SkeletonData.asset",
+      "files": {
+        "enemy_1175_dushdo_2.skel": {
+          "bytes": 38858,
+          "sha256": "1ae5fc59b68854e0d0a470ab9011d6068af6ae0bf2928e8d5d5d0b0835749035"
+        },
+        "enemy_1175_dushdo_2.atlas": {
+          "bytes": 2985,
+          "sha256": "8d0762feaecccd3ee889b00069936e982d4d9521f39c580b0a0e641358102383"
+        },
+        "enemy_1175_dushdo_2.png": {
+          "bytes": 70465,
+          "sha256": "0deca2f8dcd3bfe88aae1b8d0a30527ce03e67fffcbe9365fb056bf6642acbc7"
+        }
+      },
+      "spineVersion": "3.8.99",
+      "durations": {
+        "Attack": 1.333,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1.333,
+        "Move": 1
+      },
+      "hits": {
+        "Attack": [
+          0.567
+        ]
+      },
+      "bounds": {
+        "x": -335.209,
+        "y": -24.248,
+        "width": 648.98,
+        "height": 508.559
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.5666666626930237,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      }
+    },
+    "enemy_1176_dusocr_2": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1176_dusocr_2",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "-1119598612128409190",
+        "textAssetPathId": "-1358398893689994073",
+        "atlasAssetPathId": "4605147374807674519",
+        "atlasTextAssetPathId": "3760009106455257267",
+        "materials": [
+          {
+            "materialPathId": "2702686271613378163",
+            "mainTexturePathId": "1727548140937005951",
+            "alphaTexturePathId": "4415340309627511242",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1176_dusocr/2/enemy_1176_dusocr_2_SkeletonData.asset",
+      "files": {
+        "enemy_1176_dusocr_2.skel": {
+          "bytes": 63779,
+          "sha256": "3c054de9a6d1a5da6bcc9fb99f46e784617d9c2dc745cd8f27a131cf320735e4"
+        },
+        "enemy_1176_dusocr_2.atlas": {
+          "bytes": 2764,
+          "sha256": "62fd170b752479f761b2a397ac7dcb9bff3c89a2a49c625233ff0c393ba87ddd"
+        },
+        "enemy_1176_dusocr_2.png": {
+          "bytes": 65385,
+          "sha256": "d651dc84ecd24985813a2b916bdcf93f630a2b68d41baa6880e2c10731729ff5"
+        }
+      },
+      "spineVersion": "3.8.99",
+      "durations": {
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1.333,
+        "Move": 1.333,
+        "Skill": 1.333
+      },
+      "hits": {
+        "Skill": [
+          0.767
+        ]
+      },
+      "bounds": {
+        "x": -177.051,
+        "y": -3.631,
+        "width": 412.003,
+        "height": 485.635
+      },
+      "eventPayloads": {
+        "Skill": [
+          {
+            "time": 0.7666666507720947,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": null
+      }
+    }
+  }
+}

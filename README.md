@@ -2,6 +2,14 @@
 
 Battle chibi (super deformed) Spine models and original stage scenery for Arkpedia's stage overhaul. This repository holds artwork and animation assets; stats, skills and stage rules stay in `arkpedia-data`.
 
+## Original enemy bodies
+
+The original-client importer also accepts `kind: "enemy"` records. Each enemy has one `default` facing and one immutable copy of its skeleton, atlas and textures, reused by every stage. It rejects operator-style facing aliases for enemy records. Existing operator imports keep their behavior.
+
+`source-reviews/enemies/index.json` records a batch of 239 enemy bodies recovered from checksum-pinned CN bundles, plus 26 unresolved requests. The per-bundle receipts retain exact native object pointers, material switches, file hashes, clip durations and attack events. Embedded and split alpha are preserved; compression bleed is clamped to alpha. Original Spine 3.8 patch versions remain unchanged. Only literal existing Idle/Default, Move, Start, Die and Attack clips receive default roles. Ambiguous skeletons and models without a literal idle pose remain pending.
+
+Prepare another enemy with the simulator's `tools/arkpedia/extract-native-enemy-models.py --ids <JSON-array> --out <directory>`, then import its receipt with `node scripts/import-original-models.mjs --metadata <receipt> --bundle <original-bundle> --extracted-root <directory>`. Run `npm test` and `npm run validate` before pinning the resulting SD commit. One ID is a complete independent addition. These receipts establish original body inputs and compatible files; native prefab selection, alternate forms, animation dispatch, effects and game frame/pixel parity have separate reviews.
+
 ## Website chibis
 
 The manifest also supplies every model referenced by the website's existing chibi catalogue: **1,378 skin IDs**, including their battle facings and separate dormitory/base animations. `websiteSkins` maps each exact skin ID and `front`/`back`/`walk` selection to a model key. Shared original models remain explicit aliases; missing facings are not invented. The website reads this catalogue at one immutable SD repository commit and serves skeletons, atlases and textures from this repository only.

@@ -170,3 +170,23 @@ test('invented facing names and down records without a native token chain cannot
     assert.deepEqual((await f.manifest()).models, {});
   } finally { await rm(f.dir, { recursive: true, force: true }); }
 });
+
+
+test('original enemies import one default skeleton without duplicate operator facings', async () => {
+ const f=await fixture();try {
+  f.info.models={enemy_original:{...f.front,kind:'enemy'}};await f.save();await importOriginalModels(f.args);
+  const first=(await f.manifest()).models;assert.deepEqual(Object.keys(first),['enemy/enemy_original/default/default']);
+  const model=first['enemy/enemy_original/default/default'];assert.equal(model.kind,'enemy');assert.equal(model.facing,'default');
+  assert.equal(model.source.facingAlias,undefined);assert.deepEqual(model.source.originalPathIds,f.front.originalPathIds);
+  await importOriginalModels(f.args);assert.deepEqual((await f.manifest()).models,first);
+  f.info.models.enemy_original.facings={front:f.front,back:f.back};await f.save();
+  await assert.rejects(importOriginalModels(f.args),/one original default skeleton/);assert.deepEqual((await f.manifest()).models,first);
+ }finally{await rm(f.dir,{recursive:true,force:true});}
+});
+
+test('original model kinds cannot silently turn an operator into an enemy', async () => {
+ const f=await fixture();try{
+  f.info.models={token_pair:{...f.front,kind:'enemy'}};await f.save();await assert.rejects(importOriginalModels(f.args),/invalid original model kind/);
+  assert.deepEqual((await f.manifest()).models,{});
+ }finally{await rm(f.dir,{recursive:true,force:true});}
+});

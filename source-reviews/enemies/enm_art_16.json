@@ -1,0 +1,523 @@
+{
+  "sourceBundle": {
+    "client": "cn",
+    "path": "refs/arts/enm_art_16.ab",
+    "bytes": 5833456,
+    "md5": "bd3e0323c22709c2d6bbc56aea19deaa",
+    "sha256": "fc1f196afcfe5bc792eed34cdaf1dd3ef6cd17c82b815d841893a08c6877a730",
+    "resourceVersion": "26-09-22-07-47-20_6c71fa",
+    "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/refs_arts_enm_art_16.dat",
+    "transforms": [
+      "Original skeleton bytes retained",
+      "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+      "Atlas page dimensions and PMA header normalized; native regions retained"
+    ]
+  },
+  "models": {
+    "enemy_1424_lrboom_2": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1424_lrboom_2",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "2140765020657321033",
+        "textAssetPathId": "8445917273646824900",
+        "atlasAssetPathId": "8592625207118575778",
+        "atlasTextAssetPathId": "-6814524531550828808",
+        "materials": [
+          {
+            "materialPathId": "7131243390048238363",
+            "mainTexturePathId": "7818567057944780044",
+            "alphaTexturePathId": null,
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_OutlineMipLevel": 0,
+              "_OutlineReferenceTexWidth": 1024,
+              "_OutlineSmoothness": 1,
+              "_OutlineWidth": 3,
+              "_StencilComp": 8,
+              "_StencilRef": 1,
+              "_StraightAlphaInput": 0,
+              "_ThresholdEnd": 0.25,
+              "_Use8Neighbourhood": 1,
+              "_UseAlphaTex": 0,
+              "_UseBleed": 1,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1424_lrboom/2/enemy_1424_lrboom_2_SkeletonData.asset",
+      "files": {
+        "enemy_1424_lrboom_2.skel": {
+          "bytes": 17387,
+          "sha256": "496749784500050b0289948fa9b1917a4454a2e2d9206a1846ebf7f1eb143b18"
+        },
+        "enemy_1424_lrboom_2.atlas": {
+          "bytes": 1219,
+          "sha256": "7461d4638af34d65c21e3574c6da53a15dfbe14c891aef3e485e9d30074bd7c1"
+        },
+        "enemy_1424_lrboom_2.png": {
+          "bytes": 28594,
+          "sha256": "6c6f19e80266b954733c732130134797b789e5142d691a7035fe6b904a5387aa"
+        }
+      },
+      "spineVersion": "3.8.99",
+      "durations": {
+        "Attack": 1.033,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1,
+        "Move": 1.067
+      },
+      "hits": {
+        "Attack": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -161.354,
+        "y": -8.93,
+        "width": 347,
+        "height": 232.5
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.46666666865348816,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      }
+    },
+    "enemy_1509_mousek": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1509_mousek",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "5285406911944445765",
+        "textAssetPathId": "8561352892022152044",
+        "atlasAssetPathId": "3455257097270774041",
+        "atlasTextAssetPathId": "-3247708244999208691",
+        "materials": [
+          {
+            "materialPathId": "-4092995275448488698",
+            "mainTexturePathId": "4371781179561560904",
+            "alphaTexturePathId": "1306987058861231562",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1509_mousek/enemy_1509_mousek_SkeletonData.asset",
+      "files": {
+        "enemy_1509_mousek.skel": {
+          "bytes": 148964,
+          "sha256": "c44999b58c6ce106e7d88c2033a28173a0b6c18c4bd6fc1a0e5cec62e30c1984"
+        },
+        "enemy_1509_mousek.atlas": {
+          "bytes": 2956,
+          "sha256": "dbc707e99277717354681bcad6acb7869be4d0df16834fb6053271c3ec47136e"
+        },
+        "enemy_1509_mousek.png": {
+          "bytes": 87733,
+          "sha256": "6f6d74317f7c25f57a5ec4c42f784c1911d8b2a7b1c6e08f635bcdf0f476422c"
+        }
+      },
+      "spineVersion": "3.8.99",
+      "durations": {
+        "Attack": 2.333,
+        "Default": 0,
+        "Die": 4.333,
+        "Idle": 2,
+        "Move": 2.667,
+        "Skill_1": 2.333,
+        "Skill_2": 1.333
+      },
+      "hits": {
+        "Attack": [
+          1.367
+        ],
+        "Skill_1": [
+          1.967
+        ],
+        "Skill_2": [
+          0.667
+        ]
+      },
+      "bounds": {
+        "x": -249.715,
+        "y": -21.842,
+        "width": 402.998,
+        "height": 389.006
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 1.3666666746139526,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Skill_1": [
+          {
+            "time": 1.9666666984558105,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Skill_2": [
+          {
+            "time": 0.6666666865348816,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      }
+    },
+    "enemy_1511_mdrock": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1511_mdrock",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "-5891516626909145802",
+        "textAssetPathId": "7781735770863473835",
+        "atlasAssetPathId": "-7242050602694622156",
+        "atlasTextAssetPathId": "-7868009026074162320",
+        "materials": [
+          {
+            "materialPathId": "7948093505774901059",
+            "mainTexturePathId": "5331150641565117927",
+            "alphaTexturePathId": "5239179624160448285",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1511_mdrock/enemy_1511_mdrock_SkeletonData.asset",
+      "files": {
+        "enemy_1511_mdrock.skel": {
+          "bytes": 140340,
+          "sha256": "8e81c6eabdd885a0d1daf08c2aa7c78ff83f7d857bafe7671b83b81c01e8ff06"
+        },
+        "enemy_1511_mdrock.atlas": {
+          "bytes": 4574,
+          "sha256": "1762995e796f1ca57228fe6024233a75efe9312295cad2e447ca325181a2b23e"
+        },
+        "enemy_1511_mdrock.png": {
+          "bytes": 80724,
+          "sha256": "0c577fab67b3468a0698bf0b3ab738d07ec016a9006ffa0055305cfcf4bac149"
+        }
+      },
+      "spineVersion": "3.8.99",
+      "durations": {
+        "Attack_1": 2,
+        "Attack_2": 2,
+        "Default": 0,
+        "Die": 3.333,
+        "Idle": 2.667,
+        "Move": 1.333,
+        "Skill_1": 1.5,
+        "Skill_2": 1.333
+      },
+      "hits": {
+        "Attack_1": [
+          1.133
+        ],
+        "Attack_2": [
+          1.133
+        ],
+        "Skill_1": [
+          0.867
+        ],
+        "Skill_2": [
+          0.733
+        ]
+      },
+      "bounds": {
+        "x": -171.955,
+        "y": -4.867,
+        "width": 495.401,
+        "height": 484.295
+      },
+      "eventPayloads": {
+        "Attack_1": [
+          {
+            "time": 1.1333333253860474,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Attack_2": [
+          {
+            "time": 1.1333333253860474,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Skill_1": [
+          {
+            "time": 0.8666666746139526,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Skill_2": [
+          {
+            "time": 0.7333333492279053,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": null
+      }
+    },
+    "enemy_1513_dekght": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1513_dekght",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "-309365102847648383",
+        "textAssetPathId": "-1747291274784512819",
+        "atlasAssetPathId": "270396502624871111",
+        "atlasTextAssetPathId": "-3328249154899017954",
+        "materials": [
+          {
+            "materialPathId": "7991360618004310468",
+            "mainTexturePathId": "3241454586728780554",
+            "alphaTexturePathId": "-654256580448924227",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1513_dekght/1/enemy_1513_dekght_SkeletonData.asset",
+      "files": {
+        "enemy_1513_dekght.skel": {
+          "bytes": 210965,
+          "sha256": "b0fb95919709bb23a486e8703769ededff991b2b19ccc25e5ed2ee93a3dc4591"
+        },
+        "enemy_1513_dekght.atlas": {
+          "bytes": 4852,
+          "sha256": "eea35aa46380f62850ee021e80ab014d47f2a7f953b0b38d2f14bf8565cfec52"
+        },
+        "enemy_1513_dekght.png": {
+          "bytes": 105666,
+          "sha256": "b44dc3b370cd730ae0a20e4f7fe0efed00e1079fababb298de93ae7a4e487805"
+        }
+      },
+      "spineVersion": "3.8.99",
+      "durations": {
+        "Attack": 2.367,
+        "Default": 0,
+        "Die": 2.667,
+        "Idle": 6,
+        "Move": 1.667,
+        "Skill_End": 2.133,
+        "Skill_Loop": 0.667,
+        "Skill_Start": 0.833
+      },
+      "hits": {
+        "Attack": [
+          1.1
+        ],
+        "Skill_End": [
+          1.1
+        ]
+      },
+      "bounds": {
+        "x": -306.984,
+        "y": -1.933,
+        "width": 605.154,
+        "height": 509.503
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 1.100000023841858,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Skill_End": [
+          {
+            "time": 1.100000023841858,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      }
+    },
+    "enemy_1513_dekght_2": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1513_dekght_2",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "676673270099421805",
+        "textAssetPathId": "-2408437586297637502",
+        "atlasAssetPathId": "529368725541966457",
+        "atlasTextAssetPathId": "-2343441222566022948",
+        "materials": [
+          {
+            "materialPathId": "-5702157948145602908",
+            "mainTexturePathId": "2158335241368640708",
+            "alphaTexturePathId": "-1159997757520868511",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1513_dekght/2/enemy_1513_dekght_2_SkeletonData.asset",
+      "files": {
+        "enemy_1513_dekght_2.skel": {
+          "bytes": 182063,
+          "sha256": "e240aa1b861e80b8d04059418b6dbd03d7d081ccf1fdd51dee05b0e925b236ae"
+        },
+        "enemy_1513_dekght_2.atlas": {
+          "bytes": 7202,
+          "sha256": "02ba131a003ba04d2ec2be3468ee43fd24d2ea30661cf0b41465a3cb134343bd"
+        },
+        "enemy_1513_dekght_2.png": {
+          "bytes": 135867,
+          "sha256": "07e5393d82c448a9b2a6e0be3cb95aa83a1b4e4403afe84551336b59bd17d1ba"
+        }
+      },
+      "spineVersion": "3.8.99",
+      "durations": {
+        "Attack": 1.667,
+        "Default": 0,
+        "Die": 2,
+        "Idle": 2,
+        "Move": 1.333,
+        "Skill": 1.667
+      },
+      "hits": {
+        "Attack": [
+          1
+        ],
+        "Skill": [
+          1
+        ]
+      },
+      "bounds": {
+        "x": -299.391,
+        "y": -1.922,
+        "width": 655.005,
+        "height": 509.857
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 1,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ],
+        "Skill": [
+          {
+            "time": 1,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      }
+    }
+  }
+}

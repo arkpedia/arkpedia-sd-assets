@@ -1,0 +1,469 @@
+{
+  "sourceBundle": {
+    "client": "cn",
+    "path": "refs/arts/enm_art_11.ab",
+    "bytes": 3325326,
+    "md5": "0ee42a5b5cd83dee06e1f3ce6171c9aa",
+    "sha256": "8e9119f3d04d9e310d96d4026200e4a370825c1e1481a049ba17db712c14daa8",
+    "resourceVersion": "26-09-22-07-47-20_6c71fa",
+    "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/refs_arts_enm_art_11.dat",
+    "transforms": [
+      "Original skeleton bytes retained",
+      "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+      "Atlas page dimensions and PMA header normalized; native regions retained"
+    ]
+  },
+  "models": {
+    "enemy_1258_durman": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1258_durman",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "5469647036595604103",
+        "textAssetPathId": "-5866109054956540882",
+        "atlasAssetPathId": "-6133419460937791258",
+        "atlasTextAssetPathId": "-3531180161654512068",
+        "materials": [
+          {
+            "materialPathId": "7203035916713936283",
+            "mainTexturePathId": "5199873493484292413",
+            "alphaTexturePathId": "4311482350311825872",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_OutlineMipLevel": 0,
+              "_OutlineReferenceTexWidth": 1024,
+              "_OutlineSmoothness": 1,
+              "_OutlineWidth": 3,
+              "_StencilComp": 8,
+              "_StencilRef": 1,
+              "_StraightAlphaInput": 0,
+              "_ThresholdEnd": 0.25,
+              "_Use8Neighbourhood": 1,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1258_durman/1/enemy_1258_durman_SkeletonData.asset",
+      "files": {
+        "enemy_1258_durman.skel": {
+          "bytes": 76215,
+          "sha256": "1f8d1d87091be3565b35651519e8905b0049899148460ca3bc21fc34f76c99af"
+        },
+        "enemy_1258_durman.atlas": {
+          "bytes": 3251,
+          "sha256": "9308cb994fef1fe82b364fe03ed82a4756036b7252546a81424ed4e5a9ecbd91"
+        },
+        "enemy_1258_durman.png": {
+          "bytes": 42201,
+          "sha256": "0a286d2092b223400aed2bd194699cd6d4d846bd71101750093e8c4bcecb9c22"
+        }
+      },
+      "spineVersion": "3.8.84",
+      "durations": {
+        "Attack": 1.333,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 4,
+        "Move": 1.333
+      },
+      "hits": {
+        "Attack": [
+          0.833
+        ]
+      },
+      "bounds": {
+        "x": -139.617,
+        "y": -5.737,
+        "width": 322.881,
+        "height": 369.613
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.8333333134651184,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      }
+    },
+    "enemy_1258_durman_2": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1258_durman_2",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "213137947795748861",
+        "textAssetPathId": "310636286650159719",
+        "atlasAssetPathId": "4175822284811405314",
+        "atlasTextAssetPathId": "-5129872768860193620",
+        "materials": [
+          {
+            "materialPathId": "4119254325241196344",
+            "mainTexturePathId": "-4022233820627682545",
+            "alphaTexturePathId": "-6693256321216059305",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_OutlineMipLevel": 0,
+              "_OutlineReferenceTexWidth": 1024,
+              "_OutlineSmoothness": 1,
+              "_OutlineWidth": 3,
+              "_StencilComp": 8,
+              "_StencilRef": 1,
+              "_StraightAlphaInput": 0,
+              "_ThresholdEnd": 0.25,
+              "_Use8Neighbourhood": 1,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1258_durman/2/enemy_1258_durman_2_SkeletonData.asset",
+      "files": {
+        "enemy_1258_durman_2.skel": {
+          "bytes": 76215,
+          "sha256": "e9f17df7dc70258e5bbec75154001e38061fb5ba9f11b615bd37d5baed21ac43"
+        },
+        "enemy_1258_durman_2.atlas": {
+          "bytes": 3251,
+          "sha256": "3c32efa3dea806156b7ca5a639c6a3c1818389a9505361074dec55c55e2e941f"
+        },
+        "enemy_1258_durman_2.png": {
+          "bytes": 41331,
+          "sha256": "eb3415185bf643488ebd4225426ff7625c376e4877829de246676114e23523eb"
+        }
+      },
+      "spineVersion": "3.8.84",
+      "durations": {
+        "Attack": 1.333,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 4,
+        "Move": 1.333
+      },
+      "hits": {
+        "Attack": [
+          0.833
+        ]
+      },
+      "bounds": {
+        "x": -139.617,
+        "y": -5.737,
+        "width": 322.881,
+        "height": 369.613
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.8333333134651184,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      }
+    },
+    "enemy_1259_durwar": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1259_durwar",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "710297034567394199",
+        "textAssetPathId": "2862371633155476614",
+        "atlasAssetPathId": "-6211269395888633265",
+        "atlasTextAssetPathId": "-2268552281369160211",
+        "materials": [
+          {
+            "materialPathId": "6733785591624534914",
+            "mainTexturePathId": "-3948582271041561527",
+            "alphaTexturePathId": "-6226206469581009620",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_OutlineMipLevel": 0,
+              "_OutlineReferenceTexWidth": 1024,
+              "_OutlineSmoothness": 1,
+              "_OutlineWidth": 3,
+              "_StencilComp": 8,
+              "_StencilRef": 1,
+              "_StraightAlphaInput": 0,
+              "_ThresholdEnd": 0.25,
+              "_Use8Neighbourhood": 1,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1259_durwar/1/enemy_1259_durwar_SkeletonData.asset",
+      "files": {
+        "enemy_1259_durwar.skel": {
+          "bytes": 35935,
+          "sha256": "5d874147784da25a6613a4896c48ed7a272cefc55c82eb53de920510ae5771bc"
+        },
+        "enemy_1259_durwar.atlas": {
+          "bytes": 2012,
+          "sha256": "c50a5291ac609f0120f4c471b53c16d630be4325ff116f2cb925769db4eb5f57"
+        },
+        "enemy_1259_durwar.png": {
+          "bytes": 32806,
+          "sha256": "0319c6e40f3842d93038210a9de35a5c75e18eca60d11b31402b0b3713434675"
+        }
+      },
+      "spineVersion": "3.8.84",
+      "durations": {
+        "Attack": 0.933,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1.333,
+        "Move": 1.067
+      },
+      "hits": {
+        "Attack": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -105.485,
+        "y": -4.989,
+        "width": 236,
+        "height": 403
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.46666666865348816,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      }
+    },
+    "enemy_1260_durmag": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1260_durmag",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "7403317495943941484",
+        "textAssetPathId": "2241685573333539534",
+        "atlasAssetPathId": "-8018354487356606877",
+        "atlasTextAssetPathId": "7096226739939337478",
+        "materials": [
+          {
+            "materialPathId": "-3410876972730194502",
+            "mainTexturePathId": "1874085053120250109",
+            "alphaTexturePathId": "4936996701249070092",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_OutlineMipLevel": 0,
+              "_OutlineReferenceTexWidth": 1024,
+              "_OutlineSmoothness": 1,
+              "_OutlineWidth": 3,
+              "_StencilComp": 8,
+              "_StencilRef": 1,
+              "_StraightAlphaInput": 0,
+              "_ThresholdEnd": 0.25,
+              "_Use8Neighbourhood": 1,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1260_durmag/1/enemy_1260_durmag_SkeletonData.asset",
+      "files": {
+        "enemy_1260_durmag.skel": {
+          "bytes": 46263,
+          "sha256": "cc8127a3d2cd26ba87c62709d8479dca93e8dbab9000fc217f5417f33c443e0a"
+        },
+        "enemy_1260_durmag.atlas": {
+          "bytes": 2513,
+          "sha256": "7a626686954bb72287ab9337371ecc0cb090cfc1d08321dd70c0082f829b507f"
+        },
+        "enemy_1260_durmag.png": {
+          "bytes": 44528,
+          "sha256": "35ddc01bff64add5e1f91b0552901b65f2570fd885ee30881ceeb2f44d51eb4d"
+        }
+      },
+      "spineVersion": "3.8.84",
+      "durations": {
+        "Attack": 0.9,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 1.333,
+        "Move": 1.067
+      },
+      "hits": {
+        "Attack": [
+          0.367
+        ]
+      },
+      "bounds": {
+        "x": -116.641,
+        "y": -14.455,
+        "width": 327.517,
+        "height": 423.123
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.36666667461395264,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      }
+    },
+    "enemy_1269_nhfly_2": {
+      "kind": "enemy",
+      "directory": "spine/enemy/enemy_1269_nhfly_2",
+      "originalPathIds": {
+        "skeletonDataAssetPathId": "-1017878845583322412",
+        "textAssetPathId": "-4522271886133520405",
+        "atlasAssetPathId": "6224429073820913081",
+        "atlasTextAssetPathId": "2407491825735324442",
+        "materials": [
+          {
+            "materialPathId": "2019301257960357085",
+            "mainTexturePathId": "-8571070143046302927",
+            "alphaTexturePathId": "5439686086947939317",
+            "floats": {
+              "_BaselineZ": 0,
+              "_Cutoff": 0.10000000149011612,
+              "_DitherIntensity": 0,
+              "_OutlineMipLevel": 0,
+              "_OutlineReferenceTexWidth": 1024,
+              "_OutlineSmoothness": 1,
+              "_OutlineWidth": 3,
+              "_StencilComp": 8,
+              "_StencilRef": 1,
+              "_StraightAlphaInput": 0,
+              "_ThresholdEnd": 0.25,
+              "_Use8Neighbourhood": 1,
+              "_UseAlphaTex": 1,
+              "_UseBleed": 0,
+              "_UseDither": 0,
+              "_UseFixedFormula": 0,
+              "_UseTintBlack": 0
+            }
+          }
+        ]
+      },
+      "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1269_nhfly/2/enemy_1269_nhfly_2_SkeletonData.asset",
+      "files": {
+        "enemy_1269_nhfly_2.skel": {
+          "bytes": 21342,
+          "sha256": "93c9cd66be20401b6e5c83591ed3da5f4432e8d765eea3e80739c858796f2632"
+        },
+        "enemy_1269_nhfly_2.atlas": {
+          "bytes": 452,
+          "sha256": "b54872f11c4c35fe7dc4e1e166245e92ce9b43bfd30e7cbc84f55338d1fdd008"
+        },
+        "enemy_1269_nhfly_2.png": {
+          "bytes": 17465,
+          "sha256": "1b8bcb6432fd0029407f859c750fd6b9a19e3f820e76f5a39298fbeb345e138f"
+        }
+      },
+      "spineVersion": "3.8.99",
+      "durations": {
+        "Attack": 0.367,
+        "Default": 0,
+        "Die": 0.833,
+        "Die2": 0.833,
+        "Idle": 2,
+        "Move": 1
+      },
+      "hits": {
+        "Attack": [
+          0.367
+        ]
+      },
+      "bounds": {
+        "x": -127.5,
+        "y": -143.662,
+        "width": 254.998,
+        "height": 283
+      },
+      "eventPayloads": {
+        "Attack": [
+          {
+            "time": 0.36666667461395264,
+            "name": "OnAttack",
+            "int": 0,
+            "float": 0,
+            "string": ""
+          }
+        ]
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      }
+    }
+  }
+}

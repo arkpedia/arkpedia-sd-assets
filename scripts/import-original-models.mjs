@@ -18,7 +18,11 @@ export async function importOriginalModels({ metadata, bundle, extractedRoot, de
   const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
   for (const [id, originalRecord] of Object.entries(info.models)) {
     component(id);
-    const facings = originalRecord.facings ? Object.keys(originalRecord.facings) : ['front', 'back'];
+    const kind = originalRecord.kind ?? 'operator';
+    if (!['operator', 'enemy'].includes(kind) || kind === 'enemy' && !id.startsWith('enemy_'))
+      throw new Error(`${id}: invalid original model kind`);
+    if (kind === 'enemy' && originalRecord.facings) throw new Error(`${id}: enemy imports require one original default skeleton`);
+    const facings = kind === 'enemy' ? ['default'] : originalRecord.facings ? Object.keys(originalRecord.facings) : ['front', 'back'];
     if (originalRecord.facings && (!originalRecord.facings.front || !originalRecord.facings.back
       || facings.some(facing => !['front', 'back', 'down'].includes(facing))))
       throw new Error(`${id}: expected exactly front and back original facings, with optional native down`);
@@ -55,11 +59,11 @@ export async function importOriginalModels({ metadata, bundle, extractedRoot, de
         || pages.some(name => !bytes.has(name))) throw new Error(`${id}: incomplete extracted model`);
     // Preserve legacy single-skeleton aliases. Tokens such as Phantom's clone
     // instead provide the exact skeleton selected by each native animator ref.
-      const key = `operator/${id}/default/${facing}`;
+      const key = `${kind}/${id}/default/${facing}`;
       const source = { key: `${sourceBundle.client ?? 'global'}-client`, kind: 'assetbundle',
         bundle: sourceBundle, directory: sourceBundle.path,
         extractedSkeleton: skel,
-        ...(originalRecord.facings ? { originalPathIds: record.originalPathIds }
+        ...(originalRecord.facings || kind === 'enemy' ? { originalPathIds: record.originalPathIds }
           : { facingAlias: 'single-original-model',
             ...(record.originalPathIds ? { originalPathIds: record.originalPathIds } : {}) }),
         transforms: sourceBundle.transforms };
@@ -82,7 +86,7 @@ export async function importOriginalModels({ metadata, bundle, extractedRoot, de
       const previous = manifest.models[key];
       const retainedAvatar = !bytes.has('avatar.png') && previous?.avatar
         && JSON.stringify(previous.source) === JSON.stringify(source) ? previous.avatar : null;
-      manifest.models[key] = { kind: 'operator', id, variant: 'default', facing, source,
+      manifest.models[key] = { kind, id, variant: 'default', facing, source,
         spineVersion: record.spineVersion, skeleton: file(skel), atlas: file(atlas),
         textures: pages.map(file), premultipliedAlpha: true,
         animations: record.durations, animationRoles: record.animationRoles,
