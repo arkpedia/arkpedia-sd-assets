@@ -1,13 +1,29 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { mkdtemp, mkdir, readFile, writeFile, rm } from 'node:fs/promises';
+import { mkdtemp, mkdir, readFile, writeFile, rm, stat } from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
-import { importOriginalModels } from '../scripts/import-original-models.mjs';
+import { importOriginalModels, importOriginalModelBatches } from '../scripts/import-original-models.mjs';
+import {validateManifest} from '../scripts/manifest.mjs';
 
 const hash = (bytes, algorithm = 'sha256') => createHash(algorithm).update(bytes).digest('hex');
 const header = value => Buffer.concat([value, '3.8.99'].map(s => Buffer.concat([Buffer.from([s.length + 1]), Buffer.from(s)])));
+
+test('a later invalid original bundle cannot publish earlier entries in the same batch',async()=>{
+  const first=await fixture(),second=await fixture();
+  try {
+    second.info.models={token_other:second.front};await second.save();
+    const bytes=await readFile(second.args.bundle);
+    await writeFile(second.args.bundle,'changed later bundle');
+    const args={batches:[first.args,second.args],destinationRoot:first.dir};
+    await assert.rejects(importOriginalModelBatches(args),/bundle bytes do not match/);
+    assert.deepEqual((await first.manifest()).models,{});
+    await writeFile(second.args.bundle,bytes);await importOriginalModelBatches(args);
+    assert.equal(Object.keys((await first.manifest()).models).length,4);
+    const before=await first.manifest();await importOriginalModelBatches(args);assert.deepEqual(await first.manifest(),before);
+  } finally {await rm(first.dir,{recursive:true,force:true});await rm(second.dir,{recursive:true,force:true});}
+});
 
 async function fixture() {
   const dir = await mkdtemp(path.join(os.tmpdir(), 'arkpedia-original-'));
@@ -188,5 +204,27 @@ test('original model kinds cannot silently turn an operator into an enemy', asyn
  const f=await fixture();try{
   f.info.models={token_pair:{...f.front,kind:'enemy'}};await f.save();await assert.rejects(importOriginalModels(f.args),/invalid original model kind/);
   assert.deepEqual((await f.manifest()).models,{});
+ }finally{await rm(f.dir,{recursive:true,force:true});}
+});
+
+test('identical enemy bodies share files while preserving per-prefab roles and provenance',async()=>{
+ const f=await fixture();try {
+  f.info.models={enemy_original:{...f.front,kind:'enemy'},
+   enemy_alias:{...f.front,kind:'enemy',originalPathIds:{skeletonTextAsset:'333'},animationRoles:{...f.front.animationRoles,attack:null}},
+   enemy_different:{...f.back,kind:'enemy'}};
+  await f.save();await importOriginalModels(f.args);
+  const manifest=await f.manifest(),key='enemy/enemy_original/default/default',aliasKey='enemy/enemy_alias/default/default';
+  const original=manifest.models[key],alias=manifest.models[aliasKey];
+  assert.equal(alias.assetAlias,key);assert.equal(alias.skeleton.path,original.skeleton.path);
+  assert.deepEqual(alias.textures,original.textures);assert.equal(alias.animationRoles.attack,null);
+  assert.equal(alias.source.originalPathIds.skeletonTextAsset,'333');
+  assert.equal(manifest.models['enemy/enemy_different/default/default'].assetAlias,undefined);
+  await assert.rejects(stat(path.join(f.dir,'models/enemy/enemy_alias')),e=>e.code==='ENOENT');
+  await importOriginalModels(f.args);assert.deepEqual(await f.manifest(),manifest);
+  for(const change of [m=>{m.models[aliasKey].assetAlias='missing';},
+   m=>{m.models[key].assetAlias=aliasKey;},m=>{m.models[aliasKey].skeleton={...alias.skeleton,sha256:'0'.repeat(64)};},
+   m=>{m.models[aliasKey].kind='operator';m.models['operator/enemy_alias/default/default']=m.models[aliasKey];delete m.models[aliasKey];}]) {
+   const mutated=structuredClone(manifest);change(mutated);await assert.rejects(validateManifest(mutated,f.dir),/shared enemy body alias/);
+  }
  }finally{await rm(f.dir,{recursive:true,force:true});}
 });

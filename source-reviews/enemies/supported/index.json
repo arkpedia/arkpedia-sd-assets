@@ -1,0 +1,578 @@
+{
+  "source": {
+    "repository": "Kengxxiao/ArknightsGameData",
+    "commit": "a550f5e048bb94e7cdefc6eb97a4091f0c4c7add",
+    "clientVersion": "2.7.71",
+    "resourceVersion": "26-09-22-07-47-20_6c71fa",
+    "baseURL": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/",
+    "manifestBytes": 3241788,
+    "manifestSha256": "d1ac02a61d98e6e4c772335bb85dc44da4794a0a8bc915354b6f9ffbc7ec1f35",
+    "manifestURL": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/hot_update_list.json",
+    "manifestName": "c3151e169fcbbf9fb10106100b071c7d.idx",
+    "manifestVersion": "V077",
+    "tableSource": {
+      "repository": "Kengxxiao/ArknightsGameData",
+      "commit": "a550f5e048bb94e7cdefc6eb97a4091f0c4c7add",
+      "tables": [
+        {
+          "path": "zh_CN/gamedata/excel/character_table.json",
+          "gitBlob": "789dfbf21512118b357129b5f01fd2a40b29e05d",
+          "bytes": 14975251,
+          "sha256": "68e3a3b5ee0d407ce234afaa5867c6fda6379a6843c7d5317a7bbda4779f8697"
+        },
+        {
+          "path": "zh_CN/gamedata/excel/char_patch_table.json",
+          "gitBlob": "5e371cce6cebd5ccdf0196584233bc386361eb8c",
+          "bytes": 48761,
+          "sha256": "d1850d5aeec1a9246a0531e88c167e66745644957662c8272fc764f54904c57e"
+        },
+        {
+          "path": "zh_CN/gamedata/excel/skill_table.json",
+          "gitBlob": "3793979c8672129489135e97727bfd9f9fd32873",
+          "bytes": 11447929,
+          "sha256": "86f4aa64c785f39727edd06d6dd8a4f27f371c8e4ace5345ba0dc61dee1386ca"
+        },
+        {
+          "path": "zh_CN/gamedata/excel/range_table.json",
+          "gitBlob": "8ade26d87026ee7649ff8a2d1636e7c3426959c8",
+          "bytes": 53368,
+          "sha256": "4d974598394630a1ad465b954321254397f514c7fb26cba944d320ac18b874d0"
+        }
+      ]
+    },
+    "globalAlternateForms": {
+      "commit": "57010cb5b2afea112cae57daa756b58676ba6850",
+      "sha256": "9604bc88f2593a4c9dd25d6f7524aeddfa352d11de990134c5fe0f12ede7ef46",
+      "patchTable": {
+        "path": "en_US/gamedata/excel/char_patch_table.json",
+        "sha": "fc84d705f44b9c2e430069c482fbf935a995952e",
+        "size": 47115
+      },
+      "formIds": [
+        "char_1001_amiya2",
+        "char_1037_amiya3"
+      ]
+    },
+    "preparedTableSha256": "fc4291af93add2391aede8b5a814135f3d092b319548141beba4ec44f4a2f941"
+  },
+  "requested": [
+    "enemy_10011_sgshot",
+    "enemy_10011_sgshot_2",
+    "enemy_10082_mpweak",
+    "enemy_10083_hlbird",
+    "enemy_10083_hlbird_2",
+    "enemy_1066_snbow_2",
+    "enemy_1073_dscout_2",
+    "enemy_1074_dbskar_2",
+    "enemy_1096_ccwitch_2",
+    "enemy_1112_emppnt_2",
+    "enemy_1114_rgrdmn_2",
+    "enemy_1116_liprr",
+    "enemy_1116_liprr_2",
+    "enemy_1119_vofsd",
+    "enemy_1119_vofsd_2",
+    "enemy_1131_sbeast_2",
+    "enemy_1133_harchn",
+    "enemy_1134_diamd",
+    "enemy_1153_dsexcu",
+    "enemy_1153_dsexcu_2",
+    "enemy_1164_bmbmot_3",
+    "enemy_1177_dufrbl",
+    "enemy_1190_krgbow",
+    "enemy_1190_krgbow_2",
+    "enemy_1242_ltsmag_2",
+    "enemy_1244_ltssch_2",
+    "enemy_1245_ltseal",
+    "enemy_1249_lysdb",
+    "enemy_1249_lysdb_2",
+    "enemy_1254_lypa",
+    "enemy_1259_durwar_2",
+    "enemy_1260_durmag_2",
+    "enemy_1261_dursho",
+    "enemy_1261_dursho_2",
+    "enemy_1270_nhstlk_2",
+    "enemy_1274_stmram_2",
+    "enemy_1275_dwlock_2",
+    "enemy_1295_ymph",
+    "enemy_1295_ymph_2",
+    "enemy_1298_ymmonk",
+    "enemy_1298_ymmonk_2",
+    "enemy_1324_wdsdw",
+    "enemy_1324_wdsdw_2",
+    "enemy_1325_cbgpro",
+    "enemy_1325_cbgpro_2",
+    "enemy_1363_spnshd_2",
+    "enemy_1364_spnaxe_2",
+    "enemy_1380_dthmak",
+    "enemy_1381_winman",
+    "enemy_1381_winman_2",
+    "enemy_1401_pogpro",
+    "enemy_1401_pogpro_2",
+    "enemy_1411_mmrnge",
+    "enemy_1411_mmrnge_2",
+    "enemy_1420_lrmm",
+    "enemy_1432_lrccon",
+    "enemy_1432_lrccon_2",
+    "enemy_15001_dqsmwa",
+    "enemy_15002_dqwing",
+    "enemy_15007_dqbear",
+    "enemy_15012_dqbsli",
+    "enemy_15013_dqsnsl",
+    "enemy_15020_dqplas",
+    "enemy_15026_dqmtrf",
+    "enemy_15029_dqfrtu",
+    "enemy_15030_dqsgpr",
+    "enemy_15044_dqtisd",
+    "enemy_15078_dqcjld",
+    "enemy_15083_dqymot",
+    "enemy_15084_dqhfly",
+    "enemy_15087_dqkkt",
+    "enemy_15095_dqams",
+    "enemy_1554_lrtsia_2",
+    "enemy_19004_akbdsn",
+    "enemy_19005_akplsp",
+    "enemy_19007_akplbt",
+    "enemy_19008_akplbr",
+    "enemy_19014_akslsn",
+    "enemy_19015_akftr",
+    "enemy_19017_akrang",
+    "enemy_19019_akbow",
+    "enemy_19035_wlftr",
+    "enemy_19037_wlrang",
+    "enemy_19039_wlbow",
+    "enemy_2001_duckmi",
+    "enemy_2005_axetro",
+    "enemy_2011_csppt",
+    "enemy_2012_csbln",
+    "enemy_2034_sythef",
+    "enemy_2085_skzjxd",
+    "enemy_3017_ycsho",
+    "enemy_3018_yczzh",
+    "enemy_3019_ycyzh",
+    "enemy_3020_ycwei",
+    "enemy_5027_amotfd",
+    "enemy_5028_dqlime_2",
+    "enemy_5029_dqslim",
+    "enemy_5030_dqpro_3",
+    "enemy_5031_dqrtar_2",
+    "enemy_5032_dqmon",
+    "enemy_5033_dqmstr_2",
+    "enemy_5034_dqield",
+    "enemy_5036_dqger_2",
+    "enemy_5037_dqdbox",
+    "enemy_5038_dqiprr_2",
+    "enemy_5042_dqkght_2",
+    "enemy_5047_dqripr",
+    "enemy_5064_yrcoin",
+    "enemy_5068_iznsbr",
+    "enemy_5069_izsdkn",
+    "enemy_5070_izuabn",
+    "enemy_5073_izbslm",
+    "enemy_5075_izbear",
+    "enemy_6008_mtslms",
+    "enemy_6012_plants",
+    "enemy_7035_epasng",
+    "enemy_7078_xbblsk",
+    "enemy_7079_xbshap",
+    "enemy_7080_xbhung",
+    "enemy_7081_xbmedc",
+    "enemy_7083_xbswrd",
+    "enemy_7085_xb2trn_2",
+    "enemy_7096_xb2deero",
+    "enemy_7097_xb2bullo",
+    "enemy_7098_xb2crabo",
+    "enemy_7099_xb2birdo",
+    "enemy_7100_xb2crab2o",
+    "enemy_7101_xb2motho",
+    "enemy_7102_xb2chpyo",
+    "enemy_7103_xb2strcho",
+    "enemy_7104_xb2firyo",
+    "enemy_7105_xb2cbrb1o",
+    "enemy_7106_xb2deer2o",
+    "enemy_7107_xb2bull1o",
+    "enemy_7111_xb2eltrsm",
+    "enemy_7112_xb2mcnd",
+    "enemy_7113_xb2mcnrhd",
+    "enemy_7114_xb2mcnrsh",
+    "enemy_7115_xb2mcnelp",
+    "enemy_7116_xb2mdrock",
+    "enemy_7117_xb2mcnist",
+    "enemy_9001_ayokai"
+  ],
+  "batches": [
+    {
+      "bundle": "refs/arts/enm_art_0.ab",
+      "ids": [
+        "enemy_10011_sgshot",
+        "enemy_10011_sgshot_2"
+      ],
+      "metadata": "enm_art_0.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_1.ab",
+      "ids": [
+        "enemy_15078_dqcjld",
+        "enemy_5028_dqlime_2"
+      ],
+      "metadata": "enm_art_1.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_10.ab",
+      "ids": [
+        "enemy_1242_ltsmag_2",
+        "enemy_1244_ltssch_2",
+        "enemy_1249_lysdb",
+        "enemy_1249_lysdb_2"
+      ],
+      "metadata": "enm_art_10.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_11.ab",
+      "ids": [
+        "enemy_1259_durwar_2",
+        "enemy_1260_durmag_2",
+        "enemy_1261_dursho",
+        "enemy_1261_dursho_2",
+        "enemy_1270_nhstlk_2",
+        "enemy_1274_stmram_2",
+        "enemy_1275_dwlock_2",
+        "enemy_15084_dqhfly"
+      ],
+      "metadata": "enm_art_11.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_12.ab",
+      "ids": [
+        "enemy_1295_ymph",
+        "enemy_1295_ymph_2",
+        "enemy_1298_ymmonk",
+        "enemy_1298_ymmonk_2",
+        "enemy_5029_dqslim"
+      ],
+      "metadata": "enm_art_12.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_13.ab",
+      "ids": [
+        "enemy_1324_wdsdw",
+        "enemy_1324_wdsdw_2",
+        "enemy_1325_cbgpro",
+        "enemy_1325_cbgpro_2",
+        "enemy_19004_akbdsn",
+        "enemy_19005_akplsp"
+      ],
+      "metadata": "enm_art_13.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_14.ab",
+      "ids": [
+        "enemy_1363_spnshd_2",
+        "enemy_1364_spnaxe_2",
+        "enemy_1381_winman",
+        "enemy_1381_winman_2",
+        "enemy_15002_dqwing"
+      ],
+      "metadata": "enm_art_14.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_15.ab",
+      "ids": [
+        "enemy_1401_pogpro",
+        "enemy_1401_pogpro_2",
+        "enemy_1411_mmrnge",
+        "enemy_1411_mmrnge_2"
+      ],
+      "metadata": "enm_art_15.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_16.ab",
+      "ids": [
+        "enemy_15087_dqkkt",
+        "enemy_7116_xb2mdrock"
+      ],
+      "metadata": "enm_art_16.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_17.ab",
+      "ids": [
+        "enemy_15007_dqbear",
+        "enemy_19008_akplbr",
+        "enemy_2001_duckmi",
+        "enemy_2005_axetro",
+        "enemy_5075_izbear"
+      ],
+      "metadata": "enm_art_17.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_18.ab",
+      "ids": [
+        "enemy_15001_dqsmwa",
+        "enemy_2011_csppt",
+        "enemy_2012_csbln",
+        "enemy_2034_sythef"
+      ],
+      "metadata": "enm_art_18.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_19.ab",
+      "ids": [
+        "enemy_2085_skzjxd",
+        "enemy_5027_amotfd"
+      ],
+      "metadata": "enm_art_19.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_2.ab",
+      "ids": [
+        "enemy_10083_hlbird",
+        "enemy_10083_hlbird_2"
+      ],
+      "metadata": "enm_art_2.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_20.ab",
+      "ids": [
+        "enemy_19014_akslsn",
+        "enemy_5064_yrcoin",
+        "enemy_6008_mtslms",
+        "enemy_6012_plants"
+      ],
+      "metadata": "enm_art_20.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_21.ab",
+      "ids": [
+        "enemy_7035_epasng",
+        "enemy_7096_xb2deero",
+        "enemy_7097_xb2bullo",
+        "enemy_7100_xb2crab2o",
+        "enemy_7101_xb2motho",
+        "enemy_7105_xb2cbrb1o",
+        "enemy_7106_xb2deer2o",
+        "enemy_7107_xb2bull1o"
+      ],
+      "metadata": "enm_art_21.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_22.ab",
+      "ids": [
+        "enemy_7111_xb2eltrsm",
+        "enemy_7112_xb2mcnd",
+        "enemy_7113_xb2mcnrhd",
+        "enemy_7114_xb2mcnrsh",
+        "enemy_7115_xb2mcnelp",
+        "enemy_7117_xb2mcnist",
+        "enemy_9001_ayokai"
+      ],
+      "metadata": "enm_art_22.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_25.ab",
+      "ids": [
+        "enemy_3017_ycsho",
+        "enemy_3018_yczzh"
+      ],
+      "metadata": "enm_art_25.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_26.ab",
+      "ids": [
+        "enemy_3019_ycyzh",
+        "enemy_3020_ycwei",
+        "enemy_7102_xb2chpyo",
+        "enemy_7103_xb2strcho"
+      ],
+      "metadata": "enm_art_26.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_27.ab",
+      "ids": [
+        "enemy_7078_xbblsk",
+        "enemy_7079_xbshap",
+        "enemy_7080_xbhung",
+        "enemy_7081_xbmedc",
+        "enemy_7083_xbswrd",
+        "enemy_7104_xb2firyo"
+      ],
+      "metadata": "enm_art_27.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_28.ab",
+      "ids": [
+        "enemy_19015_akftr",
+        "enemy_19017_akrang",
+        "enemy_19019_akbow",
+        "enemy_19035_wlftr",
+        "enemy_19037_wlrang",
+        "enemy_19039_wlbow"
+      ],
+      "metadata": "enm_art_28.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_3.ab",
+      "ids": [
+        "enemy_15012_dqbsli",
+        "enemy_15026_dqmtrf",
+        "enemy_5031_dqrtar_2",
+        "enemy_5032_dqmon",
+        "enemy_5073_izbslm"
+      ],
+      "metadata": "enm_art_3.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_4.ab",
+      "ids": [
+        "enemy_1066_snbow_2",
+        "enemy_15013_dqsnsl",
+        "enemy_5033_dqmstr_2",
+        "enemy_5036_dqger_2"
+      ],
+      "metadata": "enm_art_4.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_5.ab",
+      "ids": [
+        "enemy_1073_dscout_2",
+        "enemy_1074_dbskar_2",
+        "enemy_1096_ccwitch_2",
+        "enemy_15044_dqtisd",
+        "enemy_5047_dqripr"
+      ],
+      "metadata": "enm_art_5.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_6.ab",
+      "ids": [
+        "enemy_1112_emppnt_2",
+        "enemy_1114_rgrdmn_2",
+        "enemy_1116_liprr",
+        "enemy_1116_liprr_2",
+        "enemy_1119_vofsd",
+        "enemy_1119_vofsd_2",
+        "enemy_19007_akplbt",
+        "enemy_5037_dqdbox",
+        "enemy_5038_dqiprr_2",
+        "enemy_5042_dqkght_2",
+        "enemy_5069_izsdkn",
+        "enemy_5070_izuabn"
+      ],
+      "metadata": "enm_art_6.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_7.ab",
+      "ids": [
+        "enemy_1131_sbeast_2",
+        "enemy_1133_harchn",
+        "enemy_1134_diamd",
+        "enemy_1153_dsexcu",
+        "enemy_1153_dsexcu_2",
+        "enemy_15020_dqplas",
+        "enemy_15029_dqfrtu",
+        "enemy_15030_dqsgpr",
+        "enemy_15083_dqymot"
+      ],
+      "metadata": "enm_art_7.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_8.ab",
+      "ids": [
+        "enemy_1164_bmbmot_3",
+        "enemy_1190_krgbow",
+        "enemy_1190_krgbow_2"
+      ],
+      "metadata": "enm_art_8.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_base_0.ab",
+      "ids": [
+        "enemy_5030_dqpro_3",
+        "enemy_5034_dqield",
+        "enemy_5068_iznsbr"
+      ],
+      "metadata": "enm_art_base_0.json"
+    }
+  ],
+  "pending": [
+    "enemy_10082_mpweak",
+    "enemy_1177_dufrbl",
+    "enemy_1245_ltseal",
+    "enemy_1254_lypa",
+    "enemy_1380_dthmak",
+    "enemy_1420_lrmm",
+    "enemy_1432_lrccon",
+    "enemy_1432_lrccon_2",
+    "enemy_15095_dqams",
+    "enemy_1554_lrtsia_2",
+    "enemy_7085_xb2trn_2",
+    "enemy_7098_xb2crabo",
+    "enemy_7099_xb2birdo"
+  ],
+  "failures": [
+    {
+      "id": "enemy_10082_mpweak",
+      "bundle": "battle/enm_pfb_2.ab",
+      "reason": "Native animator has no Spine body (effect/mesh renderer needs separate support)"
+    },
+    {
+      "id": "enemy_1177_dufrbl",
+      "bundle": "battle/enm_pfb_8.ab",
+      "reason": "Native animator has no Spine body (effect/mesh renderer needs separate support)"
+    },
+    {
+      "id": "enemy_1245_ltseal",
+      "bundle": "battle/enm_pfb_11.ab",
+      "reason": "Native animator has no Spine body (effect/mesh renderer needs separate support)"
+    },
+    {
+      "id": "enemy_1254_lypa",
+      "bundle": "battle/enm_pfb_11.ab",
+      "reason": "Non-default native skin or vertex material needs review"
+    },
+    {
+      "id": "enemy_1380_dthmak",
+      "bundle": "battle/enm_pfb_15.ab",
+      "reason": "Native animator has no Spine body (effect/mesh renderer needs separate support)"
+    },
+    {
+      "id": "enemy_1420_lrmm",
+      "bundle": "battle/enm_pfb_16.ab",
+      "reason": "Native animator has no Spine body (effect/mesh renderer needs separate support)"
+    },
+    {
+      "id": "enemy_1432_lrccon",
+      "bundle": "battle/enm_pfb_16.ab",
+      "reason": "Native animator has no Spine body (effect/mesh renderer needs separate support)"
+    },
+    {
+      "id": "enemy_1432_lrccon_2",
+      "bundle": "battle/enm_pfb_16.ab",
+      "reason": "Native animator has no Spine body (effect/mesh renderer needs separate support)"
+    },
+    {
+      "id": "enemy_15095_dqams",
+      "bundle": "battle/enm_pfb_31.ab",
+      "reason": "Non-default native skin or vertex material needs review"
+    },
+    {
+      "id": "enemy_1554_lrtsia_2",
+      "bundle": "battle/enm_pfb_18.ab",
+      "reason": "Native animator has no Spine body (effect/mesh renderer needs separate support)"
+    },
+    {
+      "id": "enemy_7085_xb2trn_2",
+      "bundle": "battle/enm_pfb_32.ab",
+      "reason": "Native animator has no Spine body (effect/mesh renderer needs separate support)"
+    },
+    {
+      "id": "enemy_7098_xb2crabo",
+      "bundle": "refs/arts/enm_art_21.ab",
+      "reason": "Alpha texture and material switch disagree"
+    },
+    {
+      "id": "enemy_7099_xb2birdo",
+      "bundle": "refs/arts/enm_art_21.ab",
+      "reason": "Alpha texture and material switch disagree"
+    }
+  ],
+  "scope": "Original supported-enemy body inputs and native prefab bindings. Runtime combat, animation mode/speed dispatch, effects and frame parity remain separate."
+}

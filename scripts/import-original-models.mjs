@@ -6,7 +6,7 @@ import { parseArgs } from 'node:util';
 import { root } from './import-model.mjs';
 import { atlasPages, component, fileRecord, modelPrefix, safePath, spineVersion, validateManifest } from './manifest.mjs';
 
-export async function importOriginalModels({ metadata, bundle, extractedRoot, destinationRoot = root }) {
+async function prepareOriginalModels({ metadata, bundle, extractedRoot, destinationRoot }, manifest) {
   const info = JSON.parse(await readFile(metadata, 'utf8'));
   const original = await readFile(bundle);
   const sourceBundle = info.sourceBundle;
@@ -14,8 +14,6 @@ export async function importOriginalModels({ metadata, bundle, extractedRoot, de
     || createHash('md5').update(original).digest('hex') !== sourceBundle.md5
     || createHash('sha256').update(original).digest('hex') !== sourceBundle.sha256)
     throw new Error('Original model bundle bytes do not match the reviewed source');
-  const manifestPath = path.join(destinationRoot, 'manifest.json');
-  const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
   for (const [id, originalRecord] of Object.entries(info.models)) {
     component(id);
     const kind = originalRecord.kind ?? 'operator';
@@ -68,8 +66,19 @@ export async function importOriginalModels({ metadata, bundle, extractedRoot, de
             ...(record.originalPathIds ? { originalPathIds: record.originalPathIds } : {}) }),
         transforms: sourceBundle.transforms };
       const prefix = modelPrefix(key, source);
-      await mkdir(path.join(destinationRoot, prefix), { recursive: true });
-      for (const [name, data] of bytes) {
+      // Exact body bytes may be reused by several native enemy prefabs. Roles
+      // remain per enemy; the canonical skeleton/atlas/pages are stored once.
+      const checksum = data => createHash('sha256').update(data).digest('hex');
+      const bodyHashes = [skel, atlas, ...pages].map(name => checksum(bytes.get(name)));
+      const existingIndex = Object.keys(manifest.models).indexOf(key);
+      const shared = kind === 'enemy' && !bytes.has('avatar.png') ? Object.entries(manifest.models).find(([otherKey, model],index) =>
+        (existingIndex < 0 || index < existingIndex)
+        && otherKey !== key && model.kind === 'enemy' && !model.assetAlias && model.premultipliedAlpha === true
+        && model.spineVersion === record.spineVersion && model.skeleton.sha256 === bodyHashes[0]
+        && model.atlas.sha256 === bodyHashes[1] && model.textures.length === pages.length
+        && pages.every((_page,index) => model.textures[index].sha256 === bodyHashes[index+2])) : null;
+      if (!shared) await mkdir(path.join(destinationRoot, prefix), { recursive: true });
+      for (const [name, data] of shared ? [] : bytes) {
         const destination = path.join(destinationRoot, prefix, name);
         try {
           const existing = await readFile(destination);
@@ -87,8 +96,9 @@ export async function importOriginalModels({ metadata, bundle, extractedRoot, de
       const retainedAvatar = !bytes.has('avatar.png') && previous?.avatar
         && JSON.stringify(previous.source) === JSON.stringify(source) ? previous.avatar : null;
       manifest.models[key] = { kind, id, variant: 'default', facing, source,
-        spineVersion: record.spineVersion, skeleton: file(skel), atlas: file(atlas),
-        textures: pages.map(file), premultipliedAlpha: true,
+        spineVersion: record.spineVersion, skeleton: shared ? shared[1].skeleton : file(skel), atlas: shared ? shared[1].atlas : file(atlas),
+        textures: shared ? shared[1].textures : pages.map(file), premultipliedAlpha: true,
+        ...(shared ? {assetAlias: shared[0]} : {}),
         animations: record.durations, animationRoles: record.animationRoles,
         hits: record.hits, bounds: record.bounds,
         ...(bytes.has('avatar.png') ? { avatar: { ...file('avatar.png'), source: info.avatarSource } } : {}),
@@ -96,10 +106,25 @@ export async function importOriginalModels({ metadata, bundle, extractedRoot, de
       };
     }
   }
+  return Object.keys(info.models);
+}
+
+// All source bundles and extracted files are checked before one manifest
+// publication. A rejected batch can leave unreferenced immutable files only.
+export async function importOriginalModelBatches({batches, destinationRoot = root}) {
+  if (!Array.isArray(batches) || !batches.length) throw Error('Expected original model batches');
+  const manifestPath = path.join(destinationRoot, 'manifest.json');
+  const manifest = JSON.parse(await readFile(manifestPath, 'utf8'));
+  const imported = [];
+  for (const batch of batches) imported.push(...await prepareOriginalModels({...batch,destinationRoot},manifest));
   await validateManifest(manifest, destinationRoot);
   await writeFile(`${manifestPath}.tmp`, `${JSON.stringify(manifest, null, 2)}\n`);
   await rename(`${manifestPath}.tmp`, manifestPath);
-  return Object.keys(info.models);
+  return imported;
+}
+
+export async function importOriginalModels({destinationRoot = root, ...batch}) {
+  return importOriginalModelBatches({batches:[batch],destinationRoot});
 }
 
 if (import.meta.url === new URL(`file://${process.argv[1]}`).href) {

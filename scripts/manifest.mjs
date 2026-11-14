@@ -96,7 +96,16 @@ export async function validateManifest(manifest, root) {
         typeof source.originalPathIds?.[name] !== 'string'
         || !/^-?[1-9]\d*$/.test(source.originalPathIds[name]))))
       throw new Error(`${key}: down facing requires an original token skeleton chain`);
-    const prefix = modelPrefix(key, source);
+    let prefix = modelPrefix(key, source);
+    if (model.assetAlias != null) {
+      const original = manifest.models[model.assetAlias];
+      if (typeof model.assetAlias !== 'string' || !original || model.assetAlias === key || original.assetAlias
+        || model.kind !== 'enemy' || original.kind !== 'enemy' || model.avatar
+        || model.spineVersion !== original.spineVersion || model.premultipliedAlpha !== original.premultipliedAlpha
+        || JSON.stringify([model.skeleton,model.atlas,model.textures]) !== JSON.stringify([original.skeleton,original.atlas,original.textures]))
+        throw new Error(`${key}: invalid shared enemy body alias`);
+      prefix = modelPrefix(model.assetAlias, original.source);
+    }
     safePath(source.directory);
     if (!/^\d+\.\d+(?:\.\d+)?$/.test(model.spineVersion)) throw new Error(`${key}: missing Spine version`);
     if (!Array.isArray(model.textures) || !model.textures.length) throw new Error(`${key}: missing textures`);
