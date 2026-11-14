@@ -16,6 +16,8 @@ The follow-up in `source-reviews/enemies/bound/index.json` resolves 21 of those 
 
 Twenty-one byte-identical enemy bodies use explicit `assetAlias` references. Aliases retain their own identity, animation roles and original source receipts, but reference the canonical skeleton, atlas and texture paths. The importer compares all body hashes before reuse; the validator rejects alias cycles, chains, cross-kind targets and differing files. Old committed directories remain available to earlier pinned releases. Newly generated duplicate directories are not included in this release.
 
+`source-reviews/enemies/saxophone/` adds the two Remnant Saxophonist variants with their native prefab bindings and all original Begin/Loop/End clips, bringing these additions to 395 records. The simulator owns cast timing and combat behavior separately.
+
 Prepare another enemy with the simulator's `tools/arkpedia/extract-native-enemy-models.py --ids <JSON-array> --out <directory>`, then import its receipt with `node scripts/import-original-models.mjs --metadata <receipt> --bundle <original-bundle> --extracted-root <directory>`. Run `npm test` and `npm run validate` before pinning the resulting SD commit. One ID is a complete independent addition. These receipts establish original body inputs and compatible files; native prefab selection, alternate forms, animation dispatch, effects and game frame/pixel parity have separate reviews.
 
 ## Website chibis
