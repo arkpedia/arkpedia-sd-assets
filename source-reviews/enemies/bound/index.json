@@ -1,0 +1,197 @@
+{
+  "source": {
+    "repository": "Kengxxiao/ArknightsGameData",
+    "commit": "a550f5e048bb94e7cdefc6eb97a4091f0c4c7add",
+    "clientVersion": "2.7.71",
+    "resourceVersion": "26-09-22-07-47-20_6c71fa",
+    "baseURL": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/",
+    "manifestBytes": 3241788,
+    "manifestSha256": "d1ac02a61d98e6e4c772335bb85dc44da4794a0a8bc915354b6f9ffbc7ec1f35",
+    "manifestURL": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/hot_update_list.json",
+    "manifestName": "c3151e169fcbbf9fb10106100b071c7d.idx",
+    "manifestVersion": "V077",
+    "tableSource": {
+      "repository": "Kengxxiao/ArknightsGameData",
+      "commit": "a550f5e048bb94e7cdefc6eb97a4091f0c4c7add",
+      "tables": [
+        {
+          "path": "zh_CN/gamedata/excel/character_table.json",
+          "gitBlob": "789dfbf21512118b357129b5f01fd2a40b29e05d",
+          "bytes": 14975251,
+          "sha256": "68e3a3b5ee0d407ce234afaa5867c6fda6379a6843c7d5317a7bbda4779f8697"
+        },
+        {
+          "path": "zh_CN/gamedata/excel/char_patch_table.json",
+          "gitBlob": "5e371cce6cebd5ccdf0196584233bc386361eb8c",
+          "bytes": 48761,
+          "sha256": "d1850d5aeec1a9246a0531e88c167e66745644957662c8272fc764f54904c57e"
+        },
+        {
+          "path": "zh_CN/gamedata/excel/skill_table.json",
+          "gitBlob": "3793979c8672129489135e97727bfd9f9fd32873",
+          "bytes": 11447929,
+          "sha256": "86f4aa64c785f39727edd06d6dd8a4f27f371c8e4ace5345ba0dc61dee1386ca"
+        },
+        {
+          "path": "zh_CN/gamedata/excel/range_table.json",
+          "gitBlob": "8ade26d87026ee7649ff8a2d1636e7c3426959c8",
+          "bytes": 53368,
+          "sha256": "4d974598394630a1ad465b954321254397f514c7fb26cba944d320ac18b874d0"
+        }
+      ]
+    },
+    "globalAlternateForms": {
+      "commit": "57010cb5b2afea112cae57daa756b58676ba6850",
+      "sha256": "9604bc88f2593a4c9dd25d6f7524aeddfa352d11de990134c5fe0f12ede7ef46",
+      "patchTable": {
+        "path": "en_US/gamedata/excel/char_patch_table.json",
+        "sha": "fc84d705f44b9c2e430069c482fbf935a995952e",
+        "size": 47115
+      },
+      "formIds": [
+        "char_1001_amiya2",
+        "char_1037_amiya3"
+      ]
+    },
+    "preparedTableSha256": "fc4291af93add2391aede8b5a814135f3d092b319548141beba4ec44f4a2f941"
+  },
+  "requested": [
+    "enemy_1006_shield_2",
+    "enemy_10082_mpweak",
+    "enemy_1024_mortar",
+    "enemy_1036_amraoe",
+    "enemy_1046_agent",
+    "enemy_1046_agent_2",
+    "enemy_1047_sagent",
+    "enemy_1047_sagent_2",
+    "enemy_1049_eagent",
+    "enemy_1049_eagent_2",
+    "enemy_1093_ccsbr",
+    "enemy_1093_ccsbr_2",
+    "enemy_1118_lidbox",
+    "enemy_1118_lidbox_2",
+    "enemy_1143_merrpg",
+    "enemy_1143_merrpg_2",
+    "enemy_1169_duphlx_2",
+    "enemy_1171_durokt_2",
+    "enemy_1177_dufrbl",
+    "enemy_1177_dufrbl_2",
+    "enemy_1203_sfhu",
+    "enemy_1203_sfhu_2",
+    "enemy_1245_ltseal",
+    "enemy_1420_lrmm",
+    "enemy_1425_lrcmra_2",
+    "enemy_1522_captan"
+  ],
+  "batches": [
+    {
+      "bundle": "refs/arts/enm_art_16.ab",
+      "ids": [
+        "enemy_1425_lrcmra_2",
+        "enemy_1522_captan"
+      ],
+      "metadata": "enm_art_16.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_3.ab",
+      "ids": [
+        "enemy_1036_amraoe"
+      ],
+      "metadata": "enm_art_3.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_4.ab",
+      "ids": [
+        "enemy_1046_agent",
+        "enemy_1046_agent_2",
+        "enemy_1047_sagent",
+        "enemy_1047_sagent_2",
+        "enemy_1049_eagent",
+        "enemy_1049_eagent_2"
+      ],
+      "metadata": "enm_art_4.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_5.ab",
+      "ids": [
+        "enemy_1093_ccsbr",
+        "enemy_1093_ccsbr_2"
+      ],
+      "metadata": "enm_art_5.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_6.ab",
+      "ids": [
+        "enemy_1118_lidbox",
+        "enemy_1118_lidbox_2"
+      ],
+      "metadata": "enm_art_6.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_7.ab",
+      "ids": [
+        "enemy_1143_merrpg",
+        "enemy_1143_merrpg_2"
+      ],
+      "metadata": "enm_art_7.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_8.ab",
+      "ids": [
+        "enemy_1169_duphlx_2",
+        "enemy_1171_durokt_2"
+      ],
+      "metadata": "enm_art_8.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_9.ab",
+      "ids": [
+        "enemy_1203_sfhu",
+        "enemy_1203_sfhu_2"
+      ],
+      "metadata": "enm_art_9.json"
+    },
+    {
+      "bundle": "refs/arts/enm_art_base_0.ab",
+      "ids": [
+        "enemy_1006_shield_2",
+        "enemy_1024_mortar"
+      ],
+      "metadata": "enm_art_base_0.json"
+    }
+  ],
+  "pending": [
+    "enemy_10082_mpweak",
+    "enemy_1177_dufrbl",
+    "enemy_1177_dufrbl_2",
+    "enemy_1245_ltseal",
+    "enemy_1420_lrmm"
+  ],
+  "failures": [
+    {
+      "id": "enemy_1177_dufrbl_2",
+      "reason": "No indexed original prefab"
+    },
+    {
+      "id": "enemy_10082_mpweak",
+      "bundle": "battle/enm_pfb_2.ab",
+      "reason": "Native animator has no Spine body (effect/mesh renderer needs separate support)"
+    },
+    {
+      "id": "enemy_1177_dufrbl",
+      "bundle": "battle/enm_pfb_8.ab",
+      "reason": "Native animator has no Spine body (effect/mesh renderer needs separate support)"
+    },
+    {
+      "id": "enemy_1245_ltseal",
+      "bundle": "battle/enm_pfb_11.ab",
+      "reason": "Native animator has no Spine body (effect/mesh renderer needs separate support)"
+    },
+    {
+      "id": "enemy_1420_lrmm",
+      "bundle": "battle/enm_pfb_16.ab",
+      "reason": "Native animator has no Spine body (effect/mesh renderer needs separate support)"
+    }
+  ],
+  "scope": "Exact original root/animator/skeleton bindings and body files; native animation speed/mode dispatch, effects and frame parity are separate."
+}

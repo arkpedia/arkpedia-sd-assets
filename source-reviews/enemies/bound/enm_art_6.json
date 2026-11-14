@@ -1,0 +1,794 @@
+{
+ "sourceBundle": {
+  "client": "cn",
+  "path": "refs/arts/enm_art_6.ab",
+  "bytes": 4528075,
+  "md5": "fbb347a09f0dd39c1c7faea08291a98c",
+  "sha256": "9577bc90b6c25a04907ac47c3e7b6646a10b54d7bcddf9b7081f45e1d10b8edc",
+  "resourceVersion": "26-09-22-07-47-20_6c71fa",
+  "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/refs_arts_enm_art_6.dat",
+  "transforms": [
+   "Original skeleton bytes retained",
+   "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+   "Atlas page dimensions and PMA header normalized; native regions retained"
+  ]
+ },
+ "models": {
+  "enemy_1118_lidbox": {
+   "kind": "enemy",
+   "directory": "spine/enemy/enemy_1118_lidbox",
+   "originalPathIds": {
+    "skeletonDataAssetPathId": "1907505043723863828",
+    "textAssetPathId": "-5572446860722015345",
+    "atlasAssetPathId": "4541675655152865448",
+    "atlasTextAssetPathId": "-9191705316482477867",
+    "materials": [
+     {
+      "materialPathId": "2247018026358451299",
+      "mainTexturePathId": "6165148845870370555",
+      "alphaTexturePathId": "-3079768826376341132",
+      "floats": {
+       "_BaselineZ": 0.0,
+       "_Cutoff": 0.10000000149011612,
+       "_DitherIntensity": 0.0,
+       "_UseAlphaTex": 1.0,
+       "_UseBleed": 0.0,
+       "_UseDither": 0.0,
+       "_UseFixedFormula": 0.0,
+       "_UseTintBlack": 0.0
+      }
+     }
+    ]
+   },
+   "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1118_lidbox/1/enemy_1118_lidbox_SkeletonData.asset",
+   "files": {
+    "enemy_1118_lidbox.skel": {
+     "bytes": 300937,
+     "sha256": "66edb8f8f6a80c312ed2b5c2552ac9220d46517e17f0f15a683ed22746472b63"
+    },
+    "enemy_1118_lidbox.atlas": {
+     "bytes": 3520,
+     "sha256": "0c9f7d5a0aa0821d2d00909800d739addc91113626b41ff432a0d3b5856f1592"
+    },
+    "enemy_1118_lidbox.png": {
+     "bytes": 62676,
+     "sha256": "27541057743d99b2c0e3cd8bd00568bc9225d5588e6fc6fe5f651459966848b2"
+    }
+   },
+   "spineVersion": "3.8.99",
+   "durations": {
+    "Attack_grey": 1,
+    "Attack_orange": 1,
+    "Attack_red": 1,
+    "Default_grey": 0,
+    "Default_orange": 0,
+    "Default_red": 0,
+    "Die_grey": 0.833,
+    "Die_orange": 0.833,
+    "Die_red": 0.833,
+    "Idle_grey": 13.333,
+    "Idle_orange": 13.333,
+    "Idle_red": 13.333,
+    "Move_grey": 1,
+    "Move_orange": 1,
+    "Move_red": 0.933
+   },
+   "hits": {
+    "Attack_grey": [
+     0.2
+    ],
+    "Attack_orange": [
+     0.2
+    ],
+    "Attack_red": [
+     0.2
+    ]
+   },
+   "bounds": {
+    "x": -240.753,
+    "y": -2.86,
+    "width": 401.006,
+    "height": 393.497
+   },
+   "eventPayloads": {
+    "Attack_grey": [
+     {
+      "time": 0.20000000298023224,
+      "name": "OnAttack",
+      "int": 0,
+      "float": 0,
+      "string": ""
+     }
+    ],
+    "Attack_orange": [
+     {
+      "time": 0.20000000298023224,
+      "name": "OnAttack",
+      "int": 0,
+      "float": 0,
+      "string": ""
+     }
+    ],
+    "Attack_red": [
+     {
+      "time": 0.20000000298023224,
+      "name": "OnAttack",
+      "int": 0,
+      "float": 0,
+      "string": ""
+     }
+    ]
+   },
+   "animationRoles": {
+    "idle": "Idle_grey",
+    "move": "Move_grey",
+    "deploy": null,
+    "die": "Die_grey",
+    "attack": {
+     "loop": "Attack_grey"
+    }
+   },
+   "nativeBinding": {
+    "prefab": "dyn/battle/prefabs/enemies/enemy_1118_lidbox.prefab",
+    "bundle": {
+     "path": "battle/enm_pfb_6.ab",
+     "bytes": 288113,
+     "md5": "adf77c7486e028b2787585d5d6d34b19",
+     "archive": "battle_enm_pfb_6.dat",
+     "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/battle_enm_pfb_6.dat",
+     "sha256": "8ee59937e8504abf924aafae445eccc7ee864a56072428e8e6331a90ba80ded0"
+    },
+    "rootPathId": "-4838188618781272267",
+    "componentPathId": "2189435279295338293",
+    "animatorPathId": "3768206138423072565",
+    "skeletonAnimationPathId": "-2382312608252471499",
+    "animator": {
+     "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": "-2359598226953251019"
+     },
+     "m_Enabled": 1,
+     "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": "6360585277869116281"
+     },
+     "m_Name": "",
+     "_animations": [
+      {
+       "animKey": "Move",
+       "animName": "Move_grey",
+       "loop": 1,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Idle",
+       "animName": "Idle_grey",
+       "loop": 1,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Attack",
+       "animName": "Attack_grey",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Die",
+       "animName": "Die_grey",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Default",
+       "animName": "Default_grey",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Move_orange",
+       "animName": "Move_orange",
+       "loop": 1,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Idle_orange",
+       "animName": "Idle_orange",
+       "loop": 1,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Default_orange",
+       "animName": "Default_orange",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Attack_orange",
+       "animName": "Attack_orange",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Die_orange",
+       "animName": "Die_orange",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Move_red",
+       "animName": "Move_red",
+       "loop": 1,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Idle_red",
+       "animName": "Idle_red",
+       "loop": 1,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Default_red",
+       "animName": "Default_red",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Attack_red",
+       "animName": "Attack_red",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Die_red",
+       "animName": "Die_red",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      }
+     ],
+     "_spineSkins": [],
+     "_mixSettings": [],
+     "_spineScale": 1.0,
+     "_enableShowDamageFlash": 1,
+     "_cacheBoundsCenter": 1,
+     "_resetSkinToInitial": 0,
+     "_skeleton": {
+      "m_FileID": 0,
+      "m_PathID": "-2382312608252471499"
+     },
+     "_faceSwitcher": {
+      "m_FileID": 0,
+      "m_PathID": "4967968413895120693"
+     },
+     "_neverImmediatelyFaceSwitcher": 0,
+     "_muzzleTransform": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_hitTransform": {
+      "m_FileID": 0,
+      "m_PathID": "8249247366698719029"
+     },
+     "_headTransform": {
+      "m_FileID": 0,
+      "m_PathID": "2818642296421242677"
+     },
+     "_shadowTransform": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint0": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint1": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint2": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint3": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint4": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint5": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint6": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint7": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint8": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint9": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint10": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint11": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint12": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint13": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint14": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint15": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     }
+    },
+    "skeleton": {
+     "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": "-5905871303426484427"
+     },
+     "m_Enabled": 1,
+     "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": "175525945580115722"
+     },
+     "m_Name": "",
+     "skeletonDataAsset": {
+      "m_FileID": 2,
+      "m_PathID": "1907505043723863828"
+     },
+     "initialSkinName": "default",
+     "initialFlipX": 0,
+     "initialFlipY": 0,
+     "updateWhenInvisible": 3,
+     "separatorSlotNames": [],
+     "zSpacing": 0.0,
+     "useClipping": 1,
+     "immutableTriangles": 0,
+     "pmaVertexColors": 1,
+     "clearStateOnDisable": 0,
+     "tintBlack": 0,
+     "singleSubmesh": 0,
+     "fixDrawOrder": 0,
+     "addNormals": 0,
+     "calculateTangents": 0,
+     "maskInteraction": 0,
+     "maskMaterials": {
+      "materialsMaskDisabled": [],
+      "materialsInsideMask": [],
+      "materialsOutsideMask": []
+     },
+     "disableRenderingOnOverride": 1,
+     "_animationName": "Default_grey",
+     "loop": 0,
+     "timeScale": 1.0
+    },
+    "external": "archive:/CAB-f7c3caa0e82527e893c239f2e8005d3e/CAB-f7c3caa0e82527e893c239f2e8005d3e",
+    "cab": "CAB-f7c3caa0e82527e893c239f2e8005d3e",
+    "skeletonDataAssetPathId": "1907505043723863828"
+   }
+  },
+  "enemy_1118_lidbox_2": {
+   "kind": "enemy",
+   "directory": "spine/enemy/enemy_1118_lidbox_2",
+   "originalPathIds": {
+    "skeletonDataAssetPathId": "3003305856735853799",
+    "textAssetPathId": "8041165596799388505",
+    "atlasAssetPathId": "-5923245367541934465",
+    "atlasTextAssetPathId": "5433751643377436426",
+    "materials": [
+     {
+      "materialPathId": "8615379453354022100",
+      "mainTexturePathId": "-1977206359548011842",
+      "alphaTexturePathId": "-1466065097777155354",
+      "floats": {
+       "_BaselineZ": 0.0,
+       "_Cutoff": 0.10000000149011612,
+       "_DitherIntensity": 0.0,
+       "_UseAlphaTex": 1.0,
+       "_UseBleed": 0.0,
+       "_UseDither": 0.0,
+       "_UseFixedFormula": 0.0,
+       "_UseTintBlack": 0.0
+      }
+     }
+    ]
+   },
+   "originalAsset": "Assets/Torappu/Arts/Enemies/Spines/enemy_1118_lidbox/2/enemy_1118_lidbox_2_SkeletonData.asset",
+   "files": {
+    "enemy_1118_lidbox_2.skel": {
+     "bytes": 300937,
+     "sha256": "b2ab9ac3a16210375aafe2fde6b7b5a6f40e555bacc49510bf09b1c31db373c0"
+    },
+    "enemy_1118_lidbox_2.atlas": {
+     "bytes": 3523,
+     "sha256": "b3a76324b96afd6b3c8f94f40cc7a9f2f2e391b090085a2f1b12144d05ccc42f"
+    },
+    "enemy_1118_lidbox_2.png": {
+     "bytes": 63312,
+     "sha256": "6a20ef14d396c5c0d96cb85fcf51225ff0cbf04bacd6a99d10999e8e9a517dec"
+    }
+   },
+   "spineVersion": "3.8.99",
+   "durations": {
+    "Attack_grey": 1,
+    "Attack_orange": 1,
+    "Attack_red": 1,
+    "Default_grey": 0,
+    "Default_orange": 0,
+    "Default_red": 0,
+    "Die_grey": 0.833,
+    "Die_orange": 0.833,
+    "Die_red": 0.833,
+    "Idle_grey": 13.333,
+    "Idle_orange": 13.333,
+    "Idle_red": 13.333,
+    "Move_grey": 1,
+    "Move_orange": 1,
+    "Move_red": 0.933
+   },
+   "hits": {
+    "Attack_grey": [
+     0.2
+    ],
+    "Attack_orange": [
+     0.2
+    ],
+    "Attack_red": [
+     0.2
+    ]
+   },
+   "bounds": {
+    "x": -240.753,
+    "y": -2.86,
+    "width": 401.006,
+    "height": 393.497
+   },
+   "eventPayloads": {
+    "Attack_grey": [
+     {
+      "time": 0.20000000298023224,
+      "name": "OnAttack",
+      "int": 0,
+      "float": 0,
+      "string": ""
+     }
+    ],
+    "Attack_orange": [
+     {
+      "time": 0.20000000298023224,
+      "name": "OnAttack",
+      "int": 0,
+      "float": 0,
+      "string": ""
+     }
+    ],
+    "Attack_red": [
+     {
+      "time": 0.20000000298023224,
+      "name": "OnAttack",
+      "int": 0,
+      "float": 0,
+      "string": ""
+     }
+    ]
+   },
+   "animationRoles": {
+    "idle": "Idle_grey",
+    "move": "Move_grey",
+    "deploy": null,
+    "die": "Die_grey",
+    "attack": {
+     "loop": "Attack_grey"
+    }
+   },
+   "nativeBinding": {
+    "prefab": "dyn/battle/prefabs/enemies/enemy_1118_lidbox_2.prefab",
+    "bundle": {
+     "path": "battle/enm_pfb_6.ab",
+     "bytes": 288113,
+     "md5": "adf77c7486e028b2787585d5d6d34b19",
+     "archive": "battle_enm_pfb_6.dat",
+     "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/battle_enm_pfb_6.dat",
+     "sha256": "8ee59937e8504abf924aafae445eccc7ee864a56072428e8e6331a90ba80ded0"
+    },
+    "rootPathId": "-5661767226150587693",
+    "componentPathId": "5506161030767997651",
+    "animatorPathId": "8018621204639150803",
+    "skeletonAnimationPathId": "835481406940738259",
+    "animator": {
+     "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": "4429910471140274899"
+     },
+     "m_Enabled": 1,
+     "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": "6360585277869116281"
+     },
+     "m_Name": "",
+     "_animations": [
+      {
+       "animKey": "Move",
+       "animName": "Move_grey",
+       "loop": 1,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Idle",
+       "animName": "Idle_grey",
+       "loop": 1,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Attack",
+       "animName": "Attack_grey",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Die",
+       "animName": "Die_grey",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Default",
+       "animName": "Default_grey",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Move_orange",
+       "animName": "Move_orange",
+       "loop": 1,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Idle_orange",
+       "animName": "Idle_orange",
+       "loop": 1,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Default_orange",
+       "animName": "Default_orange",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Attack_orange",
+       "animName": "Attack_orange",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Die_orange",
+       "animName": "Die_orange",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Move_red",
+       "animName": "Move_red",
+       "loop": 1,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Idle_red",
+       "animName": "Idle_red",
+       "loop": 1,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Default_red",
+       "animName": "Default_red",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Attack_red",
+       "animName": "Attack_red",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      },
+      {
+       "animKey": "Die_red",
+       "animName": "Die_red",
+       "loop": 0,
+       "speed": 1.0,
+       "ignoreMissing": 0
+      }
+     ],
+     "_spineSkins": [],
+     "_mixSettings": [],
+     "_spineScale": 1.0,
+     "_enableShowDamageFlash": 1,
+     "_cacheBoundsCenter": 1,
+     "_resetSkinToInitial": 0,
+     "_skeleton": {
+      "m_FileID": 0,
+      "m_PathID": "835481406940738259"
+     },
+     "_faceSwitcher": {
+      "m_FileID": 0,
+      "m_PathID": "-3304875515554401581"
+     },
+     "_neverImmediatelyFaceSwitcher": 0,
+     "_muzzleTransform": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_hitTransform": {
+      "m_FileID": 0,
+      "m_PathID": "5614898471489008339"
+     },
+     "_headTransform": {
+      "m_FileID": 0,
+      "m_PathID": "6973093533080711891"
+     },
+     "_shadowTransform": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint0": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint1": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint2": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint3": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint4": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint5": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint6": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint7": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint8": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint9": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint10": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint11": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint12": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint13": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint14": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     },
+     "_specialPoint15": {
+      "m_FileID": 0,
+      "m_PathID": "0"
+     }
+    },
+    "skeleton": {
+     "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": "8967882951213019859"
+     },
+     "m_Enabled": 1,
+     "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": "175525945580115722"
+     },
+     "m_Name": "",
+     "skeletonDataAsset": {
+      "m_FileID": 2,
+      "m_PathID": "3003305856735853799"
+     },
+     "initialSkinName": "default",
+     "initialFlipX": 0,
+     "initialFlipY": 0,
+     "updateWhenInvisible": 3,
+     "separatorSlotNames": [],
+     "zSpacing": 0.0,
+     "useClipping": 1,
+     "immutableTriangles": 0,
+     "pmaVertexColors": 1,
+     "clearStateOnDisable": 0,
+     "tintBlack": 0,
+     "singleSubmesh": 0,
+     "fixDrawOrder": 0,
+     "addNormals": 0,
+     "calculateTangents": 0,
+     "maskInteraction": 0,
+     "maskMaterials": {
+      "materialsMaskDisabled": [],
+      "materialsInsideMask": [],
+      "materialsOutsideMask": []
+     },
+     "disableRenderingOnOverride": 1,
+     "_animationName": "Default_grey",
+     "loop": 0,
+     "timeScale": 1.0
+    },
+    "external": "archive:/CAB-f7c3caa0e82527e893c239f2e8005d3e/CAB-f7c3caa0e82527e893c239f2e8005d3e",
+    "cab": "CAB-f7c3caa0e82527e893c239f2e8005d3e",
+    "skeletonDataAssetPathId": "3003305856735853799"
+   }
+  }
+ }
+}
