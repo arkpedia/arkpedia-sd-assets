@@ -213596,6 +213596,484 @@
         "width": 686.949,
         "height": 393
       }
+    },
+    "enemy/enemy_1289_dubmb/default/default": {
+      "kind": "enemy",
+      "id": "enemy_1289_dubmb",
+      "variant": "default",
+      "facing": "default",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "client": "cn",
+          "path": "refs/arts/enm_art_11.ab",
+          "bytes": 3325326,
+          "md5": "0ee42a5b5cd83dee06e1f3ce6171c9aa",
+          "sha256": "8e9119f3d04d9e310d96d4026200e4a370825c1e1481a049ba17db712c14daa8",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/refs_arts_enm_art_11.dat",
+          "transforms": [
+            "Original skeleton bytes retained",
+            "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+            "Atlas page dimensions and PMA header normalized; native regions retained"
+          ]
+        },
+        "directory": "refs/arts/enm_art_11.ab",
+        "extractedSkeleton": "enemy_1289_dubmb.skel",
+        "originalPathIds": {
+          "skeletonDataAssetPathId": "5126705838523726765",
+          "textAssetPathId": "9129368326516834630",
+          "atlasAssetPathId": "3520278693496117796",
+          "atlasTextAssetPathId": "4229346467437891208",
+          "materials": [
+            {
+              "materialPathId": "-5742934172865144942",
+              "mainTexturePathId": "6947130420826854200",
+              "alphaTexturePathId": "-8472179582332632188",
+              "assignedAlphaTexture": {
+                "m_FileID": 0,
+                "m_PathID": "-8472179582332632188"
+              },
+              "shader": {
+                "m_FileID": 2,
+                "m_PathID": "-6064382340973850767"
+              },
+              "keywords": [],
+              "floats": {
+                "_BaselineZ": 0,
+                "_Cutoff": 0.10000000149011612,
+                "_DitherIntensity": 0,
+                "_OutlineMipLevel": 0,
+                "_OutlineReferenceTexWidth": 1024,
+                "_OutlineSmoothness": 1,
+                "_OutlineWidth": 3,
+                "_StencilComp": 8,
+                "_StencilRef": 1,
+                "_StraightAlphaInput": 0,
+                "_ThresholdEnd": 0.25,
+                "_Use8Neighbourhood": 1,
+                "_UseAlphaTex": 1,
+                "_UseBleed": 0,
+                "_UseDither": 0,
+                "_UseFixedFormula": 0,
+                "_UseTintBlack": 0
+              }
+            }
+          ]
+        },
+        "transforms": [
+          "Original skeleton bytes retained",
+          "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+          "Atlas page dimensions and PMA header normalized; native regions retained"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/enemy/enemy_1289_dubmb/default/default/8e9119f3d04d9e310d96d4026200e4a370825c1e1481a049ba17db712c14daa8/enemy_1289_dubmb.skel",
+        "bytes": 37461,
+        "sha256": "d6e2044db0c6bb7c7b2af4cea70030707cbd61999c8b6c9c6f81eaed22c5963c"
+      },
+      "atlas": {
+        "path": "models/enemy/enemy_1289_dubmb/default/default/8e9119f3d04d9e310d96d4026200e4a370825c1e1481a049ba17db712c14daa8/enemy_1289_dubmb.atlas",
+        "bytes": 3445,
+        "sha256": "15f533802177d9f4844e5b50cbb2fce4f82090c2bc9878986822e390f77686bc"
+      },
+      "textures": [
+        {
+          "path": "models/enemy/enemy_1289_dubmb/default/default/8e9119f3d04d9e310d96d4026200e4a370825c1e1481a049ba17db712c14daa8/enemy_1289_dubmb.png",
+          "bytes": 51868,
+          "sha256": "4fe81e627889d99c30a1b7dec1e1641835a8b2ca6c90e18a852b250d738be7b8"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.533,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 2,
+        "Move": 1.333
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.767
+        ]
+      },
+      "bounds": {
+        "x": -178.628,
+        "y": -2.31,
+        "width": 377,
+        "height": 376.04
+      }
+    },
+    "enemy/enemy_1289_dubmb_2/default/default": {
+      "kind": "enemy",
+      "id": "enemy_1289_dubmb_2",
+      "variant": "default",
+      "facing": "default",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "client": "cn",
+          "path": "refs/arts/enm_art_11.ab",
+          "bytes": 3325326,
+          "md5": "0ee42a5b5cd83dee06e1f3ce6171c9aa",
+          "sha256": "8e9119f3d04d9e310d96d4026200e4a370825c1e1481a049ba17db712c14daa8",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/refs_arts_enm_art_11.dat",
+          "transforms": [
+            "Original skeleton bytes retained",
+            "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+            "Atlas page dimensions and PMA header normalized; native regions retained"
+          ]
+        },
+        "directory": "refs/arts/enm_art_11.ab",
+        "extractedSkeleton": "enemy_1289_dubmb_2.skel",
+        "originalPathIds": {
+          "skeletonDataAssetPathId": "3627751204972011666",
+          "textAssetPathId": "2279948388982378183",
+          "atlasAssetPathId": "7131428902371828023",
+          "atlasTextAssetPathId": "3961759581131939499",
+          "materials": [
+            {
+              "materialPathId": "-4347810499881551874",
+              "mainTexturePathId": "6055214891417419914",
+              "alphaTexturePathId": "3832311627880897148",
+              "assignedAlphaTexture": {
+                "m_FileID": 0,
+                "m_PathID": "3832311627880897148"
+              },
+              "shader": {
+                "m_FileID": 2,
+                "m_PathID": "-6064382340973850767"
+              },
+              "keywords": [],
+              "floats": {
+                "_BaselineZ": 0,
+                "_Cutoff": 0.10000000149011612,
+                "_DitherIntensity": 0,
+                "_OutlineMipLevel": 0,
+                "_OutlineReferenceTexWidth": 1024,
+                "_OutlineSmoothness": 1,
+                "_OutlineWidth": 3,
+                "_StencilComp": 8,
+                "_StencilRef": 1,
+                "_StraightAlphaInput": 0,
+                "_ThresholdEnd": 0.25,
+                "_Use8Neighbourhood": 1,
+                "_UseAlphaTex": 1,
+                "_UseBleed": 0,
+                "_UseDither": 0,
+                "_UseFixedFormula": 0,
+                "_UseTintBlack": 0
+              }
+            }
+          ]
+        },
+        "transforms": [
+          "Original skeleton bytes retained",
+          "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+          "Atlas page dimensions and PMA header normalized; native regions retained"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/enemy/enemy_1289_dubmb_2/default/default/8e9119f3d04d9e310d96d4026200e4a370825c1e1481a049ba17db712c14daa8/enemy_1289_dubmb_2.skel",
+        "bytes": 37461,
+        "sha256": "531bec267a282f56364acdde89ee72045e2312b55baaf51beab163c160365c5b"
+      },
+      "atlas": {
+        "path": "models/enemy/enemy_1289_dubmb_2/default/default/8e9119f3d04d9e310d96d4026200e4a370825c1e1481a049ba17db712c14daa8/enemy_1289_dubmb_2.atlas",
+        "bytes": 3447,
+        "sha256": "3656283402c18efad50a91948c705702a8dfafb906b54167a9eb7e52084234f7"
+      },
+      "textures": [
+        {
+          "path": "models/enemy/enemy_1289_dubmb_2/default/default/8e9119f3d04d9e310d96d4026200e4a370825c1e1481a049ba17db712c14daa8/enemy_1289_dubmb_2.png",
+          "bytes": 51296,
+          "sha256": "796e3f3007e2e0173a3b18cff91895bf656b490beb87f3ef83e61e6a2c278b4d"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.533,
+        "Default": 0,
+        "Die": 1,
+        "Idle": 2,
+        "Move": 1.333
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.767
+        ]
+      },
+      "bounds": {
+        "x": -178.628,
+        "y": -2.31,
+        "width": 377,
+        "height": 376.04
+      }
+    },
+    "enemy/enemy_1290_duflm/default/default": {
+      "kind": "enemy",
+      "id": "enemy_1290_duflm",
+      "variant": "default",
+      "facing": "default",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "client": "cn",
+          "path": "refs/arts/enm_art_11.ab",
+          "bytes": 3325326,
+          "md5": "0ee42a5b5cd83dee06e1f3ce6171c9aa",
+          "sha256": "8e9119f3d04d9e310d96d4026200e4a370825c1e1481a049ba17db712c14daa8",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/refs_arts_enm_art_11.dat",
+          "transforms": [
+            "Original skeleton bytes retained",
+            "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+            "Atlas page dimensions and PMA header normalized; native regions retained"
+          ]
+        },
+        "directory": "refs/arts/enm_art_11.ab",
+        "extractedSkeleton": "enemy_1290_duflm.skel",
+        "originalPathIds": {
+          "skeletonDataAssetPathId": "-5155716589469889112",
+          "textAssetPathId": "6276681145959633235",
+          "atlasAssetPathId": "3669444966738684144",
+          "atlasTextAssetPathId": "-4002418080764663175",
+          "materials": [
+            {
+              "materialPathId": "2363199872890129194",
+              "mainTexturePathId": "-2722102062421119501",
+              "alphaTexturePathId": "5823576903343704804",
+              "assignedAlphaTexture": {
+                "m_FileID": 0,
+                "m_PathID": "5823576903343704804"
+              },
+              "shader": {
+                "m_FileID": 2,
+                "m_PathID": "-6064382340973850767"
+              },
+              "keywords": [],
+              "floats": {
+                "_BaselineZ": 0,
+                "_Cutoff": 0.10000000149011612,
+                "_DitherIntensity": 0,
+                "_OutlineMipLevel": 0,
+                "_OutlineReferenceTexWidth": 1024,
+                "_OutlineSmoothness": 1,
+                "_OutlineWidth": 3,
+                "_StencilComp": 8,
+                "_StencilRef": 1,
+                "_StraightAlphaInput": 0,
+                "_ThresholdEnd": 0.25,
+                "_Use8Neighbourhood": 1,
+                "_UseAlphaTex": 1,
+                "_UseBleed": 0,
+                "_UseDither": 0,
+                "_UseFixedFormula": 0,
+                "_UseTintBlack": 0
+              }
+            }
+          ]
+        },
+        "transforms": [
+          "Original skeleton bytes retained",
+          "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+          "Atlas page dimensions and PMA header normalized; native regions retained"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/enemy/enemy_1290_duflm/default/default/8e9119f3d04d9e310d96d4026200e4a370825c1e1481a049ba17db712c14daa8/enemy_1290_duflm.skel",
+        "bytes": 43836,
+        "sha256": "8a9eaa328955ea00d005c5e41984011a4f16accce04074943430b7e8733e66c2"
+      },
+      "atlas": {
+        "path": "models/enemy/enemy_1290_duflm/default/default/8e9119f3d04d9e310d96d4026200e4a370825c1e1481a049ba17db712c14daa8/enemy_1290_duflm.atlas",
+        "bytes": 2649,
+        "sha256": "f84c53e8a6e791f313bd5a9da410c0a705da064ee5f93a7f9cfb63ba71b89455"
+      },
+      "textures": [
+        {
+          "path": "models/enemy/enemy_1290_duflm/default/default/8e9119f3d04d9e310d96d4026200e4a370825c1e1481a049ba17db712c14daa8/enemy_1290_duflm.png",
+          "bytes": 52684,
+          "sha256": "55298ecfa8c10b31cf47429a6f02fe1e5cbf6b4f9708f005846b421ce14608fe"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.2,
+        "Default": 0,
+        "Die": 0.933,
+        "Idle": 2,
+        "Move": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.633
+        ],
+        "Die": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -217.718,
+        "y": -5.674,
+        "width": 426,
+        "height": 368
+      }
+    },
+    "enemy/enemy_1290_duflm_2/default/default": {
+      "kind": "enemy",
+      "id": "enemy_1290_duflm_2",
+      "variant": "default",
+      "facing": "default",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "client": "cn",
+          "path": "refs/arts/enm_art_12.ab",
+          "bytes": 3605435,
+          "md5": "f9cc0a5fe4f543fd0f0a993bee1aa2e8",
+          "sha256": "678228022d33aad44c82a9aadc335a23d7e054f83a40d11cc29d1c15a1379dd4",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/refs_arts_enm_art_12.dat",
+          "transforms": [
+            "Original skeleton bytes retained",
+            "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+            "Atlas page dimensions and PMA header normalized; native regions retained"
+          ]
+        },
+        "directory": "refs/arts/enm_art_12.ab",
+        "extractedSkeleton": "enemy_1290_duflm_2.skel",
+        "originalPathIds": {
+          "skeletonDataAssetPathId": "3624266097858763790",
+          "textAssetPathId": "2761519463272961113",
+          "atlasAssetPathId": "-3265221372297621360",
+          "atlasTextAssetPathId": "3229623714685162331",
+          "materials": [
+            {
+              "materialPathId": "2235018583851230762",
+              "mainTexturePathId": "8232001207705479790",
+              "alphaTexturePathId": "1951764128703645306",
+              "assignedAlphaTexture": {
+                "m_FileID": 0,
+                "m_PathID": "1951764128703645306"
+              },
+              "shader": {
+                "m_FileID": 2,
+                "m_PathID": "-6064382340973850767"
+              },
+              "keywords": [],
+              "floats": {
+                "_BaselineZ": 0,
+                "_Cutoff": 0.10000000149011612,
+                "_DitherIntensity": 0,
+                "_OutlineMipLevel": 0,
+                "_OutlineReferenceTexWidth": 1024,
+                "_OutlineSmoothness": 1,
+                "_OutlineWidth": 3,
+                "_StencilComp": 8,
+                "_StencilRef": 1,
+                "_StraightAlphaInput": 0,
+                "_ThresholdEnd": 0.25,
+                "_Use8Neighbourhood": 1,
+                "_UseAlphaTex": 1,
+                "_UseBleed": 0,
+                "_UseDither": 0,
+                "_UseFixedFormula": 0,
+                "_UseTintBlack": 0
+              }
+            }
+          ]
+        },
+        "transforms": [
+          "Original skeleton bytes retained",
+          "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+          "Atlas page dimensions and PMA header normalized; native regions retained"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/enemy/enemy_1290_duflm_2/default/default/678228022d33aad44c82a9aadc335a23d7e054f83a40d11cc29d1c15a1379dd4/enemy_1290_duflm_2.skel",
+        "bytes": 43836,
+        "sha256": "48e1f24bbdf6d83d7c418263912fffeacdf920c5e2bb547ae120dcfa9d183bd8"
+      },
+      "atlas": {
+        "path": "models/enemy/enemy_1290_duflm_2/default/default/678228022d33aad44c82a9aadc335a23d7e054f83a40d11cc29d1c15a1379dd4/enemy_1290_duflm_2.atlas",
+        "bytes": 2651,
+        "sha256": "376876b7fdc15bdfb7e6f6cca111c8dde5e95e3d58d8b5c7e565bfcb8326529e"
+      },
+      "textures": [
+        {
+          "path": "models/enemy/enemy_1290_duflm_2/default/default/678228022d33aad44c82a9aadc335a23d7e054f83a40d11cc29d1c15a1379dd4/enemy_1290_duflm_2.png",
+          "bytes": 52971,
+          "sha256": "6366636dab9a2a9e31cdecc6e29c677e53624b2daeaa3d7427e92e075f6a9eb9"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Attack": 1.2,
+        "Default": 0,
+        "Die": 0.933,
+        "Idle": 2,
+        "Move": 1
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "move": "Move",
+        "deploy": null,
+        "die": "Die",
+        "attack": {
+          "loop": "Attack"
+        }
+      },
+      "hits": {
+        "Attack": [
+          0.633
+        ],
+        "Die": [
+          0.467
+        ]
+      },
+      "bounds": {
+        "x": -217.718,
+        "y": -5.674,
+        "width": 426,
+        "height": 368
+      }
     }
   },
   "websiteSkins": {
