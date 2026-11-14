@@ -1,0 +1,19 @@
+{
+  "scope": "Original Rover body artwork. No native frame/effect fidelity certification. Distinct variant textures; shared across stages.",
+  "requested": [
+    "enemy_1291_dusrch",
+    "enemy_1291_dusrch_2"
+  ],
+  "pending": [],
+  "failures": [],
+  "batches": [
+    {
+      "metadata": "enm_art_12.json",
+      "bundle": "refs/arts/enm_art_12.ab",
+      "ids": [
+        "enemy_1291_dusrch",
+        "enemy_1291_dusrch_2"
+      ]
+    }
+  ]
+}
