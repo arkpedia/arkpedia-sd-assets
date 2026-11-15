@@ -17,10 +17,12 @@ async function prepareOriginalModels({ metadata, bundle, extractedRoot, destinat
   for (const [id, originalRecord] of Object.entries(info.models)) {
     component(id);
     const kind = originalRecord.kind ?? 'operator';
-    if (!['operator', 'enemy'].includes(kind) || kind === 'enemy' && !id.startsWith('enemy_'))
+    if (!['operator', 'enemy', 'device'].includes(kind) || kind === 'enemy' && !id.startsWith('enemy_')
+      || kind === 'device' && !id.startsWith('trap_'))
       throw new Error(`${id}: invalid original model kind`);
-    if (kind === 'enemy' && originalRecord.facings) throw new Error(`${id}: enemy imports require one original default skeleton`);
-    const facings = kind === 'enemy' ? ['default'] : originalRecord.facings ? Object.keys(originalRecord.facings) : ['front', 'back'];
+    const singleBody = kind === 'enemy' || kind === 'device';
+    if (singleBody && originalRecord.facings) throw new Error(`${id}: ${kind} imports require one original default skeleton`);
+    const facings = singleBody ? ['default'] : originalRecord.facings ? Object.keys(originalRecord.facings) : ['front', 'back'];
     if (originalRecord.facings && (!originalRecord.facings.front || !originalRecord.facings.back
       || facings.some(facing => !['front', 'back', 'down'].includes(facing))))
       throw new Error(`${id}: expected exactly front and back original facings, with optional native down`);
@@ -61,7 +63,7 @@ async function prepareOriginalModels({ metadata, bundle, extractedRoot, destinat
       const source = { key: `${sourceBundle.client ?? 'global'}-client`, kind: 'assetbundle',
         bundle: sourceBundle, directory: sourceBundle.path,
         extractedSkeleton: skel,
-        ...(originalRecord.facings || kind === 'enemy' ? { originalPathIds: record.originalPathIds }
+        ...(originalRecord.facings || singleBody ? { originalPathIds: record.originalPathIds }
           : { facingAlias: 'single-original-model',
             ...(record.originalPathIds ? { originalPathIds: record.originalPathIds } : {}) }),
         transforms: sourceBundle.transforms };
@@ -71,9 +73,9 @@ async function prepareOriginalModels({ metadata, bundle, extractedRoot, destinat
       const checksum = data => createHash('sha256').update(data).digest('hex');
       const bodyHashes = [skel, atlas, ...pages].map(name => checksum(bytes.get(name)));
       const existingIndex = Object.keys(manifest.models).indexOf(key);
-      const shared = kind === 'enemy' && !bytes.has('avatar.png') ? Object.entries(manifest.models).find(([otherKey, model],index) =>
+      const shared = singleBody && !bytes.has('avatar.png') ? Object.entries(manifest.models).find(([otherKey, model],index) =>
         (existingIndex < 0 || index < existingIndex)
-        && otherKey !== key && model.kind === 'enemy' && !model.assetAlias && model.premultipliedAlpha === true
+        && otherKey !== key && model.kind === kind && !model.assetAlias && model.premultipliedAlpha === true
         && model.spineVersion === record.spineVersion && model.skeleton.sha256 === bodyHashes[0]
         && model.atlas.sha256 === bodyHashes[1] && model.textures.length === pages.length
         && pages.every((_page,index) => model.textures[index].sha256 === bodyHashes[index+2])) : null;

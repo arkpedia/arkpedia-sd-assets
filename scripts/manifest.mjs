@@ -87,7 +87,8 @@ export async function validateManifest(manifest, root) {
     throw new Error('Expected SD manifest schemaVersion 1');
   }
   for (const [key, model] of Object.entries(manifest.models)) {
-    if (!['operator', 'enemy'].includes(model.kind) || !['front', 'back', 'walk', 'default', 'down'].includes(model.facing)) throw new Error(`${key}: invalid kind or facing`);
+    if (!['operator', 'enemy', 'device'].includes(model.kind) || !['front', 'back', 'walk', 'default', 'down'].includes(model.facing)
+      || model.kind === 'device' && (!model.id?.startsWith('trap_') || model.facing !== 'default')) throw new Error(`${key}: invalid kind or facing`);
     if (key !== `${model.kind}/${component(model.id)}/${component(model.variant)}/${model.facing}`) throw new Error(`${key}: identity mismatch`);
     const source = model.source;
     if (model.facing === 'down' && (model.kind !== 'operator' || !model.id.startsWith('token_')
@@ -100,7 +101,7 @@ export async function validateManifest(manifest, root) {
     if (model.assetAlias != null) {
       const original = manifest.models[model.assetAlias];
       if (typeof model.assetAlias !== 'string' || !original || model.assetAlias === key || original.assetAlias
-        || model.kind !== 'enemy' || original.kind !== 'enemy' || model.avatar
+        || !['enemy', 'device'].includes(model.kind) || original.kind !== model.kind || model.avatar
         || model.spineVersion !== original.spineVersion || model.premultipliedAlpha !== original.premultipliedAlpha
         || JSON.stringify([model.skeleton,model.atlas,model.textures]) !== JSON.stringify([original.skeleton,original.atlas,original.textures]))
         throw new Error(`${key}: invalid shared enemy body alias`);

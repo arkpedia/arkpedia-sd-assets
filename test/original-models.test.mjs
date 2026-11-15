@@ -228,3 +228,19 @@ test('identical enemy bodies share files while preserving per-prefab roles and p
   }
  }finally{await rm(f.dir,{recursive:true,force:true});}
 });
+
+test('devices publish one default body and share identical files through explicit device aliases',async()=>{
+ const f=await fixture();try{
+  f.info.models={trap_original:{...f.front,kind:'device'},trap_alias:{...f.front,kind:'device',originalPathIds:{skeletonTextAsset:'333'}}};
+  await f.save();await importOriginalModels(f.args);
+  const m=await f.manifest(),key='device/trap_original/default/default',alias='device/trap_alias/default/default';
+  assert.deepEqual(Object.keys(m.models),[key,alias]);assert.equal(m.models[alias].assetAlias,key);
+  assert.deepEqual(m.models[alias].skeleton,m.models[key].skeleton);
+  await assert.rejects(stat(path.join(f.dir,'models/device/trap_alias')),e=>e.code==='ENOENT');
+  await importOriginalModels(f.args);assert.deepEqual(await f.manifest(),m);
+  for(const bad of [{...f.front,kind:'device',facings:{front:f.front,back:f.back}}, {...f.front,kind:'unknown'}]){
+   f.info.models={trap_bad:bad};await f.save();await assert.rejects(importOriginalModels(f.args));assert.deepEqual(await f.manifest(),m);
+  }
+  f.info.models={enemy_wrong:{...f.front,kind:'device'}};await f.save();await assert.rejects(importOriginalModels(f.args),/invalid original model kind/);
+ }finally{await rm(f.dir,{recursive:true,force:true});}
+});
