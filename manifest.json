@@ -218139,6 +218139,333 @@
         "width": 420.503,
         "height": 392.001
       }
+    },
+    "device/trap_757_skzbox/default/default": {
+      "kind": "device",
+      "id": "trap_757_skzbox",
+      "variant": "default",
+      "facing": "default",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_3.ab",
+          "bytes": 1869750,
+          "md5": "61e55f085db51d4679fcda61a6734c03",
+          "archive": "pkgrps_btl_pfb_tokens_3.dat",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_3.dat",
+          "sha256": "c4088040d85ef02b14946d67b2fd47f449ed25a257415e7e46b29445a3f3def3",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original skeleton bytes retained",
+            "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+            "Atlas page dimensions and PMA header normalized; native regions retained"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_3.ab",
+        "extractedSkeleton": "trap_757_skzbox.skel",
+        "originalPathIds": {
+          "skeletonDataAssetPathId": "-2600289561480382715",
+          "textAssetPathId": "-3888588758400385175",
+          "atlasAssetPathId": "-3384857165958252761",
+          "atlasTextAssetPathId": "-2601418309023506064",
+          "materials": [
+            {
+              "materialPathId": "401825299425572258",
+              "mainTexturePathId": "-7655336541744307908",
+              "alphaTexturePathId": null,
+              "assignedAlphaTexture": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "shader": {
+                "m_FileID": 5,
+                "m_PathID": "-6064382340973850767"
+              },
+              "keywords": [
+                "_USEALPHATEX_OFF",
+                "_USEBLEED_ON"
+              ],
+              "floats": {
+                "_BaselineZ": 0,
+                "_Cutoff": 0.10000000149011612,
+                "_DitherIntensity": 0,
+                "_OutlineMipLevel": 0,
+                "_OutlineReferenceTexWidth": 1024,
+                "_OutlineSmoothness": 1,
+                "_OutlineWidth": 3,
+                "_StencilComp": 8,
+                "_StencilRef": 1,
+                "_StraightAlphaInput": 0,
+                "_ThresholdEnd": 0.25,
+                "_Use8Neighbourhood": 1,
+                "_UseAlphaTex": 0,
+                "_UseBleed": 1,
+                "_UseDither": 0,
+                "_UseFixedFormula": 0,
+                "_UseTintBlack": 0
+              }
+            }
+          ],
+          "animatorPathId": "3623716082128482328",
+          "skeletonAnimationPathId": "-8625449008616083432"
+        },
+        "transforms": [
+          "Original skeleton bytes retained",
+          "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+          "Atlas page dimensions and PMA header normalized; native regions retained"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/device/trap_757_skzbox/default/default/c4088040d85ef02b14946d67b2fd47f449ed25a257415e7e46b29445a3f3def3/trap_757_skzbox.skel",
+        "bytes": 4016,
+        "sha256": "3012845b3847aca9ebd5d093a5492f19026129961892be396914db05f693d360"
+      },
+      "atlas": {
+        "path": "models/device/trap_757_skzbox/default/default/c4088040d85ef02b14946d67b2fd47f449ed25a257415e7e46b29445a3f3def3/trap_757_skzbox.atlas",
+        "bytes": 679,
+        "sha256": "95f5f60d39cb13f53782aa292e40fbfc9e7b33b18406bb8f1fcacd0692f5dae3"
+      },
+      "textures": [
+        {
+          "path": "models/device/trap_757_skzbox/default/default/c4088040d85ef02b14946d67b2fd47f449ed25a257415e7e46b29445a3f3def3/trap_757_skzbox.png",
+          "bytes": 36293,
+          "sha256": "94279a60178a6ad3eb545db65593e6b40a1bef1cb108b4e53dabc1ca588dd4ca"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Die": 1.067,
+        "Idle": 0
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "die": "Die"
+      },
+      "hits": {},
+      "bounds": null
+    },
+    "device/trap_758_skzmbx/default/default": {
+      "kind": "device",
+      "id": "trap_758_skzmbx",
+      "variant": "default",
+      "facing": "default",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_3.ab",
+          "bytes": 1869750,
+          "md5": "61e55f085db51d4679fcda61a6734c03",
+          "archive": "pkgrps_btl_pfb_tokens_3.dat",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_3.dat",
+          "sha256": "c4088040d85ef02b14946d67b2fd47f449ed25a257415e7e46b29445a3f3def3",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original skeleton bytes retained",
+            "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+            "Atlas page dimensions and PMA header normalized; native regions retained"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_3.ab",
+        "extractedSkeleton": "trap_758_skzmbx.skel",
+        "originalPathIds": {
+          "skeletonDataAssetPathId": "3500636869067616582",
+          "textAssetPathId": "8328586712214209971",
+          "atlasAssetPathId": "-2366283972065205533",
+          "atlasTextAssetPathId": "-3680686934673343946",
+          "materials": [
+            {
+              "materialPathId": "-5704999324292698388",
+              "mainTexturePathId": "-3359856119644895927",
+              "alphaTexturePathId": null,
+              "assignedAlphaTexture": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "shader": {
+                "m_FileID": 5,
+                "m_PathID": "-6064382340973850767"
+              },
+              "keywords": [
+                "_USEALPHATEX_OFF",
+                "_USEBLEED_ON"
+              ],
+              "floats": {
+                "_BaselineZ": 0,
+                "_Cutoff": 0.10000000149011612,
+                "_DitherIntensity": 0,
+                "_OutlineMipLevel": 0,
+                "_OutlineReferenceTexWidth": 1024,
+                "_OutlineSmoothness": 1,
+                "_OutlineWidth": 3,
+                "_StencilComp": 8,
+                "_StencilRef": 1,
+                "_StraightAlphaInput": 0,
+                "_ThresholdEnd": 0.25,
+                "_Use8Neighbourhood": 1,
+                "_UseAlphaTex": 0,
+                "_UseBleed": 1,
+                "_UseDither": 0,
+                "_UseFixedFormula": 0,
+                "_UseTintBlack": 0
+              }
+            }
+          ],
+          "animatorPathId": "-2200332400150704961",
+          "skeletonAnimationPathId": "-3898851038270255937"
+        },
+        "transforms": [
+          "Original skeleton bytes retained",
+          "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+          "Atlas page dimensions and PMA header normalized; native regions retained"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/device/trap_758_skzmbx/default/default/c4088040d85ef02b14946d67b2fd47f449ed25a257415e7e46b29445a3f3def3/trap_758_skzmbx.skel",
+        "bytes": 3373,
+        "sha256": "4ed8a516b2f9eff61d140c46723315aa04f24b1488c4230c828c7f3360ed4c98"
+      },
+      "atlas": {
+        "path": "models/device/trap_758_skzmbx/default/default/c4088040d85ef02b14946d67b2fd47f449ed25a257415e7e46b29445a3f3def3/trap_758_skzmbx.atlas",
+        "bytes": 955,
+        "sha256": "f82b791e120095dc689fad7cbdbf6ce2509a90bdaf89298d2b63b1ba69a8524e"
+      },
+      "textures": [
+        {
+          "path": "models/device/trap_758_skzmbx/default/default/c4088040d85ef02b14946d67b2fd47f449ed25a257415e7e46b29445a3f3def3/trap_758_skzmbx.png",
+          "bytes": 27718,
+          "sha256": "849ff71bcc22b488fded99a2e6963dbaa85aaca06449f61ab9555944ef35d225"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Idle": 0
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "die": "Default"
+      },
+      "hits": {},
+      "bounds": null
+    },
+    "device/trap_759_skzwyx/default/default": {
+      "kind": "device",
+      "id": "trap_759_skzwyx",
+      "variant": "default",
+      "facing": "default",
+      "source": {
+        "key": "cn-client",
+        "kind": "assetbundle",
+        "bundle": {
+          "path": "pkgrps/btl_pfb_tokens_3.ab",
+          "bytes": 1869750,
+          "md5": "61e55f085db51d4679fcda61a6734c03",
+          "archive": "pkgrps_btl_pfb_tokens_3.dat",
+          "url": "https://ak.hycdn.cn/assetbundle/official/Android/assets/26-09-22-07-47-20_6c71fa/pkgrps_btl_pfb_tokens_3.dat",
+          "sha256": "c4088040d85ef02b14946d67b2fd47f449ed25a257415e7e46b29445a3f3def3",
+          "client": "cn",
+          "resourceVersion": "26-09-22-07-47-20_6c71fa",
+          "transforms": [
+            "Original skeleton bytes retained",
+            "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+            "Atlas page dimensions and PMA header normalized; native regions retained"
+          ]
+        },
+        "directory": "pkgrps/btl_pfb_tokens_3.ab",
+        "extractedSkeleton": "trap_759_skzwyx.skel",
+        "originalPathIds": {
+          "skeletonDataAssetPathId": "-8856776824933753390",
+          "textAssetPathId": "3507385030051350495",
+          "atlasAssetPathId": "1507964509226590132",
+          "atlasTextAssetPathId": "-5423991205845278608",
+          "materials": [
+            {
+              "materialPathId": "-1367100166162340076",
+              "mainTexturePathId": "-865812836382431723",
+              "alphaTexturePathId": null,
+              "assignedAlphaTexture": {
+                "m_FileID": 0,
+                "m_PathID": "0"
+              },
+              "shader": {
+                "m_FileID": 5,
+                "m_PathID": "-6064382340973850767"
+              },
+              "keywords": [
+                "_USEALPHATEX_OFF",
+                "_USEBLEED_ON"
+              ],
+              "floats": {
+                "_BaselineZ": 0,
+                "_Cutoff": 0.10000000149011612,
+                "_DitherIntensity": 0,
+                "_OutlineMipLevel": 0,
+                "_OutlineReferenceTexWidth": 1024,
+                "_OutlineSmoothness": 1,
+                "_OutlineWidth": 3,
+                "_StencilComp": 8,
+                "_StencilRef": 1,
+                "_StraightAlphaInput": 0,
+                "_ThresholdEnd": 0.25,
+                "_Use8Neighbourhood": 1,
+                "_UseAlphaTex": 0,
+                "_UseBleed": 1,
+                "_UseDither": 0,
+                "_UseFixedFormula": 0,
+                "_UseTintBlack": 0
+              }
+            }
+          ],
+          "animatorPathId": "2523320489677747295",
+          "skeletonAnimationPathId": "-4888439177053014945"
+        },
+        "transforms": [
+          "Original skeleton bytes retained",
+          "Original split or embedded alpha preserved; premultiplied RGB clamped to alpha",
+          "Atlas page dimensions and PMA header normalized; native regions retained"
+        ]
+      },
+      "spineVersion": "3.8.99",
+      "skeleton": {
+        "path": "models/device/trap_759_skzwyx/default/default/c4088040d85ef02b14946d67b2fd47f449ed25a257415e7e46b29445a3f3def3/trap_759_skzwyx.skel",
+        "bytes": 49063,
+        "sha256": "8b726b37a33ed68d37e439aee3d7e6b1ddc8d1f2098feddc6c9823065b35d759"
+      },
+      "atlas": {
+        "path": "models/device/trap_759_skzwyx/default/default/c4088040d85ef02b14946d67b2fd47f449ed25a257415e7e46b29445a3f3def3/trap_759_skzwyx.atlas",
+        "bytes": 3113,
+        "sha256": "c3a40d9d40fe8216a28538e5babcab36baec1831041edc16ebf1e0bcc4a857c0"
+      },
+      "textures": [
+        {
+          "path": "models/device/trap_759_skzwyx/default/default/c4088040d85ef02b14946d67b2fd47f449ed25a257415e7e46b29445a3f3def3/trap_759_skzwyx.png",
+          "bytes": 65434,
+          "sha256": "ce90e7f7d4163b85cfd4dd7c5cff249a35d439b07a7239c8b6400daa4420d5d5"
+        }
+      ],
+      "premultipliedAlpha": true,
+      "animations": {
+        "Default": 0,
+        "Die": 2.333,
+        "Idle": 4.9
+      },
+      "animationRoles": {
+        "idle": "Idle",
+        "die": "Die"
+      },
+      "hits": {
+        "Die": [
+          1.367
+        ]
+      },
+      "bounds": null
     }
   },
   "websiteSkins": {
