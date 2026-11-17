@@ -234391,6 +234391,198 @@
         "width": 571.011,
         "height": 494.039
       }
+    },
+    "operator/char_248_mgllan/website_char_248_mgllan_epoque_60/front": {
+      "kind": "operator",
+      "id": "char_248_mgllan",
+      "variant": "website_char_248_mgllan_epoque_60",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "53d2ac251329a54d714dec3b0b6fbdbedef1df17",
+        "directory": "spine/char_248_mgllan/char_248_mgllan_epoque_60/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_248_mgllan/website_char_248_mgllan_epoque_60/front/53d2ac251329a54d714dec3b0b6fbdbedef1df17/char_248_mgllan_epoque_60.skel",
+        "bytes": 430021,
+        "sha256": "e8989599823f4521c00f9d77dbfd1377cf2c72b4bb67260ae4133be7f4ab7714"
+      },
+      "atlas": {
+        "path": "models/operator/char_248_mgllan/website_char_248_mgllan_epoque_60/front/53d2ac251329a54d714dec3b0b6fbdbedef1df17/char_248_mgllan_epoque_60.atlas",
+        "bytes": 14956,
+        "sha256": "bbd998cdadff955cd2904e3875fac705d0b56db5875b29b303ab4fe338beb9b7"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_248_mgllan/website_char_248_mgllan_epoque_60/front/53d2ac251329a54d714dec3b0b6fbdbedef1df17/char_248_mgllan_epoque_60.png",
+          "bytes": 167289,
+          "sha256": "892cb0dec309ef69525e496abc7cdba57e600a4fba2d71a4d824b78e68506d3f"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
+    },
+    "operator/char_248_mgllan/website_char_248_mgllan_epoque_60/back": {
+      "kind": "operator",
+      "id": "char_248_mgllan",
+      "variant": "website_char_248_mgllan_epoque_60",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "53d2ac251329a54d714dec3b0b6fbdbedef1df17",
+        "directory": "spine/char_248_mgllan/char_248_mgllan_epoque_60/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_248_mgllan/website_char_248_mgllan_epoque_60/back/53d2ac251329a54d714dec3b0b6fbdbedef1df17/char_248_mgllan_epoque_60.skel",
+        "bytes": 289465,
+        "sha256": "41355dd67e5ee2288687a178c6966583f25d9030586799c63e662a0c6b83b784"
+      },
+      "atlas": {
+        "path": "models/operator/char_248_mgllan/website_char_248_mgllan_epoque_60/back/53d2ac251329a54d714dec3b0b6fbdbedef1df17/char_248_mgllan_epoque_60.atlas",
+        "bytes": 11364,
+        "sha256": "b2739c362122d608d2a134116bff2eff87ba8601e61db908543df2951c2139cf"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_248_mgllan/website_char_248_mgllan_epoque_60/back/53d2ac251329a54d714dec3b0b6fbdbedef1df17/char_248_mgllan_epoque_60.png",
+          "bytes": 148692,
+          "sha256": "265a48c6d38abefd7fe2b7fd321a6345f99273ae345f782413710a06d5a7cc08"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
+    },
+    "operator/char_248_mgllan/website_char_248_mgllan_epoque_60/walk": {
+      "kind": "operator",
+      "id": "char_248_mgllan",
+      "variant": "website_char_248_mgllan_epoque_60",
+      "facing": "walk",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "53d2ac251329a54d714dec3b0b6fbdbedef1df17",
+        "directory": "spine/char_248_mgllan/build_char_248_mgllan_epoque_60/Spine"
+      },
+      "skeleton": {
+        "path": "models/operator/char_248_mgllan/website_char_248_mgllan_epoque_60/walk/53d2ac251329a54d714dec3b0b6fbdbedef1df17/build_char_248_mgllan_epoque_60.skel",
+        "bytes": 1179551,
+        "sha256": "38e53d13c10991e96cbf049bbe34803eb46296ea98a564c239723e371d8922c8"
+      },
+      "atlas": {
+        "path": "models/operator/char_248_mgllan/website_char_248_mgllan_epoque_60/walk/53d2ac251329a54d714dec3b0b6fbdbedef1df17/build_char_248_mgllan_epoque_60.atlas",
+        "bytes": 21101,
+        "sha256": "96413f18a1f08af88bd6fe688863c1b4b919a2061903c080d8123072039eb702"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_248_mgllan/website_char_248_mgllan_epoque_60/walk/53d2ac251329a54d714dec3b0b6fbdbedef1df17/build_char_248_mgllan_epoque_60.png",
+          "bytes": 1182126,
+          "sha256": "db5c6ceb1dbf465b89e0255afce098cf6bd8dd385c5d83865224d03730758873"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
+    },
+    "operator/char_1047_halo2/website_char_1047_halo2_striker_4/front": {
+      "kind": "operator",
+      "id": "char_1047_halo2",
+      "variant": "website_char_1047_halo2_striker_4",
+      "facing": "front",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "53d2ac251329a54d714dec3b0b6fbdbedef1df17",
+        "directory": "spine/char_1047_halo2/char_1047_halo2_striker_4/Front"
+      },
+      "skeleton": {
+        "path": "models/operator/char_1047_halo2/website_char_1047_halo2_striker_4/front/53d2ac251329a54d714dec3b0b6fbdbedef1df17/char_1047_halo2_striker_4.skel",
+        "bytes": 841846,
+        "sha256": "8a283bccd2635c57346e7324efbe3073397a58d70932439f2319429c9d7699fe"
+      },
+      "atlas": {
+        "path": "models/operator/char_1047_halo2/website_char_1047_halo2_striker_4/front/53d2ac251329a54d714dec3b0b6fbdbedef1df17/char_1047_halo2_striker_4.atlas",
+        "bytes": 11463,
+        "sha256": "074987a165ecf629d37456987388282e918669e1eb44026a6c913cf391be8d3f"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_1047_halo2/website_char_1047_halo2_striker_4/front/53d2ac251329a54d714dec3b0b6fbdbedef1df17/char_1047_halo2_striker_4.png",
+          "bytes": 309354,
+          "sha256": "fe76070888013a23e7c79129385460f12cec22070f047df7da58237175576cf6"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
+    },
+    "operator/char_1047_halo2/website_char_1047_halo2_striker_4/back": {
+      "kind": "operator",
+      "id": "char_1047_halo2",
+      "variant": "website_char_1047_halo2_striker_4",
+      "facing": "back",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "53d2ac251329a54d714dec3b0b6fbdbedef1df17",
+        "directory": "spine/char_1047_halo2/char_1047_halo2_striker_4/Back"
+      },
+      "skeleton": {
+        "path": "models/operator/char_1047_halo2/website_char_1047_halo2_striker_4/back/53d2ac251329a54d714dec3b0b6fbdbedef1df17/char_1047_halo2_striker_4.skel",
+        "bytes": 662066,
+        "sha256": "6e9e9c06f37f6f04e743678b2a533a154642026150d1ffa5a4c501f89a77afbf"
+      },
+      "atlas": {
+        "path": "models/operator/char_1047_halo2/website_char_1047_halo2_striker_4/back/53d2ac251329a54d714dec3b0b6fbdbedef1df17/char_1047_halo2_striker_4.atlas",
+        "bytes": 6353,
+        "sha256": "35f43a691a857839a14af49c4ce8c5161f004b4ed9acd097d2533bf97eb0b14f"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_1047_halo2/website_char_1047_halo2_striker_4/back/53d2ac251329a54d714dec3b0b6fbdbedef1df17/char_1047_halo2_striker_4.png",
+          "bytes": 274346,
+          "sha256": "6dc4d2b9a66060abbb1f776a9377d6c0135c34583a3c8eebee67248ef745dbb9"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
+    },
+    "operator/char_1047_halo2/website_char_1047_halo2_striker_4/walk": {
+      "kind": "operator",
+      "id": "char_1047_halo2",
+      "variant": "website_char_1047_halo2_striker_4",
+      "facing": "walk",
+      "spineVersion": "3.8.99",
+      "source": {
+        "key": "operators",
+        "repository": "fexli/ArknightsResource",
+        "commit": "53d2ac251329a54d714dec3b0b6fbdbedef1df17",
+        "directory": "spine/char_1047_halo2/build_char_1047_halo2_striker_4/Spine"
+      },
+      "skeleton": {
+        "path": "models/operator/char_1047_halo2/website_char_1047_halo2_striker_4/walk/53d2ac251329a54d714dec3b0b6fbdbedef1df17/build_char_1047_halo2_striker_4.skel",
+        "bytes": 983937,
+        "sha256": "bd69bbf596104aeebef4fa6703b7a321d62c1717aa80748dcf80b6f5c86aa52d"
+      },
+      "atlas": {
+        "path": "models/operator/char_1047_halo2/website_char_1047_halo2_striker_4/walk/53d2ac251329a54d714dec3b0b6fbdbedef1df17/build_char_1047_halo2_striker_4.atlas",
+        "bytes": 14488,
+        "sha256": "65af975166e07ffefa097b7d7c224950fdcec84e9d5e480061e967d1863cde81"
+      },
+      "textures": [
+        {
+          "path": "models/operator/char_1047_halo2/website_char_1047_halo2_striker_4/walk/53d2ac251329a54d714dec3b0b6fbdbedef1df17/build_char_1047_halo2_striker_4.png",
+          "bytes": 1398807,
+          "sha256": "0f7d1e581a2f1ade38049d90c81daa4dbb4976dc194613848631fa2b83abeeef"
+        }
+      ],
+      "premultipliedAlpha": false,
+      "animations": null
     }
   },
   "websiteSkins": {
@@ -241372,11 +241564,21 @@
     },
     "char_618_acrbot#2": {
       "front": "operator/char_618_acrbot/website_char_618_acrbot/front"
+    },
+    "char_248_mgllan@epoque#60": {
+      "front": "operator/char_248_mgllan/website_char_248_mgllan_epoque_60/front",
+      "back": "operator/char_248_mgllan/website_char_248_mgllan_epoque_60/back",
+      "walk": "operator/char_248_mgllan/website_char_248_mgllan_epoque_60/walk"
+    },
+    "char_1047_halo2@striker#4": {
+      "front": "operator/char_1047_halo2/website_char_1047_halo2_striker_4/front",
+      "back": "operator/char_1047_halo2/website_char_1047_halo2_striker_4/back",
+      "walk": "operator/char_1047_halo2/website_char_1047_halo2_striker_4/walk"
     }
   },
   "websiteSource": {
     "repository": "fexli/ArknightsResource",
-    "commit": "62363543c0fa116f9cef83e291ccdeb006a9a1db",
+    "commit": "53d2ac251329a54d714dec3b0b6fbdbedef1df17",
     "table": "gamedata/excel/skin_table.json",
     "pending": []
   },
